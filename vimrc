@@ -47,8 +47,8 @@ vnoremap ; :
 let mapleader="\<Space>"
 
 " move among buffers 
-map <Leader>j :bnext<CR>
-map <Leader>k :bprev<CR>
+map <Leader>k :bnext<CR>
+map <Leader>j :bprev<CR>
 map <Leader>b :b
 map <Leader>l :ls<CR>:b<Space>
 

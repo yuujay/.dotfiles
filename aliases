@@ -73,7 +73,6 @@ alias localip="ipconfig getifaddr en0"
 alias omega='ssh pi@192.168.0.79'
 
 # Load Other Aliases
-source_if_exists "$HOME/.docker_aliases"
 
 ## ========= Cleanups ========================
 # Empty the Trash on all mounted volumes and the main HDD
