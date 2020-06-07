@@ -1,0 +1,1 @@
+set DOCKER_COMPOSE_USER_ID (id -u)

@@ -1,0 +1,47 @@
+[alias]
+    a = add
+    aa = add .
+	b = branch -vv
+    bb = branch -vv --all
+	i = init
+	d = diff
+	s = status -s
+	c = commit
+	ca = commit -a
+	cm = commit -m
+	cam = commit -a -m
+	l = log --all --graph --decorate
+	lo = log --all --graph --decorate --oneline
+	co = checkout
+	cob = checkout -b
+  	m = merge
+	mc = merge --continue
+	mt = mergetool
+	pl = pull
+	plo = pull origin
+	plrb = pull --rebase
+	pu = push
+	puo = push origin
+	puom = push origin master
+	r = remote
+	ra = remote add
+	cl = clone
+	st = stash
+	stp = stash pop
+    update-submodules = submodule update --init --recursive
+	upgrade-submodules = submodule update --init --remote
+[user]
+	id = yuujay
+	name = Gowtham UJ
+	email = gowtham.uj@gmail.com
+[core]
+	excludesfile = ~/.gitignore
+	autocrlf = input
+[credential]
+	helper = osxkeychain
+[push]
+	default = upstream
+[merge]
+	defaultToUpstream = true
+	tool = vimdiff
+

@@ -1,0 +1,39 @@
+# AOE-MW ALIASES
+alias sshg="ssh gumamahe@gumamahe-maci.dhcp.mathworks.com"
+alias sshd1="ssh basysrby@ruby26ext-d01ls"
+alias sshd2="ssh basysrby@ruby26ext-d02ls"
+alias sshd3="ssh basysrby@ruby26ext-d03ls"
+
+alias ssht1="ssh basysrby@ruby26ext-t01ls"
+alias ssht2="ssh basysrby@ruby26ext-t02ls"
+alias ssht3="ssh basysrby@ruby26ext-t03ls"
+
+alias sshi1="ssh basysrby@ruby26ext-i01ls"
+alias sshi2="ssh basysrby@ruby26ext-i02ls"
+alias sshi3="ssh basysrby@ruby26ext-i03ls"
+
+alias sshs1="ssh basysrby@ruby26ext-s01ls"
+alias sshs2="ssh basysrby@ruby26ext-s01ah"
+
+alias sshp1="ssh basysrby@ruby26ext-p01ls"
+
+## COMMUNITY TEAM
+alias cds="cd /Volumes/gumamahe"
+alias cdd="cd /Volumes/gumamahe/Bwebaddons.local"
+alias cdh="cd /Volumes/gumamahe/gumamahe.Biot/scm/mwthingspeak-hpi/main"
+alias cdt="cd /Volumes/gumamahe/gumamahe.Biot/scm/"
+alias cdfx="cd /Volumes/gumamahe/Bwebaddons.local/Bwebaddons/scm/fileexchange/main"
+alias cda="cd /Volumes/gumamahe/Bwebaddons.local/Bwebaddons/scm/add-ons/main"
+alias cdw="cd /Volumes/gumamahe/Bwebaddons.local/Bwebaddons/scm/webaddons/main"
+
+## MW-DOCKER ALIASES
+
+alias dcw="sshg 'cdd; dcr webaddons'"
+alias dca="sshg 'cdd; dcr add-ons'"
+alias dcf="sshg 'cdd; dcr file-exchange'"
+alias dcbj="sshg 'cdd; dcr addons-background-jobs-consumer'"
+alias dcda="sshg 'cdd; dcr addons-data-access'"
+
+alias dcwi="sshg 'cdd; dcw bundle install'"
+alias dcai="sshg 'cdd; dca bundle install'"
+alias dcfi="sshg 'cdd; dcf bundle install'"

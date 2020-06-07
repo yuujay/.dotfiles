@@ -1,0 +1,88 @@
+# FILE OPs
+alias less='less -g -i -J -m -Q -u'
+alias rm='rm -f'
+alias rmr='rm -r'
+alias c.='code .'
+alias code.='code .'
+alias src='source ~/.config/fish/config.fish'
+
+# LIST FILES & DIRECTORIES
+alias l='ls -1 -p'
+alias ll='ls -al'
+alias llg='ls -al | grep'
+alias lfi="ls -al | grep '^-'"
+alias ldi="ls -al | grep '^d'"
+alias fc='find . -type f | wc -l'
+alias p="pwd"
+alias t="tree -I 'node_modules|node_modules|target|cache|log|tmp|assets|.byebug_history|.bundle|.htaccess'"
+alias ti="tree -I $1"
+alias tl="tree -L "
+alias x='exa -1'
+alias xl='exa -al'
+alias xlm='exa -alm'
+alias xlg='exa -al | grep'
+alias xdi='exa -alD'
+alias xg='exa -al --git'
+alias br='bat -r'
+
+# SYSTEM OPs
+alias sudo='sudo '
+alias kill='kill -9'
+alias envs='env | sort'
+
+# APT CMDs
+alias agu='sudo apt-get -y update'
+alias agi='sudo apt-get install'
+alias agd='sudo apt-get delete'
+alias agupg='sudo apt-get -y --allow-unauthenticated upgrade && sudo apt-get autoclean && sudo apt-get autoremove'
+
+# System shortcuts
+alias reboot='sudo shutdown -r now'
+alias shutdown='sudo shutdown -h now'
+alias paux='ps aux | grep'
+
+# CD ALIASES
+alias home='cd ~'
+alias back='cd -'
+alias cdf='cd ~/.config/fish'
+alias cd.='cd ..'
+alias ..='cd ..'
+alias cd-='cd -'
+alias cd..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+
+# WEB DEV
+alias nps='npm start'
+alias ws='python -m SimpleHTTPServer'
+alias nx='npm run'
+alias bx='bundle exec'
+alias sl='sails lift'
+alias mci='mvn clean install'
+alias mcv='mvn clean verify'
+alias mct='mvn clean test'
+alias mc='mvn clean'
+
+# NETWORK
+alias ipa="dig +short myip.opendns.com @resolver1.opendns.com"
+#alias ipa="dig TXT +short o-o.myaddr.l.google.com @ns1.google.com"
+alias localip="ipconfig getifaddr en0"
+
+# OMEGA - move this to .sshconfig
+alias omega='ssh pi@192.168.0.79'
+
+# Load Other Aliases
+source_if_exists "$HOME/.docker_aliases"
+
+## ========= Cleanups ========================
+# Empty the Trash on all mounted volumes and the main HDD
+# Also, clear Apple’s System Logs to improve shell startup speed
+# alias etrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+## ===== mw-html-test =======
+alias browser="mvn pre-integration-test -Dbrowser.autoremove=false -Dtest-browser=chrome-stable"
+alias mock="cd /sandbox/gumamahe/MockBrowser/target; java -jar addonexplorer_mockbrowser-jar-with-dependencies.jar"

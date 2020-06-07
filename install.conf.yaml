@@ -1,0 +1,22 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.aliases:
+    ~/.docker_aliases:
+    ~/.gitconfig:
+    ~/.mathworks_aliases:
+    ~/.fish_env:
+
+- create:
+  - ~/.config/fish
+
+- shell:
+    - chsh -s $(which sh)
+    - chsh -s to /usr/local/bin/fish
+    - cp -r ./functions ~/.config/functions/
+
