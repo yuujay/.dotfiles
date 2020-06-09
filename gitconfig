@@ -41,6 +41,8 @@
 	helper = osxkeychain
 [push]
 	default = upstream
+[pull]
+	ff = only
 [merge]
 	defaultToUpstream = true
 	tool = vimdiff
