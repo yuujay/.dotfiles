@@ -18,13 +18,16 @@ alias sshs2="ssh basysrby@ruby26ext-s01ah"
 alias sshp1="ssh basysrby@ruby26ext-p01ls"
 
 ## COMMUNITY TEAM
-alias cds="cd /Volumes/gumamahe"
-alias cdd="cd /Volumes/gumamahe/Bwebaddons.local"
-alias cdh="cd /Volumes/gumamahe/gumamahe.Biot/scm/mwthingspeak-hpi/main"
-alias cdt="cd /Volumes/gumamahe/gumamahe.Biot/scm/"
-alias cdfx="cd /Volumes/gumamahe/Bwebaddons.local/Bwebaddons/scm/fileexchange/main"
-alias cda="cd /Volumes/gumamahe/Bwebaddons.local/Bwebaddons/scm/add-ons/main"
-alias cdw="cd /Volumes/gumamahe/Bwebaddons.local/Bwebaddons/scm/webaddons/main"
+set SANDBOX_PATH '/Volumes/gumamahe'
+
+alias cds='cd $SANDBOX_PATH'
+alias cdp='cd $SANDBOX_PATH/active-projects/aoe-mo-fullstack'
+alias cdd='cd $SANDBOX_PATH/Bwebaddons.local'
+alias cdh='cd $SANDBOX_PATH/gumamahe.Biot/scm/mwthingspeak-hpi/main'
+alias cdt='cd $SANDBOX_PATH/gumamahe/gumamahe.Biot/scm/'
+alias cdfx='cd $SANDBOX_PATH/Bwebaddons.local/Bwebaddons/scm/fileexchange/main'
+alias cda='cd $SANDBOX_PATH/Bwebaddons.local/Bwebaddons/scm/add-ons/main'
+alias cdw='cd $SANDBOX_PATH/Bwebaddons.local/Bwebaddons/scm/webaddons/main'
 
 ## MW-DOCKER ALIASES
 

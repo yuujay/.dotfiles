@@ -8,6 +8,7 @@
 - link:
     ~/.aliases:
     ~/.docker_aliases:
+    ~/.vimrc:
     ~/.gitconfig:
     ~/.mathworks_aliases:
     ~/.fish_env:
