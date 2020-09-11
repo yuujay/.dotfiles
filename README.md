@@ -1,6 +1,6 @@
 # dotfiles  💾
 
-Aggregation of dotFiles in one place and powered by [dotBot](https://github.com/anishathalye/dotbot)
+Aggregation of dotFiles powered by [dotBot](https://github.com/anishathalye/dotbot)
 
 After cloning this repo, run install to automatically set up the development environment. Note that the install script is idempotent: it can safely be run multiple times.
 
