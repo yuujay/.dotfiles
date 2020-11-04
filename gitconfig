@@ -31,9 +31,9 @@
     update-submodules = submodule update --init --recursive
 	upgrade-submodules = submodule update --init --remote
 [user]
-	id = yuujay
-	name = Gowtham UJ
-	email = gowtham.uj@gmail.com
+	id = gumamahe
+	name = gumamahe
+	email = gumamahe@mathworks.com
 [core]
 	excludesfile = ~/.gitignore
 	autocrlf = input
@@ -47,3 +47,5 @@
 	defaultToUpstream = true
 	tool = vimdiff
 
+[reviewboard]
+	url = http://reviewboard.mathworks.com/
