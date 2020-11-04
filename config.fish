@@ -1,4 +1,4 @@
-set -a PATH usr/local/bin /usr/bin /bin /usr/sbin /sbin
+set -a PATH usr/local/bin /usr/bin /bin /usr/sbin /sbin /mathworks/hub/share/sbtools/bin/maci64
 set FISH_HOME ~/.config/fish
 
 echo "Sourcing files from $FISH_HOME/config.fish"

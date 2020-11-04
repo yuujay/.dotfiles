@@ -18,24 +18,23 @@ alias sshs2="ssh basysrby@ruby26ext-s01ah"
 alias sshp1="ssh basysrby@ruby26ext-p01ls"
 
 ## COMMUNITY TEAM
-set SANDBOX_PATH '/Volumes/gumamahe'
+set SANDBOX_PATH '/sandbox/gumamahe'
 
 alias cds='cd $SANDBOX_PATH'
 alias cdp='cd $SANDBOX_PATH/active-projects/aoe-mo-fullstack'
-alias cdd='cd $SANDBOX_PATH/Bwebaddons.local'
-alias cdh='cd $SANDBOX_PATH/gumamahe.Biot/scm/mwthingspeak-hpi/main'
-alias cdt='cd $SANDBOX_PATH/gumamahe/gumamahe.Biot/scm/'
-alias cdfx='cd $SANDBOX_PATH/Bwebaddons.local/Bwebaddons/scm/fileexchange/main'
-alias cda='cd $SANDBOX_PATH/Bwebaddons.local/Bwebaddons/scm/add-ons/main'
-alias cdw='cd $SANDBOX_PATH/Bwebaddons.local/Bwebaddons/scm/webaddons/main'
+alias cdd='cd $SANDBOX_PATH/Cwebaddons.local'
+alias cdfx='cd $SANDBOX_PATH/Cwebaddons.local/file-exchange'
+alias cda='cd $SANDBOX_PATH/Cwebaddons.local/add-on-explorer'
+alias cdag='cd $SANDBOX_PATH/Cwebaddons.local/addons-data-access'
+alias cdbj='cd $SANDBOX_PATH/Cwebaddons.local/addons-background-jobs-consumer'
+alias cdw='cd $SANDBOX_PATH/Cwebaddons.local/addons-contribution-ui'
 
 ## MW-DOCKER ALIASES
 
-alias dcw="sshg 'cdd; dcr webaddons'"
-alias dca="sshg 'cdd; dcr add-ons'"
+alias dcw="sshg 'cdd; dcr addons-contribution-ui'"
+alias dca="sshg 'cdd; dcr add-on-explorer'"
 alias dcf="sshg 'cdd; dcr file-exchange'"
 alias dcbj="sshg 'cdd; dcr addons-background-jobs-consumer'"
-alias dcda="sshg 'cdd; dcr addons-data-access'"
 
 alias dcwi="sshg 'cdd; dcw bundle install'"
 alias dcai="sshg 'cdd; dca bundle install'"

@@ -21,9 +21,8 @@ set tabstop=4
 set wrap
 syntax on
 
-set list
-
-set lcs=space:·
+" set list
+" set lcs=space:·
 
 highlight ColorColumn ctermbg=blue guibg=lightgrey
 highlight CursorLine ctermbg=30
