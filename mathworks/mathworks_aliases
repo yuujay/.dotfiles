@@ -1,0 +1,41 @@
+# AOE-MW ALIASES
+alias sshg="ssh gumamahe@gumamahe-maci.dhcp.mathworks.com"
+alias sshd1="ssh basysrby@ruby26ext-d01ls"
+alias sshd2="ssh basysrby@ruby26ext-d02ls"
+alias sshd3="ssh basysrby@ruby26ext-d03ls"
+
+alias ssht1="ssh basysrby@ruby26ext-t01ls"
+alias ssht2="ssh basysrby@ruby26ext-t02ls"
+alias ssht3="ssh basysrby@ruby26ext-t03ls"
+
+alias sshi1="ssh basysrby@ruby26ext-i01ls"
+alias sshi2="ssh basysrby@ruby26ext-i02ls"
+alias sshi3="ssh basysrby@ruby26ext-i03ls"
+
+alias sshs1="ssh basysrby@ruby26ext-s01ls"
+alias sshs2="ssh basysrby@ruby26ext-s01ah"
+
+alias sshp1="ssh basysrby@ruby26ext-p01ls"
+
+## COMMUNITY TEAM
+set SANDBOX_PATH '/sandbox/gumamahe'
+
+alias cds='cd $SANDBOX_PATH'
+alias cdp='cd $SANDBOX_PATH/active-projects/aoe-mo-fullstack'
+alias cdd='cd $SANDBOX_PATH/Cwebaddons.local'
+alias cdfx='cd $SANDBOX_PATH/Cwebaddons.local/file-exchange'
+alias cda='cd $SANDBOX_PATH/Cwebaddons.local/add-on-explorer'
+alias cdag='cd $SANDBOX_PATH/Cwebaddons.local/addons-data-access'
+alias cdbj='cd $SANDBOX_PATH/Cwebaddons.local/addons-background-jobs-consumer'
+alias cdw='cd $SANDBOX_PATH/Cwebaddons.local/addons-contribution-ui'
+
+## MW-DOCKER ALIASES
+
+alias dcw="sshg 'cdd; dcr addons-contribution-ui'"
+alias dca="sshg 'cdd; dcr add-on-explorer'"
+alias dcf="sshg 'cdd; dcr file-exchange'"
+alias dcbj="sshg 'cdd; dcr addons-background-jobs-consumer'"
+
+alias dcwi="sshg 'cdd; dcw bundle install'"
+alias dcai="sshg 'cdd; dca bundle install'"
+alias dcfi="sshg 'cdd; dcf bundle install'"

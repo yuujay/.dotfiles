@@ -1,14 +1,13 @@
 # FILE OPs
-
 alias c.='code .'
 alias code.='code .'
 alias less='less -g -i -J -m -Q -u'
 alias rm='rm -f'
 alias rmr='rm -r'
 alias src='source ~/.config/fish/config.fish'
+alias rc='~/.rc'
 
 # LIST FILES & DIRECTORIES
-
 alias br='bat -r'
 alias fc='find . -type f | wc -l'
 alias l='ls -1 -p'
@@ -28,26 +27,22 @@ alias xlg='exa -al | grep'
 alias xlm='exa -alm'
 
 # SYSTEM OPs
-
 alias envs='env | sort'
 alias kill='kill -9'
 alias sudo='sudo '
 
 # APT CMDs
-
 alias agd='sudo apt-get delete'
 alias agi='sudo apt-get install'
 alias agu='sudo apt-get -y update'
 alias agupg='sudo apt-get -y --allow-unauthenticated upgrade && sudo apt-get autoclean && sudo apt-get autoremove'
 
 # System shortcuts
-
 alias paux='ps aux | grep'
 alias reboot='sudo shutdown -r now'
 alias shutdown='sudo shutdown -h now'
 
 # CD ALIASES
-
 alias .....='cd ../../../../'
 alias ....='cd ../../../../'
 alias ...='cd ../../../'
@@ -60,7 +55,6 @@ alias cdf='cd ~/.config/fish'
 alias home='cd ~'
 
 # WEB DEV
-
 alias bx='bundle exec'
 alias mc='mvn clean'
 alias mci='mvn clean install'
@@ -72,7 +66,6 @@ alias sl='sails lift'
 alias ws='python -m SimpleHTTPServer'
 
 # NETWORK
-
 alias ipa="dig +short myip.opendns.com @resolver1.opendns.com"
 #alias ipa="dig TXT +short o-o.myaddr.l.google.com @ns1.google.com"
 alias localip="ipconfig getifaddr en0"
@@ -92,5 +85,5 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 ## ===== mw-html-test =======
 
-alias browser="mvn pre-integration-test -Dbrowser.autoremove=false -Dtest-browser=chrome-stable"
+alias browser="mw -using Cwebaddons mvn pre-integration-test -Dbrowser.autoremove=false -Dtest-browser=chrome-stable"
 alias mock="cd /sandbox/gumamahe/MockBrowser/target; java -jar addonexplorer_mockbrowser-jar-with-dependencies.jar"

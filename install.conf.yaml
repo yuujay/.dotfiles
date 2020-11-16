@@ -13,11 +13,12 @@
     ~/.mathworks_aliases:
     ~/.fish_env:
     ~/.iterm2_shell_integration.fish:
+    ~/.rc: bash_scripts/rc
 
 - create:
   - ~/.config/fish
 
 - shell:
-    - chsh -s $(which sh)
+    # - chsh -s $(which sh)
     - cp -r ./functions ~/.config/functions/
 
