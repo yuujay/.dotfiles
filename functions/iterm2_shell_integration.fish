@@ -14,13 +14,20 @@ if begin; status --is-interactive; and not functions -q -- iterm2_status; and [ 
     printf "\033]1337;SetUserVar=%s=%s\007" "$argv[1]" (printf "%s" "$argv[2]" | base64 | tr -d "\n")
   end
 
+  function iterm2_print_user_vars
+    iterm2_set_user_var rubyVersion (ruby -v | awk '{ print $2 }')
+    iterm2_set_user_var nodeVersion (node -v)
+    iterm2_set_user_var localIP (localip)
+    iterm2_set_user_var ipa (ipa)
+  end
+
   function iterm2_write_remotehost_currentdir_uservars
     printf "\033]1337;RemoteHost=%s@%s\007\033]1337;CurrentDir=%s\007" $USER $iterm2_hostname $PWD
 
     # Users can define a function called iterm2_print_user_vars.
     # It should call iterm2_set_user_var and produce no other output.
    if functions -q -- iterm2_print_user_vars
-      # iterm2_print_user_vars
+      iterm2_print_user_vars
     end
   end
 
@@ -53,6 +60,8 @@ if begin; status --is-interactive; and not functions -q -- iterm2_status; and [ 
       set -g iterm2_hostname (hostname)
     end
   end
+
+  iterm2_print_user_vars
 
   iterm2_write_remotehost_currentdir_uservars
   printf "\033]1337;ShellIntegrationVersion=10;shell=fish\007"

@@ -6,13 +6,13 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.aliases:
-    ~/.docker_aliases:
+    ~/.aliases: aliases/aliases
+    ~/.docker_aliases: aliases/docker_aliases
     ~/.vimrc:
-    ~/.gitconfig:
-    ~/.mathworks_aliases:
+    ~/.gitconfig: git/gitconfig
+    ~/.mathworks_aliases: mathworks/mathworks_aliases
     ~/.fish_env:
-    ~/.iterm2_shell_integration.fish:
+    ~/.iterm2_shell_integration.fish: functions/iterm2_shell_integration.fish
     ~/.rc: bash_scripts/rc
 
 - create:
