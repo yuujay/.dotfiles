@@ -81,7 +81,10 @@ call plug#begin('~/.vim/plugged')
 
 " Plug 'https://github.com/Valloric/YouCompleteMe.git'
 " Plug 'https://github.com/dense-analysis/ale.git'
+" Plug coc
+Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/christoomey/vim-sort-motion.git'
+Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'https://github.com/powerline/fonts.git'
@@ -91,28 +94,61 @@ Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'https://github.com/tpope/vim-endwise.git'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
-Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug 'https://github.com/elzr/vim-json.git'
+Plug 'neoclide/coc.nvim',  {'tag': '*', 'do': { -> coc#util#install()}}
+" Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh',  }
+Plug 'dense-analysis/ale'
+" Plug 'https://github.com/neoclide/coc.nvim.git'
 
 call plug#end()
 
 "---------------------- PLUGIN INSTATTION END --------------------------
 
 
-" ---------------------  PLUGIN CONFIGURATIONS -------------------------
-" nerdtree
+
+" ---------------------  PLUGIN SHORTCUTS ------------------------------
+" Ctrl-P
+let g:ctrlp_map = '<c-p>'
+
+" NodeTree
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>f :NERDTreeFind<CR>
 
+" Gundo
+nnoremap <Leader>g :GundoToggle<CR>
+
+
+" nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+" nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+" nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+
+
+" ---------------------  PLUGIN SHORTCUTS END --------------------------
+
+
+
+" ---------------------  PLUGIN CONFIGURATIONS -------------------------
 " airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 " CtrlP
 let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_map = '<c-p>'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_working_path_mode = 'ra'
 
-" Gundo
-nnoremap <Leader>g :GundoToggle<CR>
+" COC
+set cmdheight=2  " Better display for messages
+set updatetime=300  " Smaller updatetime for CursorHold & CursorHoldI
+set shortmess+=c  " don't give |ins-completion-menu| messages.
 
+" COC-Solargraph
+" set hidden
+" let g:LanguageClient_serverCommands = {
+"     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+"     \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+"     \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+"     \ 'python': ['/usr/local/bin/pyls'],
+"     \ 'ruby': ['tcp://localhost:7658'],
+"     \ }
+" let g:LanguageClient_autoStop = 0
