@@ -30,9 +30,9 @@
 	stp = stash pop
     update-submodules = submodule update --init --recursive
 	upgrade-submodules = submodule update --init --remote
-[includeIf "gitdir:~/Users/ujgowtham"]
+[include]
 	path = ~/.gitconfig-personal
-[includeIf "gitdir:~/sandbox/gumamahe/"]
+[includeIf "gitdir:/sandbox/gumamahe/**"]
 	path = ~/.gitconfig-mw
 [core]
 	excludesfile = ~/.gitignore
