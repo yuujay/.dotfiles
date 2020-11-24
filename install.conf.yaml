@@ -10,6 +10,8 @@
     ~/.docker_aliases: aliases/docker_aliases
     ~/.vimrc:
     ~/.gitconfig: git/gitconfig
+    ~/.gitconfig-mw: git/gitconfig-mw
+    ~/.gitconfig-personal: git/gitconfig-personal
     ~/.mathworks_aliases: mathworks/mathworks_aliases
     ~/.fish_env:
     ~/.iterm2_shell_integration.fish: functions/iterm2_shell_integration.fish

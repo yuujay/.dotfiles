@@ -22,7 +22,7 @@
 	plrb = pull --rebase
 	pu = push
 	puo = push origin
-	puom = push origin master
+	puom = push origin main
 	r = remote
 	ra = remote add
 	cl = clone
@@ -30,10 +30,10 @@
 	stp = stash pop
     update-submodules = submodule update --init --recursive
 	upgrade-submodules = submodule update --init --remote
-[user]
-	id = yuujay
-	name = Gowtham Jaganathan
-	email = gowtham.uj@gmail.com
+[includeIf "gitdir:~/Users/ujgowtham"]
+	path = ~/.gitconfig-personal
+[includeIf "gitdir:~/sandbox/gumamahe/"]
+	path = ~/.gitconfig-mw
 [core]
 	excludesfile = ~/.gitignore
 	autocrlf = input
