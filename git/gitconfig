@@ -31,9 +31,9 @@
     update-submodules = submodule update --init --recursive
 	upgrade-submodules = submodule update --init --remote
 [include]
-	path = ~/.gitconfig-personal
+	path = ~/.gitconfig.personal
 [includeIf "gitdir:/sandbox/gumamahe/**"]
-	path = ~/.gitconfig-mw
+	path = ~/.gitconfig.mw
 [core]
 	excludesfile = ~/.gitignore
 	autocrlf = input

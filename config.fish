@@ -4,8 +4,8 @@ set FISH_HOME ~/.config/fish
 echo "Sourcing files from $FISH_HOME/config.fish"
 
 source "$HOME/.aliases"
-source "$HOME/.mathworks_aliases"
-source "$HOME/.docker_aliases"
+source "$HOME/.aliases.mathworks"
+source "$HOME/.aliases.docker"
 
 fish_vi_key_bindings
 
