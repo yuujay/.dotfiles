@@ -79,26 +79,22 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-" Plug 'https://github.com/Valloric/YouCompleteMe.git'
-" Plug 'https://github.com/dense-analysis/ale.git'
-" Plug coc
+" Plug 'neoclide/coc.nvim' ",  {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'dense-analysis/ale'
 Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/christoomey/vim-sort-motion.git'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
+Plug 'https://github.com/elzr/vim-json.git'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'https://github.com/powerline/fonts.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/sjl/gundo.vim.git'
 Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'https://github.com/tpope/vim-endwise.git'
+Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
-Plug 'https://github.com/elzr/vim-json.git'
-Plug 'neoclide/coc.nvim',  {'tag': '*', 'do': { -> coc#util#install()}}
-" Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh',  }
-Plug 'dense-analysis/ale'
-" Plug 'https://github.com/neoclide/coc.nvim.git'
 
 call plug#end()
 
@@ -138,9 +134,9 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 let g:ctrlp_working_path_mode = 'ra'
 
 " COC
-set cmdheight=2  " Better display for messages
-set updatetime=300  " Smaller updatetime for CursorHold & CursorHoldI
-set shortmess+=c  " don't give |ins-completion-menu| messages.
+" set cmdheight=2  " Better display for messages
+" set updatetime=300  " Smaller updatetime for CursorHold & CursorHoldI
+" set shortmess+=c  " don't give |ins-completion-menu| messages.
 
 " COC-Solargraph
 " set hidden
