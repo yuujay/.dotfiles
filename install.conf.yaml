@@ -6,16 +6,17 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.aliases: aliases/aliases
     ~/.aliases.docker: aliases/aliases.docker
-    ~/.vimrc:
-    ~/.gitconfig: git/gitconfig
+    ~/.aliases.mathworks: mathworks/aliases.mathworks
+    ~/.aliases: aliases/aliases
+    ~/.fish_env:
     ~/.gitconfig.mw: git/gitconfig.mw
     ~/.gitconfig.personal: git/gitconfig.personal
-    ~/.aliases.mathworks: mathworks/aliases.mathworks
-    ~/.fish_env:
+    ~/.gitconfig: git/gitconfig
     ~/.iterm2_shell_integration.fish: functions/iterm2_shell_integration.fish
     ~/.rc: bash_scripts/rc
+    ~/.ssh/config: ssh/config
+    ~/.vimrc:
 
 - create:
   - ~/.config/fish
