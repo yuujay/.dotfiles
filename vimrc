@@ -84,7 +84,7 @@ Plug 'dense-analysis/ale'
 Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/christoomey/vim-sort-motion.git'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
-Plug 'https://github.com/easymotion/vim-easymotion.git'
+Plug 'https://github.com/easymotion/vim-easymotion.git'  "invoke by <Leader><Leader>s
 Plug 'https://github.com/elzr/vim-json.git'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'https://github.com/powerline/fonts.git'
@@ -113,14 +113,7 @@ nnoremap <Leader>f :NERDTreeFind<CR>
 " Gundo
 nnoremap <Leader>g :GundoToggle<CR>
 
-
-" nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-" nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-" nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
-
-
 " ---------------------  PLUGIN SHORTCUTS END --------------------------
-
 
 
 " ---------------------  PLUGIN CONFIGURATIONS -------------------------
