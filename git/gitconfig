@@ -10,8 +10,9 @@
 	ca = commit -a
 	cm = commit -m
 	cam = commit -a -m
-	l = log --all --graph --decorate
-	lo = log --all --graph --decorate --oneline
+	l = log --all --graph --decorate --oneline -n 30
+	lo = log --all --graph --decorate --oneline -n 30
+	lof = log --all --graph --decorate --oneline
 	co = checkout
 	cob = checkout -b
   	m = merge
@@ -19,7 +20,6 @@
 	mt = mergetool
 	pl = pull
 	plo = pull origin
-	plrb = pull --rebase
 	pu = push
 	puo = push origin
 	puom = push origin main
@@ -30,26 +30,32 @@
 	stp = stash pop
     update-submodules = submodule update --init --recursive
 	upgrade-submodules = submodule update --init --remote
-[include]
-	path = ~/.gitconfig.personal
-[includeIf "gitdir:/sandbox/gumamahe/**"]
-	path = ~/.gitconfig.mw
+[commit]
+  template = ~/.gitmessage
 [core]
 	excludesfile = ~/.gitignore
 	autocrlf = input
 [credential]
 	helper = osxkeychain
-[push]
-	default = upstream
-[pull]
-	ff = only
-[merge]
-	defaultToUpstream = true
-	tool = vimdiff
-[reviewboard]
-	url = http://reviewboard.mathworks.com/
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[include]
+	path = ~/.gitconfig.personal
+[includeIf "gitdir:/sandbox/gumamahe/**"]
+	path = ~/.gitconfig.mw
+[merge]
+	defaultToUpstream = true
+	tool = vimdiff
+[push]
+	default = upstream
+[pull]
+	ff = only
+    rebase = true
+[rebase]
+    autoStash = true
+[reviewboard]
+	url = http://reviewboard.mathworks.com/
+

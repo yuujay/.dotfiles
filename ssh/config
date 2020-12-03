@@ -2,3 +2,36 @@
 Host sshg
     HostName gumamahe-maci.dhcp.mathworks.com
     User gumamahe
+Host d1
+	HostName ruby23ext-d01ls
+	User basysrby
+Host d2
+	HostName ruby23ext-d02ls
+	User basysrby
+Host d3
+        HostName ruby23ext-d03ls
+        User basysrby
+Host t1
+        HostName ruby23ext-t01ls
+        User basysrby
+Host t2
+        HostName ruby23ext-t02ls
+        User basysrby
+Host t3
+        HostName ruby23ext-t03ls
+        User basysrby
+Host i1
+        HostName ruby23ext-i01ls
+        User basysrby
+Host i2
+        HostName ruby23ext-i02ls
+        User basysrby
+Host i3
+        HostName ruby23ext-i03ls
+        User basysrby
+Host s1
+        HostName ruby23ext-s01ls
+        User basysrby
+Host p1
+        HostName ruby23ext-p01ls
+        User basysrby
