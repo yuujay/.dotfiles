@@ -42,11 +42,24 @@ set backspace=indent,eol,start
 set wildmode=longest,list
 set wildmenu
 
+" ------------------- vim + tmux --------------------------------------
+
+"Automatically rebalance windows on vim resize. Becomes essential while
+"working with vim and tmux
+autocmd VimResized * :wincmd =
+
+" zoom a vim pane, <C-w>= to re-balance - NEED TO FIGURE THIS OUT.
+" If not use the plugin https://github.com/dhruvasagar/vim-zoom
+" nnoremap <leader>0 :wincmd _<cr>:wincmd \|<cr>
+" nnoremap <leader>= :wincmd =<cr>
+
 " ------------------------- REMAPPING ------------------------------
 inoremap jj <Esc>
 
 nnoremap ; :
 vnoremap ; :
+
+nmap <CR> o<Esc>k
 
 let mapleader="\<Space>"
 
@@ -64,7 +77,7 @@ map <C-N> :enew<CR>
 map <C-A> :w<Space>
 
 " Disable search highlights with a button click.
-map - :nohls<cr>
+" map - :nohls<cr>
 
 " ------------------------- REMAPPING END ------------------------------
 
@@ -80,6 +93,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Plug 'neoclide/coc.nvim' ",  {'tag': '*', 'do': { -> coc#util#install()}}
+
 Plug 'dense-analysis/ale'
 Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/christoomey/vim-sort-motion.git'
@@ -95,6 +109,8 @@ Plug 'https://github.com/tpope/vim-endwise.git'
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
+Plug 'https://github.com/christoomey/vim-tmux-runner.git'
 
 call plug#end()
 

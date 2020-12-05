@@ -15,8 +15,8 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitmessage: git/gitmessage
     ~/.iterm2_shell_integration.fish: functions/iterm2_shell_integration.fish
-    ~/.rc: bash_scripts/rc
     ~/.ssh/config: ssh/config
+    ~/.tmux.conf: tmux.conf
     ~/.vimrc:
 
 - create:

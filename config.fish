@@ -1,4 +1,4 @@
-set -a PATH usr/local/bin /usr/bin /bin /usr/sbin /sbin /mathworks/hub/share/sbtools/bin/maci64
+set -a PATH usr/local/bin /usr/bin /bin /usr/sbin /sbin /mathworks/hub/share/sbtools/bin/maci64 ~/.config/fish/functions/bash_scripts
 set FISH_HOME ~/.config/fish
 
 echo "Sourcing files from $FISH_HOME/config.fish"
@@ -9,6 +9,7 @@ source "$HOME/.aliases.docker"
 
 fish_vi_key_bindings
 
+test -e $FISH_HOME/functions/bash_scripts/always_in_tmux && always_in_tmux
 test -e ~/.iterm2_shell_integration.fish ; and source ~/.iterm2_shell_integration.fish
 
 function iterm2_print_user_vars
