@@ -16,7 +16,6 @@
     ~/.gitmessage: git/gitmessage
     ~/.iterm2_shell_integration.fish: functions/iterm2_shell_integration.fish
     ~/.ssh/config: ssh/config
-    ~/.tmux.remote.conf: tmux/tmux.remote.conf
     ~/.tmux.conf: tmux/tmux.conf
     ~/.vimrc:
 
