@@ -1,0 +1,14 @@
+mutt # CLI mail client
+ack
+exa
+bat
+htop
+youtube-dl
+speedtest-cli
+ipconf2
+ctags
+tmux
+fzf
+pip install --user git+git://github.com/powerline/powerline
+https://powerline.readthedocs.io/en/master/installation/osx.html
+

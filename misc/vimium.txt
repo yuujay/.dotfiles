@@ -1,0 +1,36 @@
+#========================================
+# ========= Custom key Mappings =========
+# =======================================
+unmapAll
+
+map k scrollUp
+map j scrollDown
+
+map h previousTab
+map l nextTab
+
+map gg scrollToTop
+map G scrollToBottom
+
+map ii scrollPageUp
+map kk scrollPageDown
+
+map d duplicateTab
+map w moveTabToNewWindow
+
+map o moveTabRight
+map u moveTabLeft
+
+map F enterFindMode
+map n performFind
+map N performBackwardsFind
+
+map s enterInsertMode
+
+map p togglePinTab
+map m toggleMuteTab
+
+#========================================
+# ========= Excluded URLs and keys ======
+# =======================================
+https?://www.youtube.com/*      h j k l i t f m

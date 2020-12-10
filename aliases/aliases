@@ -64,11 +64,11 @@ alias nps='npm start'
 alias nx='npm run'
 alias sl='sails lift'
 alias ws='python -m SimpleHTTPServer'
-
+alias vi.='vi .'
 # NETWORK
-alias ipa="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ipa='dig +short myip.opendns.com @resolver1.opendns.com'
 #alias ipa="dig TXT +short o-o.myaddr.l.google.com @ns1.google.com"
-alias localip="ipconfig getifaddr en0"
+alias localip='ipconfig getifaddr en0'
 
 # OMEGA - move this to .sshconfig
 alias omega='ssh pi@192.168.0.79'
@@ -82,9 +82,9 @@ alias omega='ssh pi@192.168.0.79'
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-alias flushDNS='sudo killall -HUP mDNSResponder'
+alias flushDNS="sudo killall -HUP mDNSResponder; echo 'DNS flushed'"
 
 ## ===== mw-html-test =======
 
-alias browser="mw -using Cwebaddons mvn pre-integration-test -Dbrowser.autoremove=false -Dtest-browser=chrome-stable"
-alias mock="cd /sandbox/gumamahe/MockBrowser/target; java -jar addonexplorer_mockbrowser-jar-with-dependencies.jar"
+alias browser='mw -using Cwebaddons mvn pre-integration-test -Dbrowser.autoremove=false -Dtest-browser=chrome-stable'
+alias mock='cd /sandbox/gumamahe/MockBrowser/target; java -jar addonexplorer_mockbrowser-jar-with-dependencies.jar'
