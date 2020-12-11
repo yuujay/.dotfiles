@@ -1,7 +1,6 @@
 set nocompatible
 
-" Remove any trailing whitespace that is in the file
-autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+" Remove any trailing whitespace that is in the file autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 set autoindent
 set colorcolumn=80
@@ -94,7 +93,8 @@ call plug#begin('~/.vim/plugged')
 
 " Plug 'neoclide/coc.nvim' ",  {'tag': '*', 'do': { -> coc#util#install()}}
 
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
+Plug 'https://github.com/ngmy/vim-rubocop.git'
 Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/christoomey/vim-sort-motion.git'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
@@ -141,6 +141,25 @@ let g:airline_powerline_fonts = 1
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_working_path_mode = 'ra'
+
+" Ale
+" Set specific linters
+let g:ale_linters = {
+    \   'javascript': ['eslint'],
+    \   'ruby': ['standardrb' , 'rubocop'],
+    \}
+" Only run linters named in ale_linters settings.
+let g:ale_linters_explicit = 1
+let g:airline#extensions#ale#enabled = 1
+let g:ale_sign_column_always = 1
+
+" TODO:
+" shortcuts for vertical and horizontal splits
+" controlP movement keys with vim bindings
+" Find all in current directory
+" Git Diffs on the vi editor
+"
+
 
 " COC
 " set cmdheight=2  " Better display for messages

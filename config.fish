@@ -1,4 +1,4 @@
-set -a PATH usr/local/bin /usr/bin /bin /usr/sbin /sbin /mathworks/hub/share/sbtools/bin/maci64 ~/.config/fish/bash_scripts
+set -a PATH usr/local/bin /usr/bin /bin /usr/sbin /sbin /mathworks/hub/share/sbtools/bin/maci64 ~/.config/fish/bash_scripts /Users/gumamahe/.gem/ruby/2.6.0/bin
 set FISH_HOME ~/.config/fish
 
 echo "Sourcing files from $FISH_HOME/config.fish"
@@ -19,3 +19,7 @@ function iterm2_print_user_vars
     iterm2_set_user_var ipa (ipa)
 end
 
+# To install and configure rvm in fish.
+# More info here 
+# https://rvm.io/integration/fish
+rvm default
