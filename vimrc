@@ -110,7 +110,6 @@ Plug 'neoclide/coc.nvim' ",  {'tag': '*', 'do': { -> coc#util#install()}}
 "
 "
 "
-Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/christoomey/vim-sort-motion.git'
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
@@ -128,6 +127,7 @@ Plug 'https://github.com/tpope/vim-endwise.git'
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/ryanoasis/vim-devicons'  "This needs to be at the end since we devicons need to loaded after all plugins
 
 call plug#end()
 
