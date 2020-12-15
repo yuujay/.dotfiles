@@ -1,62 +1,66 @@
 [alias]
     a = add
     aa = add .
-	b = branch -vv
+    b = branch -vv
     bb = branch -vv --all
-	i = init
-	d = diff
-	s = status -s
-	c = commit
-	ca = commit -a
-	cm = commit -m
-	cam = commit -a -m
-	l = log --all --graph --decorate --oneline -n 30
-	lo = log --all --graph --decorate --oneline -n 30
-	lof = log --all --graph --decorate --oneline
-	co = checkout
-	cob = checkout -b
-  	m = merge
-	mc = merge --continue
-	mt = mergetool
-	pl = pull
-	plo = pull origin
-	pu = push
-	puo = push origin
-	puom = push origin main
-	r = remote
-	ra = remote add
-	cl = clone
-	st = stash
-	stp = stash pop
+    c = commit
+    ca = commit -a
+    cam = commit -a -m
+    cl = clone
+    cm = commit -m
+    co = checkout
+    cob = checkout -b
+    d = diff
+    i = init
+    l = log --all --graph --decorate --oneline -n 30
+    lo = log --all --graph --decorate --oneline -n 30
+    lof = log --all --graph --decorate --oneline
+    m = merge
+    mt = mergetool
+    pl = pull
+    plo = pull origin
+    pu = push
+    puo = push origin
+    puom = push origin main
+    r = remote
+    ra = remote add
+    s = status -s
+    st = stash
+    stp = stash pop
     update-submodules = submodule update --init --recursive
-	upgrade-submodules = submodule update --init --remote
+    upgrade-submodules = submodule update --init --remote
 [commit]
-  template = ~/.gitmessage
+    template = ~/.gitmessage
 [core]
-	excludesfile = ~/.gitignore
-	autocrlf = input
+    autocrlf = input
+    editor = /usr/bin/vim
+    excludesfile = ~/.gitignore
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
 [filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+    clean = git-lfs clean -- %f
+    process = git-lfs filter-process
+    required = true
+    smudge = git-lfs smudge -- %f
 [include]
-	path = ~/.gitconfig.personal
+    path = ~/.gitconfig.mw
 [includeIf "gitdir:/sandbox/gumamahe/**"]
-	path = ~/.gitconfig.mw
+    path = ~/.gitconfig.mw
+[includeIf "gitdir:/System/Volumes/Data/mathworks/devel/sandbox/gumamahe/Cwebaddons.local/**"]
+    path = ~/.gitconfig.mw
 [merge]
-	defaultToUpstream = true
-	tool = vimdiff
+    defaultToUpstream = true
+    tool = vimdiff
+[mergetool "vimdiff"]
+    cmd = vimdiff -f $LOCAL $MERGED $REMOTE
 [push]
-	default = upstream
+    default = upstream
 [pull]
-	ff = only
+    ff = only
     rebase = true
 [rebase]
     autoStash = true
 [reviewboard]
-	url = http://reviewboard.mathworks.com/
+    url = http://reviewboard.mathworks.com/
 [log]
-	excludeDecoration = *origin/j*
+    excludeDecoration = *origin/j*
