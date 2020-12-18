@@ -10,9 +10,9 @@ set nu
 set rnu
 set showcmd
 set showmatch
-set softtabstop=4
-set shiftwidth=4
-set tabstop=4
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
 set t_Co=256
 set wrap
 syntax on
@@ -21,7 +21,7 @@ syntax on
 set encoding=UTF-8
 
 set list
-set lcs=tab:▸\ ,eol:¬,space:·
+set lcs=tab:▸\ ,eol:¬ ",space:·
 
 " Highlight trailing spaces
 highlight RedundantSpaces ctermbg=red guibg=red
@@ -54,7 +54,7 @@ set wildmenu
 autocmd VimResized * :wincmd =
 
 " -------------------------------------------------------
-"           ToggleBackground
+"          SHORTCUTS
 " -------------------------------------------------------
 inoremap jj <Esc>
 
@@ -66,20 +66,31 @@ nmap <CR> o<Esc>k
 let mapleader="\<Space>"
 
 " move among buffers
-map <Leader>k :bnext<CR>
-map <Leader>j :bprev<CR>
+
 map <Leader>b :b
-map <Leader>l :ls<CR>:b<Space>
+map <Leader>h :bprev<CR>
+map <Leader>l :bnext<CR>
+map <Leader>ll :ls<CR>:b<Space>
+
+" Split buffers
+
+map <Leader>- :split<CR>
+map <Leader>\ :vs<CR>
+map <Leader>x :close<CR>
 
 " File Operation Shortcuts
-map ss :w<CR>
-map <C-W> :bw<CR>
-map <C-O> :e<Space>
-map <C-N> :enew<CR>
+
 map <C-A> :w<Space>
+map <C-N> :enew<CR>
+map <C-O> :e<Space>
+map <C-W> :bw<CR>
+map ss :w<CR>
 
 " Disable search highlights with a button click.
-map <leader>/ :nohls<cr>
+map <leader>` :nohls<cr>
+
+" Reload vimrc
+map <leader><leader>rr :source ~/.vimrc<CR>:echom 'vimrc reloaded'<CR>
 
 "---------------------- ------------------------------
 "           PLUGIN INSTALLATION
@@ -88,8 +99,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
      \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-
-
 endif
 
 call plug#begin('~/.vim/plugged')
@@ -124,6 +133,7 @@ Plug 'https://github.com/junegunn/limelight.vim'
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
+
 Plug 'https://github.com/ryanoasis/vim-devicons'  "This needs to be at the end since we devicons need to loaded after all plugins
 
 call plug#end()
@@ -132,20 +142,18 @@ call plug#end()
 "           PLUGIN SHORTCUTS
 " ---------------------------------------------------
 
-" Ctrl-P
-let g:ctrlp_map = '<c-p>'
-
 " NodeTree
 nnoremap <Leader>n :NERDTreeToggle<CR>
 
 " Start fzf file finder
-nnoremap <C-p> :Files<CR>
-nnoremap <leader>p :Files<CR>
+
 nnoremap <C-F> :Ag<CR>
-nnoremap <leader>f :Ag<CR>
+nnoremap <C-p> :Files<CR>
+nnoremap <leader>/ :BLines<CR>
 nnoremap <leader>c :BCommits<CR>
+nnoremap <leader>f :Ag<CR>
+nnoremap <leader>p :Files<CR>
 nnoremap <leader>t :Colors<CR>
-nnoremap <leader>L :BLines<CR>
 
 " Gundo
 nnoremap <Leader>g :GundoToggle<CR>
@@ -198,7 +206,6 @@ let g:ale_sign_column_always = 1
 
 " TODO:
 " Removal of trailing spaces
-" shortcuts for vertical and horizontal splits
 " Find all in current directory
 " Git Diffs on the vi editor
 " Toggle certain settings such as relative numbers
@@ -221,11 +228,4 @@ let g:LanguageClient_serverCommands = {
     \ 'ruby': ['tcp://localhost:7658'],
     \ }
 let g:LanguageClient_autoStop = 0
-
-" CtrlP
-" let g:ctrlp_cmd = 'CtrlP'
-" let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-" let g:ctrlp_working_path_mode = 'ra'
-
-
 

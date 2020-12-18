@@ -9,6 +9,8 @@ ipconf2
 ctags
 tmux
 fzf
+ag
+fd
 pip install --user git+git://github.com/powerline/powerline
 https://powerline.readthedocs.io/en/master/installation/osx.html
 
