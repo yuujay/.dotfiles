@@ -1,19 +1,20 @@
-set nocompatible
 set autoindent
 set colorcolumn=80
 set cursorline
 set expandtab
 set hls
 set incsearch
+set nocompatible
 set noswapfile
 set nu
 set rnu
+set shiftwidth=2
 set showcmd
 set showmatch
+set signcolumn=yes
 set softtabstop=2
-set shiftwidth=2
-set tabstop=2
 set t_Co=256
+set tabstop=2
 set wrap
 syntax on
 
@@ -27,9 +28,11 @@ set lcs=tab:▸\ ,eol:¬ ",space:·
 highlight RedundantSpaces ctermbg=red guibg=red
 match RedundantSpaces /\s\+$\| \+\ze\t/
 
-" Set cursorLine and cursor pointer colors
+" Set colors for cursorLine, signcolumn and cursor pointer
+
 highlight ColorColumn ctermbg=blue guibg=lightgrey
 highlight CursorLine ctermbg=30
+highlight SignColumn ctermbg=black
 
 " enable file type detection
 filetype plugin indent on
@@ -92,6 +95,13 @@ map <leader>` :nohls<cr>
 " Reload vimrc
 map <leader><leader>rr :source ~/.vimrc<CR>:echom 'vimrc reloaded'<CR>
 
+" Close preview buffer
+map <ESC><leader> :pc<CR>
+
+" Toggles
+
+map `12 :set rnu!<CR>
+map `1 :set nu!<CR>
 "---------------------- ------------------------------
 "           PLUGIN INSTALLATION
 "---------------------- ------------------------------
@@ -115,24 +125,25 @@ Plug 'neoclide/coc.nvim' ",  {'tag': '*', 'do': { -> coc#util#install()}}
 " Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 
 Plug 'https://github.com/Yggdroot/indentLine.git'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
-Plug 'https://github.com/junegunn/fzf.vim'
+Plug 'https://github.com/airblade/vim-gitgutter'
 Plug 'https://github.com/christoomey/vim-sort-motion.git'
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 Plug 'https://github.com/christoomey/vim-tmux-runner.git'
 Plug 'https://github.com/easymotion/vim-easymotion.git'  "invoke by <Leader><Leader>s
 Plug 'https://github.com/elzr/vim-json.git'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
+Plug 'https://github.com/junegunn/fzf.vim'
+Plug 'https://github.com/junegunn/limelight.vim'
 Plug 'https://github.com/ngmy/vim-rubocop.git'
 Plug 'https://github.com/powerline/fonts.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/sjl/gundo.vim.git'
 Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'https://github.com/tpope/vim-endwise.git'
-Plug 'https://github.com/junegunn/limelight.vim'
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 
 Plug 'https://github.com/ryanoasis/vim-devicons'  "This needs to be at the end since we devicons need to loaded after all plugins
 
@@ -157,6 +168,14 @@ nnoremap <leader>t :Colors<CR>
 
 " Gundo
 nnoremap <Leader>g :GundoToggle<CR>
+
+" Git guttter
+
+nnoremap <leader>gh :GitGutterPreviewHunk<CR>
+nnoremap <leader>gs :GitGutterStageHunk<CR>
+nnoremap <leader>gj :GitGutterNextHunk<CR>
+nnoremap <leader>gk :GitGutterPrevHunk<CR>
+nnoremap <leader>u :GitGutterUndoHunk<CR>
 
 " ----------------------------------------------
 "           PLUGIN CONFIGURATIONS
@@ -183,7 +202,6 @@ let g:limelight_priority = -1
 " TODO: Delete this limelight configs once you have them working
 
 
-
 " devicons
 " loading the plugin
 let g:webdevicons_enable = 1
@@ -207,8 +225,6 @@ let g:ale_sign_column_always = 1
 " TODO:
 " Removal of trailing spaces
 " Find all in current directory
-" Git Diffs on the vi editor
-" Toggle certain settings such as relative numbers
 " Read comments about commits inside fzf:  https://dev.to/christalib/i-spent-3-years-configuring-n-vim-and-this-what-i-learnt-22on
 
 " COC
