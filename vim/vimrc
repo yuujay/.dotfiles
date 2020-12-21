@@ -70,16 +70,16 @@ let mapleader="\<Space>"
 
 " move among buffers
 
-map <Leader>b :b
-map <Leader>h :bprev<CR>
-map <Leader>l :bnext<CR>
-map <Leader>ll :ls<CR>:b<Space>
+map <leader>b :b
+map <leader>h :bprev<CR>
+map <leader>l :bnext<CR>
+map <leader>ll :ls<CR>:b<Space>
 
 " Split buffers
 
-map <Leader>- :split<CR>
-map <Leader>\ :vs<CR>
-map <Leader>x :close<CR>
+map <leader>- :split<CR>
+map <leader>\ :vs<CR>
+map <leader>x :close<CR>
 
 " File Operation Shortcuts
 
@@ -88,6 +88,11 @@ map <C-N> :enew<CR>
 map <C-O> :e<Space>
 map <C-W> :bw<CR>
 map ss :w<CR>
+
+" Replace text
+nnoremap <leader>r :%s/\<<C-r><C-w>\>/
+nnoremap <leader>R :%s/\<<C-r><C-w>\>//g<Left><Left>
+
 
 " Disable search highlights with a button click.
 map <leader>` :nohls<cr>
@@ -100,8 +105,8 @@ map <ESC><leader> :pc<CR>
 
 " Toggles
 
-map `12 :set rnu!<CR>
 map `1 :set nu!<CR>
+map `12 :set rnu!<CR>
 "---------------------- ------------------------------
 "           PLUGIN INSTALLATION
 "---------------------- ------------------------------
@@ -129,7 +134,7 @@ Plug 'https://github.com/airblade/vim-gitgutter'
 Plug 'https://github.com/christoomey/vim-sort-motion.git'
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 Plug 'https://github.com/christoomey/vim-tmux-runner.git'
-Plug 'https://github.com/easymotion/vim-easymotion.git'  "invoke by <Leader><Leader>s
+Plug 'https://github.com/easymotion/vim-easymotion.git'  "invoke by <leader><leader>s
 Plug 'https://github.com/elzr/vim-json.git'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'https://github.com/junegunn/fzf.vim'
@@ -154,7 +159,7 @@ call plug#end()
 " ---------------------------------------------------
 
 " NodeTree
-nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
 
 " Start fzf file finder
 
@@ -167,7 +172,7 @@ nnoremap <leader>p :Files<CR>
 nnoremap <leader>t :Colors<CR>
 
 " Gundo
-nnoremap <Leader>g :GundoToggle<CR>
+nnoremap <leader>g :GundoToggle<CR>
 
 " Git guttter
 
@@ -244,4 +249,15 @@ let g:LanguageClient_serverCommands = {
     \ 'ruby': ['tcp://localhost:7658'],
     \ }
 let g:LanguageClient_autoStop = 0
+
+
+" http://stackoverflow.com/a/21152503/153718
+" function! GitTracks(...)
+"   let file = a:0 ? a:1 : expand('%')
+"   let message = system('git ls-files -- ' . file)
+"   let is_tracked = (message =~ '^fatal:') ? 0 : strlen(message)
+"   return is_tracked
+" endfun
+
+" let g:airline_section_b = "%{GitTracks() ? fugitive#head() : 'NOT tracked!'}"
 

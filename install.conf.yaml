@@ -17,7 +17,7 @@
     ~/.iterm2_shell_integration.fish: functions/iterm2_shell_integration.fish
     ~/.ssh/config: ssh/config
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.vimrc:
+    ~/.vimrc: vim/vimrc
 
 - create:
   - ~/.config/fish
