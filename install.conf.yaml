@@ -17,6 +17,12 @@
     ~/.iterm2_shell_integration.fish: functions/iterm2_shell_integration.fish
     ~/.ssh/config: ssh/config
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.vim/plugin-config.vim: vim/plugin-config.vim
+    ~/.vim/plugin-shortcuts.vim: vim/plugin-shortcuts.vim
+    ~/.vim/plugins.vim: vim/plugins.vim
+    ~/.vim/settings.vim: vim/settings.vim
+    ~/.vim/shortcuts.vim: vim/shortcuts.vim
+    ~/.vim/tmux-config.vim: vim/tmux-config.vim
     ~/.vimrc: vim/vimrc
 
 - create:
