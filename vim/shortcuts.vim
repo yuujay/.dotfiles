@@ -1,18 +1,22 @@
-inoremap jj <Esc>
+let mapleader="\<Space>"
+
+" Remap <Esc> key to `ff` so that Caps lock is freed up for tmux prefix
+
+inoremap ff <Esc>
+nnoremap ff <Esc>
+vnoremap ff <Esc>
 
 nnoremap ; :
 vnoremap ; :
 
-nmap <CR> o<Esc>k
-
-let mapleader="\<Space>"
+nnoremap <CR> o<Esc>k
+nnoremap <Space> i<Space><Esc>
 
 " move among buffers
 
-map <leader>b :b
 map <leader>h :bprev<CR>
 map <leader>l :bnext<CR>
-map <leader>ll :ls<CR>:b<Space>
+map <leader>lb :ls<CR>:b<Space>
 
 " Split buffers
 
@@ -32,7 +36,6 @@ map ss :w<CR>
 nnoremap <leader>r :%s/\<<C-r><C-w>\>/
 nnoremap <leader>R :%s/\<<C-r><C-w>\>//g<Left><Left>
 
-
 " Disable search highlights with a button click.
 map <leader>` :nohls<cr>
 
@@ -40,9 +43,11 @@ map <leader>` :nohls<cr>
 map <leader><leader>rr :source ~/.vimrc<CR>:echom 'vimrc reloaded'<CR>
 
 " Close preview buffer
-map <ESC><leader> :pc<CR>
+map <Esc><leader> :pc<CR>
 
 " Toggles
 
-map `1 :set nu!<CR>
-map `12 :set rnu!<CR>
+map 12 :set nu!<CR>
+map 123 :set rnu!<CR>
+map 1c :set cursorline!<CR>
+

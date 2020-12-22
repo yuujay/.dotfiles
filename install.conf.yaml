@@ -17,6 +17,12 @@
     ~/.iterm2_shell_integration.fish: functions/iterm2_shell_integration.fish
     ~/.ssh/config: ssh/config
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux/tmux-nested.conf: tmux/tmux-nested.conf
+    ~/.tmux/tmux-plugin-settings.conf: tmux/tmux-plugin-settings.conf
+    ~/.tmux/tmux-plugins.conf: tmux/tmux-plugins.conf
+    ~/.tmux/tmux-settings.conf: tmux/tmux-settings.conf
+    ~/.tmux/tmux-shortcuts.conf: tmux/tmux-shortcuts.conf
+    ~/.tmux/tmux-vim.conf: tmux/tmux-vim.conf
     ~/.vim/plugin-config.vim: vim/plugin-config.vim
     ~/.vim/plugin-shortcuts.vim: vim/plugin-shortcuts.vim
     ~/.vim/plugins.vim: vim/plugins.vim

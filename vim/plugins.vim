@@ -10,12 +10,13 @@ Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim' ",  {'tag': '*', 'do': { -> coc#util#install()}}
 
 " --- SOME NICE TO HAVE PLUGINS ---
+" Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 " https://github.com/MattesGroeger/vim-bookmarks
+" https://github.com/christoomey/vim-tmux-runner
 " https://github.com/mg979/vim-visual-multi
+" https://github.com/mhinz/vim-startify
 " https://github.com/terryma/vim-multiple-cursors
 " https://github.com/tpope/vim-rails
-" https://github.com/mhinz/vim-startify
-" Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 
 Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/airblade/vim-gitgutter'

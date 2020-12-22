@@ -28,11 +28,11 @@ set lcs=tab:▸\ ,eol:¬ ",space:·
 highlight RedundantSpaces ctermbg=red guibg=red
 match RedundantSpaces /\s\+$\| \+\ze\t/
 
-" Set colors for cursorLine, signcolumn and cursor pointer
+" Set colors for cursorLine, signcolumn
 
-highlight ColorColumn ctermbg=blue guibg=lightgrey
-highlight CursorLine ctermbg=30
-highlight SignColumn ctermbg=black
+highlight ColorColumn ctermbg=blue guibg=blue
+highlight CursorLine ctermbg=black guibg=black cterm=underline "bold
+highlight SignColumn ctermbg=black guibg=black
 
 " enable file type detection
 filetype plugin indent on
