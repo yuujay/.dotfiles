@@ -1,4 +1,7 @@
 #*#*#*#**#*#*#* UJG: HAS LOT OF LINES REMOVED FOR SIMPLICITY #*#**##*#*#*#*#*#*#*
+# Make sure to map
+#   1. `S-Space` to `Esc`
+#   2. `Caps-Lock` to `Ctrl`
 
 if begin; status --is-interactive; and not functions -q -- iterm2_status; and [ "$ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX""$TERM" != screen ]; and [ "$TERM" != dumb ]; and [ "$TERM" != linux ]; end
   function iterm2_status
