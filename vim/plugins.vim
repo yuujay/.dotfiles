@@ -27,6 +27,7 @@ Plug 'https://github.com/easymotion/vim-easymotion.git'  "invoke by <leader><lea
 Plug 'https://github.com/elzr/vim-json.git'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'https://github.com/junegunn/fzf.vim'
+Plug 'https://github.com/junegunn/goyo.vim'
 Plug 'https://github.com/junegunn/limelight.vim'
 Plug 'https://github.com/ngmy/vim-rubocop.git'
 Plug 'https://github.com/powerline/fonts.git'

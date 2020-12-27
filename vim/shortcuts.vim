@@ -50,4 +50,5 @@ map <Esc><leader> :pc<CR>
 map 12 :set nu!<CR>
 map 123 :set rnu!<CR>
 map 1c :set cursorline!<CR>
+map 1l :Limelight!!<CR>
 

@@ -1,24 +1,12 @@
 " Limelight
+autocmd VimEnter * Limelight
+
 " Color name (:help cterm-colors) or ANSI code
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
-" Color name (:help gui-colors) or RGB color
-let g:limelight_conceal_guifg = 'DarkGray'
-let g:limelight_conceal_guifg = '#777777'
-" Default: 0.5
 let g:limelight_default_coefficient = 0.7
 " Number of preceding/following paragraphs to include (default: 0)
 let g:limelight_paragraph_span = 1
-" Beginning/end of paragraph
-"   When there's no empty line between the paragraphs
-"   and each paragraph starts with indentation
-let g:limelight_bop = '^\s'
-let g:limelight_eop = '\ze\n^\s'
-" Highlighting priority (default: 10)
-"   Set it to -1 not to overrule hlsearch
-let g:limelight_priority = -1
-" TODO: Delete this limelight configs once you have them working
-
 
 " devicons
 " loading the plugin
@@ -62,7 +50,6 @@ let g:LanguageClient_serverCommands = {
     \ 'ruby': ['tcp://localhost:7658'],
     \ }
 let g:LanguageClient_autoStop = 0
-
 
 " http://stackoverflow.com/a/21152503/153718
 " function! GitTracks(...)
