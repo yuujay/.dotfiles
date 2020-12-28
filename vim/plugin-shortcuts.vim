@@ -3,11 +3,11 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 
 " Start fzf file finder
 
-nnoremap <C-F> :Ag<CR>
+nnoremap <C-F> :Ag<space>
 nnoremap <C-p> :Files<CR>
 nnoremap <leader>/ :BLines<CR>
 nnoremap <leader>c :BCommits<CR>
-nnoremap <leader>f :Ag<CR>
+nnoremap <leader>f :Ag<space>
 nnoremap <leader>p :Files<CR>
 nnoremap <leader>t :Colors<CR>
 

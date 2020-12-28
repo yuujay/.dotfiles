@@ -1,11 +1,13 @@
 set -a PATH usr/local/bin /usr/bin /bin /usr/sbin /sbin /mathworks/hub/share/sbtools/bin/maci64 ~/.config/fish/bash_scripts /Users/gumamahe/.gem/ruby/2.6.0/bin
 set FISH_HOME ~/.config/fish
+set FZF_DEFAULT_COMMAND 'ag -g ""'
 
 echo "Sourcing files from $FISH_HOME/config.fish"
 
 source "$HOME/.aliases"
-source "$HOME/.aliases.mathworks"
-source "$HOME/.aliases.docker"
+source "$HOME/.docker.aliases"
+source "$HOME/.git.aliases"
+source "$HOME/.mathworks.aliases"
 
 fish_vi_key_bindings
 
@@ -20,6 +22,6 @@ function iterm2_print_user_vars
 end
 
 # To install and configure rvm in fish.
-# More info here 
+# More info here
 # https://rvm.io/integration/fish
 rvm default

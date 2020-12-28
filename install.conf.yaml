@@ -6,15 +6,16 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.aliases.docker: aliases/aliases.docker
-    ~/.aliases.mathworks: mathworks/aliases.mathworks
     ~/.aliases: aliases/aliases
+    ~/.docker.aliases: aliases/docker.aliases
     ~/.fish_env:
+    ~/.git.aliases: aliases/git.aliases
     ~/.gitconfig.mw: git/gitconfig.mw
     ~/.gitconfig.personal: git/gitconfig.personal
     ~/.gitconfig: git/gitconfig
     ~/.gitmessage: git/gitmessage
     ~/.iterm2_shell_integration.fish: functions/iterm2_shell_integration.fish
+    ~/.mathworks.aliases: mathworks/mathworks.aliases
     ~/.ssh/config: ssh/config
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux/tmux-nested.conf: tmux/tmux-nested.conf

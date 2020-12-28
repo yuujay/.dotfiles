@@ -11,8 +11,10 @@ Plug 'neoclide/coc.nvim' ",  {'tag': '*', 'do': { -> coc#util#install()}}
 
 " --- SOME NICE TO HAVE PLUGINS ---
 " Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+" Plug 'https://github.com/junegunn/goyo.vim'
 " https://github.com/MattesGroeger/vim-bookmarks
 " https://github.com/christoomey/vim-tmux-runner
+" https://github.com/dyng/ctrlsf.vim
 " https://github.com/mg979/vim-visual-multi
 " https://github.com/mhinz/vim-startify
 " https://github.com/terryma/vim-multiple-cursors
@@ -27,7 +29,6 @@ Plug 'https://github.com/easymotion/vim-easymotion.git'  "invoke by <leader><lea
 Plug 'https://github.com/elzr/vim-json.git'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'https://github.com/junegunn/fzf.vim'
-Plug 'https://github.com/junegunn/goyo.vim'
 Plug 'https://github.com/junegunn/limelight.vim'
 Plug 'https://github.com/ngmy/vim-rubocop.git'
 Plug 'https://github.com/powerline/fonts.git'

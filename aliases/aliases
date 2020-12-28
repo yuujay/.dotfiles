@@ -2,10 +2,15 @@
 alias c.='code .'
 alias code.='code .'
 alias less='less -g -i -J -m -Q -u'
+alias rc='~/.rc'
 alias rm='rm -f'
 alias rmr='rm -r'
 alias src='source ~/.config/fish/config.fish'
-alias rc='~/.rc'
+
+# FZF
+alias fcd='cd (fd --type d | fzf)'
+alias fkill='kill (ps | fzf)'
+alias fvi='vi (fzf)'
 
 # LIST FILES & DIRECTORIES
 alias br='bat -r'
@@ -63,8 +68,9 @@ alias mcv='mvn clean verify'
 alias nps='npm start'
 alias nx='npm run'
 alias sl='sails lift'
-alias ws='python -m SimpleHTTPServer'
 alias vi.='vi .'
+alias ws='python -m SimpleHTTPServer'
+
 # NETWORK
 alias ipa='dig +short myip.opendns.com @resolver1.opendns.com'
 #alias ipa="dig TXT +short o-o.myaddr.l.google.com @ns1.google.com"

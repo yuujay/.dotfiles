@@ -1,0 +1,15 @@
+# Basic git aliases
+
+alias ga.='git add .'
+alias ga='git add'
+alias gc='git commit'
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias gd='git diff'
+alias gs='git status'
+
+# FZF aliases
+alias fgd='git diff (git s |awk \'{print $2}\'| fzf)'
+alias fga='git add (git s |awk \'{print $2}\'| fzf)'
+alias fgco='git checkout (git branch | fzf | xargs)'
+alias fgcorb='git checkout --track (git branch --remote |awk \'{print $1}\'| fzf)'
