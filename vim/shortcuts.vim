@@ -28,7 +28,6 @@ map <leader>x :close<CR>
 
 map <C-A> :w<Space>
 map <C-N> :enew<CR>
-map <C-O> :e<Space>
 map <C-W> :bw<CR>
 map ss :w<CR>
 
@@ -41,6 +40,15 @@ map <leader>` :nohls<cr>
 
 " Reload vimrc
 map <leader><leader>rr :source ~/.vimrc<CR>:echom 'vimrc reloaded'<CR>
+
+" Shortcuts to open some common files
+map <leader><leader>la :e ~/.aliases<CR>
+map <leader><leader>ya :e /System/Volumes/Data/mathworks/devel/sandbox/gumamahe/Cwebaddons.local/docker-compose.yml<CR>
+map <leader><leader>rc :e ~/.vimrc<CR>
+map <leader><leader>tc :e ~/.tmux.conf<CR>
+
+" Reload current buffer
+map <leader><leader>5 :e!<CR>
 
 " Close preview buffer
 map <Esc><leader> :pc<CR>

@@ -6,11 +6,22 @@ alias rc='~/.rc'
 alias rm='rm -f'
 alias rmr='rm -r'
 alias src='source ~/.config/fish/config.fish'
+alias vimtc='vi ~/.tmux.conf'
+alias vimla='vi ~/.aliases'
+alias vimrc='vi ~/.vimrc'
 
 # FZF
 alias fcd='cd (fd --type d | fzf)'
 alias fkill='kill (ps | fzf)'
 alias fvi='vi (fzf)'
+alias ftk='tmux kill-session -t (tmux ls | awk \'{print $1}\'| sed \'s/://\'| fzf)'
+alias fta='tmux attach -t (tmux ls | awk \'{print $1}\'| sed \'s/://\'| fzf)'
+
+#tmux
+alias tks='tmux kill-server'
+alias tls='tmux ls'
+alias ta='tmux attach -t'
+alias tk='tmux kill-session -t'
 
 # LIST FILES & DIRECTORIES
 alias br='bat -r'
@@ -90,7 +101,3 @@ alias omega='ssh pi@192.168.0.79'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 alias flushDNS="sudo killall -HUP mDNSResponder; echo 'DNS flushed'"
 
-## ===== mw-html-test =======
-
-alias browser='mw -using Cwebaddons mvn pre-integration-test -Dbrowser.autoremove=false -Dtest-browser=chrome-stable'
-alias mock='cd /sandbox/gumamahe/MockBrowser/target; java -jar addonexplorer_mockbrowser-jar-with-dependencies.jar'

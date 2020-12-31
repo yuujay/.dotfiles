@@ -1,4 +1,5 @@
 # AOE-MW ALIASES
+alias vidc='cdd; vi docker-compose.yml'
 alias sshg="ssh gumamahe@gumamahe-maci.dhcp.mathworks.com"
 alias sshd1="ssh basysrby@ruby26ext-d01ls"
 alias sshd2="ssh basysrby@ruby26ext-d02ls"
@@ -31,11 +32,17 @@ alias cdw='cd $SANDBOX_PATH/Cwebaddons.local/addons-contribution-ui'
 
 ## MW-DOCKER ALIASES
 
-alias dcw="sshg 'cdd; dcr addons-contribution-ui'"
-alias dca="sshg 'cdd; dcr add-on-explorer'"
-alias dcf="sshg 'cdd; dcr file-exchange'"
-alias dcbj="sshg 'cdd; dcr addons-background-jobs-consumer'"
+alias dcw='cdd; dcr addons-contribution-ui'
+alias dca='cdd; dcr add-on-explorer'
+alias dcf='cdd; dcr file-exchange'
+alias dcbj='cdd; dcr addons-background-jobs-consumer'
 
-alias dcwi="sshg 'cdd; dcw bundle install'"
-alias dcai="sshg 'cdd; dca bundle install'"
-alias dcfi="sshg 'cdd; dcf bundle install'"
+alias dcwi='cdd; dcw bundle install'
+alias dcai='cdd; dca bundle install'
+alias dcfi='cdd; dcf bundle install'
+
+
+## ===== mw-html-test =======
+
+alias browser='mw -using Cwebaddons mvn pre-integration-test -Dbrowser.autoremove=false -Dtest-browser=chrome-stable'
+alias mock='cd /sandbox/gumamahe/MockBrowser/target; java -jar addonexplorer_mockbrowser-jar-with-dependencies.jar'
