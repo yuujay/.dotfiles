@@ -43,7 +43,7 @@
     required = true
     smudge = git-lfs smudge -- %f
 [include]
-    path = ~/.gitconfig.mw
+    path = ~/.gitconfig.personal
 [includeIf "gitdir:/sandbox/gumamahe/**"]
     path = ~/.gitconfig.mw
 [includeIf "gitdir:/System/Volumes/Data/mathworks/devel/sandbox/gumamahe/Cwebaddons.local/**"]
