@@ -7,7 +7,7 @@ set incsearch
 set nocompatible
 set noswapfile
 set nu
-set rnu
+" set rnu
 set shiftwidth=2
 set showcmd
 set showmatch

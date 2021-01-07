@@ -1,9 +1,10 @@
+source ~/.vim/mathworks-ruby.vim
+source ~/.vim/plugin-config.vim
+source ~/.vim/plugin-shortcuts.vim
 source ~/.vim/plugins.vim
 source ~/.vim/settings.vim
 source ~/.vim/shortcuts.vim
 source ~/.vim/tmux-config.vim
-source ~/.vim/plugin-shortcuts.vim
-source ~/.vim/plugin-config.vim
 
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 

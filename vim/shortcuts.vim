@@ -31,7 +31,7 @@ map <C-N> :enew<CR>
 map <C-W> :bw<CR>
 map ss :w<CR>
 
-" Replace text
+" Replace text under cursor
 nnoremap <leader>r :%s/\<<C-r><C-w>\>/
 nnoremap <leader>R :%s/\<<C-r><C-w>\>//g<Left><Left>
 
@@ -52,6 +52,9 @@ map <leader><leader>5 :e!<CR>
 
 " Close preview buffer
 map <Esc><leader> :pc<CR>
+
+" Install plugins using vundle.
+map <leader><leader>p :PlugInstall<CR>
 
 " Toggles
 

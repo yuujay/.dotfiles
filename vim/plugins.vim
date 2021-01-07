@@ -12,13 +12,13 @@ Plug 'neoclide/coc.nvim' ",  {'tag': '*', 'do': { -> coc#util#install()}}
 " --- SOME NICE TO HAVE PLUGINS ---
 " Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 " Plug 'https://github.com/junegunn/goyo.vim'
-" https://github.com/MattesGroeger/vim-bookmarks
-" https://github.com/christoomey/vim-tmux-runner
-" https://github.com/dyng/ctrlsf.vim
+" Plug 'https://github.com/thoughtbot/vim-rspec'
 " https://github.com/mg979/vim-visual-multi
+"
+" https://github.com/MattesGroeger/vim-bookmarks
+" https://github.com/dyng/ctrlsf.vim
 " https://github.com/mhinz/vim-startify
 " https://github.com/terryma/vim-multiple-cursors
-" https://github.com/tpope/vim-rails
 
 Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/airblade/vim-gitgutter'
@@ -37,6 +37,7 @@ Plug 'https://github.com/sjl/gundo.vim.git'
 Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'https://github.com/tpope/vim-endwise.git'
 Plug 'https://github.com/tpope/vim-fugitive'
+Plug 'https://github.com/tpope/vim-rails'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }

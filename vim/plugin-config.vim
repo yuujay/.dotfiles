@@ -15,17 +15,20 @@ let g:webdevicons_enable = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-" Ale
+" ------------------- Ale -----------------------------------------
 " Set specific linters
-let g:ale_linters = {
-    \   'javascript': ['eslint'],
-    \   'ruby': ['standardrb' , 'rubocop'],
-    \}
+" let g:ale_linters = {
+"     \   'javascript': ['eslint'],
+"     \   'ruby': ['standardrb' , 'rubocop'],
+"     \}
 
-" Only run linters named in ale_linters settings.
-let g:ale_linters_explicit = 1
-let g:airline#extensions#ale#enabled = 1
-let g:ale_sign_column_always = 1
+" " Only run linters named in ale_linters settings.
+" let g:ale_linters_explicit = 1
+" let g:airline#extensions#ale#enabled = 1
+" let g:ale_sign_column_always = 1
+"
+" TODO: Uncomment above paragraph to use partial ALE configurations.
+
 
 " TODO:
 " Removal of trailing spaces
@@ -41,10 +44,8 @@ set shortmess+=c  " don't give |ins-completion-menu| messages.
 " COC-Solargraph
 set hidden
 let g:LanguageClient_serverCommands = {
-    \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
     \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
     \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
-    \ 'python': ['/usr/local/bin/pyls'],
     \ 'ruby': ['tcp://localhost:7658'],
     \ }
 let g:LanguageClient_autoStop = 0

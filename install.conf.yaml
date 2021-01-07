@@ -24,6 +24,7 @@
     ~/.tmux/tmux-settings.conf: tmux/tmux-settings.conf
     ~/.tmux/tmux-shortcuts.conf: tmux/tmux-shortcuts.conf
     ~/.tmux/tmux-vim.conf: tmux/tmux-vim.conf
+    ~/.vim/mathworks-ruby.vim: vim/mathwork-ruby.vim
     ~/.vim/plugin-config.vim: vim/plugin-config.vim
     ~/.vim/plugin-shortcuts.vim: vim/plugin-shortcuts.vim
     ~/.vim/plugins.vim: vim/plugins.vim
