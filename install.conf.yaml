@@ -7,6 +7,8 @@
 
 - link:
     ~/.aliases: aliases/aliases
+    ~/.config/nvim: nvim
+    ~/.config/karabiner: karabiner
     ~/.docker.aliases: aliases/docker.aliases
     ~/.fish_env:
     ~/.git.aliases: aliases/git.aliases
@@ -35,6 +37,8 @@
 
 - create:
   - ~/.config/fish
+  - ~/.config/nvim
+  - ~/.config/karabiner
 
 - shell:
     # - chsh -s $(which sh)

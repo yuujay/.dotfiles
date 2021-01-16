@@ -10,8 +10,10 @@ Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim' ",  {'tag': '*', 'do': { -> coc#util#install()}}
 
 " --- SOME NICE TO HAVE PLUGINS ---
+"
 " Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 " Plug 'https://github.com/junegunn/goyo.vim'
+" Plug 'https://github.com/sjl/gundo.vim.git'
 " Plug 'https://github.com/thoughtbot/vim-rspec'
 " https://github.com/mg979/vim-visual-multi
 "
@@ -33,7 +35,6 @@ Plug 'https://github.com/junegunn/limelight.vim'
 Plug 'https://github.com/ngmy/vim-rubocop.git'
 Plug 'https://github.com/powerline/fonts.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
-Plug 'https://github.com/sjl/gundo.vim.git'
 Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'https://github.com/tpope/vim-endwise.git'
 Plug 'https://github.com/tpope/vim-fugitive'
@@ -41,6 +42,7 @@ Plug 'https://github.com/tpope/vim-rails'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
+Plug 'mbbill/undotree'
 
 Plug 'https://github.com/ryanoasis/vim-devicons'  "This needs to be at the end since we devicons need to loaded after all plugins
 call plug#end()

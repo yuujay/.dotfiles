@@ -21,8 +21,9 @@ syntax on
 " Need this for using fonts
 set encoding=UTF-8
 
-set list
-set lcs=tab:▸\ ,eol:¬ ",space:·
+" set list
+" set lcs=tab:▸\ ,eol:¬
+" space:·
 
 " Highlight trailing spaces
 highlight RedundantSpaces ctermbg=red guibg=red
