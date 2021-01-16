@@ -7,8 +7,11 @@ alias rm='rm -f'
 alias rmr='rm -r'
 alias src='source ~/.config/fish/config.fish'
 alias vimtc='vi ~/.tmux.conf'
-alias vimla='vi ~/.aliases'
 alias vimrc='vi ~/.vimrc'
+
+# Use neovim over vim
+alias vim='nvim'
+alias vi='nvim'
 
 # FZF
 alias fcd='cd (fd --type d | fzf)'

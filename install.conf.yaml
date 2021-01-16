@@ -36,9 +36,9 @@
     ~/.vimrc: vim/vimrc
 
 - create:
-  - ~/.config/fish
-  - ~/.config/nvim
-  - ~/.config/karabiner
+    - ~/.config/fish
+    - ~/.config/nvim
+    - ~/.config/karabiner
 
 - shell:
     # - chsh -s $(which sh)
