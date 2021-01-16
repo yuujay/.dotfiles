@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo 'Initializing setup...'
-xcode-select —-install
+# xcode-select —-install
 
 # Check for Homebrew to be present, install if it's missing
 if test ! $(which brew); then
@@ -9,18 +9,20 @@ if test ! $(which brew); then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-echo 'Installing cask..'
-brew tap caskroom/cask
+# echo 'Installing cask..'
+# brew tap homebrew/cask
 
-echo 'Update homebrew recipes'
-brew update
+# echo 'Update homebrew recipes..'
+# brew update
+
+# Remove installation log from previous runs
+rm installation.log progress.log
 
 _packages=(
   ag
   bat
   exa
   rsync
-  cask
   ctags
   fish
   fzf
@@ -28,19 +30,21 @@ _packages=(
   htop
   neovim
   the_silver_searcher
+  tree
   tmux
   wget
 )
 
+
+
 _cask_packages=(
   firefox
-  font-hack-nerd-font
+  # font-hack-nerd-font
   hammerspoon
   iterm2
   karabiner-elements
   ngrok
-  tree
-  vlc
+  # vlc
 )
 
 _some_heavy_cask_packages=(
@@ -55,33 +59,67 @@ _ruby_gems=(
   rubocop
 )
 
-
-install_packages() {
-  # TODO: Fix the $1 and see if it works with package list format that we use.
-  # Call this function with first arugments as the list of packages
-  for package in $1
-    do
-      echo "Checking for cask package > ${cask}"
-        if brew cask list "${package}" >/dev/null 2>&1; then
-          echo "Package ${package} already installed."
-        else
-          echo "\n"
-          echo "Attempting to install ${package}..."
-          if brew cask install "${package}"; then
-            echo "Package ${package} installed.\n"
-          else
-            echo "Package ${package} install failed.\n"
-          fi
-        fi
-    done
+install_cask_package() {
+  # if test $(which $1); then
+  # if [[ -d "/Applications/$1.app" || brew list --cask $1 ]]; then
+  # TODO Check for cask brew list in `if` clause.
+  if [[ -d "/Applications/$1.app" ]]; then
+    echo "EXISTS - Package $1" >> installation.log
+  else
+    echo "Attempting to install $1 ..." >> installation.log
+    if brew install --cask "$1" >> progress.log; then
+      echo "SUCCESS - Package $1 installation" >> installation.log
+    else
+      echo "FAILED - Package $1 installation" >> installation.log
+    fi
+  fi
 }
 
+install_brew_package() {
+  if brew list "$1" >/dev/null 2>&1; then
+    echo "EXISTS - Package $1" >> installation.log
+  else
+    echo "Attempting to install $1" >> installation.log
+    if brew install "$1" >> progress.log ; then
+      echo "SUCCESS - Package $1 installed" >> installation.log
+    else
+      echo "FAILED - Package $1 installation" >> installation.log
+    fi
+  fi
+}
+
+install_package() {
+    case $2 in
+      CASK )
+        install_cask_package $1
+      ;;
+      BREW )
+        install_brew_package $1
+      ;;
+    esac
+}
+
+install_packages() {
+
+  echo 'Installing brew packages...'
+  for package in ${_packages[@]}; do
+    install_package $package BREW
+  done
+
+  echo 'Installing cask packages...'
+  for package in ${_cask_packages[@]}; do
+    install_package $package CASK
+  done
+
+# install_packages _some_heavy_cask_packages
+# install_packages _ruby_gems
+
+  echo 'Check `installtion.log` to find status'
+}
+
+install_packages
 
 main() {
-  install_packages _packages
-  install_packages _cask_packages
-  # install_packages _some_heavy_cask_packages
-  # install_packages _ruby_gems
 
   echo 'Cleaning up...'
   brew cleanup
