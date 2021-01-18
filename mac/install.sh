@@ -35,8 +35,6 @@ _packages=(
   wget
 )
 
-
-
 _cask_packages=(
   firefox
   # font-hack-nerd-font

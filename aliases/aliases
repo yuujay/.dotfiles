@@ -12,6 +12,7 @@ alias vimrc='vi ~/.vimrc'
 # Use neovim over vim
 alias vim='nvim'
 alias vi='nvim'
+alias vii='/usr/bin/vi' #Incase you really want to use vi over neo for some testing.
 
 # FZF
 alias fcd='cd (fd --type d | fzf)'

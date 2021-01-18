@@ -11,8 +11,8 @@ nnoremap <leader>f :Ag<space>
 nnoremap <leader>p :Files<CR>
 nnoremap <leader>t :Colors<CR>
 
-" Gundo
-nnoremap <leader>g :GundoToggle<CR>
+" Undotree
+nnoremap <leader>g :UndotreeToggle<CR>
 
 " Git guttter
 
@@ -28,8 +28,10 @@ nnoremap <leader>vc :VtrSendCtrlC<CR>
 nnoremap <leader>vcmd :VtrSendCommandToRunner<CR>
 nnoremap <leader>vk :VtrClearRunner<CR>
 nnoremap <leader>vl :VtrSendLinesToRunner!<CR>
-nnoremap <leader>vr :VtrOpenRunner<CR>
 nnoremap <leader>vz :VtrFocusRunner<CR>
+
+" Changing this because `VtrOpenRunner` doesn't work properly with neovim
+nnoremap <leader>vr :VtrAttachToPane<CR>
 
 " Vim-Rspec
 " nnoremap <leader>r. :call RunCurrentSpecFile()<CR>

@@ -1,22 +1,25 @@
 set autoindent
 set colorcolumn=80
 set cursorline
-set expandtab
 set hls
 set incsearch
 set nocompatible
 set noswapfile
 set nu
 " set rnu
-set shiftwidth=2
 set showcmd
 set showmatch
 set signcolumn=yes
-set softtabstop=2
 set t_Co=256
-set tabstop=2
 set wrap
 syntax on
+
+" Tab/Space setting
+
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 
 " Need this for using fonts
 set encoding=UTF-8
@@ -29,10 +32,10 @@ set encoding=UTF-8
 highlight RedundantSpaces ctermbg=red guibg=red
 match RedundantSpaces /\s\+$\| \+\ze\t/
 
-" Set colors for cursorLine, signcolumn
+" Set colors for cursorLine, signcolumn.
 
+" highlight CursorLine ctermbg=black guibg=black cterm=underline "bold - VIM8 SPECIFIC
 highlight ColorColumn ctermbg=blue guibg=blue
-highlight CursorLine ctermbg=black guibg=black cterm=underline "bold
 highlight SignColumn ctermbg=black guibg=black
 
 " enable file type detection
