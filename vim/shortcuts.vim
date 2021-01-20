@@ -1,22 +1,26 @@
 let mapleader="\<Space>"
 
 " Remap <Esc> key to `ff` so that Caps lock is freed up for tmux prefix
+" This configuration is not needed as of now since Caps lock works as both
+" `ctrl` and `esc`
 
-inoremap ff <Esc>
-nnoremap ff <Esc>
-vnoremap ff <Esc>
+" inoremap ff <Esc>
+" nnoremap ff <Esc>
+" vnoremap ff <Esc>
 
 nnoremap ; :
 vnoremap ; :
 
-nnoremap <CR> o<Esc>k
-nnoremap <Space> i<Space><Esc>
+" This is not required since the same can be achieved by using `C-m` out of
+" the box.
+" nnoremap <CR> o<Esc>k
+" nnoremap <Space> i<Space><Esc>
 
 " move among buffers
 
 map <leader>h :bprev<CR>
 map <leader>l :bnext<CR>
-map <leader>lb :ls<CR>:b<Space>
+map <leader>lb :Buffers<CR>
 
 " Split buffers
 
@@ -31,9 +35,19 @@ map <C-N> :enew<CR>
 map <C-W> :bw<CR>
 map ss :w<CR>
 
+" Resize vim windows with the arrow keys
+nnoremap <Up> :resize -2<CR>
+nnoremap <Down> :resize +2<CR>
+nnoremap <Left> :vertical resize -2<CR>
+nnoremap <Right> :vertical resize +2<CR>
+
 " Replace text under cursor
 nnoremap <leader>r :%s/\<<C-r><C-w>\>/
 nnoremap <leader>R :%s/\<<C-r><C-w>\>//g<Left><Left>
+
+" Select lines and move up or down using S-k and S-j
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv
 
 " Disable search highlights with a button click.
 map <leader>` :nohls<cr>

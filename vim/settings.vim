@@ -1,12 +1,13 @@
+" set rnu
 set autoindent
 set colorcolumn=80
 set cursorline
 set hls
 set incsearch
+set mouse=a
 set nocompatible
 set noswapfile
 set nu
-" set rnu
 set showcmd
 set showmatch
 set signcolumn=yes
@@ -33,9 +34,8 @@ highlight RedundantSpaces ctermbg=red guibg=red
 match RedundantSpaces /\s\+$\| \+\ze\t/
 
 " Set colors for cursorLine, signcolumn.
-
-" highlight CursorLine ctermbg=black guibg=black cterm=underline "bold - VIM8 SPECIFIC
 highlight ColorColumn ctermbg=blue guibg=blue
+highlight CursorLine guibg=#303000 ctermbg=236 cterm=none term=none
 highlight SignColumn ctermbg=black guibg=black
 
 " enable file type detection

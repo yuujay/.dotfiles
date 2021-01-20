@@ -1,5 +1,6 @@
 " NodeTree
 nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
 
 " Start fzf file finder
 
