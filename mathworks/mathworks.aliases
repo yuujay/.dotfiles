@@ -1,6 +1,7 @@
 # AOE-MW ALIASES
-alias vidc='cdd; vi docker-compose.yml'
+alias vimdc='cdd; vi docker-compose.yml'
 alias sshg="ssh gumamahe@gumamahe-maci.dhcp.mathworks.com"
+
 alias sshd1="ssh basysrby@ruby26ext-d01ls"
 alias sshd2="ssh basysrby@ruby26ext-d02ls"
 alias sshd3="ssh basysrby@ruby26ext-d03ls"
@@ -19,7 +20,7 @@ alias sshs2="ssh basysrby@ruby26ext-s01ah"
 alias sshp1="ssh basysrby@ruby26ext-p01ls"
 
 ## COMMUNITY TEAM
-set SANDBOX_PATH '/System/Volumes/Data/mathworks/devel/sandbox/gumamahe'
+set SANDBOX_PATH '/Users/gumamahe/Documents'
 
 alias cds='cd $SANDBOX_PATH'
 alias cdp='cd $SANDBOX_PATH/active-projects/aoe-mo-fullstack'

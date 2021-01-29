@@ -4,11 +4,10 @@ alias db='docker build'
 alias dcp='docker container prune'
 alias di='docker images'
 alias dit='docker exec -it'
-alias dn='docker network ls'
+alias dn='docker network'
 alias dps='docker ps -a'
-alias dps='docker ps -a'
-alias dri='docker rmi'
-alias drin="docker rmi (docker images -f 'dangling=true' -a | awk '{print $3}')"
+alias dri='docker image rm'
+alias drin="docker image rm (docker images -f dangling=true -a | awk '{print $3}')"
 alias ds='docker stop'
 alias dv='docker volume ls'
 alias dvp='docker volume prune'
@@ -19,16 +18,4 @@ alias dc='docker-compose'
 alias dcd='docker-compose down'
 alias dcr='docker-compose run --rm'
 alias dcu='docker-compose up'
-
-# MW DOCKER ALISES
-
-alias dca="dcr add-on-explorer"
-alias dcbj="dcr addons-background-jobs-consumer"
-alias dcda="dcr addons-data-access"
-alias dcf="dcr file-exchange"
-alias dcw="dcr addons-contribution-ui"
-
-alias dcai="dca bundle install"
-alias dcfi="dcf bundle install"
-alias dcwi="dcw bundle install"
 

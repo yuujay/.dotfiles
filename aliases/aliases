@@ -8,7 +8,8 @@ alias rmr='rm -r'
 alias src='source ~/.config/fish/config.fish'
 alias vimtc='vi ~/.tmux.conf'
 alias vimrc='vi ~/.vimrc'
-alias vimhs='vi /etc/hosts'
+alias vimgc='vi ~/.gitconfig'
+alias vimhc='vi /etc/hosts'
 
 # Use neovim over vim
 alias vim='nvim'

@@ -64,3 +64,4 @@
     url = http://reviewboard.mathworks.com/
 [log]
     excludeDecoration = *origin/j*
+    excludeDecoration = *tag: j*

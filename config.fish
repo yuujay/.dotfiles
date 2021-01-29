@@ -1,4 +1,5 @@
 set -a PATH usr/local/bin /usr/bin /bin /usr/sbin /sbin /mathworks/hub/share/sbtools/bin/maci64 ~/.config/fish/bash_scripts /Users/gumamahe/.gem/ruby/2.6.0/bin
+
 set FISH_HOME ~/.config/fish
 set FZF_DEFAULT_COMMAND 'ag -g ""'
 
@@ -10,6 +11,10 @@ source "$HOME/.git.aliases"
 source "$HOME/.mathworks.aliases"
 
 fish_vi_key_bindings
+
+# If tmux is hung for some reason, delete the restore resurrects from `~/.tmux/resurrect`
+# If that doesn't help try following https://stackoverflow.com/questions/7408068
+# Essentially we need to delete `/tmp/tmux-XXXXX` directory
 
 test -e $FISH_HOME/bash_scripts/always_in_tmux && always_in_tmux
 test -e ~/.iterm2_shell_integration.fish ; and source ~/.iterm2_shell_integration.fish
