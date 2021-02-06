@@ -7,7 +7,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'dense-analysis/ale'
-Plug 'neoclide/coc.nvim' ",  {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim' ",  {'branch': 'release'}
 
 " --- SOME NICE TO HAVE PLUGINS ---
 "

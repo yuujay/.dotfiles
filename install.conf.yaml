@@ -42,7 +42,7 @@
     - ~/.config/nvim
     - ~/.config/karabiner
 
-- shell:
+# - shell:
     # - chsh -s $(which sh)
-    - cp -r ./functions ~/.config/functions/
+    # - cp -r ./functions ~/.config
 

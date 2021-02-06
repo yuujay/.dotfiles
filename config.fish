@@ -1,23 +1,23 @@
-set -a PATH usr/local/bin /usr/bin /bin /usr/sbin /sbin /mathworks/hub/share/sbtools/bin/maci64 ~/.config/fish/bash_scripts /Users/gumamahe/.gem/ruby/2.6.0/bin
-
-set FISH_HOME ~/.config/fish
-set FZF_DEFAULT_COMMAND 'ag -g ""'
-
 echo "Sourcing files from $FISH_HOME/config.fish"
 
-source "$HOME/.aliases"
-source "$HOME/.docker.aliases"
-source "$HOME/.git.aliases"
-source "$HOME/.mathworks.aliases"
-
 fish_vi_key_bindings
+
+# this is the only environment variable to be declared out side of `$FISH_HOME/fish_env`
+set FISH_HOME ~/.config/fish
+test -e $FISH_HOME/fish_env ; and source $FISH_HOME/fish_env
+
+test -e $HOME/.aliases ; and source $HOME/.aliases
+test -e $HOME/.docker.aliases ; and source $HOME/.docker.aliases
+test -e $HOME/.mathworks.aliases ; and source $HOME/.mathworks.aliases
+test -e $HOME/.git.aliases ; and source $HOME/.git.aliases
+test -e $HOME/.iterm2_shell_integration.fish ; and source $HOME/.iterm2_shell_integration.fish
 
 # If tmux is hung for some reason, delete the restore resurrects from `~/.tmux/resurrect`
 # If that doesn't help try following https://stackoverflow.com/questions/7408068
 # Essentially we need to delete `/tmp/tmux-XXXXX` directory
 
-test -e $FISH_HOME/bash_scripts/always_in_tmux && always_in_tmux
-test -e ~/.iterm2_shell_integration.fish ; and source ~/.iterm2_shell_integration.fish
+# test -e $FISH_HOME/bash_scripts/always_in_tmux && always_in_tmux
+
 
 function iterm2_print_user_vars
     iterm2_set_user_var rubyVersion (ruby -v | awk '{ print $2 }')
@@ -29,4 +29,8 @@ end
 # To install and configure rvm in fish.
 # More info here
 # https://rvm.io/integration/fish
-rvm default
+# rvm default
+
+# Plugin manager for fish
+# curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+

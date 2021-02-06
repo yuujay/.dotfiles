@@ -42,9 +42,9 @@ alias t="tree -I 'node_modules|node_modules|target|cache|log|tmp|assets|.byebug_
 alias ti="tree -I $1"
 alias tl="tree -L "
 alias x='exa -1'
-alias xdi='exa -alD'
 alias xg='exa -al --git'
 alias xl='exa -al'
+alias xld='exa -alD'
 alias xlg='exa -al | grep'
 alias xlm='exa -alm'
 
@@ -105,5 +105,5 @@ alias omega='ssh pi@192.168.0.79'
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-alias flushDNS="sudo killall -HUP mDNSResponder; echo 'DNS flushed'"
+alias flushDNS="sudo killall -HUP mDNSResponder; dscacheutil -flushcache; echo 'DNS flushed'"
 

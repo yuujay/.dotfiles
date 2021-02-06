@@ -1,3 +1,5 @@
+set -a PATH usr/local/bin /usr/bin /bin /usr/sbin /sbin /mathworks/hub/share/sbtools/bin/maci64 $HOME/.config/fish/bash_scripts $HOME/.gem/ruby/2.6.0/bin
 set DOCKER_COMPOSE_USER_ID (id -u)
 set EDITOR 'vim'
-
+set FZF_DEFAULT_COMMAND 'ag -g ""'
+set GEM_HOME "$HOME/.gem/ruby/2.6.0"
