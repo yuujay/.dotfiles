@@ -2,3 +2,69 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "vim/plugged/ale"]
+	path = vim/plugged/ale
+	url = https://github.com/dense-analysis/ale
+[submodule "vim/plugged/vim-rubocop"]
+	path = vim/plugged/vim-rubocop
+	url = https://github.com/ngmy/vim-rubocop
+[submodule "vim/plugged/fonts"]
+	path = vim/plugged/fonts
+	url = https://github.com/powerline/fonts
+[submodule "vim/plugged/indentLine"]
+	path = vim/plugged/indentLine
+	url = https://github.com/Yggdroot/indentLine
+[submodule "vim/plugged/vim-gitgutter"]
+	path = vim/plugged/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim/plugged/vim-sort-motion"]
+	path = vim/plugged/vim-sort-motion
+	url = https://github.com/christoomey/vim-sort-motion
+[submodule "vim/plugged/vim-tmux-navigator"]
+	path = vim/plugged/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule "vim/plugged/vim-easymotion"]
+	path = vim/plugged/vim-easymotion
+	url = https://github.com/easymotion/vim-easymotion
+[submodule "vim/plugged/vim-json"]
+	path = vim/plugged/vim-json
+	url = https://github.com/elzr/vim-json
+[submodule "vim/plugged/auto-pairs"]
+	path = vim/plugged/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+[submodule "vim/plugged/fzf.vim"]
+	path = vim/plugged/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "vim/plugged/limelight.vim"]
+	path = vim/plugged/limelight.vim
+	url = https://github.com/junegunn/limelight.vim
+[submodule "vim/plugged/nerdtree"]
+	path = vim/plugged/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "vim/plugged/vim-commentary"]
+	path = vim/plugged/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "vim/plugged/vim-endwise"]
+	path = vim/plugged/vim-endwise
+	url = https://github.com/tpope/vim-endwise
+[submodule "vim/plugged/vim-fugitive"]
+	path = vim/plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/plugged/vim-rails"]
+	path = vim/plugged/vim-rails
+	url = https://github.com/tpope/vim-rails
+[submodule "vim/plugged/vim-surround"]
+	path = vim/plugged/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "vim/plugged/vim-airline"]
+	path = vim/plugged/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "vim/plugged/vim-devicons"]
+	path = vim/plugged/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons
+[submodule "vim/plugged/undotree"]
+	path = vim/plugged/undotree
+	url = https://github.com/mbbill/undotree
+[submodule "vim/plugged/fzf"]
+	path = vim/plugged/fzf
+	url = https://github.com/junegunn/fzf
