@@ -25,6 +25,7 @@
     r = remote
     ra = remote add
     s = status -s
+    sa = submodule add
     st = stash
     stp = stash pop
     update-submodules = submodule update --init --recursive

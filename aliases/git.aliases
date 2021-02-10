@@ -9,6 +9,7 @@ alias gcob='git checkout -b'
 alias gd='git diff'
 alias glo='git lo'
 alias gs='git status'
+alias gsa='git submodule add'
 
 # FZF aliases
 alias fgd='git diff (git s |awk \'{print $2}\'| fzf)'

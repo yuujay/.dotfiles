@@ -68,3 +68,15 @@
 [submodule "vim/plugged/fzf"]
 	path = vim/plugged/fzf
 	url = https://github.com/junegunn/fzf
+[submodule "vim/plugged/coc.nvim"]
+	path = vim/plugged/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule "tmux/plugins/tmux-resurrect"]
+	path = tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect
+[submodule "tmux/plugins/tmux-continuum"]
+	path = tmux/plugins/tmux-continuum
+	url = https://github.com/tmux-plugins/tmux-continuum
