@@ -106,3 +106,7 @@
 	path = tmux/plugins/tmux-continuum
 	url = https://github.com/tmux-plugins/tmux-continuum
 	ignore = dirty
+[submodule "vim/plugged/vim-tmux-runner"]
+	path = vim/plugged/vim-tmux-runner
+	url = https://github.com/christoomey/vim-tmux-runner
+	ignore = dirty
