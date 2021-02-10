@@ -5,78 +5,104 @@
 [submodule "vim/plugged/ale"]
 	path = vim/plugged/ale
 	url = https://github.com/dense-analysis/ale
+	ignore = dirty
 [submodule "vim/plugged/vim-rubocop"]
 	path = vim/plugged/vim-rubocop
 	url = https://github.com/ngmy/vim-rubocop
+	ignore = dirty
 [submodule "vim/plugged/fonts"]
 	path = vim/plugged/fonts
 	url = https://github.com/powerline/fonts
+	ignore = dirty
 [submodule "vim/plugged/indentLine"]
 	path = vim/plugged/indentLine
 	url = https://github.com/Yggdroot/indentLine
+	ignore = dirty
 [submodule "vim/plugged/vim-gitgutter"]
 	path = vim/plugged/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+	ignore = dirty
 [submodule "vim/plugged/vim-sort-motion"]
 	path = vim/plugged/vim-sort-motion
 	url = https://github.com/christoomey/vim-sort-motion
+	ignore = dirty
 [submodule "vim/plugged/vim-tmux-navigator"]
 	path = vim/plugged/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator
+	ignore = dirty
 [submodule "vim/plugged/vim-easymotion"]
 	path = vim/plugged/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion
+	ignore = dirty
 [submodule "vim/plugged/vim-json"]
 	path = vim/plugged/vim-json
 	url = https://github.com/elzr/vim-json
+	ignore = dirty
 [submodule "vim/plugged/auto-pairs"]
 	path = vim/plugged/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
+	ignore = dirty
 [submodule "vim/plugged/fzf.vim"]
 	path = vim/plugged/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
+	ignore = dirty
 [submodule "vim/plugged/limelight.vim"]
 	path = vim/plugged/limelight.vim
 	url = https://github.com/junegunn/limelight.vim
+	ignore = dirty
 [submodule "vim/plugged/nerdtree"]
 	path = vim/plugged/nerdtree
 	url = https://github.com/preservim/nerdtree
+	ignore = dirty
 [submodule "vim/plugged/vim-commentary"]
 	path = vim/plugged/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+	ignore = dirty
 [submodule "vim/plugged/vim-endwise"]
 	path = vim/plugged/vim-endwise
 	url = https://github.com/tpope/vim-endwise
+	ignore = dirty
 [submodule "vim/plugged/vim-fugitive"]
 	path = vim/plugged/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+	ignore = dirty
 [submodule "vim/plugged/vim-rails"]
 	path = vim/plugged/vim-rails
 	url = https://github.com/tpope/vim-rails
+	ignore = dirty
 [submodule "vim/plugged/vim-surround"]
 	path = vim/plugged/vim-surround
 	url = https://github.com/tpope/vim-surround
+	ignore = dirty
 [submodule "vim/plugged/vim-airline"]
 	path = vim/plugged/vim-airline
 	url = https://github.com/vim-airline/vim-airline
+	ignore = dirty
 [submodule "vim/plugged/vim-devicons"]
 	path = vim/plugged/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
+	ignore = dirty
 [submodule "vim/plugged/undotree"]
 	path = vim/plugged/undotree
 	url = https://github.com/mbbill/undotree
+	ignore = dirty
 [submodule "vim/plugged/fzf"]
 	path = vim/plugged/fzf
 	url = https://github.com/junegunn/fzf
+	ignore = dirty
 [submodule "vim/plugged/coc.nvim"]
 	path = vim/plugged/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+	ignore = dirty
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+	ignore = dirty
 [submodule "tmux/plugins/tmux-resurrect"]
 	path = tmux/plugins/tmux-resurrect
 	url = https://github.com/tmux-plugins/tmux-resurrect
+	ignore = dirty
 [submodule "tmux/plugins/tmux-continuum"]
 	path = tmux/plugins/tmux-continuum
 	url = https://github.com/tmux-plugins/tmux-continuum
+	ignore = dirty
