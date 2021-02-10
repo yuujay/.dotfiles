@@ -6,41 +6,28 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.aliases: aliases/aliases
+    ~/.aliases: aliases
     ~/.config/karabiner: karabiner
     ~/.config/nvim: nvim
-    ~/.docker.aliases: aliases/docker.aliases
     ~/.fish_env:
-    ~/.git.aliases: aliases/git.aliases
     ~/.gitconfig.mw: git/gitconfig.mw
     ~/.gitconfig.personal: git/gitconfig.personal
     ~/.gitconfig: git/gitconfig
     ~/.gitmessage: git/gitmessage
     ~/.iterm2_shell_integration.fish: functions/iterm2_shell_integration.fish
-    ~/.mathworks.aliases: mathworks/mathworks.aliases
     ~/.ssh/config: ssh/config
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.tmux/tmux-nested.conf: tmux/tmux-nested.conf
-    ~/.tmux/tmux-plugin-settings.conf: tmux/tmux-plugin-settings.conf
-    ~/.tmux/tmux-plugins.conf: tmux/tmux-plugins.conf
-    ~/.tmux/tmux-settings.conf: tmux/tmux-settings.conf
-    ~/.tmux/tmux-shortcuts.conf: tmux/tmux-shortcuts.conf
-    ~/.tmux/tmux-vim.conf: tmux/tmux-vim.conf
-    ~/.vim/language.vim: vim/language.vim
-    ~/.vim/mathworks-ruby.vim: vim/mathwork-ruby.vim
-    ~/.vim/neovim.vim: vim/neovim.vim
-    ~/.vim/plugin-config.vim: vim/plugin-config.vim
-    ~/.vim/plugin-shortcuts.vim: vim/plugin-shortcuts.vim
-    ~/.vim/plugins.vim: vim/plugins.vim
-    ~/.vim/settings.vim: vim/settings.vim
-    ~/.vim/shortcuts.vim: vim/shortcuts.vim
-    ~/.vim/tmux-config.vim: vim/tmux-config.vim
+    ~/.tmux: tmux
+    ~/.vim: vim
     ~/.vimrc: vim/vimrc
 
 - create:
     - ~/.config/fish
     - ~/.config/nvim
     - ~/.config/karabiner
+    - ~/.aliases
+    - ~/.tmux
+    - ~/.vim
 
 # - shell:
     # - chsh -s $(which sh)

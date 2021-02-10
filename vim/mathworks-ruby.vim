@@ -1,4 +1,3 @@
-" Vim shortcuts that would be used as shortcuts in mw ruby projects
 
 nnoremap <leader>ras :call ExecuteAllSpecs()<CR>
 nnoremap <leader>rg :call OpenFile('./Gemfile')<CR>
@@ -10,9 +9,9 @@ nnoremap <leader>rsh :call OpenFile('./spec/spec_helper.rb')<CR>
 
 function! OpenFile(fileName)
    if filereadable(a:fileName)
-     execute "e ".fnameescape(a:fileName)
+     execute 'e '.fnameescape(a:fileName)
    else
-     echom  a:fileName." - Not Found"
+     echom  a:fileName.' file Not Found'
    endif
 endfunction
 

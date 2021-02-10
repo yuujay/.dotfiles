@@ -34,6 +34,9 @@ nnoremap <leader>vz :VtrFocusRunner<CR>
 " Changing this because `VtrOpenRunner` doesn't work properly with neovim
 nnoremap <leader>vr :VtrAttachToPane<CR>
 
+" Rubocop
+nmap <Leader><Leader>r :RuboCop<CR>
+
 " Vim-Rspec
 " nnoremap <leader>r. :call RunCurrentSpecFile()<CR>
 " nnoremap <leader>rn :call RunNearestSpec()<CR>

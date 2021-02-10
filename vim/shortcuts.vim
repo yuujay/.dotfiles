@@ -57,7 +57,7 @@ map <leader><leader>rr :source ~/.vimrc<CR>:echom 'vimrc reloaded'<CR>
 
 " Shortcuts to open some common files
 map <leader><leader>la :e ~/.aliases<CR>
-map <leader><leader>ya :e /System/Volumes/Data/mathworks/devel/sandbox/gumamahe/Cwebaddons.local/docker-compose.yml<CR>
+map <leader><leader>ya :e /Users/gumamahe/Documents/Cwebaddons.local/docker-compose.yml<CR>
 map <leader><leader>rc :e ~/.vimrc<CR>
 map <leader><leader>tc :e ~/.tmux.conf<CR>
 map <leader><leader>hs :e /etc/hosts<CR>

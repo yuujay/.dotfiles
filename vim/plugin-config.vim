@@ -15,6 +15,10 @@ let g:webdevicons_enable = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
+" Rubocop
+let g:vimrubocop_config = '/Users/gumamahe/Documents/Cwebaddons.local/addons-contribution-ui/.rubocop.yml'
+let g:vimrubkcop_keymap = 0
+
 " ------------------- Ale -----------------------------------------
 " Set specific linters
 " let g:ale_linters = {
@@ -178,11 +182,12 @@ set shortmess+=c  " don't give |ins-completion-menu| messages.
 " nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " COC-Solargraph
-set hidden
-let g:LanguageClient_serverCommands = {
-    \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
-    \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
-    \ 'ruby': ['tcp://localhost:7658'],
-    \ }
+" set hidden
+" let g:LanguageClient_serverCommands = {
+"     \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+"     \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+"     \ 'ruby': ['tcp://localhost:7658'],
+"     \ }
+
 let g:LanguageClient_autoStop = 0
 

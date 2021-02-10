@@ -22,6 +22,7 @@ Plug 'neoclide/coc.nvim' ",  {'branch': 'release'}
 " https://github.com/mhinz/vim-startify
 " https://github.com/terryma/vim-multiple-cursors
 
+Plug 'https://github.com/ngmy/vim-rubocop'
 Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/airblade/vim-gitgutter'
 Plug 'https://github.com/christoomey/vim-sort-motion.git'

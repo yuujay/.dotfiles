@@ -6,10 +6,10 @@ fish_vi_key_bindings
 set FISH_HOME ~/.config/fish
 test -e $FISH_HOME/fish_env ; and source $FISH_HOME/fish_env
 
-test -e $HOME/.aliases ; and source $HOME/.aliases
-test -e $HOME/.docker.aliases ; and source $HOME/.docker.aliases
-test -e $HOME/.mathworks.aliases ; and source $HOME/.mathworks.aliases
-test -e $HOME/.git.aliases ; and source $HOME/.git.aliases
+test -e $HOME/.aliases/aliases ; and source $HOME/.aliases/aliases
+test -e $HOME/.aliases/docker.aliases ; and source $HOME/.aliases/docker.aliases
+test -e $HOME/.aliases/mathworks.aliases ; and source $HOME/.aliases/mathworks.aliases
+test -e $HOME/.aliases/git.aliases ; and source $HOME/.aliases/git.aliases
 test -e $HOME/.iterm2_shell_integration.fish ; and source $HOME/.iterm2_shell_integration.fish
 
 # If tmux is hung for some reason, delete the restore resurrects from `~/.tmux/resurrect`
@@ -17,7 +17,6 @@ test -e $HOME/.iterm2_shell_integration.fish ; and source $HOME/.iterm2_shell_in
 # Essentially we need to delete `/tmp/tmux-XXXXX` directory
 
 # test -e $FISH_HOME/bash_scripts/always_in_tmux && always_in_tmux
-
 
 function iterm2_print_user_vars
     iterm2_set_user_var rubyVersion (ruby -v | awk '{ print $2 }')
