@@ -1,20 +1,15 @@
-ssid = hs.wifi.currentNetwork()
+HOME_WIFI = 'Nest Up'
 
-function ssidChangedCallback()
-    if (ssid ~= nil) then
-        print("ssid = "..(ssid))
-        hs.notify.new({title="WiFi", informativeText="Connecting to `"..(ssid).."`"}):send()
-    end
-end
-
+-- Internet connectivity checker
 hs.network.reachability.internet():setCallback(function(self, flags)
+  local currentWiFi = hs.wifi.currentNetwork()
   if (flags & hs.network.reachability.flags.reachable) > 0 then
-    hs.notify.new({title="WiFi", informativeText="Connected to `"..(ssid).."`"}):send()
+    hs.notify.new({title='WiFi', informativeText='Connected to `'..(currentWiFi)..'`'}):send()
   else
-    hs.notify.new({title="WiFi - ERR", informativeText="Connection Dropped from `"..(ssid).."`"}):send()
+    hs.notify.new({title='WiFi - ERR', informativeText='Connection Dropped from `'..(currentWiFi)..'`'}):send()
   end
 end):start()
 
-wifiWatcher = hs.wifi.watcher.new(ssidChangedCallback)
-wifiWatcher:start()
-
+function muteOutputDevice(name)
+  hs.audiodevice.findDeviceByName(name):setOutputMuted(true)
+end
