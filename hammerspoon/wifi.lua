@@ -4,7 +4,7 @@ HOME_WIFI = 'Nest Up'
 hs.network.reachability.internet():setCallback(function(self, flags)
   local currentWiFi = hs.wifi.currentNetwork()
   if (flags & hs.network.reachability.flags.reachable) > 0 then
-    hs.notify.new({title='WiFi', informativeText='Connected to `'..(currentWiFi)..'`'}):send()
+    -- hs.notify.new({title='WiFi', informativeText='Connected to `'..(currentWiFi)..'`'}):send()
   else
     hs.notify.new({title='WiFi - ERR', informativeText='Connection Dropped from `'..(currentWiFi)..'`'}):send()
   end

@@ -1,6 +1,7 @@
 hs.loadSpoon("ReloadConfiguration")
 spoon.ReloadConfiguration:start()
 
+require 'layout'
 require 'shortcuts'
 require 'wifi'
 require 'window'
@@ -30,8 +31,12 @@ hs.hotkey.bind({'alt'}, 'D', openApp('DBeaver'))
 hs.hotkey.bind({'alt'}, 'F', openApp('Finder'))
 hs.hotkey.bind({'alt'}, 'I', openApp('IntelliJ IDEA'))
 hs.hotkey.bind({'alt'}, 'M', openApp('Microsoft Teams'))
+hs.hotkey.bind({'alt'}, 'S', openApp('Screen Sharing'))
 hs.hotkey.bind({'alt'}, 'T', openApp('iTerm'))
 hs.hotkey.bind({'alt'}, 'V', openApp('Visual Studio Code'))
+
+-- Layout Setup
+hs.hotkey.bind({'cmd', 'shift'}, '1', weekendLayout)
 
 -- Generic Hint
 function genericHints()

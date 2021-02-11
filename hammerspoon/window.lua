@@ -2,13 +2,13 @@ DELL_SCREEN = hs.screen.allScreens()[1]
 MAC_BOOK_SCREEN = hs.screen.allScreens()[2]
 
 function fullScreen()
-  local win = hs.window.focusedWindow()
-  win:maximize()
+  local window = hs.window.focusedWindow()
+  window:maximize()
 end
 
 function centerScreen()
-  local win = hs.window.focusedWindow()
-  win:centerOnScreen()
+  local window = hs.window.focusedWindow()
+  window:centerOnScreen()
 end
 
 function sizeRestore()
@@ -16,13 +16,13 @@ function sizeRestore()
 end
 
 function moveLeft()
-  local win = hs.window.focusedWindow()
-  win:moveOneScreenWest()
+  local window = hs.window.focusedWindow()
+  window:moveOneScreenWest()
 end
 
 function moveRight()
-  local win = hs.window.focusedWindow()
-  win:moveOneScreenEast()
+  local window = hs.window.focusedWindow()
+  window:moveOneScreenEast()
 end
 
 function showHints()
@@ -30,19 +30,19 @@ function showHints()
 end
 
 function toggleMaximizedWindow()
-  local win = hs.window.focusedWindow()
+  local window = hs.window.focusedWindow()
   hs.timer.doAfter(0.5, function()
-    win:setFullScreen(not win:isFullScreen())
+    window:setFullScreen(not window:isFullScreen())
   end)
 end
 
 function moveToScreen(direction)
-  local win = hs.window.focusedWindow()
-  win:setFullScreen(false)
+  local window = hs.window.focusedWindow()
+  window:setFullScreen(false)
   if(direction == 'left') then
-    win:moveToScreen(MAC_BOOK_SCREEN)
+    window:moveToScreen(MAC_BOOK_SCREEN)
   else
-    win:moveToScreen(DELL_SCREEN)
+    window:moveToScreen(DELL_SCREEN)
   end
   toggleMaximizedWindow()
 end
