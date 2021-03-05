@@ -1,0 +1,7 @@
+System Preferences > Keyboard > Shortcuts > Mission Control
+
+Change the 
+
+`Move left a Space` -> Shift + H
+`Move right a Space` -> Shift + L
+`Applicatin Window` -> Shift + J
