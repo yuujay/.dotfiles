@@ -45,5 +45,6 @@ alias dcfi='cdd; dcf bundle install'
 
 ## ===== mw-html-test =======
 
-alias browser='mw -using Cwebaddons mvn pre-integration-test -Dbrowser.autoremove=false -Dtest-browser=chrome-stable'
+alias setMW='sh ~/Documents/Cwebaddons.local/prep_webaddons.sh; sh ~/Documents/Cwebaddons.local/prep_aoi.sh'
+alias browser='cd ~/Documents/Cwebaddons.local/addons-e2e-test; mw -using Cwebaddons mvn pre-integration-test -Dbrowser.autoremove=false -Dtest-browser=chrome-stable'
 alias mock='cd /sandbox/gumamahe/MockBrowser/target; java -jar addonexplorer_mockbrowser-jar-with-dependencies.jar'
