@@ -1,12 +1,14 @@
 source ~/.vim/mathworks-ruby.vim
 source ~/.vim/plugin-config.vim
 source ~/.vim/plugin-shortcuts.vim
-source ~/.vim/language.vim
 source ~/.vim/plugins.vim
 source ~/.vim/neovim.vim
 source ~/.vim/settings.vim
 source ~/.vim/shortcuts.vim
 source ~/.vim/tmux-config.vim
+
+" This needs to be in the end to override language specific configs.
+source ~/.vim/language.vim
 
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 

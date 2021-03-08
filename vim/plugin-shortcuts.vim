@@ -21,7 +21,7 @@ nnoremap <leader>gh :GitGutterPreviewHunk<CR>
 nnoremap <leader>gs :GitGutterStageHunk<CR>
 nnoremap <leader>gj :GitGutterNextHunk<CR>
 nnoremap <leader>gk :GitGutterPrevHunk<CR>
-nnoremap <leader>u :GitGutterUndoHunk<CR>
+nnoremap <leader>gu :GitGutterUndoHunk<CR>
 
 " Vim-Tmux-Runner
 

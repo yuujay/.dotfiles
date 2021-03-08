@@ -1,5 +1,5 @@
 DELL_SCREEN = hs.screen.allScreens()[1].name
-MAC_BOOK_SCREEN = hs.screen.allScreens()[2].name
+-- MAC_BOOK_SCREEN = hs.screen.allScreens()[2].name
 
 -- TODO: Fix the WHOLE layout configs
 -- local windowLayout = {
