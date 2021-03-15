@@ -23,6 +23,7 @@ function iterm2_print_user_vars
     iterm2_set_user_var nodeVersion (node -v)
     iterm2_set_user_var localIP (localip)
     iterm2_set_user_var ipa (ipa)
+    iterm2_set_user_var host(scutil --get LocalHostName)
 end
 
 # To install and configure rvm in fish.
