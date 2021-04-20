@@ -19,6 +19,9 @@ let g:airline_powerline_fonts = 1
 let g:vimrubocop_config = '/Users/gumamahe/Documents/Cwebaddons.local/addons-contribution-ui/.rubocop.yml'
 let g:vimrubkcop_keymap = 0
 
+"
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
 " ------------------- Ale -----------------------------------------
 " Set specific linters
 " let g:ale_linters = {
