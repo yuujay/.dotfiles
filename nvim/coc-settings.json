@@ -1,0 +1,8 @@
+{
+    "solargraph.transport": "socket",
+    "solargraph.externalServer": {
+        "host": "localhost",
+        "port": 7658
+    },
+    "solargraph.commandPath": "~/.gem/ruby/2.6.0/bin/solargraph"
+}

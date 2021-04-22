@@ -48,6 +48,16 @@ set cmdheight=2  " Better display for messages
 set updatetime=300  " Smaller updatetime for CursorHold & CursorHoldI
 set shortmess+=c  " don't give |ins-completion-menu| messages.
 
+" coc config
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-pairs',
+  \ 'coc-tsserver',
+  \ 'coc-eslint', 
+  \ 'coc-prettier', 
+  \ 'coc-json', 
+  \ ]
+
 " " Use tab for trigger completion with characters ahead and navigate.
 " " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " " other plugin before putting this into your config.
@@ -80,10 +90,10 @@ set shortmess+=c  " don't give |ins-completion-menu| messages.
 " nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " " GoTo code navigation.
-" nmap <silent> gd <Plug>(coc-definition)
-" nmap <silent> gy <Plug>(coc-type-definition)
-" nmap <silent> gi <Plug>(coc-implementation)
-" nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 " " Use K to show documentation in preview window.
 " nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -186,11 +196,11 @@ set shortmess+=c  " don't give |ins-completion-menu| messages.
 
 " COC-Solargraph
 " set hidden
-" let g:LanguageClient_serverCommands = {
-"     \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
-"     \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
-"     \ 'ruby': ['tcp://localhost:7658'],
-"     \ }
+let g:LanguageClient_serverCommands = {
+    \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+    \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+    \ 'ruby': ['tcp://localhost:7658'],
+    \ }
 
 let g:LanguageClient_autoStop = 0
 
