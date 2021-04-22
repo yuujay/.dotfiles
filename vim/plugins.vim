@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 
 " Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim' ",  {'branch': 'release'}
+" Run :CocInstall coc-css coc-solargraph coc-tsserver coc-json coc-java coc-yaml coc-pairs coc-prettier coc-emmet coc-eslint
 
 " --- SOME NICE TO HAVE PLUGINS ---
 "
