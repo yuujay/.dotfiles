@@ -1,8 +1,20 @@
 {
-    "solargraph.transport": "socket",
-    "solargraph.externalServer": {
-        "host": "localhost",
-        "port": 7658
-    },
-    "solargraph.commandPath": "~/.gem/ruby/2.6.0/bin/solargraph"
+  "tsserver.trace.server": "verbose",
+  "suggest.noselect": false,
+
+  "solargraph.trace.server": "verbose",
+  "solargraph.diagnostics": true,
+  "solargraph.autoformat": true,
+  "solargraph.formatting": true,
+  "solargraph.hover": true,
+  "solargraph.commandPath": "~/.gem/ruby/2.6.0/bin/solargraph",
+
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "typescript",
+    "json",
+    "ruby",
+    "xml",
+    "html"
+  ]
 }

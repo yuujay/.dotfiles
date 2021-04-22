@@ -44,19 +44,23 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 " ------------------- COC -----------------------------------------
 " For JS errors during inital setup use: https://github.com/neoclide/coc.nvim/issues/651
 let g:coc_disable_startup_warning = 1
+
 set cmdheight=2  " Better display for messages
 set updatetime=300  " Smaller updatetime for CursorHold & CursorHoldI
 set shortmess+=c  " don't give |ins-completion-menu| messages.
 
 " coc config
 let g:coc_global_extensions = [
-  \ 'coc-snippets',
+  \ 'coc-solargraph',
   \ 'coc-pairs',
   \ 'coc-tsserver',
-  \ 'coc-eslint', 
-  \ 'coc-prettier', 
-  \ 'coc-json', 
+  \ 'coc-eslint',
+  \ 'coc-prettier',
+  \ 'coc-json',
   \ ]
+
+" Run pretteir on save
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " " Use tab for trigger completion with characters ahead and navigate.
 " " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -195,7 +199,7 @@ nmap <silent> gr <Plug>(coc-references)
 " nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " COC-Solargraph
-" set hidden
+set hidden
 let g:LanguageClient_serverCommands = {
     \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
     \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],

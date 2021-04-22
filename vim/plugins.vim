@@ -18,8 +18,6 @@ Plug 'neoclide/coc.nvim' ",  {'branch': 'release'}
 " Plug 'https://github.com/thoughtbot/vim-rspec'
 " https://github.com/mg979/vim-visual-multi
 "
-" https://github.com/MattesGroeger/vim-bookmarks
-" https://github.com/dyng/ctrlsf.vim
 " https://github.com/mhinz/vim-startify
 " https://github.com/terryma/vim-multiple-cursors
 
