@@ -36,4 +36,5 @@ If everything goes well, you have the symlinks established for your `rc` and `co
 - [ ] Ansible for MacOS setup script
 - [ ] Hammerspoon dual monitor configs
 - [ ] Update detailed docs
+- [ ] Directory specific README
 - More open items and enhancements can be found (here)[https://github.com/yuujay/dotfiles/projects/1] 
