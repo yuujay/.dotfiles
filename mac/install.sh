@@ -22,6 +22,7 @@ _packages=(
   ag
   bat
   exa
+  fd
   rsync
   ctags
   fish
@@ -124,4 +125,18 @@ main() {
 
   echo 'Macbook setup completed!'
 }
+
+
+
+# TODO: Clear this out when incorporating ansible
+
+# Install `fisher` - plugin in manager for fish
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+
+# Install fish plugins
+fisher install jethrokuan/z
+fisher install PatrickF1/fzf.fish
+fisher install franciscolourenco/done
+fisher install jorgebucaran/fishtape
+# fisher install gazorby/fish-abbreviation-tips
 
