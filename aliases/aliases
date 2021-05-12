@@ -94,7 +94,7 @@ alias ipa='dig +short myip.opendns.com @resolver1.opendns.com'
 alias localip='ipconfig getifaddr en0'
 
 # OMEGA - move this to .sshconfig
-alias omega='ssh pi@192.168.0.79'
+alias lab="ssh pi@{$HOME_SERVER_IP}"
 
 # Load Other Aliases
 
