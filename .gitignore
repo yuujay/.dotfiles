@@ -3,3 +3,5 @@
 *.log
 tags
 tmux/resurrect/*
+git/gitconfig
+fish_variables

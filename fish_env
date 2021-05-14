@@ -3,3 +3,5 @@ set DOCKER_COMPOSE_USER_ID (id -u)
 set EDITOR 'vim'
 set FZF_DEFAULT_COMMAND 'ag -g ""'
 set GEM_HOME "$HOME/.gem/ruby/2.6.0"
+set GOPATH "$HOME/go"
+set GOBIN "/usr/local/bin/go"

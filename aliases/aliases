@@ -1,3 +1,7 @@
+# Some new rust replacements for commonly used utilities
+alias cat='bat'
+alias catt='cat'
+
 # FILE OPs
 alias c.='code .'
 alias code.='code .'
