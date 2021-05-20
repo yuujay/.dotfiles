@@ -5,4 +5,3 @@ tags
 tmux/resurrect/*
 git/gitconfig
 fish_variables
-vim/plugged/*
