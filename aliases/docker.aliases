@@ -7,7 +7,7 @@ alias dit='docker exec -it'
 alias dn='docker network'
 alias dps='docker ps -a'
 alias dri='docker rmi -f'
-alias drin="docker image rm (docker images -f dangling=true -a | awk '{print $3}')"
+alias drin="docker image rm (docker images -f dangling=true -a | awk 'NR>2 {print $3}')"
 alias ds='docker stop'
 alias dv='docker volume ls'
 alias dvp='docker volume prune'
