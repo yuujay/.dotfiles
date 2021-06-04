@@ -35,7 +35,7 @@ If everything goes well, you have the symlinks established for your `rc` and `co
 ## Major TODO's
 - [ ] Ansible for MacOS setup script
 - [ ] Test for DotFiles setup
-- [ ] Hammerspoon dual monitor configs
+- [ ] Hammerspoon dual monitor configs(This has become a priority now)
 - [ ] Directory specific README
 - [ ] Fish plugin instructions
 
