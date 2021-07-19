@@ -24,21 +24,26 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 " ------------------- Ale -----------------------------------------
 " Set specific linters
-" let g:ale_linters = {
-"     \   'javascript': ['eslint'],
-"     \   'ruby': ['standardrb' , 'rubocop'],
-"     \}
+let g:ale_linters = {
+    \   'javascript': ['eslint'],
+    \   'ruby': ['rubocop'],
+    \}
 
-" " Only run linters named in ale_linters settings.
-" let g:ale_linters_explicit = 1
-" let g:airline#extensions#ale#enabled = 1
-" let g:ale_sign_column_always = 1
-"
+" Only run linters named in ale_linters settings.
+let g:ale_linters_explicit = 1
+let g:airline#extensions#ale#enabled = 1
+let g:ale_sign_column_always = 1
+let g:ale_ruby_rubocop_executable = 'bundle'
+let g:ale_ruby_rubocop_options = '-D'
+
+let g:ale_fixers = {
+    \ '*': ['remove_trailing_lines', 'trim_whitespace']
+    \}
+let g:ale_fix_on_save = 1
+
 " TODO: Uncomment above paragraph to use partial ALE configurations.
 
-
 " TODO:
-" Removal of trailing spaces
 " Find all in current directory
 
 " ------------------- COC -----------------------------------------
@@ -50,8 +55,8 @@ set updatetime=300  " Smaller updatetime for CursorHold & CursorHoldI
 set shortmess+=c  " don't give |ins-completion-menu| messages.
 
 " coc config
+"
 let g:coc_global_extensions = [
-  \ 'coc-solargraph',
   \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint',
@@ -199,12 +204,11 @@ nmap <silent> gr <Plug>(coc-references)
 " nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " COC-Solargraph
-set hidden
-let g:LanguageClient_serverCommands = {
-    \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
-    \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
-    \ 'ruby': ['tcp://localhost:7658'],
-    \ }
+" set hidden
+" let g:LanguageClient_serverCommands = {
+"     \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+"     \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+"     \ 'ruby': ['tcp://localhost:7658'],
+"     \ }
 
-let g:LanguageClient_autoStop = 0
-
+" let g:LanguageClient_autoStop = 0

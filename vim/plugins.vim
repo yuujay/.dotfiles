@@ -6,18 +6,26 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-" Plug 'dense-analysis/ale'
+Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim' ",  {'branch': 'release'}
 " Run :CocInstall coc-css coc-solargraph coc-tsserver coc-json coc-java coc-yaml coc-pairs coc-prettier coc-emmet coc-eslint
 
 " --- SOME NICE TO HAVE PLUGINS ---
 "
+" https://github.com/AndrewRadev/sideways.vim
+" https://github.com/AndrewRadev/splitjoin.vim
+" https://github.com/AndrewRadev/switch.vim
+" https://github.com/AndrewRadev/tagalong.vim
+" ctrlsf
+" anyjump
+" lazygit
+"
 " Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 " Plug 'https://github.com/junegunn/goyo.vim'
+" Plug 'https://github.com/ngmy/vim-rubocop.git'
 " Plug 'https://github.com/sjl/gundo.vim.git'
 " Plug 'https://github.com/thoughtbot/vim-rspec'
 " https://github.com/mg979/vim-visual-multi
-"
 " https://github.com/mhinz/vim-startify
 " https://github.com/terryma/vim-multiple-cursors
 
@@ -31,7 +39,6 @@ Plug 'https://github.com/elzr/vim-json.git'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'https://github.com/junegunn/fzf.vim'
 Plug 'https://github.com/junegunn/limelight.vim'
-Plug 'https://github.com/ngmy/vim-rubocop.git'
 Plug 'https://github.com/powerline/fonts.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/tpope/vim-commentary.git'

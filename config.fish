@@ -26,11 +26,7 @@ function iterm2_print_user_vars
     iterm2_set_user_var host(scutil --get LocalHostName)
 end
 
-# To install and configure rvm in fish.
-# More info here
-# https://rvm.io/integration/fish
-# rvm default
-
 # Plugin manager for fish
 # curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 
+source (rbenv init - | psub) # Required for setting up rbenv locally. DO NOT REMOVE THIS.

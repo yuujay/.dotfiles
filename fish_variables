@@ -3,19 +3,19 @@
 SETUVAR --path PATH:usr/local/bin\x1e/usr/bin\x1e/bin\x1e/usr/sbin\x1e/sbin\x1eusr/local/bin\x1e/usr/bin\x1e/bin\x1e/usr/sbin\x1e/sbin
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
-SETUVAR Z_DATA:/Users/ujgowtham/\x2elocal/share/z/data
-SETUVAR Z_DATA_DIR:/Users/ujgowtham/\x2elocal/share/z
-SETUVAR Z_EXCLUDE:\x5e/Users/ujgowtham\x24
+SETUVAR Z_DATA:/Users/gumamahe/\x2elocal/share/z/data
+SETUVAR Z_DATA_DIR:/Users/gumamahe/\x2elocal/share/z
+SETUVAR Z_EXCLUDE:\x5e/Users/gumamahe\x24
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
 SETUVAR _fisher_PatrickF1_2F_fzf_2E_fish_files:/Users/ujgowtham/\x2econfig/fish/functions/__fzf_extract_var_info\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/functions/__fzf_preview_file\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/functions/__fzf_report_file_type\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/functions/__fzf_search_current_dir\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/functions/__fzf_search_git_log\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/functions/__fzf_search_git_status\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/functions/__fzf_search_history\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/functions/__fzf_search_shell_variables\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/conf\x2ed/fzf\x2efish
 SETUVAR _fisher_edc_2F_bass_files:/Users/ujgowtham/\x2econfig/fish/functions/__bass\x2epy\x1e/Users/ujgowtham/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_franciscolourenco_2F_done_files:/Users/ujgowtham/\x2econfig/fish/conf\x2ed/done\x2efish
-SETUVAR _fisher_jethrokuan_2F_z_files:/Users/ujgowtham/\x2econfig/fish/functions/__z\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/functions/__z_add\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/functions/__z_clean\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/functions/__z_complete\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/conf\x2ed/z\x2efish
-SETUVAR _fisher_jorgebucaran_2F_fisher_files:/Users/ujgowtham/\x2econfig/fish/functions/fisher\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_jethrokuan_2F_z_files:/Users/gumamahe/\x2econfig/fish/functions/__z\x2efish\x1e/Users/gumamahe/\x2econfig/fish/functions/__z_add\x2efish\x1e/Users/gumamahe/\x2econfig/fish/functions/__z_clean\x2efish\x1e/Users/gumamahe/\x2econfig/fish/functions/__z_complete\x2efish\x1e/Users/gumamahe/\x2econfig/fish/conf\x2ed/z\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:/Users/gumamahe/\x2econfig/fish/functions/fisher\x2efish\x1e/Users/gumamahe/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fishtape_files:/Users/ujgowtham/\x2econfig/fish/functions/fishtape\x2efish\x1e/Users/ujgowtham/\x2econfig/fish/completions/fishtape\x2efish
-SETUVAR _fisher_plugins:edc/bass\x1ejorgebucaran/fisher\x1ejethrokuan/z\x1ePatrickF1/fzf\x2efish\x1efranciscolourenco/done\x1ejorgebucaran/fishtape
+SETUVAR _fisher_plugins:edc/bass\x1ePatrickF1/fzf\x2efish\x1efranciscolourenco/done\x1ejorgebucaran/fishtape\x1ejorgebucaran/fisher\x1ejethrokuan/z
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
