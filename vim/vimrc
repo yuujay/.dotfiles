@@ -1,5 +1,4 @@
 source ~/.vim/mathworks-ruby.vim
-source ~/.vim/neovim.vim
 source ~/.vim/plugin-config.vim
 source ~/.vim/plugins.vim
 source ~/.vim/settings.vim
@@ -12,4 +11,3 @@ source ~/.vim/plugin-shortcuts.vim
 
 " This needs to be in the end to override language specific configs.
 source ~/.vim/language.vim
-
