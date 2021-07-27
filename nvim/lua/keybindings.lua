@@ -75,5 +75,5 @@ map('n', '1s', ':set spell! spelllang=en_us<CR>', options)
 
 -- Reload init.lua
 
-map('n', '<leader><leader>rr', ":source ~/.config/fish/nvim/init.lua<CR>:echom 'Init.lua reloaded'<CR>", options)
+map('n', '<leader><leader>rr', ":source %<CR>:echom 'current lua reloaded'<CR>", options)
 

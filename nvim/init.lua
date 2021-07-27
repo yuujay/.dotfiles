@@ -14,6 +14,7 @@ require "paq-nvim" {
   "mhartington/formatter.nvim",
   "neovim/nvim-lspconfig",
   "savq/paq-nvim",
+  'nvim-treesitter/nvim-treesitter' 
   -- "alvan/vim-closetag",
   -- "b3nj5m1n/kommentary",
   -- "nvim-lua/plenary.nvim",
