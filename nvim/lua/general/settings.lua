@@ -36,4 +36,4 @@ bo.tabstop = 4
 -- bo.encoding = 'UTF-8'
 
 -- Highlight trialing spaces
--- highlight RedundantSpaces ctermbg=red guibg=red
+-- highlight RedundantSpaces ctermbg
