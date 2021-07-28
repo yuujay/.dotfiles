@@ -33,6 +33,7 @@ sh install
 If everything goes well, you have the symlinks established for your `rc` and `config` files.
 
 ## Major TODO's
+- [ ] WIP - Migrate vim to lua scripts with neovim 0.5
 - [ ] Ansible for MacOS setup script
 - [ ] Test for DotFiles setup
 - [ ] Hammerspoon dual monitor configs(This has become a priority now)
