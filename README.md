@@ -33,6 +33,15 @@ sh install
 
 If everything goes well, you have the symlinks established for your `rc` and `config` files.
 
+## Troubleshooting
+
+#### Terminal starts to show ESC[ instead of colors
+This is caused due to less being misconfigured. To fix this run the following
+
+```fish
+set LESS "-eirMX"
+```
+
 ## Major TODO's
 - [ ] WIP - Migrate vim to lua scripts with neovim 0.5
 - [ ] Ansible for MacOS setup script
