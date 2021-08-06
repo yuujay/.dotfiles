@@ -41,4 +41,4 @@ Variable.v = function (variables)
   add_variables(Type.VIM_VARIABLE, variables)
 end
 
-return Variablel
+return Variable

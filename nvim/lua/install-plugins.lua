@@ -1,34 +1,47 @@
 require "paq-nvim" {
-  'phaazon/hop.nvim', -- EASYMOTION IN LUA #TOP5
-  'glepnir/lspsaga.nvim',
-  'hrsh7th/nvim-compe',
-  'kyazdani42/nvim-web-devicons',
-  'mhartington/formatter.nvim',
-  'neovim/nvim-lspconfig',
-  'savq/paq-nvim',
-  'scrooloose/nerdtree',
-  'nvim-treesitter/nvim-treesitter',
-  'hoob3rt/lualine.nvim', -- POWERLINE WRITTEN IN LUA #TOP10 vs GalaxyLine
-  'nvim-lua/plenary.nvim',
-  'lewis6991/gitsigns.nvim',
+
+    'glepnir/lspsaga.nvim',
+    'hrsh7th/nvim-compe',
+    'mhartington/formatter.nvim',
+    'neovim/nvim-lspconfig',
+    'nvim-lua/plenary.nvim',
+    'nvim-treesitter/nvim-treesitter',
+    'phaazon/hop.nvim', -- EASYMOTION IN LUA #TOP5
+    'savq/paq-nvim',
+
+-- Telescope related
+    'nvim-lua/popup.nvim',
+    'nvim-lua/plenary.nvim',
+    'nvim-telescope/telescope.nvim',
+
+    'airblade/vim-gitgutter',
+    'christoomey/vim-sort-motion',
+    'christoomey/vim-tmux-navigator',
+    'christoomey/vim-tmux-runner',
+    'jiangmiao/auto-pairs',
+    'scrooloose/nerdtree',
+    'tpope/vim-commentary',
+    'tpope/vim-endwise',
+    'tpope/vim-fugitive',
+    'tpope/vim-rails',
+    'tpope/vim-surround',
+
+-- Status lines and fonts used in the statusline.
+    'powerline/fonts',
+    'vim-airline/vim-airline',
+    'ryanoasis/vim-devicons',  -- This needs to be at the end since we devicons need to loaded after all plugins
+
   -- "hrsh7th/vim-vsnip",
-  -- "jiangmiao/auto-pairs",
-  -- "alvan/vim-closetag",
   -- "b3nj5m1n/kommentary",
-  -- "nvim-lua/popup.nvim",
-  -- "nvim-telescope/telescope.nvim", TO-CONSIDER #TOP5
-  -- "nvim-treesitter/nvim-treesitter",
   -- "onsails/lspkind-nvim",
-  -- "rmagatti/auto-session",
-  -- "sainnhe/everforest",
-  -- "tpope/vim-repeat",
-  -- "tpope/vim-surround",
   -- "wellle/targets.vim",
-  -- "wfxr/min"
+  --
+  -- "alvan/vim-closetag",
+  -- "rmagatti/auto-session",
+  -- 'lukas-reineke/indent-blankline.nvim',
   -- 'kyazdani42/nvim-tree.lua',
+--  'hoob3rt/lualine.nvim', -- POWERLINE WRITTEN IN LUA #TOP10 vs GalaxyLine THIS SLOWS DOWN NVIM open and saving
 }
 
 
 require'hop'.setup()
-require('lualine').setup()
-require('gitsigns').setup()
