@@ -12,4 +12,3 @@ require('install-plugins')
 
 -- vim plugins settings
 require('plugins')
-

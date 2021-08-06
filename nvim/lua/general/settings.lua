@@ -12,6 +12,7 @@ o.incsearch = true
 o.ignorecase = true
 o.scrolloff = 12
 o.autoindent = true
+o.autoread = true -- TODO: Fix autoread
 o.colorcolumn = '80'
 o.cursorline = true
 o.mouse = 'a'

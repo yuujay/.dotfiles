@@ -33,10 +33,11 @@ sh install
 If everything goes well, you have the symlinks established for your `rc` and `config` files.
 
 ## Major TODO's
+- [ ] BREAKING - SLOWNESS on file save and file open NVIM.
 - [ ] Ansible for MacOS setup script
 - [ ] Test for DotFiles setup
 - [ ] Hammerspoon dual monitor configs(This has become a priority now)
 - [ ] Directory specific README
 - [ ] Fish plugin instructions
 
-- More open items and enhancements can be found (here)[https://github.com/yuujay/dotfiles/projects/1] 
+- More open items and enhancements can be found (here)[https://github.com/yuujay/dotfiles/projects/1]
