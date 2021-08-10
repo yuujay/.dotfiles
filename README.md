@@ -55,3 +55,4 @@ set LESS "-eirMX"
 - [ ] Fish plugin instructions
 
 - More open items and enhancements can be found (here)[https://github.com/yuujay/dotfiles/projects/1]
+
