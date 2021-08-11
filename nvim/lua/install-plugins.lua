@@ -26,6 +26,9 @@ require "paq-nvim" {
     'tpope/vim-rails',
     'tpope/vim-surround',
 
+-- https://github.com/itchyny/lightline.vim TODO: Check this out over airline
+-- https://github.com/maximbaz/lightline-ale - TODO: If ale is used, can provide status
+
 -- Status lines and fonts used in the statusline.
     'powerline/fonts',
     'vim-airline/vim-airline',
