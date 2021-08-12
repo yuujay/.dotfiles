@@ -41,8 +41,6 @@ let g:ale_fixers = {
     \}
 let g:ale_fix_on_save = 1
 
-" TODO: Uncomment above paragraph to use partial ALE configurations.
-
 " TODO:
 " Find all in current directory
 

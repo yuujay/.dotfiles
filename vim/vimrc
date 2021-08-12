@@ -12,4 +12,3 @@ source ~/.vim/plugin-shortcuts.vim
 
 " This needs to be in the end to override language specific configs.
 source ~/.vim/language.vim
-
