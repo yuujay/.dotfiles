@@ -7,7 +7,7 @@
   "solargraph.autoformat": true,
   "solargraph.formatting": true,
   "solargraph.hover": true,
-  "solargraph.commandPath": "~/.gem/ruby/2.6.0/bin/solargraph",
+  "solargraph.commandPath": "/Users/gumamahe/.rbenv/shims/solargraph",
 
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
