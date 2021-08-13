@@ -15,34 +15,27 @@ let g:webdevicons_enable = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-" Rubocop
-let g:vimrubocop_config = '/Users/gumamahe/Documents/Cwebaddons.local/addons-contribution-ui/.rubocop.yml'
-let g:vimrubkcop_keymap = 0
-
 "
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 " ------------------- Ale -----------------------------------------
-" Set specific linters
-let g:ale_linters = {
-    \   'javascript': ['eslint'],
-    \   'ruby': ['rubocop'],
-    \}
+" " Set specific linters
+" let g:ale_linters = {
+"     \   'javascript': ['eslint'],
+"     \   'ruby': ['rubocop'],
+"     \}
 
-" Only run linters named in ale_linters settings.
-let g:ale_linters_explicit = 1
-let g:airline#extensions#ale#enabled = 1
-let g:ale_sign_column_always = 1
-let g:ale_ruby_rubocop_executable = 'bundle'
-let g:ale_ruby_rubocop_options = '-D'
+" " Only run linters named in ale_linters settings.
+" let g:ale_linters_explicit = 1
+" let g:airline#extensions#ale#enabled = 1
+" let g:ale_sign_column_always = 1
+" let g:ale_ruby_rubocop_executable = 'bundle'
+" let g:ale_ruby_rubocop_options = '-D'
 
 let g:ale_fixers = {
     \ '*': ['remove_trailing_lines', 'trim_whitespace']
     \}
 let g:ale_fix_on_save = 1
-
-" TODO:
-" Find all in current directory
 
 " ------------------- COC -----------------------------------------
 " For JS errors during inital setup use: https://github.com/neoclide/coc.nvim/issues/651
@@ -60,6 +53,7 @@ let g:coc_global_extensions = [
   \ 'coc-eslint',
   \ 'coc-prettier',
   \ 'coc-json',
+  \ 'coc-solargraph',
   \ ]
 
 " Run pretteir on save
