@@ -7,6 +7,7 @@ nnoremap <leader>nf :NERDTreeFind<CR>
 nnoremap <C-F> :Ag<space>
 nnoremap <C-p> :Files<CR>
 nnoremap <leader>/ :BLines<CR>
+nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>c :BCommits<CR>
 nnoremap <leader>f :Ag<space>
 nnoremap <leader>p :Files<CR>
@@ -43,3 +44,6 @@ nmap <Leader><Leader>r :RuboCop<CR>
 " nnoremap <leader>rl :call RunLastSpec()<CR>
 " nnoremap <leader>ra :call RunAllSpecs()<CR>
 
+" Coc
+nnoremap <leader>cf :CocFix<CR>
+nnoremap <leader>cd :CocDiagnostics<CR>
