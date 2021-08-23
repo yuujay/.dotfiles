@@ -21,18 +21,19 @@ rm installation.log progress.log
 _packages=(
   ag
   bat
+  ctags
   exa
   fd
-  rsync
-  ctags
   fish
   fzf
+  gh
   git
   htop
   neovim
+  rsync
   the_silver_searcher
-  tree
   tmux
+  tree
   wget
 )
 
@@ -139,4 +140,3 @@ fisher install PatrickF1/fzf.fish
 fisher install franciscolourenco/done
 fisher install jorgebucaran/fishtape
 # fisher install gazorby/fish-abbreviation-tips
-
