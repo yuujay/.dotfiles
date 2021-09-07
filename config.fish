@@ -30,3 +30,15 @@ end
 # curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 
 source (rbenv init - | psub) # Required for setting up rbenv locally. DO NOT REMOVE THIS.
+
+
+# Enable completions for fish shell
+# https://docs.brew.sh/Shell-Completion
+
+if test -d (brew --prefix)"/share/fish/completions"
+    set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/completions
+end
+
+if test -d (brew --prefix)"/share/fish/vendor_completions.d"
+    set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
+end
