@@ -1,19 +1,50 @@
-DELL_SCREEN = hs.screen.allScreens()[1].name
--- MAC_BOOK_SCREEN = hs.screen.allScreens()[2].name
+require 'shortcuts'
+require 'window'
 
--- TODO: Fix the WHOLE layout configs
--- local windowLayout = {
---     {"iTerm", nil,         DELL_SCREEN, hs.layout.maximized, nil, nil},
---     {"Google Chrome", nil, DELL_SCREEN, hs.layout.maximized, nil, nil}
--- }
+PRIMARY_SCREEN = hs.screen.primaryScreen()
 
-local laptopScreen = "Color LCD"
+CHROME = 'Google Chrome'
+DBEAVER = 'DBeaver'
+ITERM = 'iTerm'
+OUTLOOK = 'Microsoft Outlook'
+TEAMS = 'Microsoft Teams'
+
+HOME_APPS = { CHROME, ITERM }
+WORK_APPS = { CHROME, DBEAVER, ITERM, OUTLOOK, TEAMS }
+
+LAYOUT = {}
+
 local windowLayout = {
-  {"Safari",  nil,          laptopScreen, hs.layout.left50,    nil, nil},
-  {"Microsoft Teams",    nil,          laptopScreen, hs.layout.right50,   nil, nil},
+  {"Google Chrome", nil, PRIMARY_SCREEN, hs.layout.maximized, nil, nil},
+  {"Microsoft Outlook", nil, PRIMARY_SCREEN, hs.layout.maximized, nil, nil},
+  {"Microsoft Teams", nil, PRIMARY_SCREEN, hs.layout.maximized, nil, nil},
 }
+
 function weekendLayout()
-  hs.alert.show(DELL_SCREEN)
-  hs.layout.apply(windowLayout)
+  killApps(WORK_APPS)
+  openApps(HOME_APPS)
 end
 
+function workLayout()
+  openApps(WORK_APPS)
+  -- hs.layout.apply(windowLayout)
+  -- maximizeApps(hs.window.filter.new():getWindows())
+end
+
+-- TODO: Fix this to maximize all open windows
+-- function maximizeApps()
+--   windows = hs.window.filter.new():getWindows()
+--   for key,window in ipairs(windows)
+--   do
+--       hs.alert.show(window)
+--       hs.logger.new('1'):d(window)
+--     maximizeToggle(window)
+--   end
+-- end
+
+-- function maximizeToggle(window)
+--     window:focus()
+--   hs.timer.doAfter(0.5, function()
+--     window:setFullScreen(not window:isFullScreen())
+--   end)
+-- end

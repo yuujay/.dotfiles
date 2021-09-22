@@ -1,5 +1,3 @@
-PRIMARY_SCREEN = hs.screen.primaryScreen()
-
 function fullScreen()
   local window = hs.window.focusedWindow()
   window:maximize()
