@@ -6,15 +6,16 @@ require 'shortcuts'
 require 'wifi'
 require 'window'
 
+
+local hyper = {'alt', 'cmd', 'ctrl'}
+
 -- App Sizing
-hs.hotkey.bind({'alt', 'cmd', 'ctrl'}, 'm', toggleMaximizedWindow)
-hs.hotkey.bind({'alt', 'cmd', 'ctrl'}, 'c', centerScreen)
-hs.hotkey.bind({'alt', 'cmd', 'ctrl'}, 'f', fullScreen)
-hs.hotkey.bind({'alt', 'cmd', 'ctrl'}, 'r', sizeRestore)
+hs.hotkey.bind(hyper, 'm', toggleMaximizedWindow)
+hs.hotkey.bind(hyper, 'c', centerScreen)
+hs.hotkey.bind(hyper, 'f', fullScreen)
+hs.hotkey.bind(hyper, 'r', sizeRestore)
 
 -- app movements
-hs.hotkey.bind({'cmd', 'ctrl', 'shift'}, 'H', hs.fnutils.partial(moveToScreen, "left"))
-hs.hotkey.bind({'cmd', 'ctrl', 'shift'}, 'L', hs.fnutils.partial(moveToScreen, "right"))
 hs.hotkey.bind({'cmd', 'ctrl'}, 'h', moveLeft)
 hs.hotkey.bind({'cmd', 'ctrl'}, 'l', moveRight)
 
@@ -40,7 +41,7 @@ hs.hotkey.bind({'cmd', 'shift'}, '1', weekendLayout)
 
 -- Generic Hint
 function genericHints()
-  hs.alert.show(' `alt-X` - Open Apps \n `cmd-shift-X` - Change Foucs \n `cmd-ctrl-X` - Move to desktop \n `cmd-ctrl-shift-X` - Move to screens \n `alt-cmd-ctrl-X` - Resize apps')
+  hs.alert.show(' `alt-X` - Open Apps \n `cmd-shift-X` - Change Foucs \n `cmd-ctrl-X` - Move to screen \n `alt-cmd-ctrl-X` - Resize apps')
 end
 hs.hotkey.bind({'cmd'}, '0', genericHints)
 
@@ -53,4 +54,3 @@ end)
 hs.hotkey.bind({"alt", "ctrl"}, "J", function()
   hs.alert.show("Hello World!")
 end)
-

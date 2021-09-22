@@ -1,5 +1,4 @@
-DELL_SCREEN = hs.screen.allScreens()[1]
-MAC_BOOK_SCREEN = hs.screen.allScreens()[2]
+PRIMARY_SCREEN = hs.screen.primaryScreen()
 
 function fullScreen()
   local window = hs.window.focusedWindow()
@@ -17,16 +16,28 @@ end
 
 function moveLeft()
   local window = hs.window.focusedWindow()
-  window:moveOneScreenWest()
+  if window:isFullScreen() then
+    window:setFullScreen(false)
+    window:moveOneScreenWest()
+    toggleMaximizedWindow()
+  else
+    window:moveOneScreenWest()
+  end
 end
 
 function moveRight()
   local window = hs.window.focusedWindow()
-  window:moveOneScreenEast()
+  if window:isFullScreen() then
+    window:setFullScreen(false)
+    window:moveOneScreenEast()
+    toggleMaximizedWindow()
+  else
+    window:moveOneScreenEast()
+  end
 end
 
 function showHints()
-  hs.hints.windowHints()
+  hs.hints.windowHints() -- This shows all the windows available to select from
 end
 
 function toggleMaximizedWindow()
@@ -36,24 +47,12 @@ function toggleMaximizedWindow()
   end)
 end
 
-function moveToScreen(direction)
-  local window = hs.window.focusedWindow()
-  window:setFullScreen(false)
-  if(direction == 'left') then
-    window:moveToScreen(MAC_BOOK_SCREEN)
-  else
-    window:moveToScreen(DELL_SCREEN)
-  end
-  toggleMaximizedWindow()
-end
-
 function changeFocus(direction)
-  -- TODO: Find a better logic to click on two different screens.
-  --       Or Find a better way to bring focus to the screen.
+  -- TODO: Use PRIMARY_SCREEN to shift focus
   if(direction == 'left') then
+    local current_screen = hs.window.focusedWindow():screen()
     hs.eventtap.leftClick({x=-10,y=500})
   else
     hs.eventtap.leftClick({x=10,y=500})
   end
 end
-
