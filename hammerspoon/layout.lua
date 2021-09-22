@@ -12,8 +12,6 @@ TEAMS = 'Microsoft Teams'
 HOME_APPS = { CHROME, ITERM }
 WORK_APPS = { CHROME, DBEAVER, ITERM, OUTLOOK, TEAMS }
 
-LAYOUT = {}
-
 local windowLayout = {
   {"Google Chrome", nil, PRIMARY_SCREEN, hs.layout.maximized, nil, nil},
   {"Microsoft Outlook", nil, PRIMARY_SCREEN, hs.layout.maximized, nil, nil},
@@ -27,7 +25,7 @@ end
 
 function workLayout()
   openApps(WORK_APPS)
-  -- hs.layout.apply(windowLayout)
+  hs.layout.apply(windowLayout)
   -- maximizeApps(hs.window.filter.new():getWindows())
 end
 
