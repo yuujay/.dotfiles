@@ -50,7 +50,7 @@ set LESS "-eirMX"
 - [ ] WIP - Migrate vim to lua scripts with neovim 0.5
 - [ ] Ansible for MacOS setup script
 - [ ] Test for DotFiles setup
-- [ ] Hammerspoon dual monitor configs(This has become a priority now)
+- [X] Hammerspoon dual monitor configs(This has become a priority now)
 - [ ] Directory specific README
 - [ ] Fish plugin instructions
 
