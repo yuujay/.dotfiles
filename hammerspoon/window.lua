@@ -14,7 +14,7 @@ function sizeRestore()
   hs.alert.show("FIX: App size restore function in .hammersoon/window.lua!")
 end
 
-function moveLeft()
+function moveAppLeft()
   local window = hs.window.focusedWindow()
   if window:isFullScreen() then
     window:setFullScreen(false)
@@ -25,7 +25,7 @@ function moveLeft()
   end
 end
 
-function moveRight()
+function moveAppRight()
   local window = hs.window.focusedWindow()
   if window:isFullScreen() then
     window:setFullScreen(false)
@@ -34,10 +34,6 @@ function moveRight()
   else
     window:moveOneScreenEast()
   end
-end
-
-function showHints()
-  hs.hints.windowHints() -- This shows all the windows available to select from
 end
 
 function toggleMaximizedWindow()
@@ -48,11 +44,20 @@ function toggleMaximizedWindow()
 end
 
 function changeFocus(direction)
-  -- TODO: Use PRIMARY_SCREEN to shift focus
+  local current_window = hs.window.focusedWindow()
+  local current_screen = current_window:screen()
+
   if(direction == 'left') then
-    local current_screen = hs.window.focusedWindow():screen()
-    hs.eventtap.leftClick({x=-10,y=500})
+    local left_screen = current_screen:toWest()
+    local point_on_left_screen = { x = left_screen:frame().x + 10, y = 300.0}
+    hs.eventtap.leftClick(point_on_left_screen)
   else
-    hs.eventtap.leftClick({x=10,y=500})
+    local right_screen = current_screen:toEast()
+    local point_on_right_screen = { x = right_screen:frame().x + 10, y = 300.0}
+    hs.eventtap.leftClick(point_on_right_screen)
   end
+end
+
+function showHints()
+  hs.hints.windowHints() -- This shows all the windows available to select from
 end
