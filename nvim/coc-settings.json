@@ -9,6 +9,8 @@
   "solargraph.hover": true,
   "solargraph.commandPath": "/Users/gumamahe/.rbenv/shims/solargraph",
 
+  "eslint.alwaysShowStatus": "true",
+  "eslint.autoFixOnSave": "true",
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "typescript",
