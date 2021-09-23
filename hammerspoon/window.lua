@@ -42,8 +42,7 @@ function toggleMaximizedWindow()
 end
 
 function changeFocus(direction)
-  local current_window = hs.window.focusedWindow()
-  local current_screen = current_window:screen()
+  local current_screen = hs.mouse.getCurrentScreen()
 
   if(direction == 'left') then
     local left_screen = current_screen:toWest()
