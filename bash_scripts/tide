@@ -1,8 +1,5 @@
-#!/bin/sh -xv
+#!/bin/sh
 #
-# Attach or create tmux session named the same as current directory.
-# https://stackoverflow.com/questions/67128348/why-does-my-shell-script-for-creating-a-split-window-tmux-session-not-work
-
 path_name="$(basename "$PWD" | tr . -)"
 session_name=${1-$path_name}
 
@@ -14,55 +11,17 @@ session_exists() {
   tmux list-sessions | sed -E 's/:.*$//' | grep -q "^$session_name$"
 }
 
-create_detached_session() {
-    echo 'TMUX before'
-    echo $TMUX
-
-    # tmux new-session -d -s "$session_name" /Users/ujgowtham/.config/fish/bash_scripts/ide
+create_if_needed_and_attach() {
+  if not_in_tmux; then
     (TMUX='' tmux new-session -Ad -s "$session_name")
-
-    # tmux switch-client -t "$session_name"
-    # tmux send-keys pwd Enter
-    # tmux split-window -h
-    # tmux -2 attach-session
-
-    echo 'TMUX after'
-    echo $TMUX
-}
-
-create_new_session() {
-  TMUX=''
-  tmux new-session -Ad -s "$session_name"
-  tmux split-window -h
-  tmux send-keys vi. Enter
-  tmux -2 attach-session
-}
-
-create_ide() {
-set -x
-    if ! not_in_tmux ; then
-        echo 'In TMUX'
-        if session_exists; then
-            tmux switch-client -t "$session_name"
-        else
-            create_detached_session
-            echo $session_name
-        fi
-    else
-        if ! session_exists; then
-            create_new_session
-        else
-            tmux attach-session -t "$session_name"
-        fi
+    sh ~/.config/fish/bash_scripts/ide $session_name
+  else
+    if ! session_exists; then
+      echo "FIX ME in fish/bash_scripts/tide"
+      sh ~/.config/fish/bash_scripts/tmux_session_ide $session_name
     fi
-set +x
-
+    tmux switch-client -t "$session_name"
+  fi
 }
 
-# not_in_tmux    session
-# Y               N   --- create new session
-# N               Y   --- attach in a session
-# N               N   --- create detached session
-# Y               Y   --- attach session 
-
-create_ide
+create_if_needed_and_attach

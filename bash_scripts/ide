@@ -5,7 +5,6 @@
 #  vim  | Shell
 #       |
 
-(TMUX='' tmux new-session -Ad -s "$1")
 tmux send-keys 'vi .' Enter
 tmux split-window -h -p 50
 tmux split-window -v -p 15
