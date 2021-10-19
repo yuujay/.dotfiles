@@ -1,0 +1,13 @@
+#!/bin/bash
+# Script to create a new tmux session with two panes.
+# This needs to run from a shell outside a tmux session.
+#       |
+#  vim  | Shell
+#       |
+
+(TMUX='' tmux new-session -Ad -s "$1")
+tmux send-keys 'vi .' Enter
+tmux split-window -h -p 50
+tmux split-window -v -p 15
+tmux select-pane -t 0
+tmux attach-session -t "$1"
