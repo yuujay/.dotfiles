@@ -1,6 +1,19 @@
 # Some new rust replacements for commonly used utilities
 alias cat='bat'
 alias catt='cat'
+alias x='exa -1'
+alias xl='exa -al --git'
+alias xld='exa -alD --git'
+alias xlg='exa -al --git | grep'
+alias xlm='exa -alm'
+alias xlt='exa -al --tree --git --level=2'
+
+# brew aliases
+alias bci='brew cask install'
+alias bi='brew install'
+alias bu='brew update && brew upgrade && brew cleanup'
+alias bug='brew upgrade'
+alias bup='brew update'
 
 # FILE OPs
 alias c.='code .'
@@ -45,12 +58,6 @@ alias p="pwd"
 alias t="tree -I 'node_modules|node_modules|target|cache|log|tmp|assets|.byebug_history|.bundle|.htaccess'"
 alias ti="tree -I $1"
 alias tl="tree -L "
-alias x='exa -1'
-alias xl='exa -al --git'
-alias xld='exa -alD --git'
-alias xlg='exa -al --git | grep'
-alias xlm='exa -alm'
-alias xlt='exa -al --tree --git --level=2'
 
 # SYSTEM OPs
 alias envs='env | sort'
@@ -91,6 +98,11 @@ alias nx='npm run'
 alias sl='sails lift'
 alias vi.='vi .'
 alias ws='python -m SimpleHTTPServer'
+
+#Utils
+alias web='curl wttr.in/boston'
+alias wec='curl wttr.in/coimbatore'
+alias wen='curl wttr.in/natick'
 
 # NETWORK
 alias ipa='dig +short myip.opendns.com @resolver1.opendns.com'
