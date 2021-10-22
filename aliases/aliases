@@ -108,6 +108,7 @@ alias wen='curl wttr.in/natick'
 alias ipa='dig +short myip.opendns.com @resolver1.opendns.com'
 #alias ipa="dig TXT +short o-o.myaddr.l.google.com @ns1.google.com"
 alias localip='ipconfig getifaddr en0'
+alias ping='ping -c 3 -i 0.2'
 
 # OMEGA - move this to .sshconfig
 alias lab="ssh pi@{$HOME_SERVER_IP}"
