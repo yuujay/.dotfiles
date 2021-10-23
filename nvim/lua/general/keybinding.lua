@@ -21,11 +21,10 @@ map('n', '<leader>\\', ':vsplit<CR>', options)
 map('n', '<leader>x', ':close<CR>', options)
 
 -- File Operation
---TODO: Figure out `C` key mapping in nvim. The below mapping dont work.
 
-map('n', 'C-A', ':w<Space>', options)
-map('n', 'C-N', ':enew<CR>', options)
-map('n', 'C-W', ':bw<CR>', options)
+map('n', '<C-a>', ':w<Space>', options)
+map('n', '<C-n>', ':enew<CR>', options)
+map('n', '<C-w>', ':bw<CR>', options)
 map('n', 'ss', ':w<CR>', options)
 
 -- Resize vim windows
@@ -47,7 +46,6 @@ map('n', '<leader>`', ':nohls<CR>', options)
 -- Install plugins using paq
 
 map('n', '<leader><leader>p', ':PaqInstall<CR>', options)
-map('n', '<leader><leader>l', ':PaqList<CR>', options)
 
 -- Shortcuts to open common files
 
