@@ -29,6 +29,7 @@ _packages=(
   gh
   git
   htop
+  minikube
   neovim
   rsync
   the_silver_searcher
