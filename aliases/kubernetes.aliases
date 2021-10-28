@@ -1,0 +1,11 @@
+# k8s customizations
+
+alias k='kubectl'
+alias kc='kubectl'
+alias ka='kublectl apply -f'
+alias ke='kubectl exec'
+alias kd='kubectl describe'
+alias kit='kubectl exec -it'
+alias kg='kubectl get all'
+alias m='minikube'
+alias mk='minikube'
