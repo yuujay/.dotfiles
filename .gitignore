@@ -1,6 +1,7 @@
 .DS_Store
 
 *.log
+fish_variables
 tags
 tmux/resurrect/*
 git/gitconfig
