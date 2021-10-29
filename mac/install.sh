@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo 'Initializing setup...'
-# xcode-select —-install
+xcode-select —-install
 
 # Check for Homebrew to be present, install if it's missing
 if test ! $(which brew); then
@@ -9,11 +9,11 @@ if test ! $(which brew); then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# echo 'Installing cask..'
-# brew tap homebrew/cask
+echo 'Installing cask..'
+brew tap homebrew/cask
 
-# echo 'Update homebrew recipes..'
-# brew update
+echo 'Update homebrew recipes..'
+brew update
 
 # Remove installation log from previous runs
 rm installation.log progress.log
@@ -31,6 +31,7 @@ _packages=(
   htop
   minikube
   neovim
+  pip
   rsync
   the_silver_searcher
   tmux
@@ -49,6 +50,7 @@ _cask_packages=(
 )
 
 _some_heavy_cask_packages=(
+  ansible
   brave-browser
   docker
   google-chrome
