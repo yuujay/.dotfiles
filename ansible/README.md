@@ -24,3 +24,17 @@ ansible all -m apt -m update_cache=true --become --ask-become-pass
 ```
 
 ## Playbooks
+- Run playbooks with `ansible-playbooks <MY_PLAYBOOK>.yml`
+
+### More Optimizations:
+
+[] Role based tasks
+[] Host variables and handlers (notify callbacks)
+    - Variables that can be added for each hosts without touching hosts or tasks files
+[] Templates
+    - Allows us to have variables that can be assigned to multiple hosts as defaults and have overrides to each host as needed.
+    - Formatted as jinga2(.j2) extension.
+
+Detailed intro to ansible can be found in [this](https://www.youtube.com/playlist?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70) youtube playlist.
+
+Git repo used in the above YT playlist can be found [here](https://github.com/LearnLinuxTV/getting_started_with_ansible)
