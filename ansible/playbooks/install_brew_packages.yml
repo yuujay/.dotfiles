@@ -1,0 +1,82 @@
+---
+
+- hosts: all
+  become: false
+  vars:
+    brew_cask_packages:
+      - docker
+      - dropbox
+      - firefox
+      - google-chrome
+      - hammerspoon
+      - iterm2
+      - karabiner-elements
+      - ngork
+      - slack
+      - visual-studio-code
+
+    brew_packages:
+      - bash-completion
+      - bat
+      - cask
+      - ctags
+      - exa
+      - fd
+      - fish
+      - fzf
+      - gh
+      - git
+      - go
+      - htop
+      - jq
+      - minikube
+      - neovim
+      - nmap
+      - openssl
+      - rbenv
+      - rsync
+      - ruby-build
+      - ssh-copy-id
+      - the_silver_searcher
+      - tmux
+      - tree
+      - wget
+
+    install_homebrew_if_missing: true
+    upgrade_homebrew_packages: false
+
+  pre_tasks:
+    - name: Ensuring Homebrew is installed
+      stat:
+        path: /usr/local/bin/brew
+      register: homebrew_check
+
+    - name: Installing Homebrew
+      shell: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      when:
+        - not homebrew_check.stat.exists
+        - install_homebrew_if_missing
+
+  tasks:
+  - name: Upgrading Homebrew Packages
+    homebrew:
+      upgrade_all: "{{ upgrade_homebrew_packages }}"
+    register: result
+    until: result is successful
+    when: homebrew_check.stat.exists
+
+  - name: Installing Homebrew Packages
+    homebrew:
+      name: "{{ brew_packages }}"
+      state: present
+    register: result
+    until: result is successful
+    when: homebrew_check.stat.exists
+
+  - name: Installing Homebrew Cask Packages
+    homebrew_cask:
+      name: "{{ brew_cask_packages }}"
+      state: present
+    register: result
+    until: result is successful
+    when: homebrew_check.stat.exists
