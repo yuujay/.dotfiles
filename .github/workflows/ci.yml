@@ -11,7 +11,7 @@ name: CI
 jobs:
 
   lint:
-    name: Lint
+    name: Linting Ansible code
     runs-on: ubuntu-latest
     steps:
       - name: Check out the codebase.
@@ -38,7 +38,7 @@ jobs:
       matrix:
         os:
           - macos-10.15
-          - macos-12.0.1
+          - macos-latest
 
     steps:
       - name: Check out the codebase.
@@ -63,12 +63,12 @@ jobs:
       #     cp ansible/default.config.yml ./default.config.yml
           # ansible-galaxy install -r requirements.yml
 
-      - name: Test the playbook's syntax.
+      - name: Test ansible playbook's syntax.
         run: |
           cd ansible
           ansible-playbook main.yml --syntax-check
 
-      - name: Test the playbook.
+      - name: Test ansible playbook.
         run: |
           cd ansible
           ansible-playbook main.yml
