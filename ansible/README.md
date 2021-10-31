@@ -26,6 +26,12 @@ ansible all -m apt -m update_cache=true --become --ask-become-pass
 ## Playbooks
 - Run playbooks with `ansible-playbooks <MY_PLAYBOOK>.yml`
 
+## How the setup works
+
+1. `main.yml` - This is the entry point for ansible playbook
+2. All the default variables and switches are available in `default.config.yml`
+3. As of now all automations are handled via the tasks in `./tasks` directory tasks. (Will try incorporating roles if needed?)
+
 ### Sequence of code organizations.
 1. Individual task files.
 2. Node specific config. Sample video [here](https://www.youtube.com/watch?v=EraC1AuWEF8&list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70&index=9)
@@ -34,15 +40,17 @@ ansible all -m apt -m update_cache=true --become --ask-become-pass
 5. Host variables and handlers. Sample video [here](https://www.youtube.com/watch?v=shBlQQZLU9M&list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70&index=15&t=895s)
 6. Templates. Sample video [here](https://www.youtube.com/watch?v=s8F_YWGHeDM&list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70&index=16)
 
-### More Optimizations:
+### Future Optimizations:
 
-- [] Role based tasks
-- [] Host variables and handlers (notify callbacks)
+- Role based tasks
+- Host variables and handlers (notify callbacks)
     - Variables that can be added for each hosts without touching hosts or tasks files
-- [] Templates
+- Templates
     - Allows us to have variables that can be assigned to multiple hosts as defaults and have overrides to each host as needed.
     - Formatted as jinga2(.j2) extension.
 
 Detailed intro to ansible can be found in [this](https://www.youtube.com/playlist?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70) youtube playlist.
 
 Git repo used in the above YT playlist can be found [here](https://github.com/LearnLinuxTV/getting_started_with_ansible)
+
+The configurations will have certain aspects and inspirations from [this repo](https://github.com/geerlingguy/mac-dev-playbook)
