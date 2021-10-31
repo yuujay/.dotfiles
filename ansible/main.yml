@@ -1,0 +1,14 @@
+---
+- hosts: all
+
+  vars_files:
+    - default.config.yml
+
+  tasks:
+  - import_tasks: tasks/install_brew_packages.yml
+    when: run_brew_tasks
+    tags: ['brew', 'packages']
+
+  - import_tasks: tasks/install_ruby_gems.yml
+    when: run_gem_tasks
+    tags: ['gems', 'ruby']
