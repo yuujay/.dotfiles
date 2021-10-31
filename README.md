@@ -47,11 +47,10 @@ set LESS "-eirMX"
 
 ## Major TODO's
 - [ ] WIP - Migrate vim to lua scripts with neovim 0.5
-- [ ] Ansible for MacOS setup script
+- [X] Ansible for MacOS setup script
 - [ ] Test for DotFiles setup
 - [X] Hammerspoon dual monitor configs(This has become a priority now)
 - [ ] Directory specific README
 - [ ] Fish plugin instructions
 
 - More open items and enhancements can be found (here)[https://github.com/yuujay/dotfiles/projects/1]
-
