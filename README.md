@@ -1,4 +1,6 @@
-# dotfiles  💾.  ![Tests](https://github.com/yuujay/dotfiles/actions/workflows/ci.yml/badge.svg)
+# dotfiles  💾
+
+![Tests](https://github.com/yuujay/dotfiles/actions/workflows/ci.yml/badge.svg)
 
 Aggregation of dotFiles powered by [dotBot](https://github.com/anishathalye/dotbot). For more such inspirations, look in [here](http://dotfiles.github.io/).
 
