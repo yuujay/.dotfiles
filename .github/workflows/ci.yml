@@ -4,7 +4,7 @@ name: CI
   pull_request:
   push:
     branches:
-      - master
+      - main
   schedule:
     - cron: "0 5 * * 4"
 
@@ -27,6 +27,7 @@ jobs:
 
       - name: Lint code.
         run: |
+          cd ansible
           yamllint .
           ansible-lint
 
