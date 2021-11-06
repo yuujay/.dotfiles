@@ -1,28 +1,17 @@
 ---
 - name: "Upgrade the system"
+  become: true
   apt:
     update_cache: true
+    allow_unauthenticated: true
     upgrade: dist
 
-- name: "Install sudo"
-  apt:
-    name: "sudo"
-    state: present
-
 - name: Installing packages
+  become: true
   apt:
     name: "{{ apt_packages }}"
     state: present
   register: result
   when:
-    - install_homebrew_packages
+    - install_debian_packages
 
-- name: Installing Homebrew Cask Packages
-  homebrew_cask:
-    name: "{{ brew_cask_packages }}"
-    state: present
-  register: result
-  until: result is successful
-  when:
-    - install_homebrew_cask_packages
-    - homebrew_check.stat.exists
