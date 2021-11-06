@@ -28,6 +28,8 @@ apt_packages:
   - jq
   - neovim
   - nmap
+  - nodejs
+  - npm
   - openssl
   - rsync
   - silversearcher-ag
@@ -43,6 +45,7 @@ brew_cask_packages:
   - hammerspoon
   - iterm2
   - karabiner-elements
+  - kitty
   - ngork
   - slack
   - visual-studio-code
@@ -63,6 +66,8 @@ brew_packages:
   - jq
   - minikube
   - neovim
+  - nodejs
+  - npm
   - nmap
   - openssl
   - rbenv
