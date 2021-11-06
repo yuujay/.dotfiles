@@ -12,3 +12,11 @@
     - import_tasks: tasks/install_ruby_gems.yml
       when: run_gem_tasks
       tags: ['gems', 'ruby']
+
+    - import_tasks: tasks/dot-files/main.yml
+      when: setup_dot_files
+      tags: ['git', 'dotfiles']
+
+    - import_tasks: tasks/debian/install_packages.yml
+      when: run_debian_tasks
+      tags: ['apt', 'debian', 'packages']

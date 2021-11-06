@@ -1,0 +1,28 @@
+---
+- name: "Upgrade the system"
+  apt:
+    update_cache: true
+    upgrade: dist
+
+- name: "Install sudo"
+  apt:
+    name: "sudo"
+    state: present
+
+- name: Installing packages
+  apt:
+    name: "{{ apt_packages }}"
+    state: present
+  register: result
+  when:
+    - install_homebrew_packages
+
+- name: Installing Homebrew Cask Packages
+  homebrew_cask:
+    name: "{{ brew_cask_packages }}"
+    state: present
+  register: result
+  until: result is successful
+  when:
+    - install_homebrew_cask_packages
+    - homebrew_check.stat.exists

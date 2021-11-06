@@ -1,0 +1,15 @@
+---
+- name: "Check if fish directory exists"
+  stat:
+    path: "~/.config/fish"
+    # path: "{{dotfiles_repo_local_path}}"
+  register: dotfile_exists
+
+- name: "Pull changes from GitHub"
+  git:
+    repo: "https://github.com/yuujay/dotfiles"
+    dest: "~/.config/fish"
+    version: main
+    accept_hostkey: true
+  when:
+    dotfile_exists.stat.exists
