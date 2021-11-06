@@ -14,4 +14,3 @@
   register: result
   when:
     - install_debian_packages
-
