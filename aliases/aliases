@@ -89,10 +89,6 @@ alias home='cd ~'
 
 # WEB DEV
 alias bx='bundle exec'
-alias mc='mvn clean'
-alias mci='mvn clean install'
-alias mct='mvn clean test'
-alias mcv='mvn clean verify'
 alias nps='npm start'
 alias nx='npm run'
 alias sl='sails lift'
