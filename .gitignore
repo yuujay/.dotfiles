@@ -1,8 +1,8 @@
 .DS_Store
 
-*.log
+**/*.log
 fish_variables
+git/gitconfig
 tags
 tmux/resurrect/*
-git/gitconfig
-fish_variables
+vim/plugged/**
