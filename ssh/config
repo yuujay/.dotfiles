@@ -1,4 +1,8 @@
 # Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+Host deb
+    HostName ah-gumamahe-l.dhcp.mathworks.com
+    User gumamahe
+
 Host ah
     HostName gumamahe-maci.dhcp.mathworks.com
     User gumamahe
