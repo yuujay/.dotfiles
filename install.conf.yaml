@@ -8,6 +8,7 @@
 - link:
     ~/.aliases: aliases
     ~/.config/karabiner: karabiner
+    ~/.config/kitty: kitty
     ~/.config/nvim: nvim
     ~/.fish_env:
     ~/.gitconfig.mw: git/gitconfig.mw
@@ -26,6 +27,7 @@
     - ~/.config/fish
     - ~/.config/nvim
     - ~/.config/karabiner
+    - ~/.config/kitty
     - ~/.aliases
     - ~/.tmux
     - ~/.vim
@@ -33,4 +35,3 @@
 # - shell:
     # - chsh -s $(which sh)
     # - cp -r ./functions ~/.config
-
