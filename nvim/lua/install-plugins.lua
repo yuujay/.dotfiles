@@ -1,13 +1,18 @@
 -- INSTRUCTIONS:
 -- You NEED to source this file for any updates before running :Paq*
+
 require "paq-nvim" {
 
-    'glepnir/lspsaga.nvim',
-    'hrsh7th/nvim-compe',
+    -- intellisense
+    'neovim/nvim-lspconfig',
+    -- 'glepnir/lspsaga.nvim',
+    'williamboman/nvim-lsp-installer',
+    'hrsh7th/nvim-compe', -- Replaced by nvim-cmp
+    -- 'hrsh7th/nvim-cmp',
+
     'junegunn/fzf',
     'junegunn/fzf.vim',
     'mhartington/formatter.nvim',
-    'neovim/nvim-lspconfig',
     'nvim-treesitter/nvim-treesitter',
     'phaazon/hop.nvim', -- EASYMOTION IN LUA #TOP5
     'savq/paq-nvim', -- lightweight package manager
@@ -23,6 +28,9 @@ require "paq-nvim" {
     'tpope/vim-fugitive',
     'tpope/vim-rails',
     'tpope/vim-surround',
+
+    'akinsho/bufferline.nvim',
+    'kyazdani42/nvim-web-devicons',
 
 -- https://github.com/itchyny/lightline.vim TODO: Check this out over airline
 -- https://github.com/maximbaz/lightline-ale - TODO: If ale is used, can provide status

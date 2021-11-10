@@ -3,35 +3,35 @@ local wo = vim.wo
 local bo = vim.bo
 
 -- global options
-o.swapfile = false
-o.dir = '/tmp'
-o.smartcase = true
-o.laststatus = 2
-o.hlsearch = true
-o.incsearch = true
-o.ignorecase = true
-o.scrolloff = 12
 o.autoindent = true
 o.autoread = true -- TODO: Fix autoread
 o.colorcolumn = '80'
+o.copyindent = true
 o.cursorline = true
+o.dir = '/tmp'
+o.hlsearch = true
+o.ignorecase = true
+o.incsearch = true
+o.laststatus = 2
 o.mouse = 'a'
+o.scrolloff = 12
+o.smartcase = true
+o.smartindent = true
+o.smarttab = true
+o.swapfile = false
 
 -- window-local options
 wo.number = true
 wo.relativenumber = false
 wo.wrap = true
 
--- syntax = 'on' TODO: CONFIRM THIS
-
-
 -- ------------------ buffer-local options ---------------------------
 
 -- Tabs/Spacing
-bo.expandtab = true
-bo.shiftwidth = 4
-bo.softtabstop = 4
-bo.tabstop = 4
+o.expandtab = true
+o.shiftwidth = 4
+o.softtabstop = 4
+o.tabstop = 4
 
 -- Need this for using fonts
 -- bo.encoding = 'UTF-8'

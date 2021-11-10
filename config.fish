@@ -1,4 +1,4 @@
-echo "Sourcing files from $FISH_HOME/config.fish"
+# echo "Sourcing files from $FISH_HOME/config.fish"
 
 fish_vi_key_bindings
 

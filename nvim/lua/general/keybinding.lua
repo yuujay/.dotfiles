@@ -9,10 +9,8 @@ map('n', ';', ':', {})
 map('v', ';', ':', {})
 
 -- Move among buffers
-
 map('n', '<leader>l', ':bnext<CR>', options)
 map('n', '<leader>h', ':bprev<CR>', options)
-map('n', '<leader>lb', ':Buffers<CR>', options)
 
 -- Split Buffers
 

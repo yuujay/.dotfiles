@@ -1,6 +1,12 @@
 local map = vim.api.nvim_set_keymap
 options = { noremap = true }
 
+-- Bufferline
+-- map('n', '<leader>l', ':BufferLineCycleNext<CR>', options)
+-- map('n', '<leader>h', ':BufferLineCyclePrev<CR>', options)
+map('n', '<leader>L', ':BufferLineMoveNext<CR>', options)
+map('n', '<leader>H', ':BufferLineMovePrev<CR>', options)
+
 -- Hop shortcuts
 map('n', '<leader><leader>s', ':HopWord<CR>', options)
 map('n', '<leader><leader>l', ':HopLine<CR>', options)
@@ -27,7 +33,7 @@ map('n', '<leader>vl', ':VtrSendLinesToRunner!<CR>', options)
 map('n', '<leader>vz', ':VtrFocusRunner<CR>', options)
 map('n', '<leader>vr', ':VtrAttachToPane<CR>', options) -- Changing this because `VtrOpenRunner` doesn't work properly with neovim
 
-
+-- FZF configs
 map('n', '<leader>/', ':BLines<CR>', options)
 map('n', '<leader>c', ':BCommits<CR>', options)
 map('n', '<leader>p', ':Files<CR>', options)

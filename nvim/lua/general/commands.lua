@@ -9,13 +9,13 @@ Command.cmd({
     'highlight SignColumn ctermbg=black guibg=black',
 })
 
-
 Augroup.cmds({
     -- highlight on yank!!!
     highlight_yank = {
         {"TextYankPost", "* silent! lua require'vim.highlight'.on_yank({timeout = 400})"},
     },
-    -- highlight on paste!!! TODO: FIX THIS FOR PASTE
+    -- TODO: FIX THIS FOR PASTE
+    -- highlight on paste!!!
     highlight_paste = {
         {"TextYankPost", "* silent! lua require'vim.highlight'.on_yank({timeout = 400})"},
     },

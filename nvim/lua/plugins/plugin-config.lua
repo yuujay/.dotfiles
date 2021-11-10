@@ -1,7 +1,20 @@
-vim.g["airline#extensions#tabline#enabled"] = 1
+-- This is now set by `bufferline`
+-- vim.g["airline#extensions#tabline#enabled"] = 1
 vim.g.airline_powerline_fonts = 1
 
 vim.env.FZF_DEFAULT_COMMAND = 'ag -g ""'
+
+-- BUFFERLINE
+vim.opt.termguicolors = true
+require("bufferline").setup({
+	options = {
+		diagnostics = 'vim_lsp',
+		persist_buffer_sort = true,
+		always_show_bufferline = true,
+		separator_style = 'thin'
+	}
+})
+
 
 -- LIMELIGHT CONFIGS USED IN OLD VIM CONFIGS
 -- -- Limelight - Turn this on when you want limelight to be enabled by default.

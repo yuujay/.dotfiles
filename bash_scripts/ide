@@ -7,6 +7,6 @@
 
 tmux send-keys 'vi .' Enter
 tmux split-window -h -p 50
-tmux split-window -v -p 15
+# tmux split-window -v -p 15
 tmux select-pane -t 0
 tmux attach-session -t "$1"
