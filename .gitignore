@@ -2,7 +2,6 @@
 
 **/*.log
 fish_variables
-git/gitconfig
 tags
 tmux/resurrect/*
 vim/plugged/**
