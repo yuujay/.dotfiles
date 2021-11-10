@@ -1,6 +1,19 @@
 # Some new rust replacements for commonly used utilities
 alias cat='bat'
 alias catt='cat'
+alias x='exa -1'
+alias xl='exa -al --git'
+alias xld='exa -alD --git'
+alias xlg='exa -al --git | grep'
+alias xlm='exa -alm'
+alias xlt='exa -al --tree --git --level=2'
+
+# brew aliases
+alias bci='brew cask install'
+alias bi='brew install'
+alias bu='brew update && brew upgrade && brew cleanup'
+alias bug='brew upgrade'
+alias bup='brew update'
 
 # FILE OPs
 alias c.='code .'
@@ -45,12 +58,6 @@ alias p="pwd"
 alias t="tree -I 'node_modules|node_modules|target|cache|log|tmp|assets|.byebug_history|.bundle|.htaccess'"
 alias ti="tree -I $1"
 alias tl="tree -L "
-alias x='exa -1'
-alias xg='exa -al --git'
-alias xl='exa -al'
-alias xld='exa -alD'
-alias xlg='exa -al | grep'
-alias xlm='exa -alm'
 
 # SYSTEM OPs
 alias envs='env | sort'
@@ -82,20 +89,22 @@ alias home='cd ~'
 
 # WEB DEV
 alias bx='bundle exec'
-alias mc='mvn clean'
-alias mci='mvn clean install'
-alias mct='mvn clean test'
-alias mcv='mvn clean verify'
 alias nps='npm start'
 alias nx='npm run'
 alias sl='sails lift'
 alias vi.='vi .'
 alias ws='python -m SimpleHTTPServer'
 
+#Utils
+alias web='curl wttr.in/boston'
+alias wec='curl wttr.in/coimbatore'
+alias wen='curl wttr.in/natick'
+
 # NETWORK
 alias ipa='dig +short myip.opendns.com @resolver1.opendns.com'
 #alias ipa="dig TXT +short o-o.myaddr.l.google.com @ns1.google.com"
 alias localip='ipconfig getifaddr en0'
+alias ping='ping -c 3 -i 0.2'
 
 # OMEGA - move this to .sshconfig
 alias lab="ssh pi@{$HOME_SERVER_IP}"
@@ -110,4 +119,3 @@ alias lab="ssh pi@{$HOME_SERVER_IP}"
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 alias flushDNS="sudo killall -HUP mDNSResponder; dscacheutil -flushcache; echo 'DNS flushed'"
-

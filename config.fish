@@ -6,6 +6,7 @@ fish_vi_key_bindings
 set FISH_HOME ~/.config/fish
 test -e $FISH_HOME/fish_env ; and source $FISH_HOME/fish_env
 
+test -e $HOME/.aliases/kubernetes.aliases ; and source $HOME/.aliases/kubernetes.aliases
 test -e $HOME/.aliases/aliases ; and source $HOME/.aliases/aliases
 test -e $HOME/.aliases/docker.aliases ; and source $HOME/.aliases/docker.aliases
 test -e $HOME/.aliases/mathworks.aliases ; and source $HOME/.aliases/mathworks.aliases

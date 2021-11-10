@@ -1,5 +1,7 @@
 # dotfiles  💾
 
+![Tests](https://github.com/yuujay/dotfiles/actions/workflows/ci.yml/badge.svg)
+
 Aggregation of dotFiles powered by [dotBot](https://github.com/anishathalye/dotbot). For more such inspirations, look in [here](http://dotfiles.github.io/).
 
 After cloning this repo, run install to automatically set up the development environment. Note that the install script is idempotent: it can safely be run multiple times.
@@ -48,11 +50,10 @@ set LESS "-eirMX"
 
 ## Major TODO's
 - [ ] WIP - Migrate vim to lua scripts with neovim 0.5
-- [ ] Ansible for MacOS setup script
+- [X] Ansible for MacOS setup script
 - [ ] Test for DotFiles setup
-- [ ] Hammerspoon dual monitor configs(This has become a priority now)
+- [X] Hammerspoon dual monitor configs(This has become a priority now)
 - [ ] Directory specific README
 - [ ] Fish plugin instructions
 
-- More open items and enhancements can be found (here)[https://github.com/yuujay/dotfiles/projects/1]
-
+- More open items and enhancements can be found [here](https://github.com/yuujay/dotfiles/projects/1)

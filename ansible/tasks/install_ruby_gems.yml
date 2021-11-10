@@ -1,0 +1,17 @@
+---
+# TODO:
+#  1. Fix ruby env conflict issue with shipped ruby on mac.
+#  2. Fix this to set up gem install paths on mac.
+
+- name: Ensuring gem is installed
+  stat:
+    path: /usr/bin/gem
+  register: gem_check
+
+- name: Installing ruby gems
+  gem:
+    name: "{{ item }}"
+  loop: "{{ gem_list }}"
+  when:
+    - gem_check
+    - install_ruby_gems

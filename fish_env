@@ -2,8 +2,19 @@ set -a PATH /Users/gumamahe/.rbenv/shims /usr/local/opt/ruby/bin /usr/local/bin 
 set DOCKER_COMPOSE_USER_ID (id -u)
 set EDITOR 'vim'
 set FZF_DEFAULT_COMMAND 'ag -g ""'
-set GEM_HOME "$HOME/.gem/ruby/2.6.0"
-set GOBIN "/usr/local/bin/go"
-set GOPATH "$HOME/go"
 set HOME_SERVER_IP 192.168.86.100
 set LAB_IP 192.168.86.100
+set TERM 'screen-256color' # required for kitty to work over SSH
+
+set -x CG_ENABLED 0
+set -x GO111MODULE "on"
+set -x GOARCH "amd64"
+set -x GOBIN "/usr/local/bin/go"
+set -x GONOPROXY ".com,.in,*.org,*.co"
+set -x GOOS "darwin"
+set -x GOPATH "$HOME/go"
+set -x GOPRIVATE "golang.dhcp*"
+set -x GOPROXY "http://iat-go-proxy-prod-01:7000/go-proxy"
+set -x GOTOOLDIR "/usr/local/go/pkg/tool/darwin_amd64/"
+set -x MW_ARCH "maci64"
+set GEM_HOME "$HOME/.gem/ruby/2.6.0"

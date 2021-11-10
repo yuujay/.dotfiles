@@ -1,0 +1,30 @@
+---
+- name: "Check if fish directory exists"
+  stat:
+    path: "~/.config/fish"
+    # path: "{{dotfiles_repo_local_path}}"
+  register: dotfile_exists
+  
+- name: "Create a tmp dotfile location"
+  file:
+    path: "/tmp/dotfiles" 
+    state: directory
+    mode: '0755'
+
+    # - name: "Pull changes from GitHub"
+    #   git:
+    #   repo: "https://github.com/yuujay/dotfiles"
+    # dest: "/tmp/dotfiles"
+    # version: main
+    # accept_hostkey: true
+    # when:
+    # dotfile_exists.stat.exists
+
+    #- name: "Sync dotfiles to fish config directory" 
+    #  synchronize:
+    #    src: /tmp/dotfiles/
+    #dest: ~/.config/fish
+
+- name: "Install dotbot" 
+  command: ~/.config/fish/install >> /dev/null
+  register: mymotd

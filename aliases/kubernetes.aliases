@@ -1,0 +1,26 @@
+# k8s customizations
+# p - pod
+# s - service
+# r - replicaset
+# d - deployment
+# n - namespace
+
+alias k='kubectl'
+alias ka='kubectl apply -f'
+alias kc='kubectl'
+alias kd='kubectl describe'
+alias kdp='kubectl delete pod'
+alias ke='kubectl exec'
+alias kg='kubectl get'
+alias kga='kubectl get all'
+alias kgp='kubectl get pod'
+alias kit='kubectl exec -it'
+alias krh='kubectl rollout history deployment'
+alias krs='kubectl rollout status deployment'
+alias kru='kubectl rollout undo deployment'
+alias ks='kubectl get all'
+alias m='minikube'
+alias md='minikube delete; rm -rf ~/.minikube; rm -rf ~/.kube'
+alias mip='minikube ip'
+alias mk='minikube'
+alias ms='minikube service'
