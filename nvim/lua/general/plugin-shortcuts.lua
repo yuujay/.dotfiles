@@ -27,12 +27,10 @@ map('n', '<leader>vl', ':VtrSendLinesToRunner!<CR>', options)
 map('n', '<leader>vz', ':VtrFocusRunner<CR>', options)
 map('n', '<leader>vr', ':VtrAttachToPane<CR>', options) -- Changing this because `VtrOpenRunner` doesn't work properly with neovim
 
--- Telescope
 
-map('n', '<leader>/', ':Telescope current_buffer_fuzzy_find<CR>', options)
-map('n', '<leader>c', ':Telescope git_bcommits<CR>', options)
-map('n', '<leader>p', ':Telescope find_files<CR>', options)
-map('n', '<leader>f', ':Telescope live_grep<CR>', options)
-map('n', '<leader>b', ':Telescope buffers<CR>', options)
-map('n', '<leader>t', ':Telescope ', options)
+map('n', '<leader>/', ':BLines<CR>', options)
+map('n', '<leader>c', ':BCommits<CR>', options)
+map('n', '<leader>p', ':Files<CR>', options)
+map('n', '<leader>f', ':Ag ', options)
+map('n', '<leader>b', ':Buffers<CR>', options)
 

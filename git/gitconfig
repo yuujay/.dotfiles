@@ -43,12 +43,6 @@
     process = git-lfs filter-process
     required = true
     smudge = git-lfs smudge -- %f
-[include]
-    path = ~/.gitconfig.personal
-[includeIf "gitdir:/sandbox/gumamahe/**"]
-    path = ~/.gitconfig.mw
-[includeIf "gitdir:/System/Volumes/Data/mathworks/devel/sandbox/gumamahe/Cwebaddons.local/**"]
-    path = ~/.gitconfig.mw
 [merge]
     defaultToUpstream = true
     tool = vimdiff
@@ -66,3 +60,6 @@
 [log]
     excludeDecoration = *origin/j*
     excludeDecoration = *tag: j*
+[user]
+	name = gumamahe
+	email = gumamahe@mathworks.com

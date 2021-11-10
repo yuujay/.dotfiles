@@ -1,18 +1,16 @@
+-- INSTRUCTIONS:
+-- You NEED to source this file for any updates before running :Paq*
 require "paq-nvim" {
 
     'glepnir/lspsaga.nvim',
     'hrsh7th/nvim-compe',
+    'junegunn/fzf',
+    'junegunn/fzf.vim',
     'mhartington/formatter.nvim',
     'neovim/nvim-lspconfig',
-    'nvim-lua/plenary.nvim',
     'nvim-treesitter/nvim-treesitter',
     'phaazon/hop.nvim', -- EASYMOTION IN LUA #TOP5
-    'savq/paq-nvim',
-
--- Telescope related
-    'nvim-lua/popup.nvim',
-    'nvim-lua/plenary.nvim',
-    'nvim-telescope/telescope.nvim',
+    'savq/paq-nvim', -- lightweight package manager
 
     'airblade/vim-gitgutter',
     'christoomey/vim-sort-motion',
@@ -38,12 +36,19 @@ require "paq-nvim" {
   -- "b3nj5m1n/kommentary",
   -- "onsails/lspkind-nvim",
   -- "wellle/targets.vim",
-  --
+  -- 'https://github.com/junegunn/limelight.vim'
   -- "alvan/vim-closetag",
   -- "rmagatti/auto-session",
   -- 'lukas-reineke/indent-blankline.nvim',
+  -- 'https://github.com/Yggdroot/indentLine.git'
   -- 'kyazdani42/nvim-tree.lua',
---  'hoob3rt/lualine.nvim', -- POWERLINE WRITTEN IN LUA #TOP10 vs GalaxyLine THIS SLOWS DOWN NVIM open and saving
+  -- 'hoob3rt/lualine.nvim', -- POWERLINE WRITTEN IN LUA #TOP10 vs GalaxyLine THIS SLOWS DOWN NVIM open and saving
+
+-- Tried these plugins below, not suitable for current workflows
+-- Telescope related
+    -- 'nvim-lua/popup.nvim',
+    -- 'nvim-lua/plenary.nvim',
+    -- 'nvim-telescope/telescope.nvim',
 }
 
 
