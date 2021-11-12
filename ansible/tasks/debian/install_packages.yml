@@ -1,5 +1,5 @@
 ---
-- name: "Upgrade the system"
+- name: Upgrade the system
   become: true
   apt:
     update_cache: true

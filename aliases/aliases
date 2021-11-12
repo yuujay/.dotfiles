@@ -1,6 +1,4 @@
 # Some new rust replacements for commonly used utilities
-alias cat='bat'
-alias catt='cat'
 alias x='exa -1'
 alias xl='exa -al --git'
 alias xld='exa -alD --git'

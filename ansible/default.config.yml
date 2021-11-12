@@ -1,21 +1,20 @@
 ---
-configure_dotfiles: true
-configure_terminal: true
 dotfiles_repo: git@github.com:yuujay/dotfiles.git
 dotfiles_repo_local_path: ~/.config/fish
 install_debian_packages: false
 install_homebrew_cask_packages: false
 install_homebrew_if_missing: true
-install_homebrew_packages: false
+install_homebrew_packages: true
 install_ruby_gems: false
-upgrade_homebrew_packages: true
+upgrade_homebrew_packages: false
 
-run_brew_tasks: false
-run_gem_tasks: false
-setup_dot_files: true
-run_debian_tasks: true
+run_brew_tasks: true
+run_debian_tasks: false
 run_fish_config_tasks: false
+run_gem_tasks: false
 run_mac_config_tasks: false
+
+setup_dot_files: false
 
 apt_packages:
   - bash-completion
@@ -83,3 +82,7 @@ brew_packages:
 gem_list:
   - rubocop
   - solrgraph
+  - neovim
+
+npm_packages:
+  - neovim

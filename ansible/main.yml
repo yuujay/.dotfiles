@@ -5,7 +5,7 @@
     - default.config.yml
 
   tasks:
-    - import_tasks: tasks/install_brew_packages.yml
+    - import_tasks: tasks/mac/main.yml
       when: run_brew_tasks
       tags: ['brew', 'packages']
 
@@ -17,6 +17,6 @@
       when: setup_dot_files
       tags: ['git', 'dotfiles']
 
-    - import_tasks: tasks/debian/install_packages.yml
+    - import_tasks: tasks/debian/main.yml
       when: run_debian_tasks
       tags: ['apt', 'debian', 'packages']

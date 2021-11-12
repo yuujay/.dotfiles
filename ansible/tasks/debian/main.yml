@@ -1,0 +1,4 @@
+---
+- import_tasks: tasks/debian/install_packages.yml
+  when: run_debian_tasks
+  tags: ['apt', 'debian', 'packages']

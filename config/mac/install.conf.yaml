@@ -1,0 +1,37 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.aliases: aliases
+    ~/.config/karabiner: karabiner
+    ~/.config/kitty: kitty
+    ~/.config/nvim: nvim
+    ~/.fish_env:
+    ~/.gitconfig.mw: git/gitconfig.mw
+    ~/.gitconfig.personal: git/gitconfig.personal
+    ~/.gitconfig: git/gitconfig
+    ~/.gitmessage: git/gitmessage
+    ~/.hammerspoon: hammerspoon
+    ~/.iterm2_shell_integration.fish: functions/iterm2_shell_integration.fish
+    ~/.ssh/config: ssh/config
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux: tmux
+    ~/.vim: vim
+    ~/.vimrc: vim/vimrc
+
+- create:
+    - ~/.config/fish
+    - ~/.config/nvim
+    - ~/.config/karabiner
+    - ~/.config/kitty
+    - ~/.aliases
+    - ~/.tmux
+    - ~/.vim
+
+# - shell:
+    # - chsh -s $(which sh)
+    # - cp -r ./functions ~/.config
