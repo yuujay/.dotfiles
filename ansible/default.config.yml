@@ -71,6 +71,7 @@ brew_packages:
   - nmap
   - openssl
   - rbenv
+  - ripgrep
   - rsync
   - ruby-build
   - ssh-copy-id
