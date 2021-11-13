@@ -12,5 +12,3 @@
     name: "{{ apt_packages }}"
     state: present
   register: result
-  when:
-    - install_debian_packages

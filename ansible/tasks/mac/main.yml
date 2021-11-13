@@ -1,8 +1,8 @@
 ---
-- import_tasks: tasks/mac/install_brew_packages.yml
-  when: run_brew_tasks
+- import_tasks: tasks/mac/packages.yml
+  when: setup_mac
   tags: ['brew', 'packages']
 
-- import_tasks: tasks/mac/configure_dotfiles.yml
-  when: run_brew_tasks
+- import_tasks: tasks/mac/dotfiles.yml
+  when: setup_mac
   tags: ['brew', 'packages']

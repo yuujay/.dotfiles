@@ -1,4 +1,8 @@
 ---
-- import_tasks: tasks/debian/install_packages.yml
-  when: run_debian_tasks
+- import_tasks: tasks/debian/packages.yml
+  when: install_debian_packages
+  tags: ['apt', 'debian', 'packages']
+
+- import_tasks: tasks/debian/dotfiles.yml
+  when: setup_debian_config
   tags: ['apt', 'debian', 'packages']
