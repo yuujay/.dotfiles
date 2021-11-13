@@ -1,11 +1,4 @@
-
 ---
-- name: Copying config.fish
-  synchronize:
-    src: '{{ dotfiles_repo_local_path }}/config/debian/config.fish'
-    dest: '{{ dotfiles_repo_local_path }}'
-
-- name: Copying dotbot install config
-  synchronize:
-    src: '{{ dotfiles_repo_local_path }}/config/debian/install.conf.yaml'
-    dest: '{{ dotfiles_repo_local_path }}'
+- name: DEBIAN - Copying file overrides
+  copy: src={{ item.src }} dest={{ item.dest }}
+  with_items: {{ debian_file_overrides }}

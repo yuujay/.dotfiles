@@ -92,3 +92,13 @@ gem_list:
 
 npm_packages:
   - neovim
+
+debian_file_overrides:
+  - { src: '{{ dotfiles_repo_local_path }}/config/debian/config.fish', dest: '{{ dotfiles_repo_local_path }}/config.fish' }
+  - { src: '{{ dotfiles_repo_local_path }}/config/debian/install.conf.yaml', dest: '{{ dotfiles_repo_local_path }}/install.conf.yaml' }
+  - { src: '{{ dotfiles_repo_local_path }}/config/debian/tmux-shortcuts.conf', dest: '{{ dotfiles_repo_local_path }}/tmux/tmux-shortcuts.conf' }
+  - { src: '{{ dotfiles_repo_local_path }}/config/debian/tmux-vim.conf', dest: '{{ dotfiles_repo_local_path }}/tmux/tmux-vim.conf' }
+
+mac_file_overrides:
+  - { src: '{{ dotfiles_repo_local_path }}/config/debian/config.fish', dest: '{{ dotfiles_repo_local_path }}/config.fish' }
+  - { src: '{{ dotfiles_repo_local_path }}/config/debian/install.conf.yaml', dest: '{{ dotfiles_repo_local_path }}/install.conf.yaml' }

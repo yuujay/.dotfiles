@@ -1,12 +1,12 @@
 ---
-- name: Upgrade the system
+- name: DEBIAN - Upgrade the system
   become: true
   apt:
     update_cache: true
     allow_unauthenticated: true
     upgrade: dist
 
-- name: Installing packages
+- name: DEBIAN - Installing packages
   become: true
   apt:
     name: "{{ apt_packages }}"
