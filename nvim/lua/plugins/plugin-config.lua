@@ -6,7 +6,7 @@ vim.env.FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 -- BUFFERLINE
 vim.opt.termguicolors = true
-require("bufferline").setup({
+require'bufferline'.setup({
 	options = {
 		diagnostics = 'vim_lsp',
 		persist_buffer_sort = true,

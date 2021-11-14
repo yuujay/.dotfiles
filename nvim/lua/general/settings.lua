@@ -5,7 +5,7 @@ local bo = vim.bo
 -- global options
 o.autoindent = true
 o.autoread = true -- TODO: Fix autoread
-o.colorcolumn = '80'
+o.colorcolumn = '79'
 o.copyindent = true
 o.cursorline = true
 o.dir = '/tmp'

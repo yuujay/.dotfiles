@@ -5,6 +5,10 @@
     - default.config.yml
 
   tasks:
+    - import_tasks: tasks/debian/main.yml
+      when: setup_debian
+      tags: ['apt', 'debian', 'packages']
+
     - import_tasks: tasks/mac/main.yml
       when: setup_mac
       tags: ['brew', 'packages']
@@ -14,13 +18,10 @@
       tags: ['gems', 'ruby']
 
       # TODO: Fix this configuration
+      # TODO: Add script to download fonts and themes.
     - import_tasks: tasks/dot-files/main.yml
       when: setup_dot_files
       tags: ['git', 'dotfiles']
-
-    - import_tasks: tasks/debian/main.yml
-      when: setup_debian
-      tags: ['apt', 'debian', 'packages']
 
       # TODO: Fix this configuration
     - import_tasks: tasks/fish.yml
