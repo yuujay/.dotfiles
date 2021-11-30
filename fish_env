@@ -17,4 +17,4 @@ set -x GOTOOLDIR "/usr/local/go/pkg/tool/darwin_amd64/"
 set -x MW_ARCH "maci64"
 set GEM_HOME "$HOME/.gem/ruby/2.6.0"
 
-set PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local/go/bin /mathworks/hub/share/bin  /usr/local/netbin/ /mathworks/hub/share/sbtools/bin/maci64 /usr/bin /Users/gumamahe/.rbenv/shims /usr/local/opt/ruby/bin $GEM_HOME/bin $HOME/.config/fish/bash_scripts
+set PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local/go/bin /mathworks/hub/share/bin  /usr/local/netbin/ /mathworks/hub/share/sbtools/bin/maci64 /usr/bin /Users/gumamahe/.rbenv/shims /usr/local/opt/ruby/bin $GEM_HOME/bin $HOME/.config/fish/bash_scripts  /Library/Ruby/Gems/2.6.0/gems/

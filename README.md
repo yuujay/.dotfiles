@@ -46,6 +46,9 @@ This is caused due to less being misconfigured. To fix this run the following
 
 ```fish
 set LESS "-eirMX"
+
+<!-- if the above one doesnt work, try setting the git config -->
+git config core.pager 'less -R'
 ```
 
 - Open items and enhancements can be found [here](https://github.com/yuujay/dotfiles/projects/1)
