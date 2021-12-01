@@ -37,8 +37,16 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
--- UPDATE THE `servers` LIST AS NEW SERVES ARE ADDED
+--        ||
+--        ||
+--        ||
+--        ||
+--      \ || /
+--       \||/
+--        \/
+-- *** IMPORTANT *** UPDATE THE `servers` LIST AS NEW SERVES ARE ADDED
 local servers = { 'solargraph', 'gopls' }
+
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
 	on_attach = on_attach,

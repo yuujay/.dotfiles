@@ -1,6 +1,16 @@
+--        ||
+--      \ || /
+--       \||/
+--        \/
+-- *** IMPORTANT *** UPDATE THE `servers` in `keybindings.lua` file 
+
 require ('plugins.lsp.compe-config')
+require ('plugins.lsp.lspsaga')
+
+require ('plugins.lsp.docker')
 require ('plugins.lsp.go')
 require ('plugins.lsp.ruby')
+
 require ('plugins.lsp.keybindings')
 
 vim.g.loaded_perl_provider = 0
@@ -10,26 +20,22 @@ vim.g.loaded_perl_provider = 0
 -- require'lspconfig'.ansiblels.setup{}
 -- require'lspconfig'.cssls.setup{}
 -- require'lspconfig'.dotls.setup{}
--- require'lspconfig'.dockerls.setup{}
 -- require'lspconfig'.eslint.setup{}
 -- require'lspconfig'.graphql.setup{}
 -- require'lspconfig'.html.setup{}
 -- require'lspconfig'.java_language_server.setup{}
 -- require'lspconfig'.jsonls.setup{}
 -- require'lspconfig'.rust_analyzer.setup{}
--- require'lspconfig'.tsserver.setup{}
 -- require'lspconfig'.vimls.setup{}
 -- require'lspconfig'.yamlls.setup{}
 -- require'lspconfig'.puppet.setup{}
 
 --- SERVER INSTALLATIONS
--- npm install -g typescript typescript-language-server
 -- npm install -g vim-language-server
 -- yarn global add yaml-language-server
 -- yarn global add ansible-language-server
 -- npm i -g bash-language-server
 -- npm i -g vscode-langservers-extracted
--- npm install -g dockerfile-language-server-nodejs
 -- npm install -g dot-language-server
 -- npm i -g vscode-langservers-extracted
 -- npm install -g graphql-language-service-cli

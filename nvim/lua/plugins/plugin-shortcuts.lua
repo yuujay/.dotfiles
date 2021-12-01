@@ -40,3 +40,6 @@ map('n', '<leader>p', ':Files<CR>', options)
 map('n', '<leader>f', ':Ag ', options)
 map('n', '<leader>b', ':Buffers<CR>', options)
 
+-- LSPsaga
+-- map('n', '<leader>ca', ':Lspsaga code_action<CR>', options)
+
