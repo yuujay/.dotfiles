@@ -3,14 +3,11 @@
 --       \||/
 --        \/
 -- *** IMPORTANT *** UPDATE THE `servers` in `keybindings.lua` file 
-
 require ('plugins.lsp.compe-config')
-require ('plugins.lsp.lspsaga')
-
 require ('plugins.lsp.docker')
 require ('plugins.lsp.go')
 require ('plugins.lsp.ruby')
-
+require ('plugins.lsp.ts')
 require ('plugins.lsp.keybindings')
 
 vim.g.loaded_perl_provider = 0

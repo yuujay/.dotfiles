@@ -7,7 +7,7 @@ require "paq-nvim" {
     -- intellisense
     'hrsh7th/nvim-compe', -- TODO: Replace by nvim-cmp
     'neovim/nvim-lspconfig',
-    'williamboman/nvim-lsp-installer',
+    -- 'williamboman/nvim-lsp-installer',
     -- 'glepnir/lspsaga.nvim',
     -- 'hrsh7th/nvim-cmp',
 
