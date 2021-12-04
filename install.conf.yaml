@@ -20,8 +20,6 @@
     ~/.ssh/config: ssh/config
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux: tmux
-    ~/.vim: vim
-    ~/.vimrc: vim/vimrc
 
 - create:
     - ~/.config/fish
@@ -30,7 +28,6 @@
     - ~/.config/kitty
     - ~/.aliases
     - ~/.tmux
-    - ~/.vim
 
 # - shell:
     # - chsh -s $(which sh)
