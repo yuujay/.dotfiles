@@ -6,7 +6,7 @@ alias mcv='mw mvn clean verify'
 
 # AOE-MW ALIASES
 alias vimdc='cdd; vi docker-compose.yml'
-alias sshg="ssh gumamahe@gumamahe-maci.dhcp.mathworks.com"
+alias sshg="ssh gumamahe@ah-gumamahe-m.dhcp.mathworks.com"
 
 alias sshd1="ssh basysrby@ruby26ext-d01ls"
 alias sshd2="ssh basysrby@ruby26ext-d02ls"

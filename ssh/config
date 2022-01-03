@@ -4,7 +4,7 @@ Host deb
     User gumamahe
 
 Host ah
-    HostName gumamahe-m.dhcp.mathworks.com
+    HostName ah-gumamahe-m.dhcp.mathworks.com
     User gumamahe
 
 Host lab
