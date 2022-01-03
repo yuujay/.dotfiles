@@ -69,6 +69,7 @@ brew_packages:
   - git
   - go
   - htop
+  - imagemagick
   - jq
   - minikube
   - multitail
