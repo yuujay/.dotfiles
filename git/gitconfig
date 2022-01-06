@@ -36,6 +36,7 @@
     autocrlf = input
     editor = /usr/bin/vim
     excludesfile = ~/.gitignore
+	pager = less -R
 [credential]
     helper = osxkeychain
 [filter "lfs"]
