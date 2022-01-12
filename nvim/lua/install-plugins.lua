@@ -1,7 +1,7 @@
 -- INSTRUCTIONS:
 -- You NEED to source this file for any updates before running :Paq*
 
-require "paq-nvim" {
+require "paq" {
     'savq/paq-nvim', -- lightweight package manager
 
     -- intellisense
