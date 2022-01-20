@@ -3,6 +3,7 @@
     aa = add .
     b = branch -vv
     bb = branch -vv --all
+    bd = branch -D
     c = commit
     ca = commit -a
     cam = commit -a -m
@@ -28,15 +29,16 @@
     sa = submodule add
     st = stash
     stp = stash pop
+    uc = reset HEAD^ --soft
     update-submodules = submodule update --init --recursive
     upgrade-submodules = submodule update --init --remote
 [commit]
     template = ~/.gitmessage
 [core]
     autocrlf = input
-    editor = /usr/bin/vim
+    editor = /usr/local/bin/nvim
     excludesfile = ~/.gitignore
-	pager = less -R
+    pager = less -R
 [credential]
     helper = osxkeychain
 [filter "lfs"]
