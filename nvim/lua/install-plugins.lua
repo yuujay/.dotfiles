@@ -26,6 +26,7 @@ require "paq" {
     'tpope/vim-fugitive',
     'tpope/vim-rails',
     'tpope/vim-surround',
+    'ellisonleao/glow.nvim',
   -- 'https://github.com/junegunn/limelight.vim'
 
     -- Cosmetic configs
