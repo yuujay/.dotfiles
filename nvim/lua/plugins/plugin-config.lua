@@ -15,6 +15,12 @@ require'bufferline'.setup({
 	}
 })
 
+-- Enable treesitter 
+require'nvim-treesitter.configs'.setup{
+  highlight =  {
+    enable = true,
+  },
+}
 
 -- LIMELIGHT CONFIGS USED IN OLD VIM CONFIGS
 -- -- Limelight - Turn this on when you want limelight to be enabled by default.

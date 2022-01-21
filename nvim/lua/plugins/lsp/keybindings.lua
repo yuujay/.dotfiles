@@ -45,7 +45,7 @@ end
 --       \||/
 --        \/
 -- *** IMPORTANT *** UPDATE THE `servers` LIST AS NEW SERVES ARE ADDED
-local servers = { 'dockerls', 'gopls', 'solargraph', 'tsserver' }
+local servers = { 'dockerls', 'gopls', 'solargraph', 'tsserver', 'bashls' }
 
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
