@@ -1,12 +1,10 @@
--- This is now set by `bufferline`
--- vim.g["airline#extensions#tabline#enabled"] = 1
 vim.g.airline_powerline_fonts = 1
 
 vim.env.FZF_DEFAULT_COMMAND = 'ag -g ""'
 
--- BUFFERLINE
+-- `bufferline`
 vim.opt.termguicolors = true
-require'bufferline'.setup({
+require('bufferline').setup({
 	options = {
 		diagnostics = 'vim_lsp',
 		persist_buffer_sort = true,
@@ -15,12 +13,13 @@ require'bufferline'.setup({
 	}
 })
 
--- Enable treesitter 
-require'nvim-treesitter.configs'.setup{
-  highlight =  {
-    enable = true,
-  },
-}
+-- `nvim-treesitter`
+require('nvim-treesitter.configs').setup({
+    -- ensure_installed = "maintained", -- DO NOT TURN THIS FLAG ON as it installs a lot language specific TS
+    highlight =  {
+        enable = true,
+    },
+})
 
 -- LIMELIGHT CONFIGS USED IN OLD VIM CONFIGS
 -- -- Limelight - Turn this on when you want limelight to be enabled by default.
