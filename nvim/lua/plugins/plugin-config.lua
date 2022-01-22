@@ -21,6 +21,13 @@ require('nvim-treesitter.configs').setup({
     },
 })
 
+-- `nvim-lspconfig` --TODO: Doesnt work as of now
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+end
+
 -- LIMELIGHT CONFIGS USED IN OLD VIM CONFIGS
 -- -- Limelight - Turn this on when you want limelight to be enabled by default.
 -- -- autocmd VimEnter * Limelight

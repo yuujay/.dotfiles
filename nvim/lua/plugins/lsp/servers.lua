@@ -1,7 +1,7 @@
--- THIS BELOW SECTION IS REQUIRED AS LSPs DON'T PROVIDE keybindings
---
--- Use an on_attach function to only map the following keys
--- after the language server attaches to the current buffer
+require ('plugins.lsp.keybindings')
+
+local nvim_lsp = require('lspconfig')
+
 local on_attach = function(client, bufnr)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
@@ -32,3 +32,52 @@ local on_attach = function(client, bufnr)
   buf_set_keymap("n", "<space>F", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 end
 
+
+-- *** IMPORTANT *** UPDATE THE `servers` LIST AS NEW SERVES ARE ADDED
+-- 'ansiblels', 'gopls','jsonls', 'bashls', 'cssls', 'dotls',  - add these back after installing LSP
+local servers = {'eslint', 'solargraph', 'tsserver', 'vimls', 'yamlls','dockerls' }
+
+-- Set the LSP capabilities
+-- Override the default capabilities with `nvim-cmp` capabilities
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+capabilities.textDocument.completion.completionItem.resolveSupport = {
+  properties = {
+    'documentation',
+    'detail',
+    'additionalTextEdits',
+  }
+}
+
+-- Use a loop to conveniently call 'setup' on multiple servers and
+-- map buffer local keybindings when the language server attaches
+for _, lsp in ipairs(servers) do
+  nvim_lsp[lsp].setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
+	flags = {
+	  debounce_text_changes = 150,
+	}
+  }
+end
+
+--- SERVER INSTALLATIONS
+
+-- brew install ansible-lint
+-- gem install --user-install solargraph
+-- go install golang.org/x/tools/gopls@latest
+-- npm i -g bash-language-server
+-- npm i -g dockerfile-language-server-nodejs
+-- npm i -g dot-language-server
+-- npm i -g emmet-ls
+-- npm i -g graphql-language-service-cli
+-- npm i -g typescript typescript-language-server
+-- npm i -g typescript typescript-language-server
+-- npm i -g vim-language-server
+-- npm i -g vscode-html-languageserver-bin
+-- npm i -g vscode-json-extracted
+-- npm i -g vscode-langservers-extracted
+-- vim.g.ruby_host_prog = '/Users/gumamahe/.gem/ruby/2.6.0/bin/neovim-ruby-host'
+-- yarn global add ansible-language-server
+-- yarn global add yaml-language-server
