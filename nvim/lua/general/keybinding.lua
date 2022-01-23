@@ -22,7 +22,9 @@ map('n', '<leader>x', ':close<CR>', options)
 
 map('n', '<C-a>', ':w<Space>', options)
 map('n', '<C-n>', ':enew<CR>', options)
+map('n', '<C-q>', ":%bd|e#<CR>:echom 'Closed all buffer except current!'<CR>", options)
 map('n', '<C-w>', ':bw<CR>', options)
+map('n', 'gf', ':edit <cfile><CR>', options) -- Opens a file under cursor even if it doesnt exisit.
 map('n', 'ss', ':w<CR>', options)
 
 -- Resize vim windows
@@ -37,6 +39,11 @@ map('n', '<Right>', ':vertical resize +2<CR>', options)
 map('x', 'K', ":move '<-2<CR>gv-gv", options)
 map('x', 'J', ":move '>+1<CR>gv-gv", options)
 
+-- Reselect visual selection after indenting
+
+map('v', '<', '<gv', options)
+map('v', '>', '>gv', options)
+
 -- Disable search highlights
 
 map('n', '<leader>`', ':nohls<CR>', options)
@@ -49,7 +56,7 @@ map('n', '<leader><leader>p', ':PaqInstall<CR>', options)
 
 map('n', '<leader><leader>la', ':e ~/.aliases<CR>', options)
 map('n', '<leader><leader>ya', ':e /Users/gumamahe/Documents/Cwebaddons.local/docker-compose.yml<CR>', options)
-map('n', '<leader><leader>rc', ':e ~/.init.lua<CR>', options)
+map('n', '<leader><leader>rc', ':e ~/.config/nvim/init.lua<CR>', options)
 map('n', '<leader><leader>tc', ':e ~/.tmux.conf<CR>', options)
 map('n', '<leader><leader>hs', ':e /etc/hosts<CR>', options)
 
@@ -71,4 +78,5 @@ map('n', '1s', ':set spell! spelllang=en_us<CR>', options)
 
 -- Reload init.lua
 
-map('n', '<leader><leader>rr', ":source %<CR>:echom 'current lua reloaded'<CR>", options)
+map('n', '<leader><leader>rf', ":source %<CR>:echom 'current lua reloaded'<CR>", options)
+map('n', '<leader><leader>rr', ":source ~/.config/nvim/init.lua<CR>:echom 'NVIM init.lua reloaded'<CR>", options)

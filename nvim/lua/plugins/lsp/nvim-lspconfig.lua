@@ -1,6 +1,6 @@
-local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+local signs = { Error = " ", Warning = " ", Hint = " ", Info = " " }
 for type, icon in pairs(signs) do
-  local hl = "DiagnosticSign" .. type
+  local hl = "LspDiagnosticsSign" .. type
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 
@@ -11,7 +11,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
         severity_limit = "Hint",
     },
     underline = true,
-    update_in_insert = true, -- TODO: Turn this off if performance becomes slow.
+    update_in_insert = true, -- NOTE: Turn this off if performance becomes slow.
     virtual_text = false,
     -- {
     --     -- Alternative `virtual_text` config

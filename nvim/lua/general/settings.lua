@@ -20,6 +20,9 @@ o.smartindent = true
 o.smarttab = true
 o.swapfile = false
 
+vim.opt.list = true
+vim.opt.listchars = { trail = '.', tab = '>~' }
+
 -- window-local options
 wo.number = true
 wo.relativenumber = false

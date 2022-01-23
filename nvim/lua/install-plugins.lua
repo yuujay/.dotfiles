@@ -37,7 +37,6 @@ require "paq" {
     'tpope/vim-commentary',
     'tpope/vim-endwise',
     'tpope/vim-fugitive',
-    'tpope/vim-rails', -- CHECK IF THIS IS USED?
     'tpope/vim-surround',
 
     -- Cosmetics
@@ -53,22 +52,29 @@ require "paq" {
     'vim-airline/vim-airline',
     'ryanoasis/vim-devicons',  -- This needs to be at the end since we devicons need to loaded after all plugins
 
+    -- Markdown preview
     'ellisonleao/glow.nvim',
 
-    -- https://github.com/itchyny/lightline.vim TODO: Check this out over airline
-    -- https://github.com/maximbaz/lightline-ale - TODO: If ale is used, can provide status
     -- "alvan/vim-closetag",
     -- "b3nj5m1n/kommentary",
-    -- "hrsh7th/vim-vsnip",
-    -- "onsails/lspkind-nvim",
     -- "rmagatti/auto-session",
     -- "wellle/targets.vim",
-    -- 'https://github.com/junegunn/limelight.vim'
-    -- 'hoob3rt/lualine.nvim', -- POWERLINE WRITTEN IN LUA #TOP10 vs GalaxyLine THIS SLOWS DOWN NVIM open and saving
     -- 'https://github.com/Yggdroot/indentLine.git'
+    -- 'https://github.com/junegunn/limelight.vim'
     -- 'kyazdani42/nvim-tree.lua',
+    -- 'WaylonWalker/Telegraph.nvim', -- Check if this is better than vim-tmux-runner.
     -- 'lukas-reineke/indent-blankline.nvim',
     -- 'mhartington/formatter.nvim', -- Not sure if this is required.
+    -- 'voldikss/vim-floaterm' -- Not particularly useful if vim is used within tmux
+    -- https://github.com/itchyny/lightline.vim TODO: Check this out over airline
+    -- https://github.com/maximbaz/lightline-ale - TODO: If ale is used, can provide status
+
+    -- Finer configurations
+    -- 'tpope/vim-projectionist' -- Too cool to configure and have it working.
+    -- 'vim-test/vim-test'
+    -- 'ThePrimeagen/harpoon'
+    -- 'code-biscuits/nvim-biscuits'
+    -- 'chipsenkbeil/distant.nvim' -- Remote development from vim
 
     -- Tried these plugins below, not suitable for current workflows
     -- Telescope related
