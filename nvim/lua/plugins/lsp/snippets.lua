@@ -17,6 +17,7 @@ keymap("s", "<C-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>", opts)
 -- Predefined snippets
 require'luasnip'.filetype_extend("ruby", {"css", "erb", "gitcommit", "go", "html", "javascript", "kubernetes", "lua", "markdown", "rails", "scala", "shell"})
 
+-- Snippets in selection mode
 ls.config.set_config({
   store_selection_keys = '<C-s>',
 })

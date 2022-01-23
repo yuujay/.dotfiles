@@ -1,32 +1,23 @@
-vim.g.airline_powerline_fonts = 1
-
 vim.env.FZF_DEFAULT_COMMAND = 'ag -g ""'
+vim.g.airline_powerline_fonts = 1
 
 -- `bufferline`
 vim.opt.termguicolors = true
 require('bufferline').setup({
 	options = {
+		always_show_bufferline = true,
 		diagnostics = 'vim_lsp',
 		persist_buffer_sort = true,
-		always_show_bufferline = true,
 		separator_style = 'thin'
 	}
 })
 
 -- `nvim-treesitter`
 require('nvim-treesitter.configs').setup({
-    -- ensure_installed = "maintained", -- DO NOT TURN THIS FLAG ON as it installs a lot language specific TS
     highlight =  {
         enable = true,
     },
 })
-
--- `nvim-lspconfig` --TODO: Doesnt work as of now
-local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
-for type, icon in pairs(signs) do
-  local hl = "DiagnosticSign" .. type
-  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
-end
 
 -- LIMELIGHT CONFIGS USED IN OLD VIM CONFIGS
 -- -- Limelight - Turn this on when you want limelight to be enabled by default.

@@ -16,10 +16,10 @@ require "paq" {
     'saadparwaiz1/cmp_luasnip',
 
     -- LSP
+    'glepnir/lspsaga.nvim',
     'neovim/nvim-lspconfig',
     'nvim-treesitter/nvim-treesitter',
     'williamboman/nvim-lsp-installer',
-    -- 'glepnir/lspsaga.nvim',
     -- 'ray-x/lsp_signature'
 
     -- Movements
