@@ -32,7 +32,10 @@ vim.g.ruby_host_prog = '/Users/gumamahe/.gem/ruby/2.6.0/bin/neovim-ruby-host'
 yarn global add ansible-language-server
 yarn global add yaml-language-server
 ```
-Another nice customization is that nvim's LSP does not come with any out of the box keybindings for code navigations. This provides various options to work with. Current setup makes of a plugin called `lspsaga`. Keybindings related to this plugin can be found in `nivm/lua/plugins/lsp/lspsaga.lua`.
+Another nice customization is that nvim's LSP does not come with any out of the box keybindings for code navigations. This provides various options to work with. Current setup uses inbuilt diagnostics api.
+
+Depricated - * Current setup makes of a plugin called `lspsaga`. Keybindings related to this plugin can be found in `nivm/lua/plugins/lsp/lspsaga.lua`. *
+TODO: Check if we could make use of Telescope to use it for diagnostics
 
 #### Autocomplete
 The setup that I currently make use for autocomplete is mostly provided by `nvim-cmp` plugin which has its own set of plugin dependencies to give a good IDE experience. More information can be found in the [github repo's README](https://github.com/hrsh7th/nvim-cmp).
