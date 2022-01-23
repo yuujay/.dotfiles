@@ -23,7 +23,7 @@ cmp.setup ({
         ["<C-f>"] = cmp.mapping.scroll_docs(2),
         ["<C-e>"] = cmp.mapping.close(),
         ["<C-Space>"] = cmp.mapping.complete(),
-        ["<C-y>"] = cmp.mapping( -- TODO: Fix this to run against <CR>
+        ["<C-y>"] = cmp.mapping(
           cmp.mapping.confirm {
             behavior = cmp.ConfirmBehavior.Insert,
             select = true,
