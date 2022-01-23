@@ -62,7 +62,7 @@ ls.snippets = {
             insert(0)
           }),
           snip({
-              trig = "link",
+              trig = "link-ujg",
               namr = "markdown_link",
               dscr = "Create markdown link [txt](url)"
           },

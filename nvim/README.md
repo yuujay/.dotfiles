@@ -1,3 +1,56 @@
+### Setup Overview
+At the time of writing this `neovim` is on `0.6.1`. The configuration for LSP is available hence a certain group of plugins were used to provide a neat working experience.
+
+#### Configuration
+This configuration of nvim LSP can be split into 3 parts at a very high level.
+
+- Language Servers
+- Autocomplete
+- Snippets
+
+##### Language Servers
+`neovim` comes with LSP from v0.5+, this means that it can act as LSP client. However, it is on us to install the acutal language servers. There is a plugin that takes care of the language server installation `williamboman/nvim-lsp-installer`.
+
+But this can be done without plugins by just using CLI tools. A sample of these could be something like
+
+```bash
+brew install ansible-lint
+gem install --user-install solargraph
+go install golang.org/x/tools/gopls@latest
+npm i -g bash-language-server
+npm i -g dockerfile-language-server-nodejs
+npm i -g dot-language-server
+npm i -g emmet-ls
+npm i -g graphql-language-service-cli
+npm i -g typescript typescript-language-server
+npm i -g typescript typescript-language-server
+npm i -g vim-language-server
+npm i -g vscode-html-languageserver-bin
+npm i -g vscode-json-extracted
+npm i -g vscode-langservers-extracted
+vim.g.ruby_host_prog = '/Users/gumamahe/.gem/ruby/2.6.0/bin/neovim-ruby-host'
+yarn global add ansible-language-server
+yarn global add yaml-language-server
+```
+Another nice customization is that nvim's LSP does not come with any out of the box keybindings for code navigations. This provides various options to work with. Current setup makes of a plugin called `lspsaga`. Keybindings related to this plugin can be found in `nivm/lua/plugins/lsp/lspsaga.lua`.
+
+#### Autocomplete
+The setup that I currently make use for autocomplete is mostly provided by `nvim-cmp` plugin which has its own set of plugin dependencies to give a good IDE experience. More information can be found in the [github repo's README](https://github.com/hrsh7th/nvim-cmp).
+
+In addition to `nvim-cmp` there are few other plugins that are currently used. Also, snippet engine plays a major role in this experience. Look into `Snippets` section for more info.
+
+- hrsh7th/cmp-buffer
+- hrsh7th/cmp-nvim-lsp
+- hrsh7th/cmp-path
+
+### Snippets
+Snippets are provided by `luasnip` plugin engine. This has means to pull in snippets from vscode engine in addition to write custom snippets.
+
+Other plugins that are used in addition with `luasnip` are
+- L3MON4D3/LuaSnip
+- rafamadriz/friendly-snippets
+- saadparwaiz1/cmp_luasnip
+
 ### Post Installation
 - After installation of NeoVim, first thing that we have to do is run `:checkhealth` and confirm that there are no errors.
 - As of 0.5v of NeoVim, LSP is supported but no autocompletion. Need to make use of external plugins such as `nvim-compe` or `nvim-cmp`
