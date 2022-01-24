@@ -3,6 +3,7 @@ set EDITOR 'vim'
 set FZF_DEFAULT_COMMAND 'ag -g ""'
 set HOME_SERVER_IP 192.168.86.100
 set LAB_IP 192.168.86.100
+set XDG_DATA_HOME "$HOME/.local/share"
 
 set -x CG_ENABLED 0
 set -x GO111MODULE "on"

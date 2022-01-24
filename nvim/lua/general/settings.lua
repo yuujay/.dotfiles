@@ -39,5 +39,3 @@ o.tabstop = 4
 -- Need this for using fonts
 -- bo.encoding = 'UTF-8'
 
--- Highlight trialing spaces
--- highlight RedundantSpaces ctermbg

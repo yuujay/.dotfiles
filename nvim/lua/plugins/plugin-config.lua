@@ -19,6 +19,17 @@ require('nvim-treesitter.configs').setup({
     },
 })
 
+-- `firenvim`
+-- TODO: Add blacklist and whitelist
+-- TODO: Set filetypes for website specific ones.
+-- TODO: Refactor once `autocmd` api's are native in lua
+vim.api.nvim_command([[
+    augroup UJ
+        autocmd BufEnter confluence.mathworks.com_*.txt set filetype=markdown
+        autocmd BufEnter github.com_*.txt set filetype=markdown
+    augroup END
+]])
+
 -- LIMELIGHT CONFIGS USED IN OLD VIM CONFIGS
 -- -- Limelight - Turn this on when you want limelight to be enabled by default.
 -- -- autocmd VimEnter * Limelight
