@@ -20,15 +20,32 @@ require('nvim-treesitter.configs').setup({
 })
 
 -- `firenvim`
--- TODO: Add blacklist and whitelist
--- TODO: Set filetypes for website specific ones.
--- TODO: Refactor once `autocmd` api's are native in lua
 vim.api.nvim_command([[
     augroup UJ
         autocmd BufEnter confluence.mathworks.com_*.txt set filetype=markdown
         autocmd BufEnter github.com_*.txt set filetype=markdown
     augroup END
 ]])
+
+-- Disable firenvim by default and enble for just confluence, github, and reviewboard
+-- TODO: This config doesn't work. Fix this to add blacklist and whitelist.
+-- vim.g.firenvim_config = {
+--       globalSettings = {
+--          alt = 'all',
+--       },
+--      localSettings = {
+--          [['stackoverflow.com']] = {
+--              cmdline  = 'neovim',
+--              content  = 'text',
+--              priority = 0,
+--              selector = 'textarea',
+--              takeover = 'never',
+--          },
+--          [['confluence.mathworks.com']] = { takeover= 'always' },
+--          [['github.com']] = { takeover= 'always' },
+--          [['github.mathworks.com']] = { takeover= 'always' },
+--      }
+--  }
 
 -- LIMELIGHT CONFIGS USED IN OLD VIM CONFIGS
 -- -- Limelight - Turn this on when you want limelight to be enabled by default.
