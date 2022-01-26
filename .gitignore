@@ -5,3 +5,4 @@ fish_variables
 tags
 tmux/resurrect/*
 vim/plugged/**
+nvim/spell
