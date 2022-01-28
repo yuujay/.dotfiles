@@ -1,9 +1,10 @@
- vim.cmd([[
-    augroup _remove_whitespace
-        autocmd!
-        autocmd BufWrite * mark ' | silent! %s/\s\+$// | norm ''
-    augroup END
+ -- TODO - Fix `_remove_whitespace` from moving to the start of the line after save
+-- augroup _remove_whitespace
+--     autocmd!
+--     autocmd BufWrite * mark ' | silent! %s/\s\+$// | norm ''
+-- augroup END
 
+ vim.cmd([[
     augroup _git
         autocmd!
         autocmd FileType gitcommit setlocal wrap
