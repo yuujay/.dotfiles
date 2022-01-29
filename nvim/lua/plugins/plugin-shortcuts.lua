@@ -18,6 +18,7 @@ map('n', '<leader>nf', ':NERDTreeFind<CR>', options)
 
 -- Vim Fuguitive
 map('n', '<leader>g', ':Git<CR>', options)
+map('n', '<leader>gb', ':Git blame<CR>', options)
 map('n', '<leader>gd', ':Gvdiffsplit<CR>', options)
 map('n', '<leader>gh', ':GitGutterPreviewHunk<CR>', options)
 map('n', '<leader>gs', ':GitGutterStageHunk<CR>', options)

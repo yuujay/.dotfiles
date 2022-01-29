@@ -16,8 +16,9 @@
 
     augroup _vim_fugitive
         autocmd!
-        autocmd FileType fugitive nnoremap <buffer> <silent> q :<C-U>call fugitive#DiffClose()<CR>
-        autocmd FileType fugitive nnoremap <buffer> <silent> d :<C-U>execute <SNR>131_StageInline('toggle',line('.'),v:count)<CR>
+        autocmd BufWritePost * GitGutter
+        autocmd FileType fugitive nnoremap <buffer> <silent> q dq
+        autocmd FileType fugitive nnoremap <buffer> <silent> d =
         autocmd FileType fugitive nnoremap <buffer> <silent> <ESC> :q<CR>
     augroup end
 

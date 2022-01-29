@@ -15,14 +15,14 @@ map('n', '<leader>h', ':bprev<CR>', options)
 -- Nifty mappings
 map('n', 'Y', 'y$', options)
 -- Keep searches centered
-map('n', 'n', 'nzzzv', options) 
+map('n', 'n', 'nzzzv', options)
 map('n', 'N', 'Nzzzv', options)
 map('n', 'J', 'mmJ`m', options)
 -- Undo break points
 map('i', '.', '.<C-g>u', options)
-map('i', '?', '.<C-g>u', options)
-map('i', ',', '.<C-g>u', options)
-map('i', '!', '.<C-g>u', options)
+map('i', '?', '?<C-g>u', options)
+map('i', ',', ',<C-g>u', options)
+map('i', '!', '!<C-g>u', options)
 
 -- Split Buffers
 map('n', '<leader>-', ':split<CR>', options)
@@ -71,11 +71,11 @@ map('n', '<leader><leader>5', ':e!<CR>', options)
 map('n', '<ESC><leader>', ':pc<CR>', options)
 
 -- Toggles
-map('n', '12', ':set nu!<CR>', options)
-map('n', '123', ':set rnu!<CR>', options)
-map('n', '1c', ':set cursorline!<CR>', options)
-map('n', '1l', ':Limelight!!<CR>', options)
-map('n', '1s', ':set spell! spelllang=en_us<CR>', options)
+map('n', '<leader>tn', ':set nu!<CR>', options)
+map('n', '<leader>trn', ':set rnu!<CR>', options)
+map('n', '<leader>tc', ':set cursorline!<CR>', options)
+map('n', '<leader>tl', ':Limelight!!<CR>', options)
+map('n', '<leader>ts', ':set spell! spelllang=en_us<CR>', options)
 
 -- Reload init.lua
 map('n', '<leader><leader>rf', ":source %<CR>:echom 'current lua reloaded'<CR>", options)
