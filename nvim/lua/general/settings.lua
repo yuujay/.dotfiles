@@ -15,6 +15,7 @@ o.incsearch = true
 o.laststatus = 2
 o.mouse = 'a'
 o.scrolloff = 12
+o.signcolumn = "auto:2"
 o.smartcase = true
 o.smartindent = true
 o.smarttab = true
