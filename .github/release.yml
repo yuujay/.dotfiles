@@ -6,12 +6,17 @@ changelog:
     - title: New Features 🎉
       labels:
         - enhancement
+        - feature
+        - feat
     - title: Bug Fixes 🐛
       labels:
         - bug-fix
+        - bug
+        - fix
     - title: Breaking Changes 🛠
       labels:
         - breaking-change
+        - breaking
     - title: Other Changes
       labels:
         - "*"
