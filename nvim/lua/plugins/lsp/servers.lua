@@ -54,7 +54,7 @@ end
 
 -- *** IMPORTANT *** UPDATE THE `servers` LIST AS NEW SERVES ARE ADDED
 -- 'ansiblels', 'jsonls', 'bashls', 'cssls', 'dotls',  - add these back after installing LSP
-local servers = {'eslint', 'gopls', 'solargraph', 'tsserver', 'vimls', 'yamlls','dockerls' }
+local servers = {'eslint', 'gopls', 'solargraph', 'sumneko_lua', 'tsserver', 'vimls', 'yamlls','dockerls' }
 
 -- Set the LSP capabilities
 -- Override the default capabilities with `nvim-cmp` capabilities
@@ -73,17 +73,18 @@ capabilities.textDocument.completion.completionItem.resolveSupport = {
 -- map buffer local keybindings when the language server attaches
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
-	on_attach = on_attach,
-	capabilities = capabilities,
-	flags = {
-	  debounce_text_changes = 150,
-	}
+      on_attach = on_attach,
+      capabilities = capabilities,
+      flags = {
+          debounce_text_changes = 150,
+      }
   }
 end
 
 --- SERVER INSTALLATIONS
 
 -- brew install ansible-lint
+-- brew install lua-language-server
 -- gem install --user-install solargraph
 -- go install golang.org/x/tools/gopls@latest
 -- npm i -g bash-language-server
