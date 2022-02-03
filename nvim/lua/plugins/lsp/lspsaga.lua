@@ -1,6 +1,6 @@
 -- Currently this is not required from `lsp.init` since this plugin is brokens
 local map = vim.api.nvim_set_keymap
-options = { noremap = true }
+local options = { noremap = true }
 
 local saga = require('lspsaga')
 saga.init_lsp_saga {}

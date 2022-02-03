@@ -64,5 +64,5 @@
     excludeDecoration = *origin/j*
     excludeDecoration = *tag: j*
 [user]
-	name = gumamahe
-	email = gumamahe@mathworks.com
+    name = gumamahe
+    email = gumamahe@mathworks.com

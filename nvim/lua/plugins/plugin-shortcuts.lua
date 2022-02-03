@@ -1,5 +1,5 @@
 local map = vim.api.nvim_set_keymap
-options = { noremap = true }
+local options = { noremap = true }
 
 -- Bufferline
 -- map('n', '<leader>l', ':BufferLineCycleNext<CR>', options)
@@ -20,6 +20,7 @@ map('n', '<leader>nf', ':NERDTreeFind<CR>', options)
 
 -- Vim Fuguitive
 map('n', '<leader>g', ':Git<CR>', options)
+map('n', '<leader>gc', ':Git commit<CR>', options)
 map('n', '<leader>gd', ':Gvdiffsplit<CR>', options)
 map('n', '<leader>gh', ':GitGutterPreviewHunk<CR>', options)
 map('n', '<leader>gs', ':GitGutterStageHunk<CR>', options)

@@ -4,12 +4,12 @@ vim.g.airline_powerline_fonts = 1
 -- `bufferline`
 vim.opt.termguicolors = true
 require('bufferline').setup({
-	options = {
-		always_show_bufferline = true,
-		diagnostics = 'vim_lsp',
-		persist_buffer_sort = true,
-		separator_style = 'thin'
-	}
+    options = {
+        always_show_bufferline = true,
+        diagnostics = 'nvim_lsp',
+        persist_buffer_sort = true,
+        separator_style = 'thick',
+    }
 })
 
 -- `nvim-treesitter`

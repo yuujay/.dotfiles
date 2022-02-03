@@ -11,7 +11,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
         severity_limit = "Hint",
     },
     underline = true,
-    update_in_insert = true, -- NOTE: Turn this off if performance becomes slow.
+    update_in_insert = false, -- NOTE: Turn this off if performance becomes slow.
     virtual_text = false,
     -- {
     --     -- Alternative `virtual_text` config

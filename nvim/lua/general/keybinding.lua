@@ -3,7 +3,7 @@ local map = vim.api.nvim_set_keymap
 map('n', '<Space>', '', {})
 vim.g.mapleader = ' '  -- 'vim.g' sets global variables
 
-options = { noremap = true }
+local options = { noremap = true }
 
 map('n', ';', ':', {})
 map('v', ';', ':', {})
@@ -58,11 +58,12 @@ map('n', '<leader>`', ':nohls<CR>', options)
 map('n', '<leader><leader>p', ':PaqInstall<CR>', options)
 
 -- Shortcuts to open common files
+map('n', '<leader><leader>hs', ':e /etc/hosts<CR>', options)
 map('n', '<leader><leader>la', ':e ~/.aliases<CR>', options)
-map('n', '<leader><leader>ya', ':e /Users/gumamahe/Documents/Cwebaddons.local/docker-compose.yml<CR>', options)
+map('n', '<leader><leader>n', ':e ~/notes/todos.md<CR>', options)
 map('n', '<leader><leader>rc', ':e ~/.config/nvim/init.lua<CR>', options)
 map('n', '<leader><leader>tc', ':e ~/.tmux.conf<CR>', options)
-map('n', '<leader><leader>hs', ':e /etc/hosts<CR>', options)
+map('n', '<leader><leader>ya', ':e /Users/gumamahe/Documents/Cwebaddons.local/docker-compose.yml<CR>', options)
 
 -- Reload current buffer
 map('n', '<leader><leader>5', ':e!<CR>', options)

@@ -35,6 +35,7 @@ require "paq" {
     'nvim-lua/popup.nvim',
     'nvim-lua/plenary.nvim',
     'nvim-telescope/telescope.nvim',
+    {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}, -- Required to make use of fzf for searching in telescope.
 
     -- Grammer
     'jiangmiao/auto-pairs',

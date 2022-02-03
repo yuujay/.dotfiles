@@ -4,7 +4,11 @@
 --     autocmd BufWrite * mark ' | silent! %s/\s\+$// | norm ''
 -- augroup END
 
- vim.cmd([[
+-- LIMELIGHT CONFIGS USED IN OLD VIM CONFIGS
+-- -- Limelight - Turn this on when you want limelight to be enabled by default.
+-- -- autocmd VimEnter * Limelight
+
+vim.cmd([[
     augroup _git
         autocmd!
         autocmd FileType gitcommit setlocal wrap

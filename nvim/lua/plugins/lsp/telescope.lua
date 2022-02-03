@@ -1,5 +1,5 @@
 local map = vim.api.nvim_set_keymap
-options = { noremap = true }
+local options = { noremap = true }
 
 require('telescope').setup{
   defaults = {
@@ -34,6 +34,8 @@ require('telescope').setup{
   }
 }
 
+require('telescope').load_extension('fzf')
+
 -- LSP Keybindings
 map('n', '<leader>ca', ':Telescope lsp_code_action<CR>', options)
 map('n', '<leader>cd', ':Telescope lsp_definitions<CR>', options)
@@ -41,6 +43,7 @@ map('n', '<leader>cf', ':Telescope lsp_references<CR>', options)
 
 -- Generic Keybindings
 map('n', '<leader><leader>t', ':Telescope ', options)
+map('n', '<leader><leader>T', ':Telescope resume<CR>', options)
 map('n', '<leader>/', ':Telescope current_buffer_fuzzy_find theme=dropdown<CR>', options)
 map('n', '<leader><C-p>', ':Telescope fd<CR>', options)
 map('n', '<leader>b', ':Telescope buffers theme=dropdown<CR>', options)
