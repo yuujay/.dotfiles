@@ -26,12 +26,15 @@ require "paq" {
 
     -- Movements
     'junegunn/fzf',
-    'junegunn/fzf.vim',
     'phaazon/hop.nvim', -- EASYMOTION IN LUA #TOP5
     'christoomey/vim-sort-motion',
     'christoomey/vim-tmux-navigator',
     'christoomey/vim-tmux-runner',
     'scrooloose/nerdtree',
+    -- Telescope related
+    'nvim-lua/popup.nvim',
+    'nvim-lua/plenary.nvim',
+    'nvim-telescope/telescope.nvim',
 
     -- Grammer
     'jiangmiao/auto-pairs',
@@ -46,6 +49,7 @@ require "paq" {
     'kyazdani42/nvim-web-devicons',
     'onsails/lspkind-nvim',
     'projekt0n/github-nvim-theme',
+    'junegunn/limelight.vim',
     -- 'tjdevries/colorbuddy.nvim', -- Not-mandatory used in autocomplete floating menu bar
 
     -- Status lines and fonts used in the statusline.
@@ -64,27 +68,23 @@ require "paq" {
     -- "rmagatti/auto-session",
     -- "wellle/targets.vim",
     -- 'https://github.com/Yggdroot/indentLine.git'
-    -- 'https://github.com/junegunn/limelight.vim'
     -- 'kyazdani42/nvim-tree.lua',
     -- 'WaylonWalker/Telegraph.nvim', -- Check if this is better than vim-tmux-runner.
     -- 'lukas-reineke/indent-blankline.nvim',
-    -- 'mhartington/formatter.nvim', -- Not sure if this is required.
-    -- 'voldikss/vim-floaterm' -- Not particularly useful if vim is used within tmux
     -- https://github.com/itchyny/lightline.vim TODO: Check this out over airline
-    -- https://github.com/maximbaz/lightline-ale - TODO: If ale is used, can provide status
 
-    -- Finer configurations
+    -- TODO:
+    -- Try these set of plugins next. Finer configurations
     -- 'tpope/vim-projectionist' -- Too cool to configure and have it working.
     -- 'vim-test/vim-test'
     -- 'ThePrimeagen/harpoon'
     -- 'code-biscuits/nvim-biscuits'
-    -- 'chipsenkbeil/distant.nvim' -- Remote development from vim
+    -- 'chipsenkbeil/distant.nvim' -- NIFTY_ONE - Remote development from vim
 
-    -- Tried these plugins below, not suitable for current workflows
-    -- Telescope related
-    -- 'nvim-lua/popup.nvim',
-    -- 'nvim-lua/plenary.nvim',
-    -- 'nvim-telescope/telescope.nvim',
+    -- OLDER PLUGINS
+    -- 'junegunn/fzf.vim', --Using telescope instead of this.
+    -- 'voldikss/vim-floaterm' -- Not particularly useful if vim is used within tmux
+    -- 'mhartington/formatter.nvim', -- Not sure if this is required.
 }
 
 require('github-theme').setup({
