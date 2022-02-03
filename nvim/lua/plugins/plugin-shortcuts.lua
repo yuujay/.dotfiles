@@ -4,8 +4,10 @@ options = { noremap = true }
 -- Bufferline
 -- map('n', '<leader>l', ':BufferLineCycleNext<CR>', options)
 -- map('n', '<leader>h', ':BufferLineCyclePrev<CR>', options)
-map('n', '<leader>L', ':BufferLineMoveNext<CR>', options)
-map('n', '<leader>H', ':BufferLineMovePrev<CR>', options)
+
+-- Not required as this is is provided by vim-tmux navigator
+-- map('n', '<leader>L', ':BufferLineMoveNext<CR>', options)
+-- map('n', '<leader>H', ':BufferLineMovePrev<CR>', options)
 
 -- Hop shortcuts
 map('n', '<leader><leader>s', ':HopWord<CR>', options)
@@ -18,7 +20,6 @@ map('n', '<leader>nf', ':NERDTreeFind<CR>', options)
 
 -- Vim Fuguitive
 map('n', '<leader>g', ':Git<CR>', options)
-map('n', '<leader>gb', ':Git blame<CR>', options)
 map('n', '<leader>gd', ':Gvdiffsplit<CR>', options)
 map('n', '<leader>gh', ':GitGutterPreviewHunk<CR>', options)
 map('n', '<leader>gs', ':GitGutterStageHunk<CR>', options)
@@ -35,9 +36,9 @@ map('n', '<leader>vz', ':VtrFocusRunner<CR>', options)
 map('n', '<leader>vr', ':VtrAttachToPane<CR>', options) -- Changing this because `VtrOpenRunner` doesn't work properly with neovim
 
 -- FZF configs
-map('n', '<leader>/', ':BLines<CR>', options)
-map('n', '<leader>c', ':BCommits<CR>', options)
-map('n', '<leader>p', ':Files<CR>', options)
-map('n', '<leader>f', ':Ag ', options)
-map('n', '<leader>b', ':Buffers<CR>', options)
+-- map('n', '<leader>/', ':BLines<CR>', options)
+-- map('n', '<leader>c', ':BCommits<CR>', options)
+-- map('n', '<leader>p', ':Files<CR>', options)
+-- map('n', '<leader>f', ':Ag ', options)
+-- map('n', '<leader>b', ':Buffers<CR>', options)
 

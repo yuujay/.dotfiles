@@ -54,7 +54,7 @@ end
 
 -- *** IMPORTANT *** UPDATE THE `servers` LIST AS NEW SERVES ARE ADDED
 -- 'ansiblels', 'jsonls', 'bashls', 'cssls', 'dotls',  - add these back after installing LSP
-local servers = {'eslint', 'gopls', 'solargraph', 'sumneko_lua', 'tsserver', 'vimls', 'yamlls','dockerls' }
+local servers = {'ansiblels', 'dockerls', 'emmet_ls', 'eslint', 'gopls', 'solargraph', 'sumneko_lua', 'tsserver', 'vimls', 'yamlls' }
 
 -- Set the LSP capabilities
 -- Override the default capabilities with `nvim-cmp` capabilities

@@ -40,11 +40,12 @@ map('n', '<leader>cd', ':Telescope lsp_definitions<CR>', options)
 map('n', '<leader>cf', ':Telescope lsp_references<CR>', options)
 
 -- Generic Keybindings
--- map('n', '<leader>p', ':Telescope find_files theme=dropdown<CR>', options) -- fuzzy find is not great for file searching
-map('n', '<leader>/', ':Telescope current_buffer_fuzzy_find theme=dropdown<CR>', options)
 map('n', '<leader><leader>t', ':Telescope ', options)
+map('n', '<leader>/', ':Telescope current_buffer_fuzzy_find theme=dropdown<CR>', options)
+map('n', '<leader><C-p>', ':Telescope fd<CR>', options)
 map('n', '<leader>b', ':Telescope buffers theme=dropdown<CR>', options)
 map('n', '<leader>c', ':Telescope git_bcommits<CR>', options)
 map('n', '<leader>f', ':Telescope live_grep theme=dropdown<CR>', options)
 map('n', '<leader>k', ':Telescope keymaps theme=dropdown<CR>', options)
+map('n', '<leader>p', ':Telescope git_files<CR>', options)
 map('n', '<leader>sb', ':Telescope git_branches theme=dropdown<CR>', options)
