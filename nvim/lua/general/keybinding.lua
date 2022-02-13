@@ -24,6 +24,19 @@ map('i', '?', '?<C-g>u', options)
 map('i', ',', ',<C-g>u', options)
 map('i', '!', '!<C-g>u', options)
 
+-- Rerun last run command
+map('n', '<leader>q', '@:', options)
+
+-- Copy filepath to clipboard
+map('n', '<leader>fp', ':let @+=expand("%:p")<CR>', options)
+
+-- Paste yanked text
+map('n', ',p', '"0p', options)
+map('n', ',P', '"0P', options)
+
+-- Apply macro across visual selection
+map('n', '<leader>mm', ":'<,'>norm! @", options)
+
 -- Split Buffers
 map('n', '<leader>-', ':split<CR>', options)
 map('n', '<leader>\\', ':vsplit<CR>', options)
