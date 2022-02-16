@@ -1,6 +1,5 @@
 local o = vim.o
 local wo = vim.wo
-local bo = vim.bo
 
 -- global options
 o.autoindent = true

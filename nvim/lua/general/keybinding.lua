@@ -13,7 +13,10 @@ map('n', '<leader>l', ':bnext<CR>', options)
 map('n', '<leader>h', ':bprev<CR>', options)
 
 -- Nifty mappings
+map('n', '<leader>a', 'GVgg', options) -- Select the entire buffer
+map('n', '<leader>ay', ':%y<CR>', options) -- Yank the whole buffer
 map('n', 'Y', 'y$', options)
+
 -- Keep searches centered
 map('n', 'n', 'nzzzv', options)
 map('n', 'N', 'Nzzzv', options)
@@ -42,13 +45,18 @@ map('n', '<leader>-', ':split<CR>', options)
 map('n', '<leader>\\', ':vsplit<CR>', options)
 map('n', '<leader>x', ':close<CR>', options)
 
+-- Diff windows
+map('n', '<leader>d', ':windo diffthis<CR>', options)
+map('n', '<leader>dx', ':windo diffoff<CR>', options)
+
 -- File Operation
 map('n', '<C-a>', ':w<Space>', options)
 map('n', '<C-n>', ':enew<CR>', options)
 map('n', '<C-q>', ":%bd|e#<CR>:echom 'Closed all buffer except current!'<CR>", options)
 map('n', '<C-w>', ':bw<CR>', options)
 map('n', 'gf', ':edit <cfile><CR>', options) -- Opens a file under cursor even if it doesnt exisit.
-map('n', 'ss', ':w<CR>', options)
+map('n', 'ss', ':w!<CR>', options)
+map('c', ':q', ':qall<CR>', options)
 
 -- Resize vim windows
 map('n', '<Up>', ':resize -2<CR>', options)
