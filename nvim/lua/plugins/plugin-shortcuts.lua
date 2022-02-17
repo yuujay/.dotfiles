@@ -23,9 +23,10 @@ map('n', '<leader>g', ':Git<CR>', options)
 map('n', '<leader>gc', ':Git commit<CR>', options)
 map('n', '<leader>gd', ':Gvdiffsplit<CR>', options)
 map('n', '<leader>gh', ':GitGutterPreviewHunk<CR>', options)
-map('n', '<leader>gs', ':GitGutterStageHunk<CR>', options)
 map('n', '<leader>gj', ':GitGutterNextHunk<CR>', options)
 map('n', '<leader>gk', ':GitGutterPrevHunk<CR>', options)
+map('n', '<leader>gp', ':Git push<CR>', options)
+map('n', '<leader>gs', ':GitGutterStageHunk<CR>', options)
 map('n', '<leader>gu', ':GitGutterUndoHunk<CR>', options)
 
 -- TMUX Runner
