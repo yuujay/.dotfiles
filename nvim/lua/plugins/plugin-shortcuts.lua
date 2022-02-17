@@ -19,6 +19,7 @@ map('n', '<leader>n', ':NERDTreeToggle<CR>', options)
 map('n', '<leader>nf', ':NERDTreeFind<CR>', options)
 
 -- Vim Fuguitive
+map('n', '<leader><leader>g', ':Git', options)
 map('n', '<leader>g', ':Git<CR>', options)
 map('n', '<leader>gc', ':Git commit<CR>', options)
 map('n', '<leader>gd', ':Gvdiffsplit<CR>', options)
