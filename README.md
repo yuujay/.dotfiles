@@ -1,4 +1,4 @@
-# dotfiles  💾
+# Gowtham's dotfiles  💾
 
 ![Tests](https://github.com/yuujay/dotfiles/actions/workflows/ci.yml/badge.svg)
 
@@ -17,7 +17,7 @@ The set up was inspired from the [blog post](https://www.anishathalye.com/2014/0
 - Hammerspoon
 - Karabinar(mac only)
 - iTerm
-- Fresh MacOS setup script
+- Ansible
 
 ## Quick Start
 
@@ -35,9 +35,8 @@ sh install
 
 If everything goes well, you have the symlinks established for your `rc` and `config` files.
 
-## Vim Best Practices
-
-- [Idiomatic Vim](https://github.com/romainl/idiomatic-vimrc)
+## TODO 
+ADD ANSIBLE INSTALLATION STEPS
 
 ## Troubleshooting
 
