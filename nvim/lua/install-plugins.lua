@@ -45,6 +45,9 @@ require "paq" {
     'tpope/vim-rhubarb', -- Required to make opening repositories on the browser easier when required.
     'tpope/vim-surround',
 
+    -- Language specific ones
+    'fatih/vim-go',
+
     -- Cosmetics
     'airblade/vim-gitgutter',
     'akinsho/bufferline.nvim',

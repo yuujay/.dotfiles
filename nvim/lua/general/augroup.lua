@@ -9,6 +9,10 @@
 -- -- autocmd VimEnter * Limelight
 
 vim.cmd([[
+    augroup go_ft
+        autocmd FileType go autocmd BufWritePre <buffer> GoFmt
+    augroup end
+
     augroup _git
         autocmd!
         autocmd FileType gitcommit setlocal wrap
