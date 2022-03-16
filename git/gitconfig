@@ -52,7 +52,7 @@
 [mergetool "vimdiff"]
     cmd = vimdiff -f $LOCAL $MERGED $REMOTE
 [push]
-    default = upstream
+    default = current
 [pull]
     ff = only
     rebase = true
@@ -66,3 +66,5 @@
 [user]
     name = gumamahe
     email = gumamahe@mathworks.com
+[help]
+    autocorrect = 5
