@@ -32,6 +32,7 @@
     uc = reset HEAD^ --soft
     update-submodules = submodule update --init --recursive
     upgrade-submodules = submodule update --init --remote
+    ups = push -u origin HEAD
 [commit]
     template = ~/.gitmessage
 [core]
@@ -51,8 +52,6 @@
     tool = vimdiff
 [mergetool "vimdiff"]
     cmd = vimdiff -f $LOCAL $MERGED $REMOTE
-[push]
-    default = current
 [pull]
     ff = only
     rebase = true
@@ -67,4 +66,4 @@
     name = gumamahe
     email = gumamahe@mathworks.com
 [help]
-    autocorrect = 5
+    autocorrect = 10
