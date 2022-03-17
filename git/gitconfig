@@ -35,6 +35,7 @@
     ups = push -u origin HEAD
 [commit]
     template = ~/.gitmessage
+    verbose = true
 [core]
     autocrlf = input
     editor = /usr/local/bin/nvim
