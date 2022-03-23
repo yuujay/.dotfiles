@@ -16,6 +16,8 @@ map('n', '<leader>h', ':bprev<CR>', options)
 map('n', '<leader>a', 'GVgg', options) -- Select the entire buffer
 map('n', '<leader>ay', ':%y<CR>', options) -- Yank the whole buffer
 map('n', 'Y', 'y$', options)
+map('n', 'V', 'v$', options)
+map('n', 'vv', '^v$', options)
 
 -- Keep searches centered
 map('n', 'n', 'nzzzv', options)
