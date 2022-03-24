@@ -16,13 +16,13 @@ map('n', '<leader>h', ':bprev<CR>', options)
 map('n', '<leader>a', 'GVgg', options) -- Select the entire buffer
 map('n', '<leader>ay', ':%y<CR>', options) -- Yank the whole buffer
 map('n', 'Y', 'y$', options)
-map('n', 'V', 'v$', options)
-map('n', 'vv', '^v$', options)
+map('n', 'vv', 'v$', options)
 
 -- Keep searches centered
 map('n', 'n', 'nzzzv', options)
 map('n', 'N', 'Nzzzv', options)
 map('n', 'J', 'mmJ`m', options)
+
 -- Undo break points
 map('i', '.', '.<C-g>u', options)
 map('i', '?', '?<C-g>u', options)
