@@ -101,6 +101,12 @@ map('n', '<leader>tc', ':set cursorline!<CR>', options)
 map('n', '<leader>tl', ':Limelight!!<CR>', options)
 map('n', '<leader>ts', ':set spell! spelllang=en_us<CR>', options)
 
+-- Format json
+map('n', '<leader><leader>j', ':%!python -m json.tool<CR>', options)
+
+-- Copvy visual select to system clipboard
+map('v', '<C-c>', '"+y', options)
+
 -- Reload init.lua
 map('n', '<leader><leader>rf', ":source %<CR>:echom 'current lua reloaded'<CR>", options)
 map('n', '<leader><leader>rr', ":source ~/.config/nvim/init.lua<CR>:echom 'NVIM init.lua reloaded'<CR>", options)
