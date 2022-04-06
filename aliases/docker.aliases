@@ -15,8 +15,8 @@ alias dvp='docker volume prune'
 
 # DOCKER COMPOSE
 
-alias dc='docker-compose'
-alias dcd='docker-compose down'
-alias dcr='docker-compose run --rm'
-alias dcu='docker-compose up'
+alias dc='docker compose'
+alias dcd='docker compose down'
+alias dcr='docker compose run --rm'
+alias dcu='docker compose up'
 

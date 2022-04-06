@@ -5,7 +5,7 @@
 #  vim  | Shell
 #       |
 
-tmux send-keys 'vi .' Enter
+tmux send-keys 'vi . +":Telescope fd"' Enter
 tmux split-window -h -p 50
 # tmux split-window -v -p 15
 tmux select-pane -t 0
