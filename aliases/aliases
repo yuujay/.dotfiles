@@ -28,10 +28,10 @@ alias vimrc='vi ~/.vimrc'
 alias vimtc='vi ~/.tmux.conf'
 
 # Use neovim over vim
-alias v='nvim .'
-alias vi='nvim'
+alias v='nvim . +":Telescope fd"'
+alias vi='nvim . +":Telescope fd"'
 alias vii='/usr/bin/vi' #Incase you really want to use vi over neo for some testing.
-alias vim='nvim'
+alias vim='nvim . +":Telescope fd"'
 
 # FZF
 alias fcd='cd (fd --type d | fzf)'
