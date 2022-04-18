@@ -104,7 +104,7 @@ map('n', '<leader>ts', ':set spell! spelllang=en_us<CR>', options)
 -- Format json
 map('n', '<leader><leader>j', ':%!python -m json.tool<CR>', options)
 
--- Copvy visual select to system clipboard
+-- Copy visual select text to system clipboard
 map('v', '<C-c>', '"+y', options)
 
 -- Reload init.lua

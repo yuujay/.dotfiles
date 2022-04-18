@@ -1,6 +1,7 @@
 hs.loadSpoon("ReloadConfiguration")
 spoon.ReloadConfiguration:start()
 
+require 'browser'
 require 'layout'
 require 'shortcuts'
 require 'wifi'
@@ -9,6 +10,7 @@ require 'window'
 local hyper = {'alt', 'cmd', 'ctrl'}
 local cmd_shift = {'cmd', 'shift'}
 local cmd_ctrl = {'cmd', 'ctrl'}
+local alt_ctrl = {'alt', 'ctrl'}
 
 -- App Sizing
 hs.hotkey.bind(hyper, 'm', toggleMaximizedWindow)
@@ -28,6 +30,13 @@ hs.hotkey.bind(cmd_shift, 'l', hs.fnutils.partial(changeFocus, "right"))
 -- Layout Setup
 hs.hotkey.bind(cmd_shift, '1', weekendLayout)
 hs.hotkey.bind(cmd_shift, '2', workLayout)
+
+-- Shortcuts to open URL
+hs.hotkey.bind(alt_ctrl, 'c', openUrl('https://confluence.mathworks.com/display/AOS/gumamahe'))
+hs.hotkey.bind(alt_ctrl, 'g', openUrl('https://www.gmail.com'))
+hs.hotkey.bind(alt_ctrl, 'j', openUrl('https://jira.mathworks.com/secure/RapidBoard.jspa?rapidView=961&selectedIssue=AOS-5705&quickFilter=11350'))
+hs.hotkey.bind(alt_ctrl, 'o', openUrl('https://outlook.office365.com/mail/'))
+hs.hotkey.bind(alt_ctrl, 'r', openUrl('https://github.mathworks.com/search?o=desc&q=topic%3Awebaddons+org%3Adevelopment&s=updated&type=Repositories'))
 
 -- Shortcuts to open the app
 -- NOTE: Update `helpMenu` in `shortcuts` when anything in this block changes
@@ -56,6 +65,6 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "K", function()
 end)
 
 -- Use `alt-ctrl-j` to show hello world
-hs.hotkey.bind({"alt", "ctrl"}, "J", function()
+hs.hotkey.bind({"alt", "ctrl"}, "h", function()
   hs.alert.show("Hello World!")
 end)
