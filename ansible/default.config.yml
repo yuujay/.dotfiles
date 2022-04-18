@@ -51,6 +51,7 @@ brew_cask_packages:
   - hammerspoon
   - iterm2
   - karabiner-elements
+  - keycastr
   - kitty
   - ngork
   - slack
