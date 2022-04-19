@@ -1,8 +1,6 @@
 #!/bin/sh
 
-# Attach or create tmux session named the same as current directory.
-
-file_name=$1
+# Open nvim's fuzzy finder if no file name is provied.
 
 if [ -z "$1" ]; then
     nvim . +":Telescope fd"
