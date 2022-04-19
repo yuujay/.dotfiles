@@ -1,58 +1,22 @@
 hs.loadSpoon("ReloadConfiguration")
 spoon.ReloadConfiguration:start()
 
+hyper = {'alt', 'cmd', 'ctrl'}
+cmd_shift = {'cmd', 'shift'}
+cmd_ctrl = {'cmd', 'ctrl'}
+alt_ctrl = {'alt', 'ctrl'}
+
+-- NOTE: DO NOT CHANGE THE SORT ORDER ON THIS SECTION
 require 'browser'
 require 'layout'
 require 'shortcuts'
 require 'wifi'
 require 'window'
-
-local hyper = {'alt', 'cmd', 'ctrl'}
-local cmd_shift = {'cmd', 'shift'}
-local cmd_ctrl = {'cmd', 'ctrl'}
-local alt_ctrl = {'alt', 'ctrl'}
-
--- App Sizing
-hs.hotkey.bind(hyper, 'm', toggleMaximizedWindow)
-hs.hotkey.bind(hyper, 'c', centerScreen)
-hs.hotkey.bind(hyper, 'f', fullScreen)
-hs.hotkey.bind(hyper, 'r', sizeRestore)
-
--- app movements
-hs.hotkey.bind(cmd_ctrl, 'h', moveAppLeft)
-hs.hotkey.bind(cmd_ctrl, 'l', moveAppRight)
-
--- Focus Changes
-hs.hotkey.bind(cmd_shift, '0', showHints)
-hs.hotkey.bind(cmd_shift, 'h', hs.fnutils.partial(changeFocus, "left"))
-hs.hotkey.bind(cmd_shift, 'l', hs.fnutils.partial(changeFocus, "right"))
+require 'apps'
 
 -- Layout Setup
 hs.hotkey.bind(cmd_shift, '1', weekendLayout)
 hs.hotkey.bind(cmd_shift, '2', workLayout)
-
--- Shortcuts to open URL
-hs.hotkey.bind(alt_ctrl, 'c', openUrl('https://confluence.mathworks.com/display/AOS/gumamahe'))
-hs.hotkey.bind(alt_ctrl, 'm', openUrl('https://www.gmail.com'))
-hs.hotkey.bind(alt_ctrl, 'j', openUrl('https://jira.mathworks.com/secure/RapidBoard.jspa?rapidView=961&selectedIssue=AOS-5705&quickFilter=11350'))
-hs.hotkey.bind(alt_ctrl, 'o', openUrl('https://outlook.office365.com/mail/'))
-hs.hotkey.bind(alt_ctrl, 'g', openUrl('https://github.mathworks.com/search?o=desc&q=topic%3Awebaddons+org%3Adevelopment&s=updated&type=Repositories'))
-hs.hotkey.bind(alt_ctrl, 't', openUrl('https://trello.com/b/xnp7ug9W/dev-environment'))
-
--- Shortcuts to open the app
--- NOTE: Update `helpMenu` in `shortcuts` when anything in this block changes
-hs.hotkey.bind({'alt'}, '0', helpMenu)
-hs.hotkey.bind({'alt'}, 'B', openAppBinding('Safari'))
-hs.hotkey.bind({'alt'}, 'C', openAppBinding('Google Chrome'))
-hs.hotkey.bind({'alt'}, 'D', openAppBinding('DBeaver'))
-hs.hotkey.bind({'alt'}, 'F', openAppBinding('Finder'))
-hs.hotkey.bind({'alt'}, 'I', openAppBinding('IntelliJ IDEA'))
-hs.hotkey.bind({'alt'}, 'M', openAppBinding('Microsoft Teams'))
-hs.hotkey.bind({'alt'}, 'O', openAppBinding('Microsoft Outlook'))
-hs.hotkey.bind({'alt'}, 'S', openAppBinding('Screen Sharing'))
-hs.hotkey.bind({'alt'}, 'T', openAppBinding('iTerm'))
-hs.hotkey.bind({'alt'}, 'V', openAppBinding('Visual Studio Code'))
-hs.hotkey.bind({'alt'}, 'X', openAppBinding('Firefox'))
 
 -- Generic Hint
 function genericHints()
@@ -61,11 +25,11 @@ end
 hs.hotkey.bind({'cmd'}, '0', genericHints)
 
 ----------------- Test Configs -----------------------
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "K", function()
-  hs.notify.new({title="Hammerspoon", informativeText="Hello World"}):send()
+hs.hotkey.bind(hyper, "K", function()
+  hs.notify.new({title="From Hammerspoon init.lua", informativeText="Hello World Notification"}):send()
 end)
 
 -- Use `alt-ctrl-j` to show hello world
-hs.hotkey.bind({"alt", "ctrl"}, "h", function()
+hs.hotkey.bind(alt_ctrl, "h", function()
   hs.alert.show("Hello World!")
 end)
