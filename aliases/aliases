@@ -28,7 +28,6 @@ alias vimrc='vi ~/.vimrc'
 alias vimtc='vi ~/.tmux.conf'
 
 # Use neovim over vim
-alias v='nvim . +":Telescope fd"'
 alias vi='nvim . +":Telescope fd"'
 alias vii='/usr/bin/vi' #Incase you really want to use vi over neo for some testing.
 alias vim='nvim . +":Telescope fd"'
@@ -92,7 +91,7 @@ alias bx='bundle exec'
 alias nps='npm start'
 alias nx='npm run'
 alias sl='sails lift'
-alias vi.='vi .'
+alias vi.='nvim . +":Telescope fd"'
 alias ws='python -m SimpleHTTPServer'
 
 #Utils

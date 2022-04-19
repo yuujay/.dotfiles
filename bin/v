@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Open nvim's fuzzy finder if no file name is provied.
+
+if [ -z "$1" ]; then
+    nvim . +":Telescope fd"
+else
+    nvim $1
+fi

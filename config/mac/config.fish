@@ -17,7 +17,7 @@ test -e $HOME/.iterm2_shell_integration.fish ; and source $HOME/.iterm2_shell_in
 # If that doesn't help try following https://stackoverflow.com/questions/7408068
 # Essentially we need to delete `/tmp/tmux-XXXXX` directory
 
-# test -e $FISH_HOME/bash_scripts/always_in_tmux && always_in_tmux
+# test -e $FISH_HOME/bin/always_in_tmux && always_in_tmux
 
 function iterm2_print_user_vars
     iterm2_set_user_var rubyVersion (ruby -v | awk '{ print $2 }')
