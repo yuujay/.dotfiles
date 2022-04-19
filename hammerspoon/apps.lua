@@ -4,7 +4,7 @@ hs.hotkey.bind(hyper, 'c', centerScreen)
 hs.hotkey.bind(hyper, 'f', fullScreen)
 hs.hotkey.bind(hyper, 'r', sizeRestore)
 
--- app movements
+-- move apps between monitors
 hs.hotkey.bind(cmd_ctrl, 'h', moveAppLeft)
 hs.hotkey.bind(cmd_ctrl, 'l', moveAppRight)
 
@@ -22,3 +22,4 @@ hs.hotkey.bind({'alt'}, 'S', openAppBinding('Screen Sharing'))
 hs.hotkey.bind({'alt'}, 'T', openAppBinding('iTerm'))
 hs.hotkey.bind({'alt'}, 'V', openAppBinding('Visual Studio Code'))
 hs.hotkey.bind({'alt'}, 'X', openAppBinding('Firefox'))
+

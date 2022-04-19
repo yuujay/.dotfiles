@@ -1,7 +1,6 @@
 hs.loadSpoon("ReloadConfiguration")
 spoon.ReloadConfiguration:start()
 
-
 hyper = {'alt', 'cmd', 'ctrl'}
 cmd_shift = {'cmd', 'shift'}
 cmd_ctrl = {'cmd', 'ctrl'}
@@ -31,11 +30,11 @@ end
 hs.hotkey.bind({'cmd'}, '0', genericHints)
 
 ----------------- Test Configs -----------------------
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "K", function()
-  hs.notify.new({title="Hammerspoon", informativeText="Hello World"}):send()
+hs.hotkey.bind(hyper, "K", function()
+  hs.notify.new({title="From Hammerspoon init.lua", informativeText="Hello World Notification"}):send()
 end)
 
 -- Use `alt-ctrl-j` to show hello world
-hs.hotkey.bind({"alt", "ctrl"}, "h", function()
+hs.hotkey.bind(alt_ctrl, "h", function()
   hs.alert.show("Hello World!")
 end)
