@@ -1,16 +1,18 @@
 hs.loadSpoon("ReloadConfiguration")
 spoon.ReloadConfiguration:start()
 
+
+hyper = {'alt', 'cmd', 'ctrl'}
+cmd_shift = {'cmd', 'shift'}
+cmd_ctrl = {'cmd', 'ctrl'}
+alt_ctrl = {'alt', 'ctrl'}
+
+-- Note Do not move this before key declarations
 require 'browser'
 require 'layout'
 require 'shortcuts'
 require 'wifi'
 require 'window'
-
-local hyper = {'alt', 'cmd', 'ctrl'}
-local cmd_shift = {'cmd', 'shift'}
-local cmd_ctrl = {'cmd', 'ctrl'}
-local alt_ctrl = {'alt', 'ctrl'}
 
 -- App Sizing
 hs.hotkey.bind(hyper, 'm', toggleMaximizedWindow)
@@ -30,14 +32,6 @@ hs.hotkey.bind(cmd_shift, 'l', hs.fnutils.partial(changeFocus, "right"))
 -- Layout Setup
 hs.hotkey.bind(cmd_shift, '1', weekendLayout)
 hs.hotkey.bind(cmd_shift, '2', workLayout)
-
--- Shortcuts to open URL
-hs.hotkey.bind(alt_ctrl, 'c', openUrl('https://confluence.mathworks.com/display/AOS/gumamahe'))
-hs.hotkey.bind(alt_ctrl, 'm', openUrl('https://www.gmail.com'))
-hs.hotkey.bind(alt_ctrl, 'j', openUrl('https://jira.mathworks.com/secure/RapidBoard.jspa?rapidView=961&selectedIssue=AOS-5705&quickFilter=11350'))
-hs.hotkey.bind(alt_ctrl, 'o', openUrl('https://outlook.office365.com/mail/'))
-hs.hotkey.bind(alt_ctrl, 'g', openUrl('https://github.mathworks.com/search?o=desc&q=topic%3Awebaddons+org%3Adevelopment&s=updated&type=Repositories'))
-hs.hotkey.bind(alt_ctrl, 't', openUrl('https://trello.com/b/xnp7ug9W/dev-environment'))
 
 -- Shortcuts to open the app
 -- NOTE: Update `helpMenu` in `shortcuts` when anything in this block changes
