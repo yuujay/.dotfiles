@@ -68,3 +68,5 @@
     email = gumamahe@mathworks.com
 [help]
     autocorrect = 10
+[fetch]
+	prune = true
