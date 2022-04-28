@@ -60,6 +60,7 @@ brew_cask_packages:
 brew_packages:
   - bash-completion
   - bat
+  - calcurse
   - cask
   - ctags
   - exa
@@ -76,9 +77,9 @@ brew_packages:
   - minikube
   - multitail
   - neovim
+  - nmap
   - nodejs
   - npm
-  - nmap
   - openssl
   - rbenv
   - ripgrep
