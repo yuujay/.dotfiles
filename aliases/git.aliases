@@ -1,4 +1,4 @@
-# Basic git aliases
+# Basic git aliase
 
 alias ga.='git add .'
 alias ga='git add'
@@ -12,7 +12,8 @@ alias gs='git status'
 alias gsa='git submodule add'
 
 # FZF aliases
-alias fgd='git diff (git s |awk \'{print $2}\'| fzf)'
-alias fga='git add (git s |awk \'{print $2}\'| fzf)'
+alias fga='git add (git status -s |awk \'{print $2}\'| fzf)'
 alias fgco='git checkout (git branch | fzf | xargs)'
 alias fgcorb='git checkout --track (git branch --remote |awk \'{print $1}\'| fzf)'
+alias fgd='git diff (git status -s |awk \'{print $2}\'| fzf)'
+alias fglo='git lo | fzf > /dev/null'

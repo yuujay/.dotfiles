@@ -20,4 +20,4 @@ set GEM_HOME "$HOME/.gem/ruby/2.6.0"
 set -x OTEL_TRACES_EXPORTER none
 set -x OTEL_EXPORTER_OTLP_ENDPOINT "http://localhost:14250"
 
-set PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local/go/bin /mathworks/hub/share/bin  /usr/local/netbin/ /mathworks/hub/share/sbtools/bin/maci64 /usr/bin /Users/gumamahe/.rbenv/shims /usr/local/opt/ruby/bin $GEM_HOME/bin $HOME/.config/fish/bin  /Library/Ruby/Gems/2.6.0/gems/ $GOPATH $GOBIN
+set PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local/go/bin /mathworks/hub/share/bin  /usr/local/netbin/ /mathworks/hub/share/sbtools/bin/maci64 /usr/bin /Users/gumamahe/.rbenv/shims /usr/local/opt/ruby/bin $GEM_HOME/bin $HOME/.config/fish/bin/**  /Library/Ruby/Gems/2.6.0/gems/ $GOPATH $GOBIN
