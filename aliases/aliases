@@ -1,10 +1,10 @@
 # Some new rust replacements for commonly used utilities
-alias x='exa -1'
-alias xl='exa -al --git'
-alias xld='exa -alD --git'
-alias xlg='exa -al --git | grep'
-alias xlm='exa -alm'
-alias xlt='exa -al --tree --git --level=2'
+alias l='exa -1 --icons'
+alias ll='exa -al --git --icons'
+alias lld='exa -alD --git --icons'
+alias llg='exa -al --git | grep --icons'
+alias llm='exa -alm --icons'
+alias llt='exa -al --tree --git --level=2 --icons'
 
 # brew aliases
 alias bci='brew cask install'
@@ -34,9 +34,10 @@ alias vim='nvim . +":Telescope fd"'
 
 # FZF
 alias fcd='cd (fd --type d | fzf)'
+alias fenv='env | sort | fzf'
 alias fkill='kill (ps | fzf | awk \'{print $1}\')'
-alias fps='ps | fzf'
 alias fls='ls | fzf'
+alias fps='ps | fzf'
 alias ft='tree | fzf'
 alias fta='tmux attach -t (tmux ls | awk \'{print $1}\'| sed \'s/://\'| fzf)'
 alias ftk='tmux kill-session -t (tmux ls | awk \'{print $1}\'| sed \'s/://\'| fzf)'
@@ -49,13 +50,13 @@ alias ta='tmux attach -t'
 alias tk='tmux kill-session -t'
 
 # LIST FILES & DIRECTORIES
+# alias l='ls -1 -p'
+# alias ll='ls -al'
+# alias llg='ls -al | grep'
 alias br='bat -r'
 alias fc='find . -type f | wc -l'
-alias l='ls -1 -p'
 alias ldi="ls -al | grep '^d'"
 alias lfi="ls -al | grep '^-'"
-alias ll='ls -al'
-alias llg='ls -al | grep'
 alias p="pwd"
 alias t="tree -I 'node_modules|node_modules|target|cache|log|tmp|assets|.byebug_history|.bundle|.htaccess'"
 alias ti="tree -I $1"
