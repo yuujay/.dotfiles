@@ -13,6 +13,9 @@ test -e $HOME/.aliases/mathworks.aliases ; and source $HOME/.aliases/mathworks.a
 test -e $HOME/.aliases/git.aliases ; and source $HOME/.aliases/git.aliases
 test -e $HOME/.iterm2_shell_integration.fish ; and source $HOME/.iterm2_shell_integration.fish
 
+# Keep `mw` in sync
+test -e /mathworks/hub/share/bin/CSHRC; and source /mathworks/hub/share/bin/CSHRC
+
 # If tmux is hung for some reason, delete the restore resurrects from `~/.tmux/resurrect`
 # If that doesn't help try following https://stackoverflow.com/questions/7408068
 # Essentially we need to delete `/tmp/tmux-XXXXX` directory
