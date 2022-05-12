@@ -1,6 +1,7 @@
 set DOCKER_COMPOSE_USER_ID (id -u)
 set EDITOR 'vim'
 set FZF_DEFAULT_COMMAND 'ag -g ""'
+set -gx FZF_DEFAULT_OPTS '--height=50% --border --layout=reverse'
 set HOME_SERVER_IP 192.168.86.100
 set LAB_IP 192.168.86.100
 set XDG_DATA_HOME "$HOME/.local/share"

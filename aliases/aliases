@@ -42,7 +42,7 @@ alias fps='ps | fzf'
 alias ft='tree | fzf'
 alias fta='tmux attach -t (tmux ls | awk \'{print $1}\'| sed \'s/://\'| fzf)'
 alias ftk='tmux kill-session -t (tmux ls | awk \'{print $1}\'| sed \'s/://\'| fzf)'
-alias fvi='vi (fzf)'
+alias fvi='nvim --clean (fzf)'
 
 #tmux
 alias tks='tmux kill-server'
