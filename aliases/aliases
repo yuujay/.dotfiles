@@ -34,10 +34,10 @@ alias vii='/usr/bin/vi' #Incase you really want to use vi over neo for some test
 alias vim='nvim . +":Telescope fd"'
 
 # FZF
-alias fcd='cd (fd --type d | fzf)'
+alias fcd="cd (fd --type d | fzf --preview 'tree -C {} | head -50')"
 alias fenv='env | sort | fzf'
 alias fkill='kill (ps | fzf | awk \'{print $1}\')'
-alias fls='ls | fzf'
+alias fls="ls | fzf --preview 'bat --color=always {}'"
 alias fps='ps | fzf'
 alias ft='tree | fzf'
 alias fta='tmux attach -t (tmux ls | awk \'{print $1}\'| sed \'s/://\'| fzf)'
