@@ -5,6 +5,7 @@ fish_vi_key_bindings
 # this is the only environment variable to be declared out side of `$FISH_HOME/fish_env`
 set FISH_HOME ~/.config/fish
 test -e $FISH_HOME/fish_env ; and source $FISH_HOME/fish_env
+test -e $FISH_HOME/fzf/env ; and source $FISH_HOME/fzf/env
 
 test -e $HOME/.aliases/kubernetes.aliases ; and source $HOME/.aliases/kubernetes.aliases
 test -e $HOME/.aliases/aliases ; and source $HOME/.aliases/aliases

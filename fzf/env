@@ -1,0 +1,3 @@
+set -gx FZF_DEFAULT_OPTS '--height=50% --border --layout=reverse --cycle --multi --keep-right --color=16'
+set FZF_DEFAULT_COMMAND 'ag -g ""'
+set TERM screen-256color
