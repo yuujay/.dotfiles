@@ -1,3 +1,13 @@
 set -gx FZF_DEFAULT_OPTS '--height=50% --border --layout=reverse --cycle --multi --color=16'
 set FZF_DEFAULT_COMMAND 'ag -g ""'
 set TERM screen-256color
+
+set FZF_CTRL_T_COMMAND ' '
+set FZF_CTRL_T_OPTS ''
+
+set FZF_CTRL_R_OPTS ''
+
+set FZF_ALT_C_COMMAND ""
+set FZF_ALT_C_OPTS ''
+
+set FZF_COMPLETION_TRIGGER '**'

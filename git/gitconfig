@@ -13,9 +13,9 @@
     cob = checkout -b
     d = diff
     i = init
-    l = log --all --graph --decorate --oneline -n 30 --pretty=format:"%C(cyan)%h%C(brightgreen)%d%x20%C(brightwhite)%s%x20%C(cyan)%C(dim)%cN%x20%ar"
-    lo = log --all --graph --decorate --oneline -n 30 --pretty=format:"%C(cyan)%h%C(brightgreen)%d%x20%C(brightwhite)%s%x20%C(cyan)%C(dim)%cN%x20%ar"
-    lof = log --all --graph --decorate --oneline --pretty=format:"%C(cyan)%h%C(brightgreen)%d%x20%C(brightwhite)%s%x20%C(cyan)%C(dim)%cN%x20%ar"
+    l = log --all --graph --decorate --oneline -n 30 --pretty=format:'%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(cyan)%C(dim)%cN %ar'
+    lo = log --all --graph --decorate --oneline -n 30 --pretty=format:'%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(cyan)%C(dim)%cN %ar'
+    lof = log --all --graph --decorate --oneline --pretty=format:'%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(cyan)%C(dim)%cN %ar'
     m = merge
     mt = mergetool
     pl = pull
@@ -33,6 +33,9 @@
     update-submodules = submodule update --init --recursive
     upgrade-submodules = submodule update --init --remote
     ups = push -u origin HEAD
+[color "decorate"]
+    head = brightcyan
+    branch = cyan
 [commit]
     template = ~/.gitmessage
     verbose = true
