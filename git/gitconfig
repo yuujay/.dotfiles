@@ -13,9 +13,9 @@
     cob = checkout -b
     d = diff
     i = init
-    l = log --all --graph --decorate --oneline -n 30 --pretty=format:'%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(cyan)%C(dim)%cN %ar'
-    lo = log --all --graph --decorate --oneline -n 30 --pretty=format:'%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(cyan)%C(dim)%cN %ar'
-    lof = log --all --graph --decorate --oneline --pretty=format:'%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(cyan)%C(dim)%cN %ar'
+    l = log --all --graph --decorate --oneline -n 30 --pretty=format:'%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(black)%cN %ar'
+    lo = log --all --graph --decorate --oneline -n 30 --pretty=format:'%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(black)%cN %ar'
+    lof = log --all --graph --decorate --oneline --pretty=format:'%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(black)%cN %ar'
     m = merge
     mt = mergetool
     pl = pull
