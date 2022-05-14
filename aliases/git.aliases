@@ -17,6 +17,4 @@ alias gsa='git submodule add'
 alias fga='git add (git status -s |awk \'{print $2}\'| fzf)'
 alias fgco='git checkout (git branch | fzf | xargs)'
 alias fgcorb='git checkout --track (git branch --remote |awk \'{print $1}\'| fzf)'
-alias fgd='git diff (git status -s |awk \'{print $2}\'| fzf)'
-alias fgl="git log --pretty=format:\'%C(yellow)%h %C(blue)%ar%C(auto)%d %C(yellow)%s%+b %C(black)%ae\' \"$argv\" | fzf -i -e +s --tiebreak=index --no-multi --preview=\"echo {} | grep -o '[a-f0-9]{7\}' | head -1 | xargs -I % sh -c 'git show --color=always % | diff-so-fancy'\" --header \"<enter>: view, <C-c>: copy hash\" --bind \"enter:execute:$_viewGitLogLine | less -R\"" 
 alias fglo='git lo | fzf > /dev/null'

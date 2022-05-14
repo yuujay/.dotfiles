@@ -1,13 +1,15 @@
-set -gx FZF_DEFAULT_OPTS '--height=50% --border --layout=reverse --cycle --multi --color=16'
+set -gx FZF_DEFAULT_OPTS '--height=50% --border --layout=reverse --cycle --multi --color=16 --bind=ctrl-u:preview-half-page-up  --bind=ctrl-d:preview-half-page-down'
 set FZF_DEFAULT_COMMAND 'ag -g ""'
+
+set -gx FZF_CTRL_T_COMMAND "fd --type=f"
+set -gx FZF_CTRL_T_OPTS "--preview='bat --style=numbers --color=always {}'"
+
+set -gx FZF_ALT_C_COMMAND "fd --type=d"
+set -gx FZF_ALT_C_OPTS "--preview='exa -T {}'"
+
+# https://github.com/junegunn/fzf/wiki/Configuring-shell-key-bindings
+set -gx FZF_CTRL_R_OPTS "--preview='echo {}' --preview-window=down:3:hidden:wrap --bind='?:toggle-preview'"
+
 set TERM screen-256color
-
-set FZF_CTRL_T_COMMAND ' '
-set FZF_CTRL_T_OPTS ''
-
-set FZF_CTRL_R_OPTS ''
-
-set FZF_ALT_C_COMMAND ""
-set FZF_ALT_C_OPTS ''
 
 set FZF_COMPLETION_TRIGGER '**'
