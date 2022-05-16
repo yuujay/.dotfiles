@@ -13,9 +13,9 @@
     cob = checkout -b
     d = diff
     i = init
-    l = log --all --graph --decorate --oneline -n 30 --pretty=format:'%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(black)%cN %ar'
-    lo = log --all --graph --decorate --oneline -n 30 --pretty=format:'%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(black)%cN %ar'
-    lof = log --all --graph --decorate --oneline --pretty=format:'%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(black)%cN %ar'
+    l = log --all --graph --decorate --oneline -n 30 --pretty=format:"%C(cyan)%h%C(brightgreen)%d%x20%C(brightwhite)%s%x20%C(cyan)%C(dim)%cN%x20%ar" --remotes=format:"%C(red)%d"
+    lo = log --all --graph --decorate --oneline -n 30 --pretty=format:"%C(cyan)%h%C(brightgreen)%d%x20%C(brightwhite)%s%x20%C(cyan)%C(dim)%cN%x20%ar"
+    lof = log --all --graph --decorate --oneline --pretty=format:"%C(cyan)%h%C(brightgreen)%d%x20%C(brightwhite)%s%x20%C(cyan)%C(dim)%cN%x20%ar"
     m = merge
     mt = mergetool
     pl = pull
@@ -72,4 +72,4 @@
 [help]
     autocorrect = 10
 [fetch]
-	prune = true
+    prune = true
