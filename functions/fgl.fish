@@ -13,7 +13,6 @@ function fgl
             --reverse \
             --tiebreak=index \
             --no-multi \
-            --ansi \
             --border \
             --preview=$_viewGitLogLine \
             --header "<enter>: view diff, <C-i>: Copy hash" \
