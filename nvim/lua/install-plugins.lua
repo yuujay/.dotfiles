@@ -44,6 +44,7 @@ require "paq" {
     'tpope/vim-fugitive',
     'tpope/vim-rhubarb', -- Required to make opening repositories on the browser easier when required.
     'tpope/vim-surround',
+    'michaeljsmith/vim-indent-object',
 
     -- Language specific ones
     'fatih/vim-go',
