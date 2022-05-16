@@ -8,7 +8,7 @@ function fgl
 
     git log \
         --color=always \
-        --pretty=format:"%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(black)%cN %ar"|
+        --pretty=format:"%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(auto)%cN %ar"|
         fzf -i -e +s \
             --reverse \
             --tiebreak=index \
