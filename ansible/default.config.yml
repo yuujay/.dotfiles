@@ -85,6 +85,7 @@ brew_packages:
   - ripgrep
   - rsync
   - ruby-build
+  - slides
   - ssh-copy-id
   - the_silver_searcher
   - tmux
