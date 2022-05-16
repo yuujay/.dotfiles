@@ -29,6 +29,6 @@
     - ~/.aliases
     - ~/.tmux
 
-# - shell:
+- shell:
     # - chsh -s $(which sh)
-    # - cp -r ./functions ~/.config
+    - cp ./git/hooks/post-commit .git/hooks/
