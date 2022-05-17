@@ -1,5 +1,5 @@
 function fdl
-    set _container_id "echo {} | grep -o '[a-f0-9]\{12\}' "
+    set _container_id "echo {} | grep -o '[a-f0-9]\{12\}' | head -1 "
 
     # set _container_id "echo {} | grep -o '[a-f0-9]\{12\}' | tr -d \"\n\""
     set _container_logs "$_container_id | xargs docker logs"
