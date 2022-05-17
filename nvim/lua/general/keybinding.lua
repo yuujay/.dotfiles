@@ -54,7 +54,7 @@ map('n', '<leader>dx', ':windo diffoff<CR>', options)
 -- File Operation
 map('n', '<C-a>', ':w<Space>', options)
 map('n', '<C-n>', ':enew<CR>', options)
-map('n', '<C-q>', ":%bd|e#<CR>:echom 'Closed all buffer except current!'<CR>", options)
+map('n', '<C-q>', ':%bd|e#|bd#<CR>:echom \'closed all buffers\'<CR>', options)
 map('n', '<C-w>', ':bw<CR>', options)
 map('n', 'gf', ':edit <cfile><CR>', options) -- Opens a file under cursor even if it doesnt exisit.
 map('n', 'ss', ':w!<CR>', options)
