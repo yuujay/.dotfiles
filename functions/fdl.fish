@@ -7,10 +7,10 @@ function fdl
 
     set _enter_container "echo $_container_id | xargs -oI{} bash -c \"docker exec -it {} bash\""
 
-    docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Status}}" | \
+    docker ps -a --format "table {{.ID}}\t{{.Image}}\t{{.Names}}\t{{.Status}}" | \
         awk '(NR>1)' | \
         fzf  --preview=$_container_logs \
-             --header "<enter>: view logs, <C-i>: Copy container hash,<C-b>: Bash into container" \
+             --header "<space>: toggle preview | <enter>: view logs | <C-b>: Bash into container | <C-i>: Copy container hash " \
              --bind "enter:execute:$_log_in_less" \
              --bind "ctrl-i:execute:$_copy_container_id" \
              --bind "ctrl-i:+abort" \
