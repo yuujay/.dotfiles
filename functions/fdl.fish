@@ -1,7 +1,6 @@
 function fdl
-    set _container_id "echo {} | grep -o '[a-f0-9]\{12\}' | head -1 "
+    set _container_id "echo {} | grep -o '[a-f0-9]\{12\}' | head -1 | tr -d \"\n\""
 
-    # set _container_id "echo {} | grep -o '[a-f0-9]\{12\}' | tr -d \"\n\""
     set _container_logs "$_container_id | xargs docker logs"
     set _copy_container_id "$_container_id | pbcopy"
     set _log_in_less "$_container_logs | less -R"
