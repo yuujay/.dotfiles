@@ -3,5 +3,6 @@ function fgs
 
     git status -s |  \
         fzf --preview=$_git_diff \
+            --header "<space>: toggle preview | <enter>: view commit diff " \
             --bind "enter:execute:$_git_diff | less -R"
 end

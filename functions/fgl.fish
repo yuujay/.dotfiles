@@ -10,12 +10,12 @@ function fgl
         --color=always \
         --pretty=format:"%C(dim)%C(yellow)%h%C(reset) %C(auto)%d %C(brightgreen)%s%  %C(auto)%cN %ar"|
         fzf -i -e +s \
+            --header "<space>: toggle preview | <enter>: view commit diff | <C-i>: copy commit hash" \
             --reverse \
             --tiebreak=index \
             --no-multi \
             --border \
             --preview=$_viewGitLogLine \
-            --header "<enter>: view diff, <C-i>: Copy hash" \
             --bind "enter:execute:$_viewGitLogLine | less -R" \
             --bind "ctrl-i:execute-silent:$_gitLogLineToHash | pbcopy" \
             --bind "ctrl-i:+abort"
