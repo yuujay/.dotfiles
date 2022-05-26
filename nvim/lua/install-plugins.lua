@@ -21,6 +21,7 @@ require "paq" {
     'nvim-treesitter/nvim-treesitter',
     'williamboman/nvim-lsp-installer',
     'jose-elias-alvarez/null-ls.nvim',
+    'github/copilot.vim',
     -- 'mfussenegger/nvim-dap', -- Debugger to look into
     -- 'ray-x/lsp_signature'
 
