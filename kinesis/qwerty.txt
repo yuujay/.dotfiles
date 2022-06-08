@@ -1,15 +1,1 @@
-[caps]>[escape]
-[up]>[down]
-[down]>[up]
-[scroll]>[shutdn]
-[kp=]>[kp=mac]
-[lalt]>[home]
-[home]>[lalt]
-[lctrl]>[lwin]
-[kp-lctrl]>[kp-lwin]
-[delete]>[rctrl]
-[rctrl]>[rwin]
-[kp-rctrl]>[kp-rwin]
-[rwin]>[lalt]
-[pup]>[lalt]
-
+/Volumes/ADVANTAGE2/active/qwerty.txt
