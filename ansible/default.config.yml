@@ -47,13 +47,13 @@ brew_cask_packages:
   - docker
   - dropbox
   - firefox
+  - font-hack-nerd-font
   - google-chrome
   - hammerspoon
   - iterm2
   - karabiner-elements
   - keycastr
   - kitty
-  - ngork
   - slack
   - visual-studio-code
 
