@@ -12,7 +12,9 @@ require('luasnip/loaders/from_vscode').lazy_load()
 vim.o.completeopt = 'menu,menuone,noselect,noinsert'
 
 cmp.setup ({
-    documentation = true,
+    window = {
+        documentation = cmp.config.window.bordered(),
+    },
     snippet = {
       expand = function(args)
         require('luasnip').lsp_expand(args.body)
