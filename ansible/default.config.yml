@@ -15,6 +15,12 @@ install_debian_packages: false
 setup_debian: false
 setup_debian_config: false
 
+# New machine flags
+# TODO: Functionality needs implementing
+install_lsp_servers: false
+install_paq: false # nvim specific
+setup_ssh_keys: false
+
 # Generics
 install_ruby_gems: false
 setup_dot_files: false
@@ -44,6 +50,7 @@ apt_packages:
   - wget
 
 brew_cask_packages:
+  - dbeaver-community
   - docker
   - dropbox
   - firefox
