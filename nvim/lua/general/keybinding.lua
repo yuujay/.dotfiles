@@ -1,112 +1,110 @@
-local map = vim.api.nvim_set_keymap
-
-map('n', '<Space>', '', {})
-vim.g.mapleader = ' '  -- 'vim.g' sets global variables
-
 local options = { noremap = true }
 
-map('n', ';', ':', {})
-map('v', ';', ':', {})
+vim.keymap.set('n', '<Space>', '', {})
+vim.g.mapleader = ' '  -- 'vim.g' sets global variables
+
+vim.keymap.set('n', ';', ':', {})
+vim.keymap.set('v', ';', ':', {})
 
 -- Move among buffers
-map('n', '<leader>l', ':bnext<CR>', options)
-map('n', '<leader>h', ':bprev<CR>', options)
+vim.keymap.set('n', '<leader>l', ':bnext<CR>', options)
+vim.keymap.set('n', '<leader>h', ':bprev<CR>', options)
 
 -- Nifty mappings
-map('n', '<leader>a', 'GVgg', options) -- Select the entire buffer
-map('n', '<leader>ay', ':%y<CR>', options) -- Yank the whole buffer
-map('n', 'Y', 'y$', options)
-map('n', 'vv', 'v$', options)
+vim.keymap.set('n', '<leader>a', 'GVgg', options) -- Select the entire buffer
+vim.keymap.set('n', '<leader>ay', ':%y<CR>', options) -- Yank the whole buffer
+vim.keymap.set('n', 'Y', 'y$', options)
+vim.keymap.set('n', 'vv', 'v$', options)
 
 -- Keep searches centered
-map('n', 'n', 'nzzzv', options)
-map('n', 'N', 'Nzzzv', options)
-map('n', 'J', 'mmJ`m', options)
+vim.keymap.set('n', 'n', 'nzzzv', options)
+vim.keymap.set('n', 'N', 'Nzzzv', options)
+vim.keymap.set('n', 'J', 'mmJ`m', options)
 
 -- Undo break points
-map('i', '.', '.<C-g>u', options)
-map('i', '?', '?<C-g>u', options)
-map('i', ',', ',<C-g>u', options)
-map('i', '!', '!<C-g>u', options)
+vim.keymap.set('i', '.', '.<C-g>u', options)
+vim.keymap.set('i', '?', '?<C-g>u', options)
+vim.keymap.set('i', ',', ',<C-g>u', options)
+vim.keymap.set('i', '!', '!<C-g>u', options)
 
 -- Rerun last run command
-map('n', '<leader>q', '@:', options)
+vim.keymap.set('n', '<leader>q', '@:', options)
 
 -- Copy filepath to clipboard
-map('n', '<leader>fp', ':let @+=expand("%:p")<CR>', options)
+vim.keymap.set('n', '<leader>fp', ':let @+=expand("%:p")<CR>', options)
 
 -- Paste yanked text
-map('n', ',p', '"0p', options)
-map('n', ',P', '"0P', options)
+vim.keymap.set('n', ',p', '"0p', options)
+vim.keymap.set('n', ',P', '"0P', options)
 
 -- Apply macro across visual selection
-map('n', '<leader>mm', ":'<,'>norm! @", options)
+vim.keymap.set('n', '<leader>mm', ":'<,'>norm! @", options)
 
 -- Split Buffers
-map('n', '<leader>-', ':split<CR>', options)
-map('n', '<leader>\\', ':vsplit<CR>', options)
-map('n', '<leader>x', ':close<CR>', options)
+vim.keymap.set('n', '<leader>-', ':split<CR>', options)
+vim.keymap.set('n', '<leader>\\', ':vsplit<CR>', options)
+vim.keymap.set('n', '<leader>x', ':close<CR>', options)
 
 -- Diff windows
-map('n', '<leader>d', ':windo diffthis<CR>', options)
-map('n', '<leader>dx', ':windo diffoff<CR>', options)
+vim.keymap.set('n', '<leader>d', ':windo diffthis<CR>', options)
+vim.keymap.set('n', '<leader>dx', ':windo diffoff<CR>', options)
 
 -- File Operation
-map('n', '<C-a>', ':w<Space>', options)
-map('n', '<C-n>', ':enew<CR>', options)
-map('n', '<C-q>', ':%bd|e#|bd#<CR>:echom \'closed all buffers\'<CR>', options)
-map('n', '<C-w>', ':bw<CR>', options)
-map('n', 'gf', ':edit <cfile><CR>', options) -- Opens a file under cursor even if it doesnt exisit.
-map('n', 'ss', ':w!<CR>', options)
-map('c', ':q', ':qall<CR>', options)
+vim.keymap.set('n', '<C-a>', ':w<Space>', options)
+vim.keymap.set('n', '<C-n>', ':enew<CR>', options)
+vim.keymap.set('n', '<C-q>', ':%bd|e#|bd#<CR>:echom \'closed all buffers\'<CR>', options)
+vim.keymap.set('n', '<C-w>', ':bw<CR>', options)
+vim.keymap.set('n', 'gf', ':edit <cfile><CR>', options) -- Opens a file under cursor even if it doesnt exisit.
+vim.keymap.set('n', 'ss', ':w!<CR>', options)
+vim.keymap.set('c', ':q', ':qall<CR>', options)
 
 -- Resize vim windows
-map('n', '<Up>', ':resize -2<CR>', options)
-map('n', '<Down>', ':resize +2<CR>', options)
-map('n', '<Left>', ':vertical resize -2<CR>', options)
-map('n', '<Right>', ':vertical resize +2<CR>', options)
+vim.keymap.set('n', '<Up>', ':resize -2<CR>', options)
+vim.keymap.set('n', '<Down>', ':resize +2<CR>', options)
+vim.keymap.set('n', '<Left>', ':vertical resize -2<CR>', options)
+vim.keymap.set('n', '<Right>', ':vertical resize +2<CR>', options)
 
 -- S-k & S-j moves up and down
-map('x', 'K', ":move '<-2<CR>gv=gv", options)
-map('x', 'J', ":move '>+1<CR>gv=gv", options)
+vim.keymap.set('x', 'K', ":move '<-2<CR>gv=gv", options)
+vim.keymap.set('x', 'J', ":move '>+1<CR>gv=gv", options)
 
 -- Reselect visual selection after indenting
-map('v', '<', '<gv', options)
-map('v', '>', '>gv', options)
+vim.keymap.set('v', '<', '<gv', options)
+vim.keymap.set('v', '>', '>gv', options)
 
 -- Disable search highlights
-map('n', '<leader>`', ':nohls<CR>', options)
+vim.keymap.set('n', '<leader>`', ':nohls<CR>', options)
 
 -- Install plugins using paq
-map('n', '<leader><leader>p', ':PaqInstall<CR>', options)
+vim.keymap.set('n', '<leader><leader>p', ':PaqInstall<CR>', options)
 
 -- Shortcuts to open common files
-map('n', '<leader><leader>hs', ':e /etc/hosts<CR>', options)
-map('n', '<leader><leader>la', ':e ~/.aliases<CR>', options)
-map('n', '<leader><leader>n', ':e ~/notes/todos.md<CR>', options)
-map('n', '<leader><leader>rc', ':e ~/.config/nvim/init.lua<CR>', options)
-map('n', '<leader><leader>tc', ':e ~/.tmux.conf<CR>', options)
-map('n', '<leader><leader>ya', ':e /Users/gumamahe/Documents/Cwebaddons.local/docker-compose.yml<CR>', options)
+vim.keymap.set('n', '<leader><leader>hs', ':e /etc/hosts<CR>', options)
+vim.keymap.set('n', '<leader><leader>la', ':e ~/.aliases<CR>', options)
+vim.keymap.set('n', '<leader><leader>n', ':e ~/notes/todos.md<CR>', options)
+vim.keymap.set('n', '<leader><leader>rc', ':e ~/.config/nvim/init.lua<CR>', options)
+vim.keymap.set('n', '<leader><leader>tc', ':e ~/.tmux.conf<CR>', options)
+vim.keymap.set('n', '<leader><leader>ya', ':e /Users/gumamahe/Documents/Cwebaddons.local/docker-compose.yml<CR>', options)
 
 -- Reload current buffer
-map('n', '<leader><leader>5', ':e!<CR>', options)
+vim.keymap.set('n', '<leader><leader>5', ':e!<CR>', options)
 
 -- Close preview buffer
-map('n', '<ESC><leader>', ':pc<CR>', options)
+vim.keymap.set('n', '<ESC><leader>', ':pc<CR>', options)
 
 -- Toggles
-map('n', '<leader>tn', ':set nu!<CR>', options)
-map('n', '<leader>trn', ':set rnu!<CR>', options)
-map('n', '<leader>tc', ':set cursorline!<CR>', options)
-map('n', '<leader>tl', ':Limelight!!<CR>', options)
-map('n', '<leader>ts', ':set spell! spelllang=en_us<CR>', options)
+vim.keymap.set('n', '<leader>tn', ':set nu!<CR>', options)
+vim.keymap.set('n', '<leader>trn', ':set rnu!<CR>', options)
+vim.keymap.set('n', '<leader>tc', ':set cursorline!<CR>', options)
+vim.keymap.set('n', '<leader>tl', ':Limelight!!<CR>', options)
+vim.keymap.set('n', '<leader>ts', ':set spell! spelllang=en_us<CR>', options)
 
 -- Format json
-map('n', '<leader><leader>j', ':%!python -m json.tool<CR>', options)
+vim.keymap.set('n', '<leader><leader>j', ':%!python -m json.tool<CR>', options)
 
 -- Copy visual select text to system clipboard
-map('v', '<C-c>', '"+y', options)
+vim.keymap.set('v', '<C-c>', '"+y', options)
 
 -- Reload init.lua
-map('n', '<leader><leader>rf', ":source %<CR>:echom 'current lua reloaded'<CR>", options)
-map('n', '<leader><leader>rr', ":source ~/.config/nvim/init.lua<CR>:echom 'NVIM init.lua reloaded'<CR>", options)
+vim.keymap.set('n', '<leader><leader>rf', ":source %<CR>:echom 'current lua reloaded'<CR>", options)
+vim.keymap.set('n', '<leader><leader>rr', ":source ~/.config/nvim/init.lua<CR>:echom 'NVIM init.lua reloaded'<CR>", options)

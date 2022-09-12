@@ -7,12 +7,11 @@ local func = ls.function_node
 local choice = ls.choice_node
 local dynamicn = ls.dynamic_node
 
-local keymap = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
-keymap("i", "<C-j>", "<cmd>lua require'luasnip'.jump(1)<CR>", opts)
-keymap("s", "<C-j>", "<cmd>lua require'luasnip'.jump(1)<CR>", opts)
-keymap("i", "<C-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>", opts)
-keymap("s", "<C-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>", opts)
+vim.keymap.set("i", "<C-j>", "<cmd>lua require'luasnip'.jump(1)<CR>", opts)
+vim.keymap.set("s", "<C-j>", "<cmd>lua require'luasnip'.jump(1)<CR>", opts)
+vim.keymap.set("i", "<C-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>", opts)
+vim.keymap.set("s", "<C-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>", opts)
 
 -- Predefined snippets
 require'luasnip'.filetype_extend("ruby", {"css", "erb", "gitcommit", "go", "html", "javascript", "kubernetes", "lua", "markdown", "rails", "scala", "shell"})
