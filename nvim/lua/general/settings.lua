@@ -1,41 +1,35 @@
-local o = vim.o
-local wo = vim.wo
-
 -- global options
-o.autoindent = true
-o.autoread = true -- TODO: Fix autoread
-o.colorcolumn = '79'
-o.copyindent = true
-o.cursorline = true
-o.dir = '/tmp'
-o.hlsearch = true
-o.ignorecase = true
-o.incsearch = true
-o.laststatus = 2
-o.mouse = 'a'
-o.scrolloff = 12
-o.signcolumn = "auto:2"
-o.smartcase = true
-o.smartindent = true
-o.smarttab = true
-o.swapfile = false
+vim.opt.autoindent = true
+vim.opt.autoread = true -- TODO: Fix autoread
+vim.opt.colorcolumn = '79'
+vim.opt.copyindent = true
+vim.opt.cursorline = true
+vim.opt.dir = '/tmp'
+vim.opt.hlsearch = true
+vim.opt.ignorecase = true
+vim.opt.incsearch = true
+vim.opt.laststatus = 2
+vim.opt.mouse = 'a'
+vim.opt.scrolloff = 12
+vim.opt.signcolumn = "auto:2"
+vim.opt.smartcase = true
+vim.opt.smartindent = true
+vim.opt.smarttab = true
+vim.opt.swapfile = false
 
 vim.opt.list = true
 vim.opt.listchars = { trail = '.', tab = '>~' }
 
--- window-local options
-wo.number = true
-wo.relativenumber = false
-wo.wrap = true
-
--- ------------------ buffer-local options ---------------------------
+vim.opt.number = true
+vim.opt.relativenumber = false
+vim.opt.wrap = true
 
 -- Tabs/Spacing
-o.expandtab = true
-o.shiftwidth = 4
-o.softtabstop = 4
-o.tabstop = 4
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.tabstop = 4
 
 -- Need this for using fonts
--- bo.encoding = 'UTF-8'
+-- vim.opt.encoding = 'UTF-8'
 
