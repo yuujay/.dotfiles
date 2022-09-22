@@ -97,6 +97,7 @@ brew_packages:
   - the_silver_searcher
   - tmux
   - tree
+  - watch
   - wget
   - yarn
 
