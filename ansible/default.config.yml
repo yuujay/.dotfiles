@@ -43,10 +43,12 @@ apt_packages:
   - nodejs
   - npm
   - openssl
+  - protobuf
   - rsync
   - silversearcher-ag
   - tmux
   - tree
+  - watch
   - wget
 
 brew_cask_packages:
@@ -88,6 +90,7 @@ brew_packages:
   - nodejs
   - npm
   - openssl
+  - protobuf
   - rbenv
   - ripgrep
   - rsync
