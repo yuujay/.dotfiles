@@ -69,6 +69,7 @@ brew_cask_packages:
 brew_packages:
   - bash-completion
   - bat
+  - caddy
   - calcurse
   - cask
   - ctags
@@ -78,6 +79,7 @@ brew_packages:
   - fzf
   - gh
   - git
+  - git-delta
   - glow
   - go
   - htop

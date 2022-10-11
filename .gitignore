@@ -6,3 +6,4 @@ tags
 tmux/resurrect/*
 vim/plugged/**
 nvim/spell
+gh/hosts.yml
