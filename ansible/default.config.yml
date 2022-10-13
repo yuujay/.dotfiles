@@ -82,6 +82,7 @@ brew_packages:
   - git-delta
   - glow
   - go
+  - gpg1
   - htop
   - imagemagick
   - jq

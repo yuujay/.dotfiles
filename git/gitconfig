@@ -39,6 +39,7 @@
     branch = cyan
 [commit]
     template = ~/.gitmessage
+    gpgsign = true
     verbose = true
 [core]
     autocrlf = input
@@ -70,6 +71,7 @@
 [user]
     name = gumamahe
     email = gumamahe@mathworks.com
+    signingkey = E75F9B5C9D012B01
 [help]
     autocorrect = 10
 [fetch]
