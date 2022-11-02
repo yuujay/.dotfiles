@@ -76,3 +76,5 @@
     autocorrect = 10
 [fetch]
     prune = true
+[gpg]
+    program = /usr/local/bin/gpg
