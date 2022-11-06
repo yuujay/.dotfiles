@@ -68,13 +68,12 @@
 [log]
     excludeDecoration = *origin/j*
     excludeDecoration = *tag: j*
-[user]
-    name = gumamahe
-    email = gumamahe@mathworks.com
-    signingkey = E75F9B5C9D012B01
 [help]
     autocorrect = 10
 [fetch]
     prune = true
-[gpg]
-    program = /usr/local/bin/gpg
+[includeIf "gitdir:~/personal/"]
+  path = ~/.config/fish/git/.gitconfig-personal
+[includeIf "gitdir:~/work/"]
+  path = ~/.gitconfig-work
+
