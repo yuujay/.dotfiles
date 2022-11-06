@@ -72,8 +72,8 @@
     autocorrect = 10
 [fetch]
     prune = true
-[includeIf "gitdir:~/personal/"]
-  path = ~/.config/fish/git/.gitconfig-personal
-[includeIf "gitdir:~/work/"]
+[includeIf "hasconfig:remote.*.url:git@github.com:yuujay/**"]
+  path = ~/.gitconfig-personal
+[includeIf "hasconfig:remote.*.url:git@mathworks.github.com:gumamahe/**"]
   path = ~/.gitconfig-work
 
