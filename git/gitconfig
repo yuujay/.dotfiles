@@ -72,8 +72,10 @@
     autocorrect = 10
 [fetch]
     prune = true
-[includeIf "hasconfig:remote.*.url:git@github.com:yuujay/**"]
-  path = ~/.gitconfig-personal
-[includeIf "hasconfig:remote.*.url:git@mathworks.github.com:gumamahe/**"]
-  path = ~/.gitconfig-work
-
+[user]
+    id = gumamahe
+    name = Gowtham Jaganathan
+    signingkey = E75F9B5C9D012B01
+    email = gumamahe@mathworks.com
+[gpg]
+    program = /usr/local/bin/gpg
