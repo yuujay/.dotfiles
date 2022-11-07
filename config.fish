@@ -1,6 +1,7 @@
 # echo "Sourcing files from $FISH_HOME/config.fish"
 
 fish_vi_key_bindings
+setgitconfig
 
 # this is the only environment variable to be declared out side of `$FISH_HOME/fish_env`
 set FISH_HOME ~/.config/fish

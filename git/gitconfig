@@ -73,9 +73,9 @@
 [fetch]
     prune = true
 [user]
-    id = gumamahe
-    name = Gowtham Jaganathan
-    signingkey = E75F9B5C9D012B01
-    email = gumamahe@mathworks.com
+	signingkey = E75F9B5C9D012B01
+	id = gumamahe
+	name = Gowtham Jaganathan
+	email = gumamahe@mathworks.com
 [gpg]
-    program = /usr/local/bin/gpg
+	program = /usr/local/bin/gpg
