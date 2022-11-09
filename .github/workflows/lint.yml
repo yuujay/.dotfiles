@@ -32,6 +32,7 @@ jobs:
       #     ansible-lint
 
   syntax:
+    needs: lint
     name: Syntax checking
     runs-on: ${{ matrix.os }}
     strategy:
@@ -44,8 +45,8 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v3
 
-      - name: Install ansible
-        run: brew install ansible
+      # - name: Install ansible
+      #   run: brew install ansible
 
       - name: List ansible version
         run: ansible --version
