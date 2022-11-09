@@ -37,7 +37,7 @@ jobs:
     strategy:
       matrix:
         os:
-          - macos-11.20
+          - macos-11.2.3
           # - macos-latest
 
     steps:
