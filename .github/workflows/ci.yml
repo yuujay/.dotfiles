@@ -60,9 +60,12 @@ jobs:
           cd ansible
           ansible-playbook main.yml --syntax-check
 
-      - name: Test ansible playbook.
-        run: |
-          cd ansible
-          ansible-playbook main.yml
-        env:
-          ANSIBLE_FORCE_COLOR: '1'
+      # - name: Test ansible playbook.
+      #   run: |
+      #     cd ansible
+      #     ansible-playbook main.yml
+      #   env:
+      #     ANSIBLE_FORCE_COLOR: '1'
+
+      - name: Test dotbot install script
+        run: sh dotbot-install
