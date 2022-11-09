@@ -47,22 +47,18 @@ jobs:
       - name: Install ansible
         run: brew install ansible
 
-      - name: list files
-        run: ls
-
-      - name: Echo path
-        run: echo $PATH
+      - name: List ansible version
+        run: ansible --version
 
       - name: Test ansible playbook's syntax.
-        run: ansible --version
-        # run: which ansible ansible-playbook
-          # cd ansible
-          # ansible-playbook main.yml --syntax-check
+        run: |
+          cd ansible
+          ansible-playbook main.yml --syntax-check
 
-      # - name: Test ansible playbook.
-      #   run: |
-      #     cd ansible
-      #     ansible-playbook main.yml
-      #   env:
-      #     ANSIBLE_FORCE_COLOR: '1'
+      - name: Test ansible playbook.
+        run: |
+          cd ansible
+          ansible-playbook main.yml
+        env:
+          ANSIBLE_FORCE_COLOR: '1'
 
