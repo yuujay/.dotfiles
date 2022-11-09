@@ -9,15 +9,15 @@ name: lint
     - cron: "0 5 * * 4"
 
 jobs:
-
-  setup:
-    name: Setup action to syntax check
+  syntax:
+    name: Lint and syntax checking
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os:
           - macos-11
           - macos-latest
+
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v3
@@ -28,17 +28,6 @@ jobs:
       - name: Install test dependencies.
         run: brew install yamllint ansible ansible-lint
 
-  syntax:
-    needs: setup
-    name: Syntax checking
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os:
-          - macos-11
-          - macos-latest
-
-    steps:
       - name: List ansible version
         run: ansible --version
 
