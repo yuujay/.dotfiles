@@ -12,10 +12,18 @@ jobs:
 
   setup:
     name: Setup action to syntax check
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - macos-11
+          - macos-latest
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v3
+
+      - name: Check brew version
+        run: which brew
 
       - name: Install test dependencies.
         run: brew install yamllint ansible ansible-lint
