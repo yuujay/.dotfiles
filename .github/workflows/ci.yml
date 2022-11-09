@@ -25,3 +25,6 @@ jobs:
 
       - name: Test dotbot install script
         run: sh dotbot-install
+
+      - name: Install nvim
+        run: brew install nvim
