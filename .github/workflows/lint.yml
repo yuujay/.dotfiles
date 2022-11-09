@@ -45,7 +45,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install ansible
-        run: pip3 install ansible
+        run: brew install ansible
 
       - name: list files
         run: ls
