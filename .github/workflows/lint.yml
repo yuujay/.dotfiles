@@ -10,46 +10,35 @@ name: lint
 
 jobs:
 
-  lint:
-    name: Linting Ansible code
+  setup:
+    name: Setup action to syntax check
     runs-on: ubuntu-latest
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v3
 
-      # - name: Set up Python 3.
-      #   uses: actions/setup-python@v2
-      #   with:
-      #     python-version: '3.x'
-
       - name: Install test dependencies.
-        run: pip3 install yamllint ansible ansible-lint
-
-      # - name: Lint code.
-      #   run: |
-      #     cd ansible
-      #     yamllint .
-      #     ansible-lint
+        run: brew install yamllint ansible ansible-lint
 
   syntax:
-    needs: lint
+    needs: setup
     name: Syntax checking
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os:
           - macos-11
-          # - macos-latest
+          - macos-latest
 
     steps:
-      - name: Check out the codebase.
-        uses: actions/checkout@v3
-
-      # - name: Install ansible
-      #   run: brew install ansible
-
       - name: List ansible version
         run: ansible --version
+
+      # - name: Lint code
+      #   run: |
+      #     cd ansible
+      #     yamllint .
+      #     ansible-lint
 
       - name: Test ansible playbook's syntax.
         run: |
