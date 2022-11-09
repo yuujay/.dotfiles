@@ -37,12 +37,12 @@ jobs:
     strategy:
       matrix:
         os:
-          - macos-10.15
-          - macos-latest
+          - macos-11.20
+          # - macos-latest
 
     steps:
       - name: Check out the codebase.
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       # - name: Uninstall GitHub Actions' built-in Homebrew.
       #   run: tests/uninstall-homebrew.sh
