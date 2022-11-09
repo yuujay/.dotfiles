@@ -10,27 +10,6 @@ name: CI
 
 jobs:
 
-  # lint:
-  #   name: Linting Ansible code
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Check out the codebase.
-  #       uses: actions/checkout@v2
-
-  #     - name: Set up Python 3.
-  #       uses: actions/setup-python@v2
-  #       with:
-  #         python-version: '3.x'
-
-  #     - name: Install test dependencies.
-  #       run: pip3 install yamllint ansible ansible-lint
-
-  #     - name: Lint code.
-  #       run: |
-  #         cd ansible
-  #         yamllint .
-  #         ansible-lint
-
   integration:
     name: Integration
     runs-on: ${{ matrix.os }}
@@ -38,26 +17,11 @@ jobs:
       matrix:
         os:
           - macos-11
-          # - macos-latest
+          - macos-latest
 
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v3
-
-      - name: Install test dependencies.
-        run: sudo pip3 install ansible
-
-      - name: Test ansible playbook's syntax.
-        run: ls -al
-          # cd ansible
-          # ansible-playbook main.yml --syntax-check
-
-      # - name: Test ansible playbook.
-      #   run: |
-      #     cd ansible
-      #     ansible-playbook main.yml
-      #   env:
-      #     ANSIBLE_FORCE_COLOR: '1'
 
       - name: Test dotbot install script
         run: sh dotbot-install
