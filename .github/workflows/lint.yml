@@ -44,13 +44,15 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v3
 
-      - name: Install test dependencies.
-        run: sudo pip3 install ansible
+      - name: Install ansible
+        run: pip3 install ansible
 
       - name: Test ansible playbook's syntax.
         run: |
-          cd ansible
-          ansible-playbook main.yml --syntax-check
+          which ansible
+          which ansible-playbook
+          # cd ansible
+          # ansible-playbook main.yml --syntax-check
 
       # - name: Test ansible playbook.
       #   run: |

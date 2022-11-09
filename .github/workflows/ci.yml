@@ -31,3 +31,6 @@ jobs:
 
       - name: Install nvim
         run: brew install nvim
+
+      - name: Checkhealth nvim
+        run: nvim --clean -es '+:checkhealth'
