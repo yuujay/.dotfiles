@@ -29,5 +29,5 @@ jobs:
       - name: List brew path
         run: which brew
 
-      # - name: Install nvim
-      #   run: brew install nvim
+      - name: Install nvim
+        run: brew install nvim
