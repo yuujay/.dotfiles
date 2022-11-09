@@ -48,9 +48,7 @@ jobs:
         run: pip3 install ansible
 
       - name: Test ansible playbook's syntax.
-        run: |
-          which ansible
-          which ansible-playbook
+        run: which ansible ansible-playbook
           # cd ansible
           # ansible-playbook main.yml --syntax-check
 
