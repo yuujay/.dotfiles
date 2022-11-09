@@ -6,7 +6,5 @@ echo >&2 " HOME        $HOME"
 echo >&2 "====================================================================="
 
 # I'd like to use fish, please
-sudo apt-get install -y fish
-sudo chsh -s /usr/bin/fish $USER
 
 echo "-------DONE SETUP-------"
