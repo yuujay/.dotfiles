@@ -10,26 +10,26 @@ name: CI
 
 jobs:
 
-  lint:
-    name: Linting Ansible code
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out the codebase.
-        uses: actions/checkout@v2
+  # lint:
+  #   name: Linting Ansible code
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Check out the codebase.
+  #       uses: actions/checkout@v2
 
-      - name: Set up Python 3.
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
+  #     - name: Set up Python 3.
+  #       uses: actions/setup-python@v2
+  #       with:
+  #         python-version: '3.x'
 
-      - name: Install test dependencies.
-        run: pip3 install yamllint ansible ansible-lint
+  #     - name: Install test dependencies.
+  #       run: pip3 install yamllint ansible ansible-lint
 
-      - name: Lint code.
-        run: |
-          cd ansible
-          yamllint .
-          ansible-lint
+  #     - name: Lint code.
+  #       run: |
+  #         cd ansible
+  #         yamllint .
+  #         ansible-lint
 
   integration:
     name: Integration
@@ -54,14 +54,6 @@ jobs:
 
       - name: Install test dependencies.
         run: sudo pip3 install ansible
-
-      # - name: Set up the test environment.
-      #   run: |
-      #     cp tests/ansible/ansible.cfg ./ansible.cfg
-      #     cp tests/ansible/inventory ./inventory
-      #     cp ansible/main.yml ./main.yml
-      #     cp ansible/default.config.yml ./default.config.yml
-          # ansible-galaxy install -r requirements.yml
 
       - name: Test ansible playbook's syntax.
         run: |
