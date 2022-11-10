@@ -1,6 +1,11 @@
 # Gowtham's dotfiles  💾
 
-![Tests](https://github.com/yuujay/dotfiles/actions/workflows/ci.yml/badge.svg)  ![Lint](https://github.com/yuujay/dotfiles/actions/workflows/lint.yml/badge.svg) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/yuujay/dotfiles?color=FF) ![GitHub repo size](https://img.shields.io/github/repo-size/yuujay/dotfiles?label=size) ![GitHub issues](https://img.shields.io/github/issues-raw/yuujay/dotfiles) ![GitHub](https://img.shields.io/github/license/yuujay/dotfiles)
+![Tests](https://github.com/yuujay/dotfiles/actions/workflows/ci.yml/badge.svg)
+![Lint](https://github.com/yuujay/dotfiles/actions/workflows/lint.yml/badge.svg)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/yuujay/dotfiles?color=FF)
+![GitHub repo size](https://img.shields.io/github/repo-size/yuujay/dotfiles?label=size)
+[![GitHub issues](https://img.shields.io/github/issues-raw/yuujay/dotfiles)](https://github.com/yuujay/dotfiles/issues)
+![GitHub](https://img.shields.io/github/license/yuujay/dotfiles)
 
 
 Aggregation of dotFiles powered by [dotBot](https://github.com/anishathalye/dotbot). For more such inspirations, look in [here](http://dotfiles.github.io/).
