@@ -14,6 +14,9 @@ alias glo='git lo'
 alias gs='git status'
 alias gsa='git submodule add'
 
+# Worktree alias
+alias gw='git worktree'
+
 # FZF aliases
 alias fga='git add (git status -s |awk \'{print $2}\'| fzf)'
 alias fgco='git checkout (git branch | fzf | xargs)'
