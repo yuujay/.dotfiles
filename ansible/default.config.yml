@@ -46,6 +46,7 @@ apt_packages:
   - protobuf
   - rsync
   - silversearcher-ag
+  - tldr
   - tmux
   - tree
   - watch
@@ -101,6 +102,7 @@ brew_packages:
   - slides
   - ssh-copy-id
   - the_silver_searcher
+  - tldr
   - tmux
   - tree
   - watch
