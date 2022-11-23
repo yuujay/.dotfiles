@@ -1,4 +1,4 @@
-# Gowtham's dotfiles  💾
+# Gowtham's  <img src="./images/dotfiles-4.png" width="40" height="40" />
 
 ![Tests](https://github.com/yuujay/dotfiles/actions/workflows/ci.yml/badge.svg)
 ![Lint](https://github.com/yuujay/dotfiles/actions/workflows/lint.yml/badge.svg)
