@@ -72,10 +72,3 @@
     autocorrect = 10
 [fetch]
     prune = true
-[user]
-	signingkey = E75F9B5C9D012B01
-	id = gumamahe
-	name = Gowtham Jaganathan
-	email = gumamahe@mathworks.com
-[gpg]
-	program = /usr/local/bin/gpg

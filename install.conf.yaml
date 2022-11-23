@@ -13,6 +13,7 @@
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
     ~/.fish_env:
+    ~/.gitconfig-base: git/gitconfig-base
     ~/.gitconfig-mw: git/gitconfig-mw
     ~/.gitconfig-personal: git/gitconfig-personal
     ~/.gitconfig: git/gitconfig

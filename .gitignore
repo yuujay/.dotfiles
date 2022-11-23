@@ -7,5 +7,5 @@ tmux/resurrect/*
 vim/plugged/**
 nvim/spell
 gh/hosts.yml
-**/gitconfig
+git/gitconfig
 test
