@@ -1,0 +1,37 @@
+#!/bin/bash
+# addkey.sh
+
+SSH_DIR="$HOME/.ssh"
+SSH_ADDED_SERVERS="$HOME/.ssh-added-servers"
+abort() {
+  echo -e "$1"
+  exit 1
+}
+
+[ -z "$1" ] && abort "[!] Missing Server User"
+[ -z "$2" ] && abort "[!] Missing Server Ip Or Domain"
+[ -z "$3" ] && abort "[!] Missing Key Name"
+
+user="$1"
+server="$2"
+key_name="$3"
+
+# Check If key doesn't not exist
+if [ ! -f "$SSH_DIR/$key_name.pub" ]; then
+   abort "[!] \"$SSH_DIR/$key_name.pub\" does not exist; exit"
+fi
+
+# Copy Key to user@server
+addcmd="ssh-copy-id -f -i $SSH_DIR/$key_name $user@$server"
+print "[+] Running '$addcmd'"
+output=`$addcmd`
+
+# You could add a verbose flag to silence output
+echo "$output"
+
+[[ "$output" == *"ERROR"* ]] && abort "[!] Error Running ssh-copy-id"
+[[ "$output" == *"Name or service not known"* ]] && abort "[!] Error Running ssh-copy-id"
+
+# OPTIONAL: Let's Keep Track of Added Servers, so we can use it later in our script
+echo "[+] Adding \"$user:$server:$key_name\" to \"$SSH_ADDED_SERVERS\""
+echo "$user:$server:$key_name" >> "$SSH_ADDED_SERVERS"
