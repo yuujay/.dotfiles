@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Script to generate ssh key on a machine.
+# Execute it using `generate-ssh-key fileName`
+
+SSH_DIR="$HOME/.ssh"
+[ -z "$1" ] && abort "[!] Missing Key Name"
+
+echo "[+] Generating Key In: $SSH_DIR/$1"
+
+ssh-keygen -t rsa -b 4096 -f "$SSH_DIR/$1" -q -N ""
