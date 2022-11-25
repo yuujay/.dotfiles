@@ -7,9 +7,9 @@ fi
 
 read -p "Enter Query: " query
 
-if grep -qs "$selected" ~/.tmux/.tmux-cht-languages; then
+if grep -qs "$selected" ~/.tmux/cht.sh/tmux-cht-languages; then
     query=`echo $query | tr ' ' '+'`
-    tmux split-window -v bash -c "echo \"curl cht.sh/$selected/$query/\" & curl cht.sh/$selected/$query & while [ : ]; do sleep 1; done"
+    tmux split-window -v bash -c "curl -s cht.sh/$selected/$query | less -R"
 else
     tmux split-window -v bash -c "curl -s cht.sh/$selected~$query | less -R"
 fi
