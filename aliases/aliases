@@ -6,6 +6,8 @@ alias llg='exa -al --git | grep --icons'
 alias llm='exa -alm --icons'
 alias llt='exa -al --tree --git --level=2 --icons'
 
+alias lg='lazygit'
+
 # brew aliases
 alias bci='brew cask install'
 alias bi='brew install'
