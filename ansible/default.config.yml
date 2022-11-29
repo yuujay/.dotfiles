@@ -37,6 +37,7 @@ apt_packages:
   - git
   - htop
   - jq
+  - lazygit
   - multitail
   - neovim
   - nmap
@@ -87,6 +88,7 @@ brew_packages:
   - htop
   - imagemagick
   - jq
+  - lazygit
   - minikube
   - multitail
   - neovim
