@@ -26,28 +26,32 @@ test -e $HOME/.iterm2_shell_integration.fish ; and source $HOME/.iterm2_shell_in
 
 # UJG code of interest
 if test -e $HOME/.iterm2_shell_integration.fish
-	function iterm2_print_user_vars
-	    iterm2_set_user_var rubyVersion (ruby -v | awk '{ print $2 }')
-	    iterm2_set_user_var nodeVersion (node -v)
-	    iterm2_set_user_var localIP (localip)
-	    iterm2_set_user_var ipa (ipa)
-	    iterm2_set_user_var host(scutil --get LocalHostName)
-	end
+    function iterm2_print_user_vars
+        iterm2_set_user_var rubyVersion (ruby -v | awk '{ print $2 }')
+	iterm2_set_user_var nodeVersion (node -v)
+	iterm2_set_user_var localIP (localip)
+	iterm2_set_user_var ipa (ipa)
+	iterm2_set_user_var host(scutil --get LocalHostName)
+    end
 end
 
 # Plugin manager for fish
 # curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 
-source (rbenv init - | psub) # Required for setting up rbenv locally. DO NOT REMOVE THIS.
+if type -q rbenv
+    source (rbenv init - | psub) # Required for setting up rbenv locally. DO NOT REMOVE THIS.
+end
 
 
 # Enable completions for fish shell
 # https://docs.brew.sh/Shell-Completion
 
-if test -d (brew --prefix)"/share/fish/completions"
-    set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/completions
-end
+if type -q brew
+    if test -d (brew --prefix)"/share/fish/completions"
+	set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/completions
+    end
 
-if test -d (brew --prefix)"/share/fish/vendor_completions.d"
-    set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
+    if test -d (brew --prefix)"/share/fish/vendor_completions.d"
+    	set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
+    end
 end
