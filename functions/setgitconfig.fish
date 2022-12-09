@@ -1,5 +1,5 @@
 function setgitconfig
-  isMWMachine
+  isMWMachine # We treat the iMac as MW machine and laptop is not in the list to be considered.
   set machine_code $status
   if [ $machine_code = 10 ]
       setMWGitConfigs

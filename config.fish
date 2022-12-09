@@ -15,6 +15,8 @@ test -e $HOME/.aliases/mathworks.aliases ; and source $HOME/.aliases/mathworks.a
 test -e $HOME/.aliases/git.aliases ; and source $HOME/.aliases/git.aliases
 test -e $HOME/.iterm2_shell_integration.fish ; and source $HOME/.iterm2_shell_integration.fish
 
+test -e $FISH_HOME/mw/config.fish ; and source $FISH_HOME/mw/config.fish
+
 # Keep `mw` in sync
 # test -e /mathworks/hub/share/bin/CSHRC; and source /mathworks/hub/share/bin/CSHRC
 
@@ -28,10 +30,10 @@ test -e $HOME/.iterm2_shell_integration.fish ; and source $HOME/.iterm2_shell_in
 if test -e $HOME/.iterm2_shell_integration.fish
     function iterm2_print_user_vars
         iterm2_set_user_var rubyVersion (ruby -v | awk '{ print $2 }')
-	iterm2_set_user_var nodeVersion (node -v)
-	iterm2_set_user_var localIP (localip)
-	iterm2_set_user_var ipa (ipa)
-	iterm2_set_user_var host(scutil --get LocalHostName)
+        iterm2_set_user_var nodeVersion (node -v)
+        iterm2_set_user_var localIP (localip)
+        iterm2_set_user_var ipa (ipa)
+        iterm2_set_user_var host(scutil --get LocalHostName)
     end
 end
 
