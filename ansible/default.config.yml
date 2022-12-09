@@ -4,15 +4,15 @@ dotfiles_repo_local_path: ~/.config/fish
 
 # MAC Specific flags
 install_homebrew_cask_packages: false
-install_homebrew_if_missing: false
+install_homebrew_if_missing: true
 install_homebrew_packages: true
-setup_mac: false
+setup_mac: true
 setup_mac_config: false
 upgrade_homebrew_packages: false
 
 # Debian Specific flags
-install_debian_packages: true
-setup_debian: true
+install_debian_packages: false
+setup_debian: false
 setup_debian_config: false
 
 # New machine flags
