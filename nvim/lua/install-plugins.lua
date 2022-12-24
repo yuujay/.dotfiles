@@ -17,9 +17,11 @@ require "paq" {
 
     -- LSP
     -- 'tami5/lspsaga.nvim', WARN: Do not use lspsage since there are some maintainence issues.
-    'neovim/nvim-lspconfig',
     'nvim-treesitter/nvim-treesitter',
-    'williamboman/nvim-lsp-installer',
+    'VonHeikemen/lsp-zero.nvim',
+    'neovim/nvim-lspconfig',
+    'williamboman/mason.nvim', -- Replaces nvim-lsp-installer
+    'williamboman/mason-lspconfig.nvim',
     'jose-elias-alvarez/null-ls.nvim',
     -- 'github/copilot.vim',
     -- 'mfussenegger/nvim-dap', -- Debugger to look into
