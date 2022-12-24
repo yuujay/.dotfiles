@@ -3,8 +3,7 @@
 -- vim core settings
 require('general')
 
--- paq-nvim settings & plugins
--- require('install-plugins')
+-- packer-nvim installation & plugins
 require('install-plugins-packer')
 
 -- vim plugins settings
