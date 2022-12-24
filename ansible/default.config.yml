@@ -80,6 +80,7 @@ brew_packages:
   - git-delta
   - glow
   - go
+  - goreleaser
   - gpg1
   - htop
   - imagemagick
