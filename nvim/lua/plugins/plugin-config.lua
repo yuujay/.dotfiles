@@ -4,12 +4,6 @@ vim.g.airline_powerline_fonts = 1
 -- `bufferline`
 vim.opt.termguicolors = true
 
-SIGN_ICONS = {
-    error = " ",
-    warn = " ",
-    hint = " ",
-    info = " "
-}
 require('bufferline').setup({
     options = {
         always_show_bufferline = true,
@@ -20,7 +14,9 @@ require('bufferline').setup({
             local s = " "
             for e, n in pairs(diagnostics_dict) do
                 local sym = e == "error" and " "
-                or (e == "warning" and " " or " " )
+                or (e == "warning" and " ")
+                or (e == "hint" and " ")
+                or (e == "info" and " ")
                 s = s .. sym .. n
             end
             return s
