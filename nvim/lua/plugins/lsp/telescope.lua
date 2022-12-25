@@ -35,11 +35,6 @@ require('telescope').setup{
 
 require('telescope').load_extension('fzf')
 
--- LSP Keybindings
-vim.keymap.set('n', '<leader>ca', ':Telescope lsp_code_action<CR>', options)
-vim.keymap.set('n', '<leader>cd', ':Telescope lsp_definitions<CR>', options)
-vim.keymap.set('n', '<leader>cf', ':Telescope lsp_references<CR>', options)
-
 -- Generic Keybindings
 vim.keymap.set('n', '<leader>/', ':Telescope current_buffer_fuzzy_find theme=dropdown<CR>', options)
 vim.keymap.set('n', '<leader><C-r>', ':Telescope fd theme=dropdown<CR>', options)
@@ -52,3 +47,4 @@ vim.keymap.set('n', '<leader>gbc', ':Telescope git_bcommits<CR>', options)
 vim.keymap.set('n', '<leader>k', ':Telescope keymaps theme=dropdown<CR>', options)
 vim.keymap.set('n', '<leader>r', ':Telescope git_files theme=dropdown<CR>', options)
 vim.keymap.set('n', '<leader>sb', ':Telescope git_branches theme=dropdown<CR>', options)
+vim.keymap.set('n', '<leader>th', ':Telescope help_tags<CR>', options)
