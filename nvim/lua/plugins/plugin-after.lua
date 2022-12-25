@@ -26,4 +26,4 @@ require("obsidian").setup({
     -- end
     -- return tostring(os.time()) .. "-" .. suffix
   -- end
-}) 
+})

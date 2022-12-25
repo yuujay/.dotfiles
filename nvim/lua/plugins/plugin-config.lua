@@ -10,7 +10,7 @@ require('bufferline').setup({
         diagnostics = 'nvim_lsp',
         persist_buffer_sort = true,
         separator_style = 'thick',
----@diagnostic disable-next-line: unused-local
+        ---@diagnostic disable-next-line: unused-local
         diagnostics_indicator = function(_count, _level, diagnostics_dict, _context)
             local s = " "
             for e, n in pairs(diagnostics_dict) do
