@@ -3,13 +3,29 @@ vim.g.airline_powerline_fonts = 1
 
 -- `bufferline`
 vim.opt.termguicolors = true
+
+SIGN_ICONS = {
+    error = " ",
+    warn = " ",
+    hint = " ",
+    info = " "
+}
 require('bufferline').setup({
     options = {
         always_show_bufferline = true,
         diagnostics = 'nvim_lsp',
         persist_buffer_sort = true,
         separator_style = 'thick',
-    }
+        diagnostics_indicator = function(_count, _level, diagnostics_dict, _context)
+            local s = " "
+            for e, n in pairs(diagnostics_dict) do
+                local sym = e == "error" and " "
+                or (e == "warning" and " " or " " )
+                s = s .. sym .. n
+            end
+            return s
+        end
+    },
 })
 
 -- `nvim-treesitter`
