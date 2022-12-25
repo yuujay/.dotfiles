@@ -11,6 +11,7 @@ end
 require('packer').startup(function(use)
     -- Package manager
     use 'wbthomason/packer.nvim'
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
     use {
         'VonHeikemen/lsp-zero.nvim',
