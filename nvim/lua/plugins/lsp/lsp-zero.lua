@@ -114,8 +114,13 @@ end)
 lsp.setup()
 
 -- Diagnostics
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
+
 vim.diagnostic.config({
-    virtual_text = true, -- Set this to true if you want diagnostic message on each line
+    virtual_text = false, -- Set this to true if you want diagnostic message on each line
     signs = true,
     update_in_insert = false,
     underline = true,
