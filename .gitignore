@@ -10,3 +10,4 @@ nvim/spell
 gh/hosts.yml
 git/gitconfig
 test
+**/packer_compiled.lua
