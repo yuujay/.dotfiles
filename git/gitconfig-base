@@ -48,11 +48,20 @@
     pager = less -R
 [credential]
     helper = osxkeychain
+[fetch]
+    prune = true
 [filter "lfs"]
     clean = git-lfs clean -- %f
     process = git-lfs filter-process
     required = true
     smudge = git-lfs smudge -- %f
+[help]
+    autocorrect = 10
+[init]
+  defaultBranch = main
+[log]
+    excludeDecoration = *origin/j*
+    excludeDecoration = *tag: j*
 [merge]
     defaultToUpstream = true
     tool = vimdiff
@@ -65,10 +74,3 @@
     autoStash = true
 [reviewboard]
     url = http://reviewboard.mathworks.com/
-[log]
-    excludeDecoration = *origin/j*
-    excludeDecoration = *tag: j*
-[help]
-    autocorrect = 10
-[fetch]
-    prune = true
