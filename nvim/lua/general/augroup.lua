@@ -40,9 +40,9 @@ vim.cmd([[
         autocmd FileType markdown setlocal spellsuggest+=10
     augroup end
 
-    augroup _yank
+    augroup vim_highlight_on_yank
         autocmd!
-        autocmd TextYankPost * silent! lua vim.highlight.on_yank{ timeout = 400 }
+        autocmd TextYankPost * lua vim.highlight.on_yank()
     augroup END
 
     augroup UJG
