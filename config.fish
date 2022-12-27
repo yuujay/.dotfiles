@@ -15,7 +15,7 @@ test -e $HOME/.aliases/mathworks.aliases ; and source $HOME/.aliases/mathworks.a
 test -e $HOME/.aliases/git.aliases ; and source $HOME/.aliases/git.aliases
 test -e $HOME/.iterm2_shell_integration.fish ; and source $HOME/.iterm2_shell_integration.fish
 
-test -e $FISH_HOME/mw/config.fish ; and source $FISH_HOME/mw/config.fish
+test -e $FISH_HOME/mw/env.fish ; and source $FISH_HOME/mw/env.fish
 
 # Keep `mw` in sync
 # test -e /mathworks/hub/share/bin/CSHRC; and source /mathworks/hub/share/bin/CSHRC
