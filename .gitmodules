@@ -94,14 +94,6 @@
 	path = vim/plugged/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
 	ignore = dirty
-[submodule "tmux/plugins/tmux-resurrect"]
-	path = tmux/plugins/tmux-resurrect
-	url = https://github.com/tmux-plugins/tmux-resurrect
-	ignore = dirty
-[submodule "tmux/plugins/tmux-continuum"]
-	path = tmux/plugins/tmux-continuum
-	url = https://github.com/tmux-plugins/tmux-continuum
-	ignore = dirty
 [submodule "vim/plugged/vim-tmux-runner"]
 	path = vim/plugged/vim-tmux-runner
 	url = https://github.com/christoomey/vim-tmux-runner

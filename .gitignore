@@ -2,6 +2,7 @@
 
 **/*.log
 tmux/plugins/tpm
+tmux/plugins/**
 fish_variables
 tags
 tmux/resurrect/*
