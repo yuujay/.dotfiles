@@ -29,9 +29,10 @@ function setMWMacGPGKey
 end
 
 function setMWDebGPGKey
-    git config --global user.signingkey 7500BB0872040A1C
+    git config --global user.signingkey 6D7D345C0D7FF6F2
     git config --global gpg.program /usr/bin/gpg
 end
+
 function setMWGitConfigs
     git config --global user.id gumamahe
     git config --global user.name "Gowtham Jaganathan"
