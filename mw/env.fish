@@ -7,7 +7,7 @@ set -x GOPATH "$HOME/go"
 set -x GOPRIVATE "golang.dhcp,github.mathworks.com"
 set -x GOPROXY "http://iat-go-proxy-prod-01:7000/go-proxy"
 set -x GOTOOLDIR "/usr/local/go/pkg/tool/darwin_amd64/"
-set -x MW_ARCH "maci64"
+set -x MW_ARCH "glnxa64"
 set GEM_HOME "$HOME/.gem/ruby/2.6.0"
 
 set -x UID (id -u)
