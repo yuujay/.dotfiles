@@ -1,5 +1,5 @@
 function setgitconfig
-  isMWMachine # We treat the iMac as MW machine and laptop is not in the list to be considered.
+  isMWMachine # We treat the iMac and debian VM as MW machines and laptop is not in the list to be considered.
   set machine_code $status
   if [ $machine_code = 10 ]
       setMWGitConfigs
@@ -12,6 +12,8 @@ function isMWMachine
     set host_machine $hostname
     if [ $host_machine = "ah-gumamahe-m" ]
         return 10
+    else if [ $host_machine = "ah-gumamahe-l" ]
+            return 10
     else
         return 20
     end
