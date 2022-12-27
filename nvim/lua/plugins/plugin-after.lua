@@ -8,7 +8,7 @@ require('hop').setup()
 
 -- Most of the config comes from https://github.com/epwalsh/obsidian.nvim
 require("obsidian").setup({
-  dir = "~/my-vault",
+  dir = "~/.obsidian/uj-vault",
   completion = {
     nvim_cmp = true, -- if using nvim-cmp, otherwise set to false
   }
