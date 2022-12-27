@@ -18,12 +18,12 @@ local windowLayout = {
   {"Microsoft Teams", nil, PRIMARY_SCREEN, hs.layout.maximized, nil, nil},
 }
 
-function weekendLayout()
+function WeekendLayout()
   killApps(WORK_APPS)
   openApps(HOME_APPS)
 end
 
-function workLayout()
+function WorkLayout()
   openApps(WORK_APPS)
   hs.layout.apply(windowLayout)
   -- maximizeApps(hs.window.filter.new():getWindows())

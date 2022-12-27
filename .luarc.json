@@ -3,6 +3,8 @@
     "Lua.diagnostics.globals": [
         "vim",
         "require",
-        "pairs"
+        "pairs",
+        "hs",
+        "spoon"
     ]
 }

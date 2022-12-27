@@ -1,12 +1,12 @@
 -- App Sizing
-hs.hotkey.bind(hyper, 'm', toggleMaximizedWindow)
-hs.hotkey.bind(hyper, 'c', centerScreen)
-hs.hotkey.bind(hyper, 'f', fullScreen)
-hs.hotkey.bind(hyper, 'r', sizeRestore)
+hs.hotkey.bind(HYPER, 'm', toggleMaximizedWindow)
+hs.hotkey.bind(HYPER, 'c', centerScreen)
+hs.hotkey.bind(HYPER, 'f', fullScreen)
+hs.hotkey.bind(HYPER, 'r', sizeRestore)
 
 -- move apps between monitors
-hs.hotkey.bind(cmd_ctrl, 'h', moveAppLeft)
-hs.hotkey.bind(cmd_ctrl, 'l', moveAppRight)
+hs.hotkey.bind(CMD_CTRL, 'h', moveAppLeft)
+hs.hotkey.bind(CMD_CTRL, 'l', moveAppRight)
 
 -- Shortcuts to open the app
 -- NOTE: Update `helpMenu` in `shortcuts` when anything in this block changes
