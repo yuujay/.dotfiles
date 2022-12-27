@@ -1,7 +1,0 @@
-[user]
-    name = yuujay
-    email = gowtham.uj@gmail.com
-    signingkey = 415F3412804BEE04
-[gpg]
-    program = /opt/homebrew/bin/gpg
-

@@ -2,6 +2,10 @@ function setgitconfig
   isMWMachine # We treat the iMac and debian VM as MW machines and laptop is not in the list to be considered.
   set machine_code $status
   if [ $machine_code = 10 ]
+      setMWMacGPGKey
+      setMWGitConfigs
+  else if [ $machine_code = 20 ]
+      setMWDebGPGKey
       setMWGitConfigs
   else
       setPersonalGitConfigs
@@ -13,19 +17,25 @@ function isMWMachine
     if [ $host_machine = "ah-gumamahe-m" ]
         return 10
     else if [ $host_machine = "ah-gumamahe-l" ]
-            return 10
-    else
         return 20
+    else
+        return 30
     end
 end
 
-function setMWGitConfigs
+function setMWMacGPGKey
     git config --global user.signingkey E75F9B5C9D012B01
+    git config --global gpg.program /usr/local/bin/gpg
+end
+
+function setMWDebGPGKey
+    git config --global user.signingkey 7500BB0872040A1C
+    git config --global gpg.program /usr/bin/gpg
+end
+function setMWGitConfigs
     git config --global user.id gumamahe
     git config --global user.name "Gowtham Jaganathan"
     git config --global user.email gumamahe@mathworks.com
-    git config --global gpg.program /usr/local/bin/gpg
-
 end
 
 function setPersonalGitConfigs
