@@ -17,7 +17,7 @@
     # ~/.gitconfig: git/gitconfig # COMMENTING THIS TO FIX GitHub Actions failure. Add this while setting up.
     ~/.gitmessage: git/gitmessage
     ~/.hammerspoon: hammerspoon
-    ~/.iterm2_shell_integration.fish: functions/iterm2_shell_integration.fish
+    # ~/.iterm2_shell_integration.fish: functions/iterm2_shell_integration.fish # Use this from overrides on mac machine
     ~/.ssh/config: ssh/config
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux: tmux
