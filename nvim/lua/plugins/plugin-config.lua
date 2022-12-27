@@ -27,7 +27,7 @@ require('bufferline').setup({
 
 -- `nvim-treesitter`
 require('nvim-treesitter.configs').setup({
-    ensure_installed = {"bash", "c", "css", "go", "help", "html", "java", "javascript", "json", "lua", "markdown", "ruby", "typescript", "vim", "yaml"},
+    ensure_installed = {"bash", "c", "css", "go",  "fish", "help", "html", "java", "javascript", "json", "lua", "markdown", "ruby", "typescript", "vim", "yaml"},
     highlight =  {
         enable = true,
     },
