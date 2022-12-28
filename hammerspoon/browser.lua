@@ -12,4 +12,3 @@ hs.hotkey.bind(ALT_CTRL, 'j', openUrl('https://jira.mathworks.com/secure/RapidBo
 hs.hotkey.bind(ALT_CTRL, 'm', openUrl('https://www.gmail.com'))
 hs.hotkey.bind(ALT_CTRL, 'o', openUrl('https://outlook.office365.com/mail/'))
 hs.hotkey.bind(ALT_CTRL, 't', openUrl('https://trello.com/b/xnp7ug9W/dev-environment'))
-

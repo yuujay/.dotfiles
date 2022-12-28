@@ -13,6 +13,7 @@ require 'shortcuts'
 require 'wifi'
 require 'window'
 require 'apps'
+require 'work-setup'
 
 -- Focus Changes
 hs.hotkey.bind(CMD_SHIFT, '0', showHints)
