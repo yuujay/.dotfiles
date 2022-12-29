@@ -7,11 +7,11 @@ vim.keymap.set('n', ';', ':', {})
 vim.keymap.set('v', ';', ':', {})
 
 -- Move among buffers
-vim.keymap.set('n', '<leader>l', ':bnext<CR>', options)
-vim.keymap.set('n', '<leader>h', ':bprev<CR>', options)
+vim.keymap.set('n', '<leader>ll', ':bnext<CR>', options)
+vim.keymap.set('n', '<leader>hh', ':bprev<CR>', options)
 
 -- Nifty mappings
-vim.keymap.set('n', '<leader>a', 'GVgg', options) -- Select the entire buffer
+vim.keymap.set('n', '<leader>aa', 'GVgg', options) -- Select the entire buffer
 vim.keymap.set('n', '<leader>ay', ':%y<CR>', options) -- Yank the whole buffer
 vim.keymap.set('n', 'Y', 'y$', options)
 vim.keymap.set('n', 'vv', 'v$', options)
@@ -32,6 +32,14 @@ vim.keymap.set('n', '<leader>q', '@:', options)
 
 -- Copy filepath to clipboard
 vim.keymap.set('n', '<leader>fp', ':let @+=expand("%:p")<CR>', options)
+
+-- Prevent override of paste
+vim.keymap.set("x", "<leader>p", "\"_dP")
+
+-- Copy visual select text to system clipboard
+vim.keymap.set("n", "<leader>y", "\"+y")
+vim.keymap.set("v", "<leader>y", "\"+y")
+vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 -- Paste yanked text
 vim.keymap.set('n', ',p', '"0p', options)
@@ -80,10 +88,6 @@ vim.keymap.set('n', '<leader><leader>p', ':PaqInstall<CR>', options)
 
 -- Shortcuts to open common files
 vim.keymap.set('n', '<leader><leader>hs', ':e /etc/hosts<CR>', options)
-vim.keymap.set('n', '<leader><leader>la', ':e ~/.aliases<CR>', options)
-vim.keymap.set('n', '<leader><leader>n', ':e ~/notes/todos.md<CR>', options)
-vim.keymap.set('n', '<leader><leader>rc', ':e ~/.config/nvim/init.lua<CR>', options)
-vim.keymap.set('n', '<leader><leader>tc', ':e ~/.tmux.conf<CR>', options)
 vim.keymap.set('n', '<leader><leader>ya', ':e /Users/gumamahe/Documents/Cwebaddons.local/docker-compose.yml<CR>', options)
 
 -- Reload current buffer
@@ -101,9 +105,6 @@ vim.keymap.set('n', '<leader>ts', ':set spell! spelllang=en_us<CR>', options)
 
 -- Format json
 vim.keymap.set('n', '<leader><leader>j', ':%!python -m json.tool<CR>', options)
-
--- Copy visual select text to system clipboard
-vim.keymap.set('v', '<C-c>', '"+y', options)
 
 -- Reload init.lua
 vim.keymap.set('n', '<leader><leader>rf', ":source %<CR>:echom 'current lua reloaded'<CR>", options)

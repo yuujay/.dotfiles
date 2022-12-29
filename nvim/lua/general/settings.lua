@@ -8,6 +8,7 @@ vim.opt.dir = '/tmp'
 vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.incsearch = true
+vim.opt.hlsearch = false
 vim.opt.laststatus = 2
 vim.opt.mouse = 'a'
 vim.opt.scrolloff = 12
