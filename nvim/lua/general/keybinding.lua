@@ -28,7 +28,7 @@ vim.keymap.set('i', ',', ',<C-g>u', options)
 vim.keymap.set('i', '!', '!<C-g>u', options)
 
 -- Rerun last run command
-vim.keymap.set('n', '<leader>q', '@:', options)
+vim.keymap.set('n', '<leader>lc', '@:', options)
 
 -- Copy filepath to clipboard
 vim.keymap.set('n', '<leader>fp', ':let @+=expand("%:p")<CR>', options)
