@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 selected=`cat ~/.tmux/cht.sh/tmux-cht-languages ~/.tmux/cht.sh/tmux-cht-command | fzf`
 if [[ -z $selected ]]; then

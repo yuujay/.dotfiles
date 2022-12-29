@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Script to create a new tmux session with two panes.
 # This needs to run from a shell outside a tmux session.
 #       |

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Script to generate ssh key on a machine.
 # Execute it using `generate-ssh-key fileName`
