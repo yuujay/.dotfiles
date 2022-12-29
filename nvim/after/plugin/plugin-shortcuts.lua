@@ -34,8 +34,8 @@ vim.keymap.set('n', '<leader>vcmd', ':VtrSendCommandToRunner<CR>', options)
 vim.keymap.set('n', '<leader>vk', ':VtrClearRunner<CR>', options)
 vim.keymap.set('n', '<leader>vl', ':VtrSendLinesToRunner!<CR>', options)
 vim.keymap.set('n', '<leader>vz', ':VtrFocusRunner<CR>', options)
-vim.keymap.set('n', '<leader>vr', ':VtrAttachToPane<CR>', options) -- Changing this because `VtrOpenRunner` doesn't work properly with neovim
-vim.keymap.set('n', '<leader>vo', ':VtrOpenRunner<CR>', options) -- Changing this because `VtrOpenRunner` doesn't work properly with neovim
+vim.keymap.set('n', '<leader>vr', ':VtrAttachToPane<CR>', options) -- Use this incase `VtrOpenRunner` doesn't work properly with neovim
+vim.keymap.set('n', '<leader>vo', ':VtrOpenRunner<CR>', options)
 
 -- FZF configs
 -- vim.keymap.set('n', '<leader>/', ':BLines<CR>', options)
