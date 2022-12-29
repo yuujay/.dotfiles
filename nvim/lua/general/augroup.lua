@@ -9,8 +9,8 @@
 -- -- autocmd VimEnter * Limelight
 
 vim.cmd([[
-    augroup go_ft
-        autocmd FileType go autocmd BufWritePre <buffer> GoFmt
+    augroup lsp_format
+        autocmd FileType go autocmd BufWritePre <buffer> lua vim.lsp.buf.format()
     augroup end
 
     augroup _git
