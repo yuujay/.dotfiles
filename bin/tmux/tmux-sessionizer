@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Take in a directory as an argument and creates a tmux session out of it.
 # If no path is given it pipes and fzf window with select set of directories to choose from
+# Credits to Prime.
 
 if [[ $# -eq 1 ]]; then
     selected=$1

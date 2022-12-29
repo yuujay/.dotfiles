@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Used to create and send commands to a window in current session
+# Credits to Prime.
 
 branch_name=$(basename $1)
 session_name=$(tmux display-message -p "#S")
