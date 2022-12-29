@@ -7,4 +7,4 @@ set SHELL (which fish)
 
 set -x CG_ENABLED 0
 
-set PATH /opt/homebrew/bin /usr/local/bin /opt /usr/bin /bin /usr/sbin /sbin /usr/local/go/bin /mathworks/hub/share/bin  /usr/local/netbin/netbin/ /mathworks/hub/share/sbtools/bin/maci64 /usr/bin /Users/gumamahe/.rbenv/shims /usr/local/opt/ruby/bin $GEM_HOME/bin $HOME/.config/fish/bin/ $HOME/.config/fish/bin/*/  /Library/Ruby/Gems/2.6.0/gems/ $GOPATH $GOBIN /snap/bin
+set PATH /opt/homebrew/bin /usr/local/bin /opt /usr/bin /bin /usr/sbin /sbin /usr/local/go/bin /mathworks/hub/share/bin  /usr/local/netbin/netbin/ /mathworks/hub/share/sbtools/bin/maci64 /usr/bin /Users/gumamahe/.rbenv/shims /usr/local/opt/ruby/bin $GEM_HOME/bin $HOME/.config/fish/bin/ $HOME/.config/fish/bin/*/  /Library/Ruby/Gems/2.6.0/gems/ $GOPATH $GOBIN /snap/bin ~/.asdf/installs/
