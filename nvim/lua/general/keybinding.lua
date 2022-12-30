@@ -83,8 +83,8 @@ vim.keymap.set('v', '>', '>gv', options)
 -- Disable search highlights
 vim.keymap.set('n', '<leader>`', ':nohls<CR>', options)
 
--- Install plugins using paq
-vim.keymap.set('n', '<leader><leader>p', ':PaqInstall<CR>', options)
+-- Packer plugins using packer
+vim.keymap.set('n', '<leader><leader>p', ':PackerSync<CR>', options)
 
 -- Shortcuts to open common files
 vim.keymap.set('n', '<leader><leader>hs', ':e /etc/hosts<CR>', options)
