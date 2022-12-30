@@ -86,6 +86,8 @@ brew_packages:
   - htop
   - imagemagick
   - jq
+  - koekeishiya/formulae/skhd
+  - koekeishiya/formulae/yabai
   - lazygit
   - minikube
   - multitail
