@@ -23,14 +23,11 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v3
 
-      - name: Test dotbot install script
-        run: sh dotbot-install
+      - name: Install stow
+        uses: brew install stow
 
-      - name: List brew path
-        run: which brew
-
-      - name: Install nvim
-        run: brew install nvim
+      - name: Test stow install script
+        run: sh stow-setup
 
       - name: Checkhealth nvim
         run: nvim --clean -es '+:checkhealth'
