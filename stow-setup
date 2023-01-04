@@ -18,13 +18,15 @@ case "$OS" in
     "Darwin")
         cd ../iterm2/mac
         stow -vt ~ .
+        cd ../../yabai
+        stow -vt ~ .
         ;;
     *)
         echo "Unable to determine OS. Setup iTerm2 manually."
         ;;
 esac
 
-cd ../../karabiner
+cd ../karabiner
 stow -vt ~ .
 
 cd ../kitty
