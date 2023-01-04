@@ -54,9 +54,9 @@ alias ta='tmux attach -t'
 alias tk='tmux kill-session -t'
 
 # LIST FILES & DIRECTORIES
-# alias l='ls -1 -p'
-# alias ll='ls -al'
-# alias llg='ls -al | grep'
+alias l='ls -1 -p'
+alias ll='ls -al'
+alias llg='ls -al | grep'
 alias br='bat -r'
 alias fc='find . -type f | wc -l'
 alias ldi="ls -al | grep '^d'"
