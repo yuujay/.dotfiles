@@ -15,7 +15,7 @@ local function pin_tab()
     hs.applescript.applescript(pin_tab_script)
 end
 
-local function randomMackingMusic()
+local function randomHackingMusic()
     return function()
         local musicLibrary = {}
         musicLibrary[1] = 'https://www.youtube.com/watch?v=kxbGIMVKacg&ab_channel=ChillMusicLab'
@@ -41,4 +41,4 @@ local function randomMackingMusic()
     end
 end
 
-hs.hotkey.bind(ALT_CTRL, 'y', randomMackingMusic())
+hs.hotkey.bind(ALT_CTRL, 'y', randomHackingMusic())
