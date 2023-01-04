@@ -30,9 +30,6 @@ stow -vt ~ .
 cd ../kitty
 stow -vt ~ .
 
-cd ../kinesis
-stow -vt ~ .
-
 cd ../nvim
 stow -vt ~ .
 
