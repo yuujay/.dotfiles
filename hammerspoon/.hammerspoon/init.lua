@@ -9,7 +9,6 @@ ALT_CMD = {'alt', 'cmd'}
 
 -- Note Do not move this before key declarations
 require 'browser'
-require 'shortcuts'
 require 'wifi'
 require 'apps'
 require 'work-setup'
