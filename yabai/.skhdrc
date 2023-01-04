@@ -4,12 +4,6 @@ alt - j : yabai -m window --focus south
 alt - k : yabai -m window --focus north
 alt - l : yabai -m window --focus east
 
-# shift window in current workspace
-# alt + shift - h : yabai -m window --swap west || $(yabai -m window --display west; yabai -m display --focus west)
-# alt + shift - j : yabai -m window --swap south || $(yabai -m window --display south; yabai -m display --focus south)
-# alt + shift - k : yabai -m window --swap north || $(yabai -m window --display north; yabai -m display --focus north)
-# alt + shift - l : yabai -m window --swap east || $(yabai -m window --display east; yabai -m display --focus east)
-
 # set insertion point in focused container
 alt + ctrl - h : yabai -m window --insert west
 alt + ctrl - j : yabai -m window --insert south
@@ -34,21 +28,24 @@ alt + shift - 7 : yabai -m window --space 7
 alt + shift - 8 : yabai -m window --space 8
 alt + shift - 9 : yabai -m window --space 9
 
-# mirror tree y-axis
-alt + shift - y : yabai -m space --mirror y-axis
-
-# mirror tree x-axis
-alt + shift - x : yabai -m space --mirror x-axis
-
-
 # change layout of desktop
 # alt - e : yabai -m space --layout bsp
 alt - l : yabai -m space --layout float
 alt - s : yabai -m space --layout stack
 
+# close focused window
+alt - w : yabai -m window --close
+
+# enter fullscreen mode for the focused container
+alt - f : yabai -m window --toggle zoom-fullscreen
+
+# toggle window native fullscreen
+alt + shift - f : yabai -m window --toggle native-fullscreen
+
+
 # --------- LAYOUT START -------------------
  
-# Toggle window split type
+# Toggle window split type from horizontal to vertical
 alt - e : yabai -m window --toggle split
 
 # rotate layout
@@ -63,12 +60,22 @@ alt + shift - t : yabai -m window --toggle float;\
 
 # --------- LAYOUT END -------------------
 
-# close focused window
-alt - w : yabai -m window --close
+# ----------------- TO TEST LATER -------------------
+# shift window in current workspace
+# alt + shift - h : yabai -m window --swap west || $(yabai -m window --display west; yabai -m display --focus west)
+# alt + shift - j : yabai -m window --swap south || $(yabai -m window --display south; yabai -m display --focus south)
+# alt + shift - k : yabai -m window --swap north || $(yabai -m window --display north; yabai -m display --focus north)
+# alt + shift - l : yabai -m window --swap east || $(yabai -m window --display east; yabai -m display --focus east)
 
-# enter fullscreen mode for the focused container
-alt - f : yabai -m window --toggle zoom-fullscreen
+# Create and delete macOS desktop
+# For this to works need to have system integrity propery disabled.
+# More information here https://github.com/koekeishiya/yabai/issues/787
+# cmd + alt - [ : yabai -m space --create
+# cmd + alt - ] : yabai -m space --destroy
 
-# toggle window native fullscreen
-alt + shift - f : yabai -m window --toggle native-fullscreen
+# mirror tree y-axis
+# alt + shift - y : yabai -m space --mirror y-axis
+
+# mirror tree x-axis
+# alt + shift - x : yabai -m space --mirror x-axis
 
