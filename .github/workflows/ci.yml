@@ -29,5 +29,8 @@ jobs:
       - name: Test stow install script
         run: sh stow-setup
 
+      - name: Install nvim
+        run: brew install nvim
+
       - name: Checkhealth nvim
         run: nvim --clean -es '+:checkhealth'
