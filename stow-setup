@@ -46,4 +46,4 @@ cd ..
 cp git/hooks/post-commit .git/hooks/
 
 cd ~
-rmr hooks
+rm -rf hooks
