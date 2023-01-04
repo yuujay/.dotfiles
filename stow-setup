@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+OS=$(uname -s)
+
+cd aliases
+stow -vt ~ .
+
+cd ../fish
+stow -vt ~ .
+
+cd ../gh
+stow -vt ~ .
+
+cd ../hammerspoon
+stow -vt ~ .
+
+case "$OS" in
+    "Darwin")
+        cd ../iterm2/mac
+        stow -vt ~ .
+        ;;
+    *)
+        echo "Unable to determine OS. Setup iTerm2 manually."
+        ;;
+esac
+
+cd ../../karabiner
+stow -vt ~ .
+
+cd ../kitty
+stow -vt ~ .
+
+cd ../kinesis
+stow -vt ~ .
+
+cd ../nvim
+stow -vt ~ .
+
+cd ../ssh
+stow -vt ~ .
+
+cd ../tmux
+stow -vt ~ .
+
+cd ../vscode
+stow -vt ~ .
+
+cd ..
+cp git/hooks/post-commit .git/hooks/
