@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+cd aliases
+stow -nt ~ .
+
+cd ../fish
+stow -nt ~ .
+
+cd ../gh
+stow -nt ~ .
+
+cd ../hammerspoon
+stow -nt ~ .
+
+# TODO: Execute this only on mac
+cd ../iterm2/mac
+stow -nt ~ .
+
+cd ../karabiner
+stow -nt ~ .
+
+cd ../kitty
+stow -nt ~ .
+
+cd ../kinesis
+stow -nt ~ .
+
+cd ../nvim
+stow -nt ~ .
+
+cd ../ssh
+stow -nt ~ .
+
+cd ../tmux
+stow -nt ~ .
+
+cd ../vscode
+stow -nt ~ .
+
+cd ..
+cp git/hooks/post-commit .git/hooks/
