@@ -41,19 +41,6 @@ sh install
 
 If everything goes well, you have the symlinks established for your `rc` and `config` files.
 
-## TODO 
-ADD ANSIBLE INSTALLATION STEPS
-
-## Troubleshooting
-
-#### Terminal starts to show ESC[ instead of colors
-This is caused due to less being misconfigured. To fix this run the following
-
-```fish
-set LESS "-eirMX"
-
-<!-- if the above one doesnt work, try setting the git config -->
-git config core.pager 'less -R'
-```
+#### More information can be found in [wiki section](https://github.com/yuujay/dotfiles/wiki)
 
 - Open items and enhancements can be found [here](https://github.com/yuujay/dotfiles/projects/1)
