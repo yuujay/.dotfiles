@@ -74,3 +74,9 @@
     autoStash = true
 [reviewboard]
     url = http://reviewboard.mathworks.com/
+[user]
+	signingkey = 415F3412804BEE04
+	name = yuujay
+	email = gowtham.uj@gmail.com
+[gpg]
+	program = /opt/homebrew/bin/gpg
