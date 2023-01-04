@@ -1,41 +1,49 @@
 #!/usr/bin/env bash
 
+OS=$(uname -s)
+
 cd aliases
-stow -nt ~ .
+stow -vt ~ .
 
 cd ../fish
-stow -nt ~ .
+stow -vt ~ .
 
 cd ../gh
-stow -nt ~ .
+stow -vt ~ .
 
 cd ../hammerspoon
-stow -nt ~ .
+stow -vt ~ .
 
-# TODO: Execute this only on mac
-cd ../iterm2/mac
-stow -nt ~ .
+case "$OS" in
+    "Darwin")
+        cd ../iterm2/mac
+        stow -vt ~ .
+        ;;
+    *)
+        echo "Unable to determine OS. Setup iTerm2 manually."
+        ;;
+esac
 
-cd ../karabiner
-stow -nt ~ .
+cd ../../karabiner
+stow -vt ~ .
 
 cd ../kitty
-stow -nt ~ .
+stow -vt ~ .
 
 cd ../kinesis
-stow -nt ~ .
+stow -vt ~ .
 
 cd ../nvim
-stow -nt ~ .
+stow -vt ~ .
 
 cd ../ssh
-stow -nt ~ .
+stow -vt ~ .
 
 cd ../tmux
-stow -nt ~ .
+stow -vt ~ .
 
 cd ../vscode
-stow -nt ~ .
+stow -vt ~ .
 
 cd ..
 cp git/hooks/post-commit .git/hooks/
