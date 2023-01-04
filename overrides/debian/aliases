@@ -25,12 +25,12 @@ alias rmr='rm -r'
 alias src='source ~/.config/fish/config.fish'
 alias vimgc='v ~/.gitconfig'
 alias vimhc='v /etc/hosts'
-alias vimn='v ~/notes/todos.md'
 alias vimrc='v ~/.vimrc'
 alias vimtc='v ~/.tmux.conf'
 
 # Use neovim over vim
 alias vc='nvim --clean'
+alias vi.='nvim . +":Telescope fd"'
 alias vi='nvim . +":Telescope fd"'
 alias vii='/usr/bin/vi' #Incase you really want to use vi over neo for some testing.
 alias vim='nvim . +":Telescope fd"'
@@ -91,7 +91,7 @@ alias back='cd -'
 alias cd-='cd -'
 alias cd..='cd ..'
 alias cd.='cd ..'
-alias cdf='cd ~/.config/fish'
+alias dot='cd ~/dotfiles'
 alias home='cd ~'
 
 # WEB DEV
@@ -99,7 +99,6 @@ alias bx='bundle exec'
 alias nps='npm start'
 alias nx='npm run'
 alias sl='sails lift'
-alias vi.='nvim . +":Telescope fd"'
 alias ws='python -m SimpleHTTPServer'
 
 #Utils
