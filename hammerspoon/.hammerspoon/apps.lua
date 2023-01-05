@@ -9,13 +9,8 @@ local function openAppBinding(name)
     end
 end
 
-local function helpMenu()
-  hs.alert.show(' Alt-C = Chrome \n Alt-D = DBeaver \n Alt-F = Finder \n Alt-I = IntelliJ \n Alt-M = Teams \n Alt-S = Screen Sharing \n Alt-T = iTerm \n Alt-V VSCode')
-end
-
 -- Shortcuts to open the app
 -- NOTE: Update `helpMenu` in `shortcuts` when anything in this block changes
-hs.hotkey.bind({'alt'}, '0', helpMenu)
 hs.hotkey.bind({'alt'}, 'C', openAppBinding('Google Chrome'))
 hs.hotkey.bind({'alt'}, 'D', openAppBinding('DBeaver'))
 hs.hotkey.bind({'alt'}, 'F', openAppBinding('Finder'))

@@ -41,4 +41,4 @@ local function randomHackingMusic()
     end
 end
 
-hs.hotkey.bind(ALT_CTRL, 'y', randomHackingMusic())
+hs.hotkey.bind(ALT_CMD, 'y', randomHackingMusic())

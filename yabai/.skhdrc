@@ -10,12 +10,18 @@ alt + ctrl - j : yabai -m window --insert south
 alt + ctrl - k : yabai -m window --insert north
 alt + ctrl - l : yabai -m window --insert east
 
-# TODO - This doesn't work as expected : go back to previous workspace (kind of like back_and_forth in i3)
-ctrl - b : yabai -m space --focus recent
+# shift window in current workspace
+alt + shift - h : yabai -m window --swap west || $(yabai -m window --display west; yabai -m display --focus west) 
+alt + shift - j : yabai -m window --swap south || $(yabai -m window --display south; yabai -m display --focus south)
+alt + shift - k : yabai -m window --swap north || $(yabai -m window --display north; yabai -m display --focus north)
+alt + shift - l : yabai -m window --swap east || $(yabai -m window --display east; yabai -m display --focus east)
 
 # move current focused window to previous workspace
 ctrl + cmd - b : yabai -m window --space recent; \
                   yabai -m space --focus recent
+
+# TODO - This doesn't work as expected : go back to previous workspace (kind of like back_and_forth in i3)
+ctrl - b : yabai -m space --focus recent
 
 # move focused window to next/prev desktop
 ctrl + cmd - 1 : yabai -m window --space 1
@@ -44,7 +50,7 @@ alt + shift - f : yabai -m window --toggle native-fullscreen
 
 
 # --------- LAYOUT START -------------------
- 
+
 # Toggle window split type from horizontal to vertical
 alt - e : yabai -m window --toggle split
 
@@ -55,17 +61,13 @@ alt - r : yabai -m space --rotate 90
 alt + shift - 0 : yabai -m space --balance
 
 # toggle float and center on screen
+# row-column-x-y-width-height
 alt + shift - t : yabai -m window --toggle float;\
-         yabai -m window --grid 4:4:1:1:2:2
+         yabai -m window --grid 8:8:1:0:6:8
 
 # --------- LAYOUT END -------------------
 
 # ----------------- TO TEST LATER -------------------
-# shift window in current workspace
-# alt + shift - h : yabai -m window --swap west || $(yabai -m window --display west; yabai -m display --focus west)
-# alt + shift - j : yabai -m window --swap south || $(yabai -m window --display south; yabai -m display --focus south)
-# alt + shift - k : yabai -m window --swap north || $(yabai -m window --display north; yabai -m display --focus north)
-# alt + shift - l : yabai -m window --swap east || $(yabai -m window --display east; yabai -m display --focus east)
 
 # Create and delete macOS desktop
 # For this to works need to have system integrity propery disabled.
