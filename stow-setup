@@ -2,16 +2,9 @@
 
 OS=$(uname -s)
 
-stow -vt ~ aliases
-stow -vt ~ fish
-stow -vt ~ gh
-stow -vt ~ hammerspoon
-
 case "$OS" in
     "Darwin")
-        cd iterm2
-        stow -vt ~ mac
-        cd ..
+        cp ./overrides/mac/.iterm2_shell_integration.fish ./iterm2/.iterm2_shell_integration.fish
         stow -vt ~ yabai
         ;;
     *)
@@ -19,6 +12,10 @@ case "$OS" in
         ;;
 esac
 
+stow -vt ~ aliases
+stow -vt ~ fish
+stow -vt ~ gh
+stow -vt ~ hammerspoon
 stow -vt ~ karabiner
 stow -vt ~ kitty
 stow -vt ~ nvim
