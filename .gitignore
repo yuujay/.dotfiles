@@ -1,13 +1,13 @@
 .DS_Store
 
 **/*.log
-tmux/**/plugins/tmp
-tmux/**/plugins/**
+**/packer_compiled.lua
 fish/**/fish/fish_variables
+gh/**/hosts.yml
+nvim/**/nvim/spell
 tags
+test
+tmux/**/plugins/**
+tmux/**/plugins/tmp
 tmux/**/resurrect/*
 vim/plugged/**
-nvim/**/nvim/spell
-gh/**/hosts.yml
-test
-**/packer_compiled.lua
