@@ -15,6 +15,7 @@ esac
 stow -vt ~ aliases
 stow -vt ~ fish
 stow -vt ~ gh
+stow -vt ~ git
 stow -vt ~ hammerspoon
 stow -vt ~ karabiner
 stow -vt ~ kitty

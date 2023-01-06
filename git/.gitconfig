@@ -75,8 +75,9 @@
 [reviewboard]
     url = http://reviewboard.mathworks.com/
 [user]
-	signingkey = 415F3412804BEE04
-	name = yuujay
-	email = gowtham.uj@gmail.com
+	signingkey = 6D7D345C0D7FF6F2
+	id = gumamahe
+	name = Gowtham Jaganathan
+	email = gumamahe@mathworks.com
 [gpg]
-	program = /opt/homebrew/bin/gpg
+	program = /usr/bin/gpg
