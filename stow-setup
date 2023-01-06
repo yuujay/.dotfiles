@@ -26,5 +26,6 @@ stow -vt ~ vscode
 cp git/hooks/post-commit .git/hooks/
 
 # Remove the hooks directory that is stowed
+rm ./iterm2/.iterm2_shell_integration.fish
 cd ~
 rm -rf hooks
