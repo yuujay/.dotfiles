@@ -27,7 +27,7 @@ lsp.ensure_installed({
     'dockerls',
     'emmet_ls',
     'eslint',
-    -- 'gopls',
+    'gopls',
     'rust_analyzer',
     'solargraph',
     'sumneko_lua',
