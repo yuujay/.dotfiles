@@ -36,6 +36,7 @@ apt_packages:
   - git
   - htop
   - jq
+  - keybase
   - multitail
   - neovim
   - nmap
@@ -60,6 +61,7 @@ brew_cask_packages:
   - hammerspoon
   - iterm2
   - karabiner-elements
+  - keybase
   - keycastr
   - kitty
   - slack

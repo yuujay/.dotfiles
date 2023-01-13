@@ -13,10 +13,12 @@ require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
-    -- Debugging
+    -- Debugging/DAP
     use 'mfussenegger/nvim-dap'
+    use 'nvim-telescope/telescope-dap.nvim'
     use 'rcarriga/nvim-dap-ui'
     use 'leoluz/nvim-dap-go'
+    use 'theHamsta/nvim-dap-virtual-text'
 
     -- One simple LSP Config to rule em all
     use {
