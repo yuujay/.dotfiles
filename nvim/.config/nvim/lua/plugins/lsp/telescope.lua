@@ -45,7 +45,7 @@ vim.keymap.set('n', '<leader>/', ':Telescope current_buffer_fuzzy_find theme=dro
 vim.keymap.set('n', '<leader><C-r>', ':Telescope fd theme=dropdown<CR>', options)
 vim.keymap.set('n', '<leader><leader>T', ':Telescope resume<CR>', options)
 vim.keymap.set('n', '<leader><leader>t', ':Telescope ', options)
-vim.keymap.set('n', '<leader>b', ':Telescope buffers theme=dropdown<CR>', options)
+vim.keymap.set('n', '<leader><leader>b', ':Telescope buffers theme=dropdown<CR>', options)
 vim.keymap.set('n', '<leader>cc', ':Telescope git_bcommits<CR>', options)
 vim.keymap.set('n', '<leader>ff', ':Telescope live_grep theme=dropdown<CR>', options)
 vim.keymap.set('n', '<leader>gbc', ':Telescope git_bcommits<CR>', options)

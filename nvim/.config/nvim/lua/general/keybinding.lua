@@ -53,6 +53,9 @@ vim.keymap.set('n', '<leader>-', ':split<CR>', options)
 vim.keymap.set('n', '<leader>\\', ':vsplit<CR>', options)
 vim.keymap.set('n', '<leader>x', ':close<CR>', options)
 
+-- Add executable persmission to current file
+vim.keymap.set('n', '<leader><leader>x', ':!chmod +x %', options)
+
 -- Diff windows
 vim.keymap.set('n', '<leader>d', ':windo diffthis<CR>', options)
 vim.keymap.set('n', '<leader>dx', ':windo diffoff<CR>', options)
