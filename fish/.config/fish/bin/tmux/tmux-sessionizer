@@ -26,9 +26,7 @@ if ! tmux has-session -t=$selected_name 2> /dev/null; then
 fi
 
 if [[ -z $TMUX ]] then
-    echo "if"
     tmux attach-session -t $selected_name
 else
-    echo "else"
     tmux switch-client -t $selected_name
 fi
