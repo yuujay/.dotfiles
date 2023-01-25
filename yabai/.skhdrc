@@ -62,7 +62,7 @@ alt + shift - 0 : yabai -m space --balance
 
 # toggle float and center on screen
 # row-column-x-y-width-height
-alt + shift - t : yabai -m window --toggle float;\
+ctrl + cmd - t : yabai -m window --toggle float;\
          yabai -m window --grid 8:8:1:0:6:8
 
 # --------- LAYOUT END -------------------
