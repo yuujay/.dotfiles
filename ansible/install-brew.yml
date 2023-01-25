@@ -1,0 +1,19 @@
+- hosts: all
+  # become: true
+  tasks: 
+  - name: Ensuring Homebrew is installed
+    stat:
+      path: /usr/local/bin/brew
+    register: homebrew_check
+
+  - name: get apple arch
+    shell: env /usr/bin/arch
+    register: mac_arch
+
+  # - debug: var=mac_arch.stdout_lines
+
+  - name: install brew
+    shell: >
+      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    when:
+      - not homebrew_check.stat.exists
