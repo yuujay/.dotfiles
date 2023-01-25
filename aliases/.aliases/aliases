@@ -30,10 +30,10 @@ alias vimtc='v ~/.tmux.conf'
 
 # Use neovim over vim
 alias vc='nvim --clean'
-alias vi.='nvim . +":Telescope fd"'
-alias vi='nvim . +":Telescope fd"'
+alias vi.='nvim . +":Telescope git_files theme=dropdown"'
+alias vi='nvim . +":Telescope git_files theme=dropdown"'
 alias vii='/usr/bin/vi' #Incase you really want to use vi over neo for some testing.
-alias vim='nvim . +":Telescope fd"'
+alias vim='nvim . +":Telescope git_files theme=dropdown"'
 
 # FZF
 alias fcd="cd (fd --type d | fzf --preview 'tree -C {} | head -50')"
