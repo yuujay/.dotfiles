@@ -145,7 +145,7 @@ vim.keymap.set('n', '<leader><leader>j', ':%!python -m json.tool<CR>', options)
 
 -- Reload init.lua
 options.desc = "[R]eload current [F]ile"
-vim.keymap.set('n', '<leader><leader>rf', ":source %<CR>", options)
+vim.keymap.set('n', '<leader><leader>rf', ":source %<CR>:echom 'current lua file reloaded'<CR>", options)
 options.desc = "[R]eload vim enti[r]ely"
-vim.keymap.set('n', '<leader><leader>rr', ":source ~/.config/nvim/init.lua<CR>", options)
+vim.keymap.set('n', '<leader><leader>rr', ":source ~/.config/nvim/init.lua<CR>:echom 'NVIM init.lua reloaded'<CR>", options)
 options.desc = ""
