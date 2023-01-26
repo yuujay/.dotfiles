@@ -11,6 +11,8 @@ options.desc = "move to buffer on right"
 vim.keymap.set('n', '<leader>ll', ':bnext<CR>', options)
 options.desc = "move to buffer on left"
 vim.keymap.set('n', '<leader>hh', ':bprev<CR>', options)
+options.desc = "Jump to previous/alternate file"
+vim.keymap.set('n', '<C-p>', ':e #<CR>', options) -- Select the entire buffer
 options.desc = ""
 
 -- Nifty mappings
