@@ -73,13 +73,15 @@ vim.keymap.set('n', '<leader>-', ':split<CR>', options)
 vim.keymap.set('n', '<leader>\\', ':vsplit<CR>', options)
 options.desc = "close split buffers"
 vim.keymap.set('n', '<leader>x', ':close<CR>', options)
+options.desc = "Open quickfix split"
+vim.keymap.set('n', '<leader>qf', ':copen<CR>', options)
 
 -- Add executable persmission to current file
 vim.keymap.set('n', '<leader><leader>x', ':!chmod +x %', options)
 
 -- Diff windows
 options.desc = "diff two files"
-vim.keymap.set('n', '<leader>d', ':windo diffthis<CR>', options)
+vim.keymap.set('n', '<leader>dd', ':windo diffthis<CR>', options)
 options.desc = "close diff between two files"
 vim.keymap.set('n', '<leader>dx', ':windo diffoff<CR>', options)
 
