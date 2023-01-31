@@ -1,4 +1,4 @@
 ---
 - name: Install fish shell
-  # become: true
+  become: true
   ansible.builtin.shell: sh ~/.dotfiles/bin/fish/install-fish-deb
