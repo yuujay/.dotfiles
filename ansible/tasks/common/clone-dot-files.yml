@@ -4,5 +4,7 @@
      repo: "{{ dotfiles_repo }}"
      dest: ~/.dotfiles
      track_submodules: true
-     clone: yes
-     update: yes
+     # clone: yes
+     # update: yes
+     single_branch: yes
+     version: ansible-rewrite
