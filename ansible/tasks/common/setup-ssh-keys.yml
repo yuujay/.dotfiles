@@ -3,20 +3,20 @@
    ansible.builtin.copy:
      src: ~/.dotfiles/ansible-valut-secret/ssh/authorized_keys
      dest: ~/.ssh/authorized_keys
-     owner: gumamahe
-     group: 101
+     owner: "{{ user }}"
+     group: "{{ user_group }}"
      mode: '0640'
  - name: Move the private SSH Key
    ansible.builtin.copy:
      src: ~/.dotfiles/ansible-valut-secret/ssh/id_rsa
      dest: ~/.ssh/id_rsa
-     owner: gumamahe
-     group: 101
+     owner: "{{ user }}"
+     group: "{{ user_group }}"
      mode: '0400'
  - name: Move the public SSH Key
    ansible.builtin.copy:
      src: ~/.dotfiles/ansible-valut-secret/ssh/id_rsa.pub
      dest: ~/.ssh/id_rsa.pub
-     owner: gumamahe
-     group: 101
+     owner: "{{ user }}"
+     group: "{{ user_group }}"
      mode: '0644'

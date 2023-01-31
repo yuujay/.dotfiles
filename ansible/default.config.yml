@@ -1,12 +1,15 @@
 ---
+user: gumamahe
+user_group: 101
+
 dotfiles_repo: git@github.com:yuujay/dotfiles.git
 dotfiles_repo_local_path: ~/.config/fish
 
 # MAC Specific flags
 install_homebrew_cask_packages: false
-install_homebrew_if_missing: true
-install_homebrew_packages: true
-setup_mac: true
+install_homebrew_if_missing: false
+install_homebrew_packages: false
+setup_mac: false
 setup_mac_config: false
 upgrade_homebrew_packages: false
 
