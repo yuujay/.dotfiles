@@ -1,4 +1,5 @@
 ---
+# Run this by `ansible-playbook main.yml --ask-become-pass --ask-vault-pass`
 - hosts: all
 
   vars_files:
