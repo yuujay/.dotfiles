@@ -3,5 +3,6 @@
    git:
      repo: https://github.com/yuujay/dotfiles.git
      dest: ~/.dotfiles
+     track_submodules: true
      clone: yes
      update: yes

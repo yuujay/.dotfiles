@@ -6,8 +6,7 @@
 
   tasks:
     - import_tasks: tasks/debian/main.yml
-      when: setup_debian
-      tags: ['apt', 'debian', 'packages']
+      tags: ['debian-dotfile', 'new-deb-machine']
 
     - import_tasks: tasks/mac/main.yml
       when: setup_mac
@@ -16,12 +15,6 @@
     - import_tasks: tasks/ruby.yml
       when: setup_ruby
       tags: ['gems', 'ruby']
-
-      # TODO: Fix this configuration
-      # TODO: Add script to download fonts and themes.
-    - import_tasks: tasks/dot-files/main.yml
-      when: setup_dot_files
-      tags: ['git', 'dotfiles']
 
       # TODO: Fix this configuration
     - import_tasks: tasks/fish.yml

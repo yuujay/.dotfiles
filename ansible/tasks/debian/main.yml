@@ -1,8 +1,9 @@
 ---
 - import_tasks: tasks/common/clone-dot-files.yml
-  when: setup_debian_config
-  tags: ['debian', 'new-machine']
+  tags: ['debian-dotfile', 'new-deb-machine']
+
+- import_tasks: tasks/common/setup-ssh-keys.yml
+  tags: ['debian-dotfile', 'new-deb-machine', 'ssh']
 
 - import_tasks: tasks/debian/packages.yml
-  when: install_debian_packages
-  tags: ['debian', 'new-machine']
+  tags: ['debian-packages', 'new-deb-machine']

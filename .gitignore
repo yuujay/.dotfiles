@@ -11,3 +11,8 @@ tmux/**/plugins/**
 tmux/**/plugins/tmp
 tmux/**/resurrect/*
 vim/plugged/**
+
+# Ignore ssh related files
+**/authorized_keys
+**/id_rsa
+**/id_rsa.pub
