@@ -1,5 +1,0 @@
----
-- name: DEBIAN - Copying file overrides
-  copy: src={{ item.src }} dest={{ item.dest }}
-  with_items: 
-    - "{{ debian_file_overrides }}"

@@ -1,0 +1,3 @@
+[submodule "ansible-valut-secret"]
+	path = ansible-valut-secret
+	url = git@github.com:yuujay/ansible-valut-secret.git

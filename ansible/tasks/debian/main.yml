@@ -1,8 +1,8 @@
 ---
+- import_tasks: tasks/common/clone-dot-files.yml
+  when: setup_debian_config
+  tags: ['debian', 'new-machine']
+
 - import_tasks: tasks/debian/packages.yml
   when: install_debian_packages
-  tags: ['apt', 'debian', 'packages']
-
-- import_tasks: tasks/debian/dotfiles.yml
-  when: setup_debian_config
-  tags: ['apt', 'debian', 'packages']
+  tags: ['debian', 'new-machine']
