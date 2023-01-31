@@ -1,4 +1,0 @@
----
-- name: Install fish shell
-  become: true
-  ansible.builtin.shell: brew install fish
