@@ -3,8 +3,11 @@
 - import_tasks: tasks/common/clone-dot-files.yml
   tags: ['debian-dotfile', 'new-deb-machine']
 
-- import_tasks: tasks/common/setup-ssh-keys.yml
-  tags: ['debian-dotfile', 'new-deb-machine', 'ssh']
+# - import_tasks: tasks/common/setup-ssh-keys.yml
+#   tags: ['debian-dotfile', 'new-deb-machine', 'ssh']
 
-- import_tasks: tasks/debian/packages.yml
-  tags: ['debian-packages', 'new-deb-machine']
+# - import_tasks: tasks/debian/packages.yml
+#   tags: ['debian-packages', 'new-deb-machine']
+
+- import_tasks: tasks/debian/install-fish.yml
+  tags: ['debian-dotfile', 'new-deb-machine', 'shell']
