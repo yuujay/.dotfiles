@@ -49,7 +49,7 @@ options.desc = "copy current file path to register"
 vim.keymap.set('n', '<leader>fp', ':let @+=expand("%:p")<CR>', options)
 
 -- Prevent override of paste
-options.desc = "prevent registry curruption overrides when pasting"
+options.desc = "prevent registry corruption overrides when pasting"
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
 -- Copy visual select text to system clipboard
@@ -77,7 +77,8 @@ options.desc = "Open quickfix split"
 vim.keymap.set('n', '<leader>qf', ':copen<CR>', options)
 
 -- Add executable persmission to current file
-vim.keymap.set('n', '<leader><leader>x', ':!chmod +x %', options)
+options.desc = "Change/Make current file as executable"
+vim.keymap.set('n', '<leader><leader>x', ':!chmod +x %<CR>', options)
 
 -- Diff windows
 options.desc = "diff two files"
