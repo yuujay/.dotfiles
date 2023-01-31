@@ -114,10 +114,10 @@ end)
 lsp.setup()
 
 -- Diagnostics
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = "goto previous diagnostics" })
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = "goto next diagnostics" })
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "open diagnostics of current line" })
+vim.keymap.set('n', '<leader>qq', vim.diagnostic.setloclist, { desc = "open diagnostics window" })
 
 vim.diagnostic.config({
     virtual_text = false, -- Set this to true if you want diagnostic message on each line

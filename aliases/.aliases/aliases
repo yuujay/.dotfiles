@@ -30,10 +30,10 @@ alias vimtc='v ~/.tmux.conf'
 
 # Use neovim over vim
 alias vc='nvim --clean'
-alias vi.='nvim . +":Telescope fd"'
-alias vi='nvim . +":Telescope fd"'
+alias vi.='nvim . +":Telescope git_files theme=dropdown"'
+alias vi='nvim . +":Telescope git_files theme=dropdown"'
 alias vii='/usr/bin/vi' #Incase you really want to use vi over neo for some testing.
-alias vim='nvim . +":Telescope fd"'
+alias vim='nvim . +":Telescope git_files theme=dropdown"'
 
 # FZF
 alias fcd="cd (fd --type d | fzf --preview 'tree -C {} | head -50')"
@@ -47,11 +47,16 @@ alias fta='tmux attach -t (tmux ls | awk \'{print $1}\'| sed \'s/://\'| fzf)'
 alias ftk='tmux kill-session -t (tmux ls | awk \'{print $1}\'| sed \'s/://\'| fzf)'
 alias fvi='nvim --clean (fzf)'
 
-#tmux
-alias tks='tmux kill-server'
+# tmux
 alias tls='tmux ls'
-alias ta='tmux attach -t'
-alias tk='tmux kill-session -t'
+
+# Create sessions with tmux-sessionizer
+alias tao='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/add-on-explorer'
+alias td='tmux-sessionizer ~/dotfiles'
+alias tfx='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/file-exchange'
+alias tlog='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/mathworks-logging'
+alias tm='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/gem-mathworks-metrics'
+alias tw='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/addons-contribution-ui'
 
 # LIST FILES & DIRECTORIES
 alias l='ls -1 -p'
