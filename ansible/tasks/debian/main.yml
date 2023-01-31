@@ -9,5 +9,3 @@
 - import_tasks: tasks/debian/packages.yml
   tags: ['debian-packages', 'new-deb-machine']
 
-- import_tasks: tasks/debian/install-fish.yml
-  tags: ['debian-dotfile', 'new-deb-machine', 'shell']

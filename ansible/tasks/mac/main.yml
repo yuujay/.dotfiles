@@ -3,6 +3,6 @@
   when: setup_mac
   tags: ['brew', 'packages']
 
-- import_tasks: tasks/mac/dotfiles.yml
+- import_tasks: tasks/common/clone-dot-files.yml
   when: setup_mac
   tags: ['brew', 'packages']
