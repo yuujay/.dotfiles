@@ -17,7 +17,3 @@
       when: setup_ruby
       tags: ['gems', 'ruby']
 
-      # TODO: Fix this configuration
-    - import_tasks: tasks/fish.yml
-      when: setup_fish
-      tags: ['shell', 'fish']

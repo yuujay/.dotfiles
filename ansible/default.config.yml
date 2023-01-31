@@ -27,7 +27,6 @@ setup_ssh_keys: false
 # Generics
 install_ruby_gems: false
 setup_dot_files: false
-setup_fish: false
 setup_python: false
 setup_ruby: false
 
@@ -126,10 +125,8 @@ npm_packages:
 
 debian_file_overrides:
   - { src: '{{ dotfiles_repo_local_path }}/config/debian/config.fish', dest: '{{ dotfiles_repo_local_path }}/config.fish' }
-  - { src: '{{ dotfiles_repo_local_path }}/config/debian/install.conf.yaml', dest: '{{ dotfiles_repo_local_path }}/install.conf.yaml' }
   - { src: '{{ dotfiles_repo_local_path }}/config/debian/tmux-shortcuts.conf', dest: '{{ dotfiles_repo_local_path }}/tmux/tmux-shortcuts.conf' }
   - { src: '{{ dotfiles_repo_local_path }}/config/debian/tmux-vim.conf', dest: '{{ dotfiles_repo_local_path }}/tmux/tmux-vim.conf' }
 
 mac_file_overrides:
   - { src: '{{ dotfiles_repo_local_path }}/config/debian/config.fish', dest: '{{ dotfiles_repo_local_path }}/config.fish' }
-  - { src: '{{ dotfiles_repo_local_path }}/config/debian/install.conf.yaml', dest: '{{ dotfiles_repo_local_path }}/install.conf.yaml' }
