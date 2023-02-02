@@ -1,0 +1,4 @@
+---
+ - name: Run stow setup script
+   ansible.builtin.shell: ~/.dotfiles/bin/bootstrap/003_run_stow_script >> stow.log
+

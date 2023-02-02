@@ -1,11 +1,15 @@
 ---
 # This file is called from main.yml file at the root of `ansible` directory
-- import_tasks: tasks/common/clone-dot-files.yml
-  tags: ['debian-dotfile', 'new-deb-machine']
 
-- import_tasks: tasks/common/setup-ssh-keys.yml
-  tags: ['debian-dotfile', 'new-deb-machine', 'ssh']
+# Mostly we won't need two steps to be active as they would be done already before running ansible scripts from `bin/bootstrap` scripts
+# - import_tasks: tasks/common/clone-dot-files.yml
+#   tags: ['debian-dotfile', 'new-deb-machine']
+
+# - import_tasks: tasks/common/setup-ssh-keys.yml
+#   tags: ['debian-dotfile', 'new-deb-machine', 'ssh']
 
 - import_tasks: tasks/debian/packages.yml
   tags: ['debian-packages', 'new-deb-machine']
 
+- import_tasks: tasks/common/run-stow-setup.yml
+  tags: ['debian-dotfile', 'new-deb-machine']
