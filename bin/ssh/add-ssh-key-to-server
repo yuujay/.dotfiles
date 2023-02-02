@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
-# addkey.sh
+# This script does the following
+#   - Adds pub key to authorized user on the <SERVER_NAME>
+#   - Copies pubilc and private keys to the <SERVER_NAME>
+#   - Adds the <SERVER_NAME> in `.ssh-added-servers` file to keep track of servers where the keys are copied
+#
+#   NOTE: This script assumes that we copy SSH keys only from actual machine to VDI.
+#         Script WILL NOT WORK if run from VDI to a different server
+#
+# Sample run by `sh add-ssh-key-to-server <USER_NAME> <SERVER_NAME> <KEY_NAME> 0/1`
 
-SSH_DIR="$HOME/.ssh"
-SSH_ADDED_SERVERS="$HOME/.ssh-added-servers"
 abort() {
   echo -e "$1"
   exit 1
@@ -11,19 +17,32 @@ abort() {
 [ -z "$1" ] && abort "[!] Missing Server User"
 [ -z "$2" ] && abort "[!] Missing Server Ip Or Domain"
 [ -z "$3" ] && abort "[!] Missing Key Name"
+[ -z "$4" ] && abort "[!] Missing isVDI flag"
 
 user="$1"
 server="$2"
 key_name="$3"
+isVDI="$4"
+
+SSH_DIR_DEFAULT="/Users/gumamahe/.ssh"
+
+if [ $4 -eq 0 ]; then
+    DEST_SSH_DIR="/Users/gumamahe/.ssh"
+    SSH_ADDED_SERVERS="$DEST_SSH_DIR/.ssh-added-servers"
+fi
+
+if [ $4 -eq 1 ]; then
+    DEST_SSH_DIR="/home/gumamahe/.ssh"
+    SSH_ADDED_SERVERS="$DEST_SSH_DIR/.ssh-added-servers"
+fi
 
 # Check If key doesn't not exist
-if [ ! -f "$SSH_DIR/$key_name.pub" ]; then
-   abort "[!] \"$SSH_DIR/$key_name.pub\" does not exist; exit"
+if [ ! -f "$SSH_DIR_DEFAULT/$key_name.pub" ]; then
+   abort "[!] \"$SSH_DIR_DEFAULT/$key_name.pub\" does not exist"
 fi
 
 # Copy Key to user@server
-addcmd="ssh-copy-id -f -i $SSH_DIR/$key_name $user@$server"
-print "[+] Running '$addcmd'"
+addcmd="ssh-copy-id -i $SSH_DIR_DEFAULT/$key_name $user@$server"
 output=`$addcmd`
 
 # You could add a verbose flag to silence output
@@ -32,6 +51,12 @@ echo "$output"
 [[ "$output" == *"ERROR"* ]] && abort "[!] Error Running ssh-copy-id"
 [[ "$output" == *"Name or service not known"* ]] && abort "[!] Error Running ssh-copy-id"
 
-# OPTIONAL: Let's Keep Track of Added Servers, so we can use it later in our script
+echo "[+] Copying \"$user:$server:$key_name\""
+scp "$SSH_DIR_DEFAULT/$key_name" "$user@$server:$DEST_SSH_DIR/"
+
+echo "[+] Copying \"$user:$server:$key_name.pub\""
+scp "$SSH_DIR_DEFAULT/$key_name.pub" "$user@$server:$DEST_SSH_DIR/"
+
+# Let's Keep Track of Added Servers, so we can use it later in our script
 echo "[+] Adding \"$user:$server:$key_name\" to \"$SSH_ADDED_SERVERS\""
 echo "$user:$server:$key_name" >> "$SSH_ADDED_SERVERS"
