@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Generate gpg key interactivetly
+gpg --full-generate-key
+
+# Helpful commands
+# gpg --list-secret-keys
+# gpg --list-keys
+#
+#
+# gpg --export -a Gowtham > gowtham-public-gpg.key
+# gpg --import gowtham-public-gpg.key
+# gpg --export-secret-keys Gowtham >  gowtham-private-key.key
+# gpg --import gowtham-private-key.key
+#
+
+# Some DEBUGGING Info for gpg can be found below
+# https://gist.github.com/paolocarrasco/18ca8fe6e63490ae1be23e84a7039374
