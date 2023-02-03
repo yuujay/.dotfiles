@@ -80,9 +80,6 @@ vim.keymap.set('n', '<leader>qf', ':copen<CR>', options)
 options.desc = "Change/Make current file as executable"
 vim.keymap.set('n', '<leader><leader>x', ':!chmod +x %<CR>', options)
 
--- Add executable persmission to current file
-vim.keymap.set('n', '<leader><leader>x', ':!chmod +x %', options)
-
 -- Diff windows
 options.desc = "diff two files"
 vim.keymap.set('n', '<leader>dd', ':windo diffthis<CR>', options)
