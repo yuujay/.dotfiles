@@ -12,7 +12,7 @@ vim.keymap.set('n', '<leader>ll', ':bnext<CR>', options)
 options.desc = "move to buffer on left"
 vim.keymap.set('n', '<leader>hh', ':bprev<CR>', options)
 options.desc = "Jump to previous/alternate file"
-vim.keymap.set('n', '<C-p>', ':e #<CR>', options) -- Select the entire buffer
+vim.keymap.set('n', '<C-p>', ':e #<CR>', options)
 options.desc = ""
 
 -- Nifty mappings
@@ -79,6 +79,9 @@ vim.keymap.set('n', '<leader>qf', ':copen<CR>', options)
 -- Add executable persmission to current file
 options.desc = "Change/Make current file as executable"
 vim.keymap.set('n', '<leader><leader>x', ':!chmod +x %<CR>', options)
+
+-- Add executable persmission to current file
+vim.keymap.set('n', '<leader><leader>x', ':!chmod +x %', options)
 
 -- Diff windows
 options.desc = "diff two files"
