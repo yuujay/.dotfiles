@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-sh ~/.dotfiles/stow-setup
+cd ~/.dotfiles
+sh stow-setup

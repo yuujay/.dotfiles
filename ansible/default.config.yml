@@ -46,6 +46,7 @@ apt_packages:
   - openssl
   - rsync
   - silversearcher-ag
+  - stow
   - tldr
   - tmux
   - tree
@@ -105,6 +106,7 @@ brew_packages:
   - ruby-build
   - slides
   - ssh-copy-id
+  - stow
   - the_silver_searcher
   - tldr
   - tmux
