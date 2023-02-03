@@ -24,7 +24,7 @@ function isMWMachine
 end
 
 function setMWMacGPGKey
-    git config --global user.signingkey E75F9B5C9D012B01
+    git config --global user.signingkey ECBC6ADC776F5C4A
     git config --global gpg.program /usr/local/bin/gpg
 end
 
