@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cd ~/dotfiles/tmp
+gpg --import gowtham-private-key.key
+gpg --import gowtham-public-gpg.key

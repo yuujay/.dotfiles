@@ -1,0 +1,19 @@
+---
+ - name: Move private gpg key
+   ansible.builtin.copy:
+     src: ~/.dotfiles/ansible-valut-secret/gpg/gowtham-private-gpg.key
+     dest: ~/.dotfiles/tmp/gowtham-private-gpg.key
+     owner: "{{ user }}"
+     group: "{{ user_group }}"
+     mode: '0600'
+ - name: Move public gpg key
+   ansible.builtin.copy:
+     src: ~/.dotfiles/ansible-valut-secret/gpg/gowtham-public-gpg.key
+     dest: ~/.dotfiles/tmp/gowtham-public-gpg.key
+     owner: "{{ user }}"
+     group: "{{ user_group }}"
+     mode: '0640'
+ - name: Import keys
+   ansible.builtin.shell: ~/dotfiles/bin/bootstrap/004_import_pgp_keys
+ - name: Remove temp files
+   ansible.builtin.shell: rm ~/dotfiles/tmp/gowtham*
