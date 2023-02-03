@@ -75,7 +75,7 @@
 [reviewboard]
     url = http://reviewboard.mathworks.com/
 [user]
-	signingkey = 6D7D345C0D7FF6F2
+	signingkey = ECBC6ADC776F5C4A
 	id = gumamahe
 	name = Gowtham Jaganathan
 	email = gumamahe@mathworks.com

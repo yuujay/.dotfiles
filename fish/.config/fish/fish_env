@@ -4,6 +4,7 @@ set HOME_SERVER_IP 192.168.86.100
 set LAB_IP 192.168.86.100
 set XDG_DATA_HOME "$HOME/.local/share"
 set SHELL (which fish)
+set GPG_TTY tty
 
 set -x CG_ENABLED 0
 
