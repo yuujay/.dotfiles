@@ -14,6 +14,6 @@
      group: "{{ user_group }}"
      mode: '0640'
  - name: Import keys
-   ansible.builtin.shell: ~/dotfiles/bin/bootstrap/004_import_pgp_keys
- - name: Remove temp files
-   ansible.builtin.shell: rm ~/dotfiles/tmp/gowtham*
+   ansible.builtin.shell: ~/.dotfiles/bin/bootstrap/004_import_pgp_keys
+ - name: Remove temp gpg key
+   ansible.builtin.shell: rm ~/.dotfiles/tmp/gowtham*

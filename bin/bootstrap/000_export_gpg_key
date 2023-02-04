@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+echo '[INFO] Exporting public and private gpg keys'
+gpg --export -a Gowtham > ~/.dotfiles/ansible-valut-secret/gpg/gowtham-public-gpg.key
+gpg --export-secret-keys Gowtham >  ~/.dotfiles/ansible-valut-secret/gpg/gowtham-private-gpg.key
+
+cd ~/dotfiles/ansible-valut-secret/gpg
+
+echo '[INFO] Encrypt public and private gpg keys'
+ansible-vault encrypt gowtham-public-gpg.key
+ansible-vault encrypt gowtham-private-gpg.key
+
+echo '[INFO] Commit and push the encrypted keys'
+git add .
+git commit -m 'Updated encrypted keys'
+git push origin main
+

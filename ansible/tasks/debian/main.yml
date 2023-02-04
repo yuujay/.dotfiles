@@ -11,8 +11,8 @@
 - import_tasks: tasks/common/setup-gpg-keys.yml
   tags: ['debian-dotfile', 'new-deb-machine', 'gpg']
 
-# - import_tasks: tasks/debian/packages.yml
-#   tags: ['debian-packages', 'new-deb-machine']
+- import_tasks: tasks/debian/packages.yml
+  tags: ['debian-packages', 'new-deb-machine']
 
-# - import_tasks: tasks/common/run-stow-setup.yml
-#   tags: ['debian-dotfile', 'new-deb-machine']
+- import_tasks: tasks/common/run-stow-setup.yml
+  tags: ['debian-dotfile', 'new-deb-machine']
