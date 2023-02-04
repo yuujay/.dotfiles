@@ -4,7 +4,7 @@ echo '[INFO] Exporting public and private gpg keys'
 gpg --export -a Gowtham > ~/.dotfiles/ansible-valut-secret/gpg/gowtham-public-gpg.key
 gpg --export-secret-keys Gowtham >  ~/.dotfiles/ansible-valut-secret/gpg/gowtham-private-gpg.key
 
-cd ~/dotfiles/ansible-valut-secret/gpg
+cd ~/.dotfiles/ansible-valut-secret/gpg
 
 echo '[INFO] Encrypt public and private gpg keys'
 ansible-vault encrypt gowtham-public-gpg.key

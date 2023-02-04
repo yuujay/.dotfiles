@@ -96,7 +96,7 @@ alias back='cd -'
 alias cd-='cd -'
 alias cd..='cd ..'
 alias cd.='cd ..'
-alias dot='cd ~/dotfiles/'
+alias dot='cd ~/.dotfiles/'
 alias home='cd ~'
 
 # WEB DEV
