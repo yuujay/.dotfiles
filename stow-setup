@@ -23,6 +23,7 @@ stow -vt ~ nvim
 stow -vt ~ ssh
 stow -vt ~ tmux
 stow -vt ~ vscode
+stow -vt ~ i3
 cp git/hooks/post-commit .git/hooks/
 
 # Remove the hooks directory that is stowed
