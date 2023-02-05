@@ -39,7 +39,7 @@ apt_packages:
   - htop
   - jq
   - multitail
-  - neovim
+  # - neovim
   - nmap
   - nodejs
   - npm
@@ -48,7 +48,7 @@ apt_packages:
   - silversearcher-ag
   - stow
   - tldr
-  - tmux
+  # - tmux
   - tree
   - watch
   - wget

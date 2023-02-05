@@ -12,3 +12,6 @@
     name: "{{ apt_packages }}"
     state: present
   register: result
+
+- name: Install nvim and TMUX manually
+  ansible.builtin.shell: ~/.dotfiles/bin/bootstrap/000_install_debian_apps

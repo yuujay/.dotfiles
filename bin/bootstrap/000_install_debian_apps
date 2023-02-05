@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+NVIM_STABLE_DEB_RELEASE_ARTIFACT="https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb"
+
+wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb -P ~/.dotfiles/tmp
+sudo apt install ~/.dotfiles/tmp/nvim-linux64.deb
