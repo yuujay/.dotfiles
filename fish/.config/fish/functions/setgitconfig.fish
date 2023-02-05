@@ -40,8 +40,8 @@ function setMWGitConfigs
 end
 
 function setPersonalGitConfigs
-    git config --global user.signingkey 415F3412804BEE04
+    git config --global user.signingkey ECBC6ADC776F5C4A
     git config --global user.name yuujay
     git config --global user.email gowtham.uj@gmail.com
-    git config --global gpg.program /opt/homebrew/bin/gpg
+    git config --global gpg.program /usr/bin/gpg
 end

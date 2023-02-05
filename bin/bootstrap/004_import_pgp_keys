@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+echo '[INFO] Importing gpg keys'
 cd ~/.dotfiles/tmp
-gpg --import gowtham-private-key.key
+gpg --import gowtham-private-gpg.key
 gpg --import gowtham-public-gpg.key

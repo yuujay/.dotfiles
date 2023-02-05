@@ -11,6 +11,7 @@ tmux/**/plugins/**
 tmux/**/plugins/tmp
 tmux/**/resurrect/*
 vim/plugged/**
+**/.netrwhist
 
 # Ignore ssh related files
 **/authorized_keys
