@@ -42,6 +42,6 @@ end
 function setPersonalGitConfigs
     git config --global user.signingkey ECBC6ADC776F5C4A
     git config --global user.name yuujay
-    git config --global user.email gowtham.uj@gmail.com
+    git config --global user.email gumamahe@mathworks.com
     git config --global gpg.program /usr/bin/gpg
 end
