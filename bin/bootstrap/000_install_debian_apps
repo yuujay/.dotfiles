@@ -2,5 +2,10 @@
 
 NVIM_STABLE_DEB_RELEASE_ARTIFACT="https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb"
 
-wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb -P ~/.dotfiles/tmp
+wget $NVIM_STABLE_DEB_RELEASE_ARTIFACT -P ~/.dotfiles/tmp
 sudo apt install ~/.dotfiles/tmp/nvim-linux64.deb
+
+# TODO: Fix tmux installation
+# TMUX_TAR_FILE=https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
+
+# wget $TMUX_TAR_FILE -P ~/.dotfiles/tmp
