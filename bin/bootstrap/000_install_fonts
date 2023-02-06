@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+FONT_PATH="/usr/share/fonts"
+
+cd ~/.dotfiles/fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/NerdFontsSymbolsOnly.zip
+mkdir nerd-font
+unzip NerdFontsSymbolsOnly.zip -d nerd-font
+rm NerdFontsSymbolsOnly.zip
+sudo mv nerd-font /usr/share/fonts/
+
+wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip
+mkdir nerd-font-patcher
+unzip FontPatcher.zip -d nerd-font-patcher
+rm FontPatcher.zip
+sudo mv nerd-font-patcher /usr/share/fonts/
+
