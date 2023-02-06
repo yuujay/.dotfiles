@@ -18,7 +18,7 @@ function isMWMachine
     set host_machine $hostname
     if [ $host_machine = "ah-gumamahe-m" ]
         return 10
-    if [ $host_machine = "ah-gumamahe1-m" ]
+    else if [ $host_machine = "ah-gumamahe1-m" ]
         return 20
     else if [ $host_machine = "ah-gumamahe-l" ]
         return 30
