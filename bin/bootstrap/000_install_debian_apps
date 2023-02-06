@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
+# Install nvim from snap since apt always install 0.4 but we need 0.8+
 sudo apt install snapd
 sudo snap install core
 sudo snap install nvim --classic
 
+# Kitty installation
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+sudo ln -sf ~/.local/kitty.app/bin/kitty ~/.local/kitty.app/bin/kitten /usr/local/bin
+cp ~/.local/kitty.app/share/applications/kitty.desktop ~/.local/share/applications
+cp ~/.local/kitty.app/share/applications/kitty-open.desktop ~/.local/share/applications
