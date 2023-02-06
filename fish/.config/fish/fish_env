@@ -1,10 +1,12 @@
 set DOCKER_COMPOSE_USER_ID (id -u)
 set EDITOR 'vim'
+set GPG_TTY tty
 set HOME_SERVER_IP 192.168.86.100
 set LAB_IP 192.168.86.100
-set XDG_DATA_HOME "$HOME/.local/share"
 set SHELL (which fish)
-set GPG_TTY tty
+set TERMINAL 'kitty'
+set VISUAL 'vim'
+set XDG_DATA_HOME "$HOME/.local/share"
 
 set -x CG_ENABLED 0
 
