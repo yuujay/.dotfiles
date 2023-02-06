@@ -77,7 +77,7 @@
 [user]
 	signingkey = ECBC6ADC776F5C4A
 	id = gumamahe
-	name = yuujay
+	name = Gowtham Jaganathan
 	email = gumamahe@mathworks.com
 [gpg]
 	program = /usr/bin/gpg
