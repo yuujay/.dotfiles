@@ -21,8 +21,8 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v3
 
-      - name: Check brew version
-        run: which brew
+      # - name: Check brew version
+      #  run: which brew
 
       - name: Install test dependencies.
         run: apt install yamllint ansible ansible-lint
