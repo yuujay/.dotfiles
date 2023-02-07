@@ -1,6 +1,6 @@
 set DOCKER_COMPOSE_USER_ID (id -u)
 set EDITOR 'vim'
-set GPG_TTY tty
+set GPG_TTY (tty)
 set HOME_SERVER_IP 192.168.86.100
 set LAB_IP 192.168.86.100
 set SHELL (which fish)

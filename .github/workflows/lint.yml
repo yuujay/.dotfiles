@@ -25,7 +25,7 @@ jobs:
       #  run: which brew
 
       - name: Install test dependencies.
-        run: apt install yamllint ansible ansible-lint
+        run: sudo apt install yamllint ansible ansible-lint
 
       - name: List ansible version
         run: ansible --version
