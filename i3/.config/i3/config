@@ -70,9 +70,10 @@ bindsym $mod+Return exec $terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+# bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
-# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+bindsym $mod+d exec rofi -show run -lines 3 -opacity "50"
+# bindsym $mod+d exec rofi -modi drun,run -show drun
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
@@ -201,6 +202,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+        position top
         status_command i3status
 }
 
@@ -208,7 +210,6 @@ assign [class="Microsoft Teams - Preview"] $ws4
 assign [class="kitty"] $ws5
 assign [class="Chromium"] $ws6
 
-exec --no-startup-id kitty
 exec --no-startup-id chromium
 exec --no-startup-id teams
 exec --no-startup-id kitty

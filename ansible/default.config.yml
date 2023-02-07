@@ -37,6 +37,8 @@ apt_packages:
   - fzf
   - git
   - htop
+  - i3
+  - i3blocks
   - jq
   - multitail
   # - neovim
@@ -44,6 +46,7 @@ apt_packages:
   - nodejs
   - npm
   - openssl
+  - rofi
   - rsync
   - silversearcher-ag
   - stow
