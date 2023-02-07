@@ -203,7 +203,8 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         position top
-        status_command i3status
+        status_command i3blocks -c ~/.config/i3/i3blocks.conf
+        # separator_symbol "*"
 }
 
 assign [class="Microsoft Teams - Preview"] $ws4
