@@ -2,14 +2,16 @@
 # This file is called from main.yml file at the root of `ansible` directory
 
 # Mostly we won't need two steps to be active as they would be done already before running ansible scripts from `bin/bootstrap` scripts
+# Also, commenting these to not fail in GitHub action CI build.
+# TODO: Figure out a way for GitHub action to access private repo.
 # - import_tasks: tasks/common/clone-dot-files.yml
 #   tags: ['debian-dotfile', 'new-deb-machine']
 
 # - import_tasks: tasks/common/setup-ssh-keys.yml
 #   tags: ['debian-dotfile', 'new-deb-machine', 'ssh']
 
-- import_tasks: tasks/common/setup-gpg-keys.yml
-  tags: ['debian-dotfile', 'new-deb-machine', 'gpg']
+# - import_tasks: tasks/common/setup-gpg-keys.yml
+#  tags: ['debian-dotfile', 'new-deb-machine', 'gpg']
 
 - import_tasks: tasks/debian/packages.yml
   tags: ['debian-packages', 'new-deb-machine']
