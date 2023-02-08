@@ -10,4 +10,4 @@ set XDG_DATA_HOME "$HOME/.local/share"
 
 set -x CG_ENABLED 0
 
-set PATH /opt/homebrew/bin /usr/local/bin /opt /usr/bin /bin /usr/sbin /sbin /usr/local/go/bin /mathworks/hub/share/bin  /usr/local/netbin/netbin/ /mathworks/hub/share/sbtools/bin/maci64 /usr/bin /Users/gumamahe/.rbenv/shims /usr/local/opt/ruby/bin $GEM_HOME/bin $HOME/.config/fish/bin/ $HOME/.config/fish/bin/*/  /Library/Ruby/Gems/2.6.0/gems/ $GOPATH $GOBIN /snap/bin ~/.asdf/shims/
+set PATH /mathworks/hub/3rdparty/internal/9285011/maci64/golang/bin /home/gumamahe/go/bin /opt/homebrew/bin /usr/local/bin /opt /usr/bin /bin /usr/sbin /sbin /mathworks/hub/share/bin  /usr/local/netbin/netbin/ /mathworks/hub/share/sbtools/bin/maci64 /usr/bin /Users/gumamahe/.rbenv/shims /usr/local/opt/ruby/bin $GEM_HOME/bin $HOME/.config/fish/bin/ $HOME/.config/fish/bin/*/  /Library/Ruby/Gems/2.6.0/gems/ /snap/bin ~/.asdf/shims/
