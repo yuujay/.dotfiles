@@ -1,13 +1,13 @@
-set DOCKER_COMPOSE_USER_ID (id -u)
-set EDITOR 'vim'
-set GPG_TTY (tty)
-set HOME_SERVER_IP 192.168.86.100
-set LAB_IP 192.168.86.100
-set SHELL (which fish)
-set TERMINAL 'kitty'
-set VISUAL 'vim'
-set XDG_DATA_HOME "$HOME/.local/share"
+set -gx DOCKER_COMPOSE_USER_ID (id -u)
+set -gx EDITOR 'vim'
+set -gx GPG_TTY (tty)
+set -gx HOME_SERVER_IP 192.168.86.100
+set -gx LAB_IP 192.168.86.100
+set -gx SHELL (which fish)
+set -gx TERMINAL 'kitty'
+set -gx VISUAL 'vim'
+set -gx XDG_DATA_HOME "$HOME/.local/share"
 
-set -x CG_ENABLED 0
+set -gx CG_ENABLED 0
 
 set PATH /mathworks/hub/3rdparty/internal/9285011/maci64/golang/bin /home/gumamahe/go/bin /opt/homebrew/bin /usr/local/bin /opt /usr/bin /bin /usr/sbin /sbin /mathworks/hub/share/bin  /usr/local/netbin/netbin/ /mathworks/hub/share/sbtools/bin/maci64 /usr/bin /Users/gumamahe/.rbenv/shims /usr/local/opt/ruby/bin $GEM_HOME/bin $HOME/.config/fish/bin/ $HOME/.config/fish/bin/*/  /Library/Ruby/Gems/2.6.0/gems/ /snap/bin ~/.asdf/shims/
