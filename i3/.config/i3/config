@@ -133,7 +133,7 @@ bindsym $mod+a focus parent
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3:Mail"
-set $ws4 "4:Teams"
+set $ws4 "4"
 set $ws5 "5:Terminal"
 set $ws6 "6:Chrome"
 set $ws7 "7:firefox"
@@ -207,12 +207,12 @@ bar {
         # separator_symbol "*"
 }
 
-assign [class="Microsoft Teams - Preview"] $ws4
+# assign [class="Microsoft Teams - Preview"] $ws4
 assign [class="kitty"] $ws5
 assign [class="Chromium"] $ws6
 
 exec --no-startup-id chromium
-exec --no-startup-id teams
+# exec --no-startup-id teams
 exec --no-startup-id kitty
 
 for_window [class="kitty"] focus

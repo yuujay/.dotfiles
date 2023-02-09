@@ -16,3 +16,6 @@ set -gx GEM_HOME "$HOME/.gem/ruby/2.6.0"
 set -gx UID (id -u)
 set -gx GID (id -g)
 
+# ---- VDI/MOS Team ---
+set -gx M2_HOME "/opt/maven"
+
