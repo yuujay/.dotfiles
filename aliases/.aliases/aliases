@@ -1,10 +1,9 @@
 # Some new rust replacements for commonly used utilities
-alias l='exa -1 --icons'
-alias ll='exa -al --git --icons'
-alias lld='exa -alD --git --icons'
+alias la='exa -al --icons --git'
+alias lld='exa -alD --icons --git'
 alias llg='exa -al --git | grep --icons'
-alias llm='exa -alm --icons'
-alias llt='exa -al --tree --git --level=2 --icons'
+alias llm='exa -alm --icons --git'
+alias llt='exa -al --tree --git --level=3 --icons'
 
 alias lg='lazygit'
 
