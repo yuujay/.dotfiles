@@ -56,6 +56,7 @@ alias td='tmux-sessionizer ~/dotfiles'
 alias tfx='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/file-exchange'
 alias tlog='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/mathworks-logging'
 alias tm='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/gem-mathworks-metrics'
+alias ts='tmux-sessionizer'
 alias tw='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/addons-contribution-ui'
 
 # LIST FILES & DIRECTORIES
