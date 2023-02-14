@@ -26,7 +26,7 @@ alias sshs2="ssh basysrby@ruby26ext-s01ah"
 alias sshp1="ssh basysrby@ruby26ext-p01ls"
 
 ## COMMUNITY TEAM
-set SANDBOX_PATH '/Users/gumamahe/Documents'
+set -gx SANDBOX_PATH '/Users/gumamahe/Documents'
 
 alias cds='cd $SANDBOX_PATH'
 alias cdp='cd $SANDBOX_PATH/github.mathworks.repos'
@@ -36,6 +36,11 @@ alias cda='cd $SANDBOX_PATH/Cwebaddons.local/add-on-explorer'
 alias cdag='cd $SANDBOX_PATH/Cwebaddons.local/addons-data-access'
 alias cdbj='cd $SANDBOX_PATH/Cwebaddons.local/addons-background-jobs-consumer'
 alias cdw='cd $SANDBOX_PATH/Cwebaddons.local/addons-contribution-ui'
+
+## NETWORK PATH
+set -gx NETWORK_PATH '/mathworks/devel/sandbox/gumamahe'
+
+alias cdm='cd $NETWORK_PATH/mos-team/volturnus'
 
 ## MW-DOCKER ALIASES
 
@@ -47,7 +52,6 @@ alias dcbj='cdd; dcr addons-background-jobs-consumer'
 alias dcwi='cdd; dcw bundle install'
 alias dcai='cdd; dca bundle install'
 alias dcfi='cdd; dcf bundle install'
-
 
 ## ===== mw-html-test =======
 

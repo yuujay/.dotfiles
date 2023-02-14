@@ -79,5 +79,7 @@
 	id = gumamahe
 	name = Gowtham Jaganathan
 	email = gumamahe@mathworks.com
+[url "git@github.mathworks.com:"]
+	insteadOf = https://github.mathworks.com
 [gpg]
 	program = /usr/local/bin/gpg
