@@ -46,6 +46,7 @@ apt_packages:
   - nodejs
   - npm
   - openssl
+  - pip
   - rofi
   - rsync
   - silversearcher-ag
