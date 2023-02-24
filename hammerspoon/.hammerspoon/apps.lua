@@ -11,7 +11,7 @@ end
 
 -- Shortcuts to open the app
 -- NOTE: Update `helpMenu` in `shortcuts` when anything in this block changes
-hs.hotkey.bind({'alt'}, 'C', openAppBinding('Google Chrome'))
+hs.hotkey.bind({'alt'}, 'B', openAppBinding('Microsoft Edge Dev'))
 hs.hotkey.bind({'alt'}, 'D', openAppBinding('DBeaver'))
 hs.hotkey.bind({'alt'}, 'F', openAppBinding('Finder'))
 hs.hotkey.bind({'alt'}, 'I', openAppBinding('IntelliJ IDEA'))
