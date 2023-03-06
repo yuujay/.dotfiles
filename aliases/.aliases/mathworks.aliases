@@ -40,7 +40,10 @@ alias cdw='cd $SANDBOX_PATH/Cwebaddons.local/addons-contribution-ui'
 ## NETWORK PATH
 set -gx NETWORK_PATH '/mathworks/devel/sandbox/gumamahe'
 
+## mos-team
 alias cdm='cd $NETWORK_PATH/mos-team/volturnus'
+alias cdi='cd /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/glnxa64/mos/final_release_assembly/'
+alias cpi='cp /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/glnxa64/mos/final_release_assembly/matlab_online_server.zip .'
 
 ## MW-DOCKER ALIASES
 
