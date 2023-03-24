@@ -1,0 +1,28 @@
+# DOCKER
+
+alias db='docker build'
+alias dcp='docker container prune'
+alias di='docker images'
+alias dit='docker exec -it'
+alias dka='docker kill (docker ps -q)'
+alias dn='docker network'
+alias dps='docker ps -a'
+alias dri='docker rmi -f'
+alias drin='docker image rm (docker images -f dangling=true -a | awk \'NR>2 {print $3}\')'
+alias ds='docker stop'
+alias dv='docker volume ls'
+alias dvp='docker volume prune'
+
+# DOCKER COMPOSE
+
+alias dc='docker compose'
+alias dcd='docker compose down'
+alias dcr='docker compose run --rm'
+alias dcu='docker compose up'
+
+# FZF alias
+alias fdi='docker images | fzf'
+alias fdit='docker exec -it | awk \'{print $1}\''
+alias fdps='docker ps -a | fzf'
+alias fdri='docker rmi -f (docker image ls | awk \'{printf "%s\t%s\t%s\n", $1,$2,$3}\' | fzf | awk \'{print $3}\')'
+alias fds='docker stop (docker ps -a | fzf | awk \'{print $1}\')'
