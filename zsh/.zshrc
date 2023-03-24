@@ -116,9 +116,9 @@ source $ZSH/oh-my-zsh.sh
 # Include aliases
 [ -f "$HOME/.aliases/zsh/aliases" ] && source "$HOME/.aliases/zsh/aliases"
 [ -f "$HOME/.aliases/zsh/git.aliases" ] && source "$HOME/.aliases/zsh/git.aliases"
-# [ -f "$HOME/.aliases/zsh/docker.aliases" ] && source "$HOME/.aliases/zsh/docker.aliases"
-# [ -f "$HOME/.aliases/zsh/kubernetes.aliases" ] && source "$HOME/.aliases/zsh/kubernetes.aliases"
-# [ -f "$HOME/.aliases/zsh/mathworks.aliases" ] && source "$HOME/.aliases/zsh/mathworks.aliases"
+[ -f "$HOME/.aliases/zsh/docker.aliases" ] && source "$HOME/.aliases/zsh/docker.aliases"
+[ -f "$HOME/.aliases/zsh/kubernetes.aliases" ] && source "$HOME/.aliases/zsh/kubernetes.aliases"
+[ -f "$HOME/.aliases/zsh/mathworks.aliases" ] && source "$HOME/.aliases/zsh/mathworks.aliases"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
