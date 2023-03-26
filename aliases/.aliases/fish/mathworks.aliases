@@ -5,8 +5,10 @@ alias mct='mw mvn clean test'
 alias mcv='mw mvn clean verify'
 
 # AOE-MW ALIASES
-alias vimdc='cdd; vi docker-compose.yml'
+alias sshd="ssh deb"
 alias sshg="ssh gumamahe@ah-gumamahe-m.dhcp.mathworks.com"
+alias sshv="ssh vdi"
+alias vimdc='cdd; vi docker-compose.yml'
 
 alias sshd1="ssh basysrby@ruby26ext-d01ls"
 alias sshd2="ssh basysrby@ruby26ext-d02ls"
@@ -27,6 +29,7 @@ alias sshp1="ssh basysrby@ruby26ext-p01ls"
 
 ## COMMUNITY TEAM
 set -gx SANDBOX_PATH '/Users/gumamahe/Documents'
+set -gx NETWORK_PATH '/mathworks/devel/sandbox/gumamahe'
 
 alias cds='cd $SANDBOX_PATH'
 alias cdp='cd $SANDBOX_PATH/github.mathworks.repos'
@@ -37,16 +40,12 @@ alias cdag='cd $SANDBOX_PATH/Cwebaddons.local/addons-data-access'
 alias cdbj='cd $SANDBOX_PATH/Cwebaddons.local/addons-background-jobs-consumer'
 alias cdw='cd $SANDBOX_PATH/Cwebaddons.local/addons-contribution-ui'
 
-## NETWORK PATH
-set -gx NETWORK_PATH '/mathworks/devel/sandbox/gumamahe'
-
 ## mos-team
 alias cdm='cd $NETWORK_PATH/mos-team/volturnus'
 alias cdi='cd /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/glnxa64/mos/final_release_assembly/'
 alias cpi='cp /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/glnxa64/mos/final_release_assembly/matlab_online_server.zip .'
 
 ## MW-DOCKER ALIASES
-
 alias dcw='cdd; dcr addons-contribution-ui'
 alias dca='cdd; dcr add-on-explorer'
 alias dcf='cdd; dcr file-exchange'
