@@ -115,17 +115,19 @@ source $ZSH/oh-my-zsh.sh
 
 # Include aliases
 [ -f "$HOME/.aliases/zsh/aliases" ] && source "$HOME/.aliases/zsh/aliases"
+[ -f "$HOME/.aliases/zsh/docker.aliases" ] && source "$HOME/.aliases/zsh/docker.aliases"
 [ -f "$HOME/.aliases/zsh/git.aliases" ] && source "$HOME/.aliases/zsh/git.aliases"
-# [ -f "$HOME/.aliases/zsh/docker.aliases" ] && source "$HOME/.aliases/zsh/docker.aliases"
 [ -f "$HOME/.aliases/zsh/kubernetes.aliases" ] && source "$HOME/.aliases/zsh/kubernetes.aliases"
 [ -f "$HOME/.aliases/zsh/mathworks.aliases" ] && source "$HOME/.aliases/zsh/mathworks.aliases"
 
 # Include custom function
-[ -f "$HOME/.zsh/function/fkcs" ] && source "$HOME/.zsh/function/fkcs"
 [ -f "$HOME/.zsh/function/backup" ] && source "$HOME/.zsh/function/backup"
 [ -f "$HOME/.zsh/function/fgs" ] && source "$HOME/.zsh/function/fgs"
+[ -f "$HOME/.zsh/function/fkcs" ] && source "$HOME/.zsh/function/fkcs"
+[ -f "$HOME/.zsh/function/fkl" ] && source "$HOME/.zsh/function/fkl"
 [ -f "$HOME/.zsh/function/mcd" ] && source "$HOME/.zsh/function/mcd"
 [ -f "$HOME/.zsh/function/rmb" ] && source "$HOME/.zsh/function/rmb"
+[ -f "$HOME/.zsh/function/setgitconfig" ] && source "$HOME/.zsh/function/setgitconfig"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
