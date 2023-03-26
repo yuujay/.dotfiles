@@ -77,7 +77,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo vi-mode z zsh-autosuggestions)
+plugins=(git sudo vi-mode z )
 
 #-------- CUSTOM UJG -----------
 VI_MODE_SET_CURSOR=true
@@ -116,9 +116,16 @@ source $ZSH/oh-my-zsh.sh
 # Include aliases
 [ -f "$HOME/.aliases/zsh/aliases" ] && source "$HOME/.aliases/zsh/aliases"
 [ -f "$HOME/.aliases/zsh/git.aliases" ] && source "$HOME/.aliases/zsh/git.aliases"
-[ -f "$HOME/.aliases/zsh/docker.aliases" ] && source "$HOME/.aliases/zsh/docker.aliases"
+# [ -f "$HOME/.aliases/zsh/docker.aliases" ] && source "$HOME/.aliases/zsh/docker.aliases"
 [ -f "$HOME/.aliases/zsh/kubernetes.aliases" ] && source "$HOME/.aliases/zsh/kubernetes.aliases"
 [ -f "$HOME/.aliases/zsh/mathworks.aliases" ] && source "$HOME/.aliases/zsh/mathworks.aliases"
+
+# Include custom function
+[ -f "$HOME/.zsh/function/fkcs" ] && source "$HOME/.zsh/function/fkcs"
+[ -f "$HOME/.zsh/function/backup" ] && source "$HOME/.zsh/function/backup"
+[ -f "$HOME/.zsh/function/fgs" ] && source "$HOME/.zsh/function/fgs"
+[ -f "$HOME/.zsh/function/mcd" ] && source "$HOME/.zsh/function/mcd"
+[ -f "$HOME/.zsh/function/rmb" ] && source "$HOME/.zsh/function/rmb"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
