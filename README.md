@@ -41,6 +41,6 @@ sh stow-install
 
 If everything goes well, you have the symlinks established for your `rc` and `config` files.
 
-#### More information can be found in [wiki section](https://github.com/yuujay/dotfiles/wiki) - WIP
+#### More information can be found in [wiki section](https://github.com/yuujay/dotfiles/wiki)
 
 #### Open items and enhancements can be found [here](https://github.com/yuujay/dotfiles/projects/1)
