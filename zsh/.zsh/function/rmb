@@ -1,0 +1,6 @@
+function rmb() {
+  DIR_TO_DELETE=$(pwd)
+  cd ..
+  rm -r $DIR_TO_DELETE
+  DIR_TO_DELETE=""
+}

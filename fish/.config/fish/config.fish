@@ -8,11 +8,11 @@ set FISH_HOME ~/.config/fish
 test -e $FISH_HOME/fish_env ; and source $FISH_HOME/fish_env
 test -e $FISH_HOME/fzf/env ; and source $FISH_HOME/fzf/env
 
-test -e $HOME/.aliases/kubernetes.aliases ; and source $HOME/.aliases/kubernetes.aliases
-test -e $HOME/.aliases/aliases ; and source $HOME/.aliases/aliases
-test -e $HOME/.aliases/docker.aliases ; and source $HOME/.aliases/docker.aliases
-test -e $HOME/.aliases/mathworks.aliases ; and source $HOME/.aliases/mathworks.aliases
-test -e $HOME/.aliases/git.aliases ; and source $HOME/.aliases/git.aliases
+test -e $HOME/.aliases/fish/kubernetes.aliases ; and source $HOME/.aliases/fish/kubernetes.aliases
+test -e $HOME/.aliases/fish/aliases ; and source $HOME/.aliases/fish/aliases
+test -e $HOME/.aliases/fish/docker.aliases ; and source $HOME/.aliases/fish/docker.aliases
+test -e $HOME/.aliases/fish/mathworks.aliases ; and source $HOME/.aliases/fish/mathworks.aliases
+test -e $HOME/.aliases/fish/git.aliases ; and source $HOME/.aliases/fish/git.aliases
 test -e $HOME/.iterm2_shell_integration.fish ; and source $HOME/.iterm2_shell_integration.fish
 
 test -e $FISH_HOME/mw/env.fish ; and source $FISH_HOME/mw/env.fish

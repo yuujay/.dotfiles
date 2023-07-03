@@ -1,0 +1,62 @@
+## COMMUNITY TEAM
+export SANDBOX_PATH='/Users/gumamahe/Documents'
+## NETWORK PATH
+export NETWORK_PATH='/mathworks/devel/sandbox/gumamahe'
+
+#  MW MVN
+alias mc='mw mvn clean'
+alias mci='mw mvn clean install'
+alias mct='mw mvn clean test'
+alias mcv='mw mvn clean verify'
+
+# AOE-MW ALIASES
+alias vimdc='cdd; vi docker-compose.yml'
+alias sshg="ssh gumamahe@ah-gumamahe-m.dhcp.mathworks.com"
+
+alias sshd1="ssh basysrby@ruby26ext-d01ls"
+alias sshd2="ssh basysrby@ruby26ext-d02ls"
+alias sshd3="ssh basysrby@ruby26ext-d03ls"
+
+alias ssht1="ssh basysrby@ruby26ext-t01ls"
+alias ssht2="ssh basysrby@ruby26ext-t02ls"
+alias ssht3="ssh basysrby@ruby26ext-t03ls"
+
+alias sshi1="ssh basysrby@ruby26ext-i01ls"
+alias sshi2="ssh basysrby@ruby26ext-i02ls"
+alias sshi3="ssh basysrby@ruby26ext-i03ls"
+
+alias sshs1="ssh basysrby@ruby26ext-s01ls"
+alias sshs2="ssh basysrby@ruby26ext-s01ah"
+alias sshp1="ssh basysrby@ruby26ext-p01ls"
+
+## FX team
+alias cds='cd $SANDBOX_PATH'
+alias cdp='cd $SANDBOX_PATH/github.mathworks.repos'
+alias cdd='cd $SANDBOX_PATH/Cwebaddons.local'
+alias cdfx='cd $SANDBOX_PATH/Cwebaddons.local/file-exchange'
+alias cda='cd $SANDBOX_PATH/Cwebaddons.local/add-on-explorer'
+alias cdag='cd $SANDBOX_PATH/Cwebaddons.local/addons-data-access'
+alias cdbj='cd $SANDBOX_PATH/Cwebaddons.local/addons-background-jobs-consumer'
+alias cdw='cd $SANDBOX_PATH/Cwebaddons.local/addons-contribution-ui'
+
+## mos-team
+alias cdm='cd $NETWORK_PATH/mos-team/volturnus'
+alias cdi='cd /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/glnxa64/mos/final_release_assembly/'
+alias cpi='cp /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/glnxa64/mos/final_release_assembly/matlab_online_server.zip .'
+
+## MW-DOCKER ALIASES
+
+alias dcw='cdd; dcr addons-contribution-ui'
+alias dca='cdd; dcr add-on-explorer'
+alias dcf='cdd; dcr file-exchange'
+alias dcbj='cdd; dcr addons-background-jobs-consumer'
+
+alias dcwi='cdd; dcw bundle install'
+alias dcai='cdd; dca bundle install'
+alias dcfi='cdd; dcf bundle install'
+
+## ===== mw-html-test =======
+
+alias setMW='sh ~/Documents/Cwebaddons.local/prep_webaddons.sh; sh ~/Documents/Cwebaddons.local/prep_aoi.sh'
+alias browser='cd ~/Documents/Cwebaddons.local/addons-e2e-test; mw -using Cwebaddons mvn pre-integration-test -Dbrowser.autoremove=false -Dtest-browser=chrome-stable'
+alias mock='cd /sandbox/gumamahe/MockBrowser/target; java -jar addonexplorer_mockbrowser-jar-with-dependencies.jar'

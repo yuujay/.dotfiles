@@ -1,0 +1,132 @@
+# Some new rust replacements for commonly used utilities
+alias la='exa -al --icons --git'
+alias lld='exa -alD --icons --git'
+alias llg='exa -al --git | grep --icons'
+alias llm='exa -alm --icons --git'
+alias llt='exa -al --tree --git --level=3 --icons'
+
+alias lg='lazygit'
+
+# brew aliases
+alias bci='brew cask install'
+alias bi='brew install'
+alias bu='brew update && brew upgrade && brew cleanup'
+alias bug='brew upgrade'
+alias bup='brew update'
+
+# FILE OPs
+alias c.='code .'
+alias code.='code .'
+alias less='less -g -i -J -m -Q -u'
+alias rc='~/.rc'
+alias rm='rm -f'
+alias rmr='rm -r'
+alias src='source ~/.zshrc'
+alias vimgc='v ~/.gitconfig'
+alias vimhc='v /etc/hosts'
+alias vimrc='v ~/.vimrc'
+alias vimtc='v ~/.tmux.conf'
+
+# Use neovim over vim
+alias vc='nvim --clean'
+alias vi.='nvim . +":Telescope git_files theme=dropdown"'
+alias vi='nvim . +":Telescope git_files theme=dropdown"'
+alias vii='/usr/bin/vi' #Incase you really want to use vi over neo for some testing.
+alias vim='nvim . +":Telescope git_files theme=dropdown"'
+
+# FZF
+# alias fcd="cd $(fd --type=d | fzf --preview 'tree -C {} | head -50')"
+alias fenv='env | sort | fzf'
+# alias fkill="kill $(ps | fzf | awk '{print $1}')"
+alias fls="fd --type=f | fzf --preview 'bat --color=always {}'"
+alias fps='ps | fzf'
+alias frm='fd --type=f | fzf | xargs rm'
+alias ft='tree | fzf'
+# alias fta="tmux attach -t $(tmux ls | awk '{print $1}'| sed 's/://'| fzf)"
+#alias ftk="tmux kill-session -t $(tmux ls | awk '{print $1}'| sed 's/://'| fzf)"
+alias fvi='nvim --clean $(fzf)'
+
+# tmux
+alias tls='tmux ls'
+
+# Create sessions with tmux-sessionizer
+alias tao='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/add-on-explorer'
+alias td='tmux-sessionizer ~/dotfiles'
+alias tfx='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/file-exchange'
+alias tlog='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/mathworks-logging'
+alias tm='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/gem-mathworks-metrics'
+alias ts='tmux-sessionizer'
+alias tw='tmux-sessionizer $SANDBOX_PATH/Cwebaddons.local/addons-contribution-ui'
+
+# LIST FILES & DIRECTORIES
+alias l='ls -1 -p'
+alias ll='ls -al'
+alias llg='ls -al | grep'
+alias br='bat -r'
+alias fc='find . -type f | wc -l'
+alias ldi="ls -al | grep '^d'"
+alias lfi="ls -al | grep '^-'"
+alias p="pwd"
+alias t="tree -I 'node_modules|node_modules|target|cache|log|tmp|assets|.byebug_history|.bundle|.htaccess'"
+alias ti="tree -I $1"
+alias tl="tree -L "
+
+# SYSTEM OPs
+alias envs='env | sort'
+alias kill='kill -9'
+alias sudo='sudo '
+
+# APT CMDs
+alias agd='sudo apt-get delete'
+alias agi='sudo apt-get install'
+alias agu='sudo apt-get -y update'
+alias agupg='sudo apt-get -y --allow-unauthenticated upgrade && sudo apt-get autoclean && sudo apt-get autoremove'
+
+# System shortcuts
+alias paux='ps aux | grep'
+alias reboot='sudo shutdown -r now'
+alias shutdown='sudo shutdown -h now'
+
+# CD ALIASES
+alias .....='cd ../../../../'
+alias ....='cd ../../../../'
+alias ...='cd ../../../'
+alias ..='cd ..'
+alias back='cd -'
+alias cd-='cd -'
+alias cd..='cd ..'
+alias cd.='cd ..'
+alias dot='cd ~/.dotfiles/'
+alias home='cd ~'
+
+# WEB DEV
+alias bx='bundle exec'
+alias nps='npm start'
+alias nx='npm run'
+alias sl='sails lift'
+alias ws='python -m SimpleHTTPServer'
+
+#Utils
+alias web='curl wttr.in/boston'
+alias wec='curl wttr.in/coimbatore'
+alias wen='curl wttr.in/natick'
+
+# NETWORK
+alias ipa='dig +short myip.opendns.com @resolver1.opendns.com'
+alias ipa="dig TXT +short o-o.myaddr.l.google.com @ns1.google.com"
+alias localip='ipconfig getifaddr en0'
+alias ping='ping -c 3 -i 0.2'
+
+# OMEGA - move this to .sshconfig
+alias lab="ssh pi@{$HOME_SERVER_IP}"
+
+## Load Other Aliases
+
+## ========= Cleanups ========================
+# Empty the Trash on all mounted volumes and the main HDD
+# Also, clear Apple’s System Logs to improve shell startup speed
+# alias etrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias flushDNS="sudo killall -HUP mDNSResponder; dscacheutil -flushcache; echo 'DNS flushed'"
