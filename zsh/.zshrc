@@ -131,3 +131,6 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# https://stackoverflow.com/questions/33592008/git-log-show-etc-replaces-the-terminal-screen/49267711#49267711
+unset LESS;
