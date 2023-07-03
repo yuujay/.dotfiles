@@ -54,7 +54,7 @@ require('lazy').setup({
     'christoomey/vim-sort-motion',
     'christoomey/vim-tmux-navigator',
     'christoomey/vim-tmux-runner',
-    'scrooloose/nerdtree',
+    -- 'scrooloose/nerdtree',
 
     -- Telescope related
     'nvim-lua/popup.nvim',
@@ -90,9 +90,6 @@ require('lazy').setup({
 
     -- Nvim clients outside of terminal
     {'glacambre/firenvim', build='firenvim#install(1)'},
-
-    -- For Obsidian
-    'epwalsh/obsidian.nvim'
 
     -- "alvan/vim-closetag",
     -- "b3nj5m1n/kommentary",
