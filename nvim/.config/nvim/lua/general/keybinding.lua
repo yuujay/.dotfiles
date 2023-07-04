@@ -6,15 +6,6 @@ vim.g.mapleader = ' '  -- 'vim.g' sets global variables
 vim.keymap.set('n', ';', ':', {})
 vim.keymap.set('v', ';', ':', {})
 
--- Move among buffers
-options.desc = "move to buffer on right"
-vim.keymap.set('n', '<leader>ll', ':bnext<CR>', options)
-options.desc = "move to buffer on left"
-vim.keymap.set('n', '<leader>hh', ':bprev<CR>', options)
-options.desc = "Jump to previous/alternate file"
-vim.keymap.set('n', '<C-p>', ':e #<CR>', options)
-options.desc = ""
-
 -- Nifty mappings
 options.desc = "select entire buffer"
 vim.keymap.set('n', '<leader>aa', 'GVgg', options) -- Select the entire buffer

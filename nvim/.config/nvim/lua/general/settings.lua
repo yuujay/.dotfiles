@@ -34,3 +34,8 @@ vim.opt.tabstop = 4
 -- Need this for using fonts
 -- vim.opt.encoding = 'UTF-8'
 
+vim.cmd.colorscheme "catppuccin"
+vim.env.FZF_DEFAULT_COMMAND = 'ag -g ""'
+vim.g.airline_powerline_fonts = 1
+vim.g.loaded_perl_provider = 0
+

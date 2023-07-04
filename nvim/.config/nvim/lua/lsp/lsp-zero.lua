@@ -30,7 +30,6 @@ lsp.ensure_installed({
     'gopls',
     'rust_analyzer',
     'solargraph',
-    'sumneko_lua',
     'tsserver',
     'yamlls',
 })
