@@ -54,6 +54,7 @@ require('lazy').setup({
     'christoomey/vim-sort-motion',
     'christoomey/vim-tmux-navigator',
     'christoomey/vim-tmux-runner',
+    'nvim-neo-tree/neo-tree.nvim',
     -- 'scrooloose/nerdtree',
 
     -- Telescope related
@@ -115,8 +116,7 @@ require('lazy').setup({
     -- 'mhartington/formatter.nvim', -- Not sure if this is required.
 })
 
--- After plugin install configs
-require('plugins.plugin-after')
-
 require('plugins.plugin-config')
+require('plugins.bufferline')
+require('plugins.nvim-treesitter')
 require('plugins.lsp')
