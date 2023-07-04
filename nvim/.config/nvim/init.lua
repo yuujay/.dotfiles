@@ -1,6 +1,3 @@
--- vim core settings
-require('general')
-
 -- Initialize Lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -19,8 +16,6 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-vim.g.loaded_perl_provider = 0
-
 require('lazy').setup({{
     defaults = {
         -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
@@ -34,8 +29,7 @@ require('lazy').setup({{
     import = 'plugins'
 }})
 
-vim.cmd.colorscheme "catppuccin"
-vim.env.FZF_DEFAULT_COMMAND = 'ag -g ""'
-vim.g.airline_powerline_fonts = 1
-
+-- vim core settings
+require('general')
 require('lsp')
+
