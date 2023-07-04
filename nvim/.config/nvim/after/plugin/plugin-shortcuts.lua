@@ -16,12 +16,6 @@ vim.keymap.set('n', '<leader><leader>l', ':HopLine<CR>', options)
 options.desc = "Search for pattern using hop"
 vim.keymap.set('n', '<leader><leader>/', ':HopPattern<CR>', options)
 
--- Nvim Tree
-options.desc = "[N]erdtree toggle"
-vim.keymap.set('n', '<leader>n', ':NERDTreeToggle<CR>', options)
-options.desc = "[N]erdTree [F]ind the current file"
-vim.keymap.set('n', '<leader>nf', ':NERDTreeFind<CR>', options)
-
 -- Vim Fuguitive
 options.desc = "Enter fuguitive [g]it and wait for user input"
 vim.keymap.set('n', '<leader><leader>g', ':Git ', options)
