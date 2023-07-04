@@ -16,6 +16,7 @@ return {
             follow_current_file = true,
             hijack_netrw_behavior = "open_current"
         },
+        enable_diagnostics = false,
         icon = {
             folder_closed = "",
             folder_open = "",
