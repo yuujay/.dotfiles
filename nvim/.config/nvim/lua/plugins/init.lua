@@ -47,13 +47,13 @@ return {
   'jiangmiao/auto-pairs',
   'tpope/vim-commentary',
   'tpope/vim-endwise',
-  'tpope/vim-fugitive',
+--  'tpope/vim-fugitive',
   'tpope/vim-rhubarb', -- Required to make opening repositories on the browser easier when required.
   'tpope/vim-surround',
   'michaeljsmith/vim-indent-object',
 
   -- Cosmetics
-  'airblade/vim-gitgutter',
+  -- 'airblade/vim-gitgutter',
 
   -- Markdown preview
   'ellisonleao/glow.nvim',

@@ -15,18 +15,8 @@ options.desc = "Launch fuguitive [g]it"
 vim.keymap.set('n', '<leader>g', ':Git<CR>', options)
 options.desc = "fugutive [g]it [c]ommit"
 vim.keymap.set('n', '<leader>gc', ':Git commit<CR>', options)
-options.desc = "fugutive [g]it preview [h]unk"
-vim.keymap.set('n', '<leader>gh', ':GitGutterPreviewHunk<CR>', options)
-options.desc = "fugutive goto [g]it hunk down - [j]"
-vim.keymap.set('n', '<leader>gj', ':GitGutterNextHunk<CR>', options)
-options.desc = "fugutive goto [g]it hunk up - [k]"
-vim.keymap.set('n', '<leader>gk', ':GitGutterPrevHunk<CR>', options)
 options.desc = "fugutive [g]it [p]ush"
 vim.keymap.set('n', '<leader>gp', ':Git push<CR>', options)
-options.desc = "fugutive [g]it [s]tage current hunk"
-vim.keymap.set('n', '<leader>gs', ':GitGutterStageHunk<CR>', options)
-options.desc = "fugutive [g]it [u]ndo current hunk"
-vim.keymap.set('n', '<leader>gu', ':GitGutterUndoHunk<CR>', options)
 options.desc = ""
 
 -- TMUX Runner

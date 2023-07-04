@@ -6,7 +6,7 @@ return {
     opts = {
         options = {
             icons_enabled = true,
-            theme = 'auto',
+            theme = 'gruvbox',
             component_separators = { left = '', right = ''},
             section_separators = { left = '', right = ''},
             disabled_filetypes = {
@@ -26,15 +26,17 @@ return {
             lualine_a = {'mode'},
             lualine_b = {'branch', 'diff', {
                 'diagnostics',
-                sources = { 'nvim_lsp', 'vim_lsp' },
+                -- 'nvim_lsp', 'vim_lsp'
+                sources = { 'nvim_diagnostic' },
                 sections = { 'error', 'warn', 'info', 'hint' },
-                diagnostics_color = {
-                    error = 'DiagnosticError',
-                    warn  = 'DiagnosticWarn',
-                    info  = 'DiagnosticInfo',
-                    hint  = 'DiagnosticHint',
-                },
+                -- diagnostics_color = {
+                --     error = 'DiagnosticError',
+                --     warn  = 'DiagnosticWarn',
+                --     info  = 'DiagnosticInfo',
+                --     hint  = 'DiagnosticHint',
+                -- },
                 symbols = {error = ' ', warn = ' ', info = ' ', hint = ' '},
+                -- colored = true,
                 update_in_insert = false,
                 always_visible = false,
             }
