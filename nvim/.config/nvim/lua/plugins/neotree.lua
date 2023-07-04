@@ -1,6 +1,7 @@
 return {
     "nvim-neo-tree/neo-tree.nvim",
     cmd = "Neotree",
+    lazy = false,
     branch = "v2.x",
     keys = {
         {"<leader>nn", "<cmd>Neotree toggle<CR>", desc="NeoTree"},
