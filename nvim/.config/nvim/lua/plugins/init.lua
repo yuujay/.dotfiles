@@ -54,8 +54,6 @@ return {
 
   -- Cosmetics
   'airblade/vim-gitgutter',
-  -- 'akinsho/bufferline.nvim',
-  -- 'kyazdani42/nvim-web-devicons',
 
   -- Markdown preview
   'ellisonleao/glow.nvim',

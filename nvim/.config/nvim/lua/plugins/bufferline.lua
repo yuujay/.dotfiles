@@ -1,4 +1,3 @@
-ass
 return {
     'akinsho/bufferline.nvim',
     version = "*",
