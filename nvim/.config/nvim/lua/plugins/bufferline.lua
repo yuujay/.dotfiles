@@ -1,7 +1,7 @@
 return {
    'akinsho/bufferline.nvim',
    version = "*",
-   lazy = false,
+   lazy = true,
    dependencies = {
       'onsails/lspkind-nvim',
       'nvim-tree/nvim-web-devicons'

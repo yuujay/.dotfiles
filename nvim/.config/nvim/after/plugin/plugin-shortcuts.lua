@@ -8,14 +8,6 @@ local options = { noremap = true }
 -- vim.keymap.set('n', '<leader>L', ':BufferLineMoveNext<CR>', options)
 -- vim.keymap.set('n', '<leader>H', ':BufferLineMovePrev<CR>', options)
 
--- Hop shortcuts
-options.desc = "[S]earch for word using hop"
-vim.keymap.set('n', '<leader><leader>s', ':HopWord<CR>', options)
-options.desc = "Search for [L]ine using hop"
-vim.keymap.set('n', '<leader><leader>l', ':HopLine<CR>', options)
-options.desc = "Search for pattern using hop"
-vim.keymap.set('n', '<leader><leader>/', ':HopPattern<CR>', options)
-
 -- Vim Fuguitive
 options.desc = "Enter fuguitive [g]it and wait for user input"
 vim.keymap.set('n', '<leader><leader>g', ':Git ', options)
