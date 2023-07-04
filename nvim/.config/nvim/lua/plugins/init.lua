@@ -57,11 +57,6 @@ return {
   -- 'akinsho/bufferline.nvim',
   -- 'kyazdani42/nvim-web-devicons',
 
-  -- Status lines and fonts used in the statusline.
-  'powerline/fonts',
-  'vim-airline/vim-airline',
-  'ryanoasis/vim-devicons',  -- This needs to be at the end since we devicons need to loaded after all plugins
-
   -- Markdown preview
   'ellisonleao/glow.nvim',
 

@@ -35,5 +35,7 @@ require('lazy').setup({{
 }})
 
 vim.cmd.colorscheme "catppuccin"
+vim.env.FZF_DEFAULT_COMMAND = 'ag -g ""'
+vim.g.airline_powerline_fonts = 1
 
 require('lsp')
