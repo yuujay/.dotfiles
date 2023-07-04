@@ -1,5 +1,6 @@
 return {
     'akinsho/bufferline.nvim',
+    lazy = false,
     version = "*",
     dependencies = {
         'onsails/lspkind-nvim',
