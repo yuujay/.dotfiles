@@ -3,7 +3,7 @@ return {
     cmd = "Neotree",
     branch = "v2.x",
     keys = {
-        {"<leader>n", "<cmd>Neotree toggle<CR>", desc="NeoTree"},
+        {"<leader>nn", "<cmd>Neotree toggle<CR>", desc="NeoTree"},
         {"<leader>nf", "<cmd>NeoTreeFocus<CR>", desc="NeoTreeFocus"},
     },
     dependencies = {
