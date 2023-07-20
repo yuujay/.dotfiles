@@ -17,3 +17,5 @@ vim/plugged/**
 **/authorized_keys
 **/id_rsa
 **/id_rsa.pub
+
+vscode/.vscode/

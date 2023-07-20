@@ -17,7 +17,8 @@ return {
             diagnostics = 'nvim_lsp',
             persist_buffer_sort = true,
             separator_style = 'thick',
-            diagnostics_indicator = function(_count, _level, diagnostics_dict, _context)
+            buffer_close_icon = '', -- This is required. https://github.com/akinsho/bufferline.nvim/issues/725
+            diagnostics_indicator = function(_context, _level, diagnostics_dict, _count)
                 local s = " "
                 for e, n in pairs(diagnostics_dict) do
                     local sym = e == "error" and " "

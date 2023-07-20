@@ -3,7 +3,7 @@
 FONT_PATH="/usr/share/fonts"
 
 cd ~/.dotfiles/fonts
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/NerdFontsSymbolsOnly.zip
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/NerdFontsSymbolsOnly.zip
 mkdir nerd-font
 unzip NerdFontsSymbolsOnly.zip -d nerd-font
 rm NerdFontsSymbolsOnly.zip
