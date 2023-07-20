@@ -5,7 +5,6 @@ alias mct='mw mvn clean test'
 alias mcv='mw mvn clean verify'
 
 # AOE-MW ALIASES
-alias vimdc='cdd; vi docker-compose.yml'
 alias sshg="ssh gumamahe@ah-gumamahe-m.dhcp.mathworks.com"
 
 alias sshd1="ssh basysrby@ruby26ext-d01ls"
@@ -25,39 +24,13 @@ alias sshs2="ssh basysrby@ruby26ext-s01ah"
 
 alias sshp1="ssh basysrby@ruby26ext-p01ls"
 
-## COMMUNITY TEAM
-set -gx SANDBOX_PATH '/Users/gumamahe/Documents'
-
-alias cds='cd $SANDBOX_PATH'
-alias cdp='cd $SANDBOX_PATH/github.mathworks.repos'
-alias cdd='cd $SANDBOX_PATH/Cwebaddons.local'
-alias cdfx='cd $SANDBOX_PATH/Cwebaddons.local/file-exchange'
-alias cda='cd $SANDBOX_PATH/Cwebaddons.local/add-on-explorer'
-alias cdag='cd $SANDBOX_PATH/Cwebaddons.local/addons-data-access'
-alias cdbj='cd $SANDBOX_PATH/Cwebaddons.local/addons-background-jobs-consumer'
-alias cdw='cd $SANDBOX_PATH/Cwebaddons.local/addons-contribution-ui'
-
 ## NETWORK PATH
 set -gx NETWORK_PATH '/mathworks/devel/sandbox/gumamahe'
 
 ## mos-team
-alias cdm='cd $NETWORK_PATH/mos-team/volturnus'
+alias cdc='cd $NETWORK_PATH/shared/kube-configs/'
+alias cdk='cd $NETWORK_PATH/shared/keys/'
+alias cdm='cd $NETWORK_PATH/mos-team'
 alias cdi='cd /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/glnxa64/mos/final_release_assembly/'
 alias cpi='cp /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/glnxa64/mos/final_release_assembly/matlab_online_server.zip .'
 
-## MW-DOCKER ALIASES
-
-alias dcw='cdd; dcr addons-contribution-ui'
-alias dca='cdd; dcr add-on-explorer'
-alias dcf='cdd; dcr file-exchange'
-alias dcbj='cdd; dcr addons-background-jobs-consumer'
-
-alias dcwi='cdd; dcw bundle install'
-alias dcai='cdd; dca bundle install'
-alias dcfi='cdd; dcf bundle install'
-
-## ===== mw-html-test =======
-
-alias setMW='sh ~/Documents/Cwebaddons.local/prep_webaddons.sh; sh ~/Documents/Cwebaddons.local/prep_aoi.sh'
-alias browser='cd ~/Documents/Cwebaddons.local/addons-e2e-test; mw -using Cwebaddons mvn pre-integration-test -Dbrowser.autoremove=false -Dtest-browser=chrome-stable'
-alias mock='cd /sandbox/gumamahe/MockBrowser/target; java -jar addonexplorer_mockbrowser-jar-with-dependencies.jar'

@@ -57,3 +57,6 @@ if type -q brew
         set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
     end
 end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/gumamahe/google-cloud-sdk/path.fish.inc' ]; . '/home/gumamahe/google-cloud-sdk/path.fish.inc'; end
