@@ -8,11 +8,11 @@
 
 alias a='awssaml --profile=default --session-duration=8h --region=us-east-1'
 
+alias bkc='mv ~/.kube/config ~/.kube/config.backup'
+
 alias k='kubectl'
-alias krc='rm ~/.kube/config'
 alias ka='kubectl apply -f'
 alias kc='kubectl config'
-alias klc='kubectl config get-contexts'
 alias kd='kubectl describe'
 alias kdp='kubectl delete pod'
 alias ke='kubectl exec'
@@ -22,17 +22,12 @@ alias kgi='kubectl get ingress'
 alias kgp='kubectl get pod -o wide --all-namespaces'
 alias kit='kubectl exec -it'
 alias kl='kubectl logs'
+alias klc='kubectl config get-contexts'
+alias krc='rm ~/.kube/config'
 alias krh='kubectl rollout history deployment'
 alias krs='kubectl rollout status deployment'
 alias kru='kubectl rollout undo deployment'
 alias ks='kubectl get all --all-namespaces'
-
-# minikube
-alias m='minikube'
-alias md='minikube delete; rm -rf ~/.minikube; rm -rf ~/.kube'
-alias mip='minikube ip'
-alias mk='minikube'
-alias ms='minikube service'
 
 # HELM
 alias h='helm'
@@ -43,4 +38,4 @@ alias hdr='helm install --debug --dry-run dryrun-alias'
 # fzf
 alias fkd='kubectl describe ( kubectl get all --all-namespaces | awk  \'{print $2}\' | fzf )'
 alias fkdp='kubectl delete pod ( kubectl get pod -o wide --all-namespaces | awk \'{print $2}\' | fzf  )'
-alias fklc='kubectl config get-contexts | fzf'
+alias fkgc='kubectl config get-contexts | fzf'
