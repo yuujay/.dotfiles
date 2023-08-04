@@ -1,8 +1,9 @@
 #  MW MVN
-alias mc='mw mvn clean'
-alias mci='mw mvn clean install'
-alias mct='mw mvn clean test'
-alias mcv='mw mvn clean verify'
+alias m='mw -using Bconnector'
+alias mc='m mvn clean'
+alias mci='m mvn clean install'
+alias mct='m mvn clean test'
+alias mcv='m mvn clean verify'
 
 # AOE-MW ALIASES
 alias sshg="ssh gumamahe@ah-gumamahe-m.dhcp.mathworks.com"
@@ -33,6 +34,7 @@ alias cdk='cd $NETWORK_PATH/shared/keys/'
 alias cdm='cd $NETWORK_PATH/mos-team'
 alias cdv='cd $NETWORK_PATH/mos-team/volturnus/'
 alias cdco='cd $NETWORK_PATH/mos-team/volturnus/chart-overrides/kind-sbmos/gumamahe/'
+alias cds='cd $NETWORK_PATH/shared/'
 alias cdi='cd /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/glnxa64/mos/final_release_assembly/'
 alias cpi='cp /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/glnxa64/mos/final_release_assembly/matlab_online_server.zip .'
 alias wlg='watch kubectl get pods --kubeconfig=/tmp/sbmos/sbmosstack/.kube/admin.conf -n gumamahe'

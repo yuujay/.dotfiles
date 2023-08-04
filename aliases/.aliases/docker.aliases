@@ -1,7 +1,9 @@
 # DOCKER
 
 alias db='docker build'
+alias drc='rm ~/.docker/config.json'
 alias dcp='docker container prune'
+alias dcc='cp ~/.docker/config.json dockerconfig.json'
 alias di='docker images'
 alias dit='docker exec -it'
 alias dka='docker kill (docker ps -q)'
