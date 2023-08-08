@@ -29,6 +29,7 @@ alias sshp1="ssh basysrby@ruby26ext-p01ls"
 set -gx NETWORK_PATH '/mathworks/devel/sandbox/gumamahe'
 
 ## mos-team
+alias cda='cd /mathworks/devel/relarchive/'
 alias cdc='cd $NETWORK_PATH/shared/kube-configs/'
 alias cdk='cd $NETWORK_PATH/shared/keys/'
 alias cdm='cd $NETWORK_PATH/mos-team'
