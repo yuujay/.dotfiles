@@ -8,6 +8,7 @@ return {
   'theHamsta/nvim-dap-virtual-text',
 
   -- One simple LSP Config to rule em all
+  'towolf/vim-helm',
   {
     'VonHeikemen/lsp-zero.nvim',
     dependencies = {
