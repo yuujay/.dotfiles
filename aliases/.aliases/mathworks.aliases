@@ -6,7 +6,7 @@ alias mct='m mvn clean test'
 alias mcv='m mvn clean verify'
 
 # AOE-MW ALIASES
-alias sshg="ssh gumamahe@ah-gumamahe-m.dhcp.mathworks.com"
+alias sshg="ssh $MW_USERNAME@MW_MAC_HOST"
 
 alias sshd1="ssh basysrby@ruby26ext-d01ls"
 alias sshd2="ssh basysrby@ruby26ext-d02ls"
@@ -25,18 +25,16 @@ alias sshs2="ssh basysrby@ruby26ext-s01ah"
 
 alias sshp1="ssh basysrby@ruby26ext-p01ls"
 
-## NETWORK PATH
-set -gx NETWORK_PATH '/mathworks/devel/sandbox/gumamahe'
 
 ## mos-team
 alias cda='cd /mathworks/devel/relarchive/'
-alias cdc='cd $NETWORK_PATH/shared/kube-configs/'
-alias cdk='cd $NETWORK_PATH/shared/keys/'
+alias cdc='cd $NETWORK_SHARED_PATH/kube-configs/'
+alias cdk='cd $NETWORK_SHARED_PATH/keys/'
 alias cdm='cd $NETWORK_PATH/mos-team'
 alias cdv='cd $NETWORK_PATH/mos-team/volturnus/'
 alias cdco='cd $NETWORK_PATH/mos-team/volturnus/chart-overrides/kind-sbmos/gumamahe/'
-alias cds='cd $NETWORK_PATH/shared/'
+alias cds='cd $NETWORK_SHARED_PATH'
 alias cdi='cd /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/glnxa64/mos/final_release_assembly/'
 alias cpi='cp /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/glnxa64/mos/final_release_assembly/matlab_online_server.zip .'
-alias wlg='watch kubectl get pods --kubeconfig=/tmp/sbmos/sbmosstack/.kube/admin.conf -n gumamahe'
+alias wlg='watch kubectl get pods --kubeconfig=/tmp/sbmos/sbmosstack/.kube/admin.conf -n $MW_USERNAME'
 alias wlm='watch kubectl get pods --kubeconfig=/tmp/sbmos/sbmosstack/.kube/admin.conf -n mathworks'

@@ -113,7 +113,6 @@ options.desc = ""
 
 -- Shortcuts to open common files
 vim.keymap.set('n', '<leader><leader>hs', ':e /etc/hosts<CR>', options)
-vim.keymap.set('n', '<leader><leader>ya', ':e /Users/gumamahe/Documents/Cwebaddons.local/docker-compose.yml<CR>', options)
 
 -- Reload current buffer
 vim.keymap.set('n', '<leader><leader>5', ':e!<CR>', options)
