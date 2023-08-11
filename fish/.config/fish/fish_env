@@ -11,7 +11,7 @@ set -gx XDG_DATA_HOME "$HOME/.local/share"
 set -gx CG_ENABLED 0
 
 set -gx NETWORK_PATH '/mathworks/devel/sandbox/gumamahe'
-set -gx NETWORK_SHARED_PATH '/mathworks/devel/sandbox/gumamahe/shared/'
+set -gx NETWORK_SHARED_PATH '/mathworks/devel/sandbox/gumamahe/shared'
 set -gx NETWORK_PERSONAL_SHARED_PATH '/mathworks/devel/sandbox/gumamahe/shared/ujg'
 set -gx MW_USERNAME 'gumamahe'
 set -gx WORK_MAC_DESKTOP 'ah-gumamahe-m.dhcp.mathworks.com'
