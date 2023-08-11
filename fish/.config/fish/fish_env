@@ -14,6 +14,6 @@ set -gx NETWORK_PATH '/mathworks/devel/sandbox/gumamahe'
 set -gx NETWORK_SHARED_PATH '/mathworks/devel/sandbox/gumamahe/shared/'
 set -gx NETWORK_PERSONAL_SHARED_PATH '/mathworks/devel/sandbox/gumamahe/shared/ujg'
 set -gx MW_USERNAME 'gumamahe'
-set -gx MW_MAC_HOST 'ah-gumamahe-m.dhcp.mathworks.com'
+set -gx WORK_MAC_DESKTOP 'ah-gumamahe-m.dhcp.mathworks.com'
 
 set PATH /mathworks/hub/3rdparty/internal/9621007/maci64/golang/bin /home/gumamahe/go/bin /opt/homebrew/bin /usr/local/bin /opt /usr/bin /bin /usr/sbin /sbin /mathworks/hub/share/bin  /usr/local/netbin/netbin/ /mathworks/hub/share/sbtools/bin/maci64 /usr/bin /Users/gumamahe/.rbenv/shims /usr/local/opt/ruby/bin $GEM_HOME/bin $HOME/.config/fish/bin/ $HOME/.config/fish/bin/*/  /Library/Ruby/Gems/2.6.0/gems/ /snap/bin ~/.asdf/shims/ $M2_HOME/bin /home/gumamahe/.local/bin
