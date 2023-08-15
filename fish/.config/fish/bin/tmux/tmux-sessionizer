@@ -6,7 +6,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/Documents/Cwebaddons.local ~/.config/fish ~/.config ~ -mindepth 1 -maxdepth 1 -type d | fzf)
+    selected=$(find $NETWORK_PATH $NETWORK_PATH/mos-team $NETWORK_PATH/mos-team/volturnus ~ -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then

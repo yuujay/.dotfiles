@@ -13,6 +13,7 @@ test -e $HOME/.aliases/aliases ; and source $HOME/.aliases/aliases
 test -e $HOME/.aliases/docker.aliases ; and source $HOME/.aliases/docker.aliases
 test -e $HOME/.aliases/mathworks.aliases ; and source $HOME/.aliases/mathworks.aliases
 test -e $HOME/.aliases/git.aliases ; and source $HOME/.aliases/git.aliases
+test -e $HOME/.aliases/tmux.aliases ; and source $HOME/.aliases/tmux.aliases
 test -e $HOME/.iterm2_shell_integration.fish ; and source $HOME/.iterm2_shell_integration.fish
 
 test -e $FISH_HOME/mw/env.fish ; and source $FISH_HOME/mw/env.fish

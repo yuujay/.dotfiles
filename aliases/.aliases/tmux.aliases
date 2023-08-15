@@ -1,0 +1,16 @@
+# tmux
+alias tls='tmux ls'
+
+# Create sessions with tmux-sessionizer
+alias td='tmux-sessionizer ~/.dotfiles'
+alias tm='tmux-sessionizer $NETWORK_PATH/mos-team'
+alias ts='tmux-sessionizer'
+alias tv='tmux-sessionizer $NETWORK_PATH/mos-team/volturnus'
+
+# Tmux-windowizer
+alias twa='tmux-windowizer w-all watch kubectl get po --all-namespaces'
+alias twg='tmux-windowizer w-gumamahe watch kubectl get po -n gumamahe'
+alias twm='tmux-windowizer w-mathworks watch kubectl get po -n mathworks'
+alias tww='tmux-windowizer w watch kubectl get po'
+
+
