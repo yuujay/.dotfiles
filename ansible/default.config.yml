@@ -40,6 +40,7 @@ apt_packages:
   - i3
   - i3blocks
   - jq
+  - jqp
   - multitail
   # - neovim
   - nmap
@@ -93,6 +94,7 @@ brew_packages:
   - htop
   - imagemagick
   - jq
+  - jqp
   - koekeishiya/formulae/skhd
   - koekeishiya/formulae/yabai
   - lazygit
