@@ -31,6 +31,7 @@ setup_python: false
 setup_ruby: false
 
 apt_packages:
+  - bat
   - bash-completion
   - exa
   - fish
@@ -48,6 +49,7 @@ apt_packages:
   - npm
   - openssl
   - pip
+  - ranger
   - rofi
   - rsync
   - silversearcher-ag
@@ -57,6 +59,11 @@ apt_packages:
   - tree
   - watch
   - wget
+
+snap_packages:
+  - neovim
+  - dust
+  - dog
 
 brew_cask_packages:
   - dbeaver-community
