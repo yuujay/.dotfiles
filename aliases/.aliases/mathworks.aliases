@@ -8,7 +8,7 @@ alias mcv='m mvn clean verify'
 # AOE-MW ALIASES
 alias vdi="ssh vdi"
 alias ec2="ssh ec2"
-alias sshg="ssh $MW_USERNAME@MW_MAC_HOST"
+alias sshg="ssh $MW_USERNAME@$WORK_MACHINE"
 
 alias sshd1="ssh basysrby@ruby26ext-d01ls"
 alias sshd2="ssh basysrby@ruby26ext-d02ls"
