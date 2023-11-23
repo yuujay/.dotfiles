@@ -40,3 +40,8 @@ alias cdi='cd /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/
 alias cpi='cp /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/glnxa64/mos/final_release_assembly/matlab_online_server.zip .'
 alias wlg='watch kubectl get pods --kubeconfig=/tmp/sbmos/sbmosstack/.kube/admin.conf -n $MW_USERNAME'
 alias wlm='watch kubectl get pods --kubeconfig=/tmp/sbmos/sbmosstack/.kube/admin.conf -n mathworks'
+
+#alias kindcluster=mw -using Bmain sbmos create mosdev --http-port 80 --https-port 443 --mos-sandbox /local-ssd/dev/5-17-dev/volturnus/chart-overrides --out-to-terminal
+#alias mosadm='mw -using Bmain mosadm' # Use under /volturnus directory
+alias mm='./mosadm'
+

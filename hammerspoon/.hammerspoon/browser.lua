@@ -8,7 +8,7 @@ end
 hs.hotkey.bind(ALT_CMD, 'a', openUrl('https://esso.mathworks.com/idp/startSSO.ping?PartnerSpId=urn%3Aamazon%3Awebservices'))
 hs.hotkey.bind(ALT_CMD, 'c', openUrl('https://confluence.mathworks.com/pages/viewpage.action?pageId=841483897'))
 hs.hotkey.bind(ALT_CMD, 'd', openUrl('https://github.com/yuujay/.dotfiles/'))
-hs.hotkey.bind(ALT_CMD, 'g', openUrl('https://github.mathworks.com/search?o=desc&q=topic%3Awebaddons+org%3Adevelopment&s=updated&type=Repositories'))
+hs.hotkey.bind(ALT_CMD, 'g', openUrl('https://github.mathworks.com/search?q=topic%3Amos+org%3Adevelopment&type=Repositories'))
 hs.hotkey.bind(ALT_CMD, 'j', openUrl(''))
 hs.hotkey.bind(ALT_CMD, 'm', openUrl('https://www.gmail.com'))
 hs.hotkey.bind(ALT_CMD, 'o', openUrl('https://outlook.office365.com/mail/'))
