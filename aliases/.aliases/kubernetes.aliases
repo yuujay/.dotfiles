@@ -6,7 +6,7 @@
 # n - namespace
 # l -logs
 
-alias a='awssaml --profile=default --session-duration=8h --region=us-east-1'
+alias a='awssaml --profile=default --session-duration=8h --region=us-east-2'
 
 alias bkc='mv ~/.kube/config ~/.kube/config.backup'
 
