@@ -52,6 +52,7 @@ apt_packages:
   - ranger
   - rofi
   - rsync
+  - skopeo
   - silversearcher-ag
   - stow
   - tldr
@@ -117,6 +118,7 @@ brew_packages:
   - ripgrep
   - rsync
   - ruby-build
+  - skopeo
   - slides
   - ssh-copy-id
   - stow
