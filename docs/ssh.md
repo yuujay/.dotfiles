@@ -1,0 +1,5 @@
+- sudo apt install openssh-client
+- sudo apt install openssh-server
+- configs available under `/etc/ssh/sshd_config`
+- sudo sshd -t -f /etc/ssh/sshd_config
+- sudo systemctl restart sshd.service
