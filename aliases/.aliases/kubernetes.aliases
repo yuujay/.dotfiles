@@ -10,6 +10,8 @@ alias a='awssaml --profile=default --session-duration=8h --region=us-east-1'
 
 alias bkc='mv ~/.kube/config ~/.kube/config.backup'
 
+alias nshoot='kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot'
+
 alias k='kubectl'
 alias ka='kubectl apply -f'
 alias kc='kubectl config'

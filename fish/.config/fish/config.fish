@@ -1,5 +1,8 @@
 # echo "Sourcing files from $FISH_HOME/config.fish"
 
+# TEST THIS FOR VS CODE integration
+set VSC_TMP "/run/user/12162/tmp`}"
+
 fish_vi_key_bindings
 setgitconfig
 

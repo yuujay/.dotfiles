@@ -9,9 +9,9 @@ set -gx GOOS ""
 set -gx GOPATH "/local-ssd/gumamahe/go/"
 set -gx GOPRIVATE "golang.dhcp,github.mathworks.com"
 set -gx GOPROXY "http://iat-go-proxy-prod-01:7000/go-proxy"
-set -gx GOROOT "/mathworks/hub/3rdparty/internal/10636913/glnxa64/golang"
+set -gx GOROOT "/mathworks/hub/3rdparty/internal/11156708/glnxa64/golang"
 set -gx GOTOOLDIR "/home/gumamahe/go/pkg/tool/darwin_amd64/"
-set -gx MW_ARCH ""
+set -gx MW_ARCH "glnxa64"
 set -gx GEM_HOME "$HOME/.gem/ruby/2.6.0"
 
 set -gx UID (id -u)
