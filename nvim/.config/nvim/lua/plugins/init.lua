@@ -6,6 +6,7 @@ return {
   'rcarriga/nvim-dap-ui',
   'leoluz/nvim-dap-go',
   'theHamsta/nvim-dap-virtual-text',
+  'nvim-neotest/nvim-nio',
 
   -- One simple LSP Config to rule em all
   'towolf/vim-helm',
@@ -21,7 +22,6 @@ return {
       {'hrsh7th/nvim-cmp'},
       {'hrsh7th/cmp-buffer'},
       {'hrsh7th/cmp-path'},
-      {'saadparwaiz1/cmp_luasnip'},
       {'hrsh7th/cmp-nvim-lsp'},
       {'hrsh7th/cmp-nvim-lua'},
 

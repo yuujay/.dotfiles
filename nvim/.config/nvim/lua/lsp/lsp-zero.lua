@@ -29,7 +29,7 @@ lsp.ensure_installed({
     'eslint',
     'gopls',
     'rust_analyzer',
-    'solargraph',
+    -- 'solargraph',
     'tsserver',
     'yamlls',
 })
