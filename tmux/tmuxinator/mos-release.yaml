@@ -1,7 +1,7 @@
-# /home/gumamahe/.config/tmuxinator/mos-team-stack.yml
+# /home/gumamahe/.config/tmuxinator/volturnus.yml
 
-name: mos-team-stack
-root: /mathworks/devel/sandbox/gumamahe/mos-team/volturnus/chart-overrides/matlabonlineserver-a/mos-team-stack
+name: MOS-RELEASE
+root: /mathworks/devel/sandbox/gumamahe/shared/MOS-Team/bash
 
 # Optional tmux socket
 # socket_name: foo
@@ -15,7 +15,7 @@ root: /mathworks/devel/sandbox/gumamahe/mos-team/volturnus/chart-overrides/matla
 # on_project_start: command
 
 # Run on project start, the first time
-#on_project_first_start: (sleep 1 && tmux list-windows -F "#{window_id}" | while read WINDOW_ID; do tmux select-layout -t "$WINDOW_ID"; done) &
+# on_project_first_start: command
 
 # Run on project start, after the first time
 # on_project_restart: command
@@ -32,7 +32,7 @@ root: /mathworks/devel/sandbox/gumamahe/mos-team/volturnus/chart-overrides/matla
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
 
-# Change the command to call tmux. This can be used by derivatives/wrappers like byobu.
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
 # tmux_command: byobu
 
 # Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
@@ -45,23 +45,22 @@ root: /mathworks/devel/sandbox/gumamahe/mos-team/volturnus/chart-overrides/matla
 # attach: false
 
 windows:
-  - bash:
+  - bash-prep:
       layout: main-horizontal
-      # main-pane-height: 50% # Doesn't work  as expected. Looks to be a limitation with tmux
       panes:
-        - cd ./bash && v
-        - cd ./bash
-        - watch kubectl get po -n bash
-  - demo:
+        - cd /mathworks/devel/sandbox/gumamahe/mos-team/mos-install-scripts & v
+        - cd /mathworks/devel/sandbox/gumamahe/mos-team/mos-install-scripts
+  - HUB:
       layout: main-horizontal
-      # main-pane-height: 50% # Doesn't work  as expected. Looks to be a limitation with tmux
       panes:
-        - cd ./demo && v
-        - cd ./demo
-        - watch kubectl get po -n demo
-  - efs:
+        - cd /mathworks/hub/share/opi/r2022b
+        - cd /mathworks/hub/share/opi/r2022b
+  - EC2:
       layout: main-horizontal
-      # main-pane-height: 50% # Doesn't work  as expected. Looks to be a limitation with tmux
       panes:
         - cd ~/.ssh
         -
+  - releaes-artifacts:
+      layout: main-horizontal
+      panes:
+        - cd /mathworks/inside/files/dev/eps/WIT/MOS/Release/
