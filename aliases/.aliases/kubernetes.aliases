@@ -31,6 +31,9 @@ alias krs='kubectl rollout status deployment'
 alias kru='kubectl rollout undo deployment'
 alias ks='kubectl get all --all-namespaces'
 
+# kube get routes
+alias kgr='kubectl get --all-namespaces ingress -o json 2> /dev/null| jq -r \'.items[] | .spec.rules[] | .host as $host | .http.paths[] | ( $host + .path)\' | sort'
+
 # HELM
 alias h='helm'
 alias hi='helm install'
