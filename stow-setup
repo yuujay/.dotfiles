@@ -12,19 +12,19 @@ case "$OS" in
         ;;
 esac
 
-/opt/homebrew/bin/stow -vt ~ aliases
-/opt/homebrew/bin/stow -vt ~ fish
-/opt/homebrew/bin/stow -vt ~ gh
-/opt/homebrew/bin/stow -vt ~ git
-/opt/homebrew/bin/stow -vt ~ hammerspoon
-/opt/homebrew/bin/stow -vt ~ karabiner
-/opt/homebrew/bin/stow -vt ~ kitty
-/opt/homebrew/bin/stow -vt ~ nvim
-/opt/homebrew/bin/stow -vt ~ ssh
-/opt/homebrew/bin/stow -vt ~ tmux
-/opt/homebrew/bin/stow -vt ~ vscode
-/opt/homebrew/bin/stow -vt ~ i3
-/opt/homebrew/bin/stow -vt ~ zsh
+stow -vt ~ aliases
+stow -vt ~ fish
+stow -vt ~ gh
+stow -vt ~ git
+stow -vt ~ hammerspoon
+stow -vt ~ karabiner
+stow -vt ~ kitty
+stow -vt ~ nvim
+stow -vt ~ ssh
+stow -vt ~ tmux
+stow -vt ~ vscode
+stow -vt ~ i3
+stow -vt ~ zsh
 cp git/hooks/post-commit .git/hooks/
 
 # Remove the hooks directory that is stowed
