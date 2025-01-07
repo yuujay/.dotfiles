@@ -64,3 +64,6 @@ end
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/gumamahe/google-cloud-sdk/path.fish.inc' ]; . '/home/gumamahe/google-cloud-sdk/path.fish.inc'; end
+
+# Generated for envman. Do not edit.
+test -s "$HOME/.config/envman/load.fish"; and source "$HOME/.config/envman/load.fish"
