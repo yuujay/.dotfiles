@@ -53,6 +53,7 @@ apt_packages:
   - rofi
   - rsync
   - skopeo
+  - snapd
   - silversearcher-ag
   - stow
   - tldr
@@ -60,6 +61,7 @@ apt_packages:
   - tree
   - watch
   - wget
+  - zk
 
 snap_packages:
   - neovim
@@ -129,6 +131,7 @@ brew_packages:
   - watch
   - wget
   - yarn
+  - zk
 
 gem_list:
   - rubocop
