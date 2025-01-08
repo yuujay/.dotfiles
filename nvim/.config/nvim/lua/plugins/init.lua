@@ -52,8 +52,9 @@ return {
   'tpope/vim-surround',
   'michaeljsmith/vim-indent-object',
 
-  -- Markdown preview
-  'ellisonleao/glow.nvim',
+  -- Markdown
+  'ellisonleao/glow.nvim', -- Preview markdown
+  {'plasticboy/vim-markdown', branch = 'master', require = {'godlygeek/tabular'}},
 
   -- 'ThePrimeagen/harpoon'
   -- 'chipsenkbeil/distant.nvim' -- NIFTY_ONE - Remote development from vim

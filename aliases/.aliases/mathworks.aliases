@@ -8,7 +8,7 @@ alias mcv='m mvn clean verify'
 # AOE-MW ALIASES
 alias vdi="ssh vdi"
 alias ec2="ssh ec2"
-alias sshg="ssh $MW_USERNAME@$WORK_MACHINE"
+alias sshg="ssh $WORK_USERNAME@$WORK_MACHINE"
 
 alias sshd1="ssh basysrby@ruby26ext-d01ls"
 alias sshd2="ssh basysrby@ruby26ext-d02ls"
@@ -41,7 +41,7 @@ alias cpi='cp /mathworks/devel/jobarchive/Bconnector/latest_pass/matlab/derived/
 alias wlg='watch kubectl get pods --kubeconfig=/tmp/sbmos/sbmosstack/.kube/admin.conf -n $MW_USERNAME'
 alias wlm='watch kubectl get pods --kubeconfig=/tmp/sbmos/sbmosstack/.kube/admin.conf -n mathworks'
 
-alias mosdev='mw -using Bmain sbmos create mosdev --http-port 80 --https-port 443 --mos-sandbox /mathworks/devel/sandbox/gumamahe/mos-team/volturnus/ --out-to-terminal'
+alias mosdev='mw -using Bmain sbmos create mosdev --http-port 80 --https-port 443 --mos-sandbox $NETWORK_PATH/mos-team/volturnus/ --out-to-terminal'
 #alias mosadm='mw -using Bmain mosadm' # Use under /volturnus directory
 alias mm='./mosadm'
 

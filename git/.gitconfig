@@ -82,4 +82,4 @@
 [url "git@github.mathworks.com:"]
 	insteadOf = https://github.mathworks.com
 [gpg]
-	program = /opt/homebrew/bin/gpg
+	program = /usr/bin/gpg
