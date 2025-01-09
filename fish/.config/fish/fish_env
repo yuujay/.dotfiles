@@ -7,6 +7,7 @@ set -gx SHELL (which fish)
 set -gx TERMINAL 'kitty'
 set -gx VISUAL 'vim'
 set -gx XDG_DATA_HOME "$HOME/.local/share"
+set -gx ZK_NOTEBOOK_DIR "$HOME/zettelkasten"
 
 set -gx CG_ENABLED 0
 

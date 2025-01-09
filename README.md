@@ -36,7 +36,7 @@ git clone git@github.com:yuujay/dotfiles.git
 Once cloned `cd` into the `dotfiles` directory and run the install script
 
 ```sh
-sh stow-install
+sh stow-setup
 ```
 
 If everything goes well, you have the symlinks established for your `rc` and `config` files.

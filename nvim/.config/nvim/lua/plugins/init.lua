@@ -56,6 +56,16 @@ return {
   'ellisonleao/glow.nvim', -- Preview markdown
   {'plasticboy/vim-markdown', branch = 'master', require = {'godlygeek/tabular'}},
 
+  -- zettlekasten
+-- {
+--   "zk-org/zk-nvim",
+--   config = function()
+--     require("zk").setup({
+--       -- See Setup section below
+--     })
+--   end
+-- }
+
   -- 'ThePrimeagen/harpoon'
   -- 'chipsenkbeil/distant.nvim' -- NIFTY_ONE - Remote development from vim
 }

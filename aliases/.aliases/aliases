@@ -6,6 +6,7 @@ alias llm='exa -alm --icons --git'
 alias llt='exa -al --tree --git --level=3 --icons'
 
 alias lg='lazygit'
+alias bat='batcat'
 
 # brew aliases
 alias bci='brew cask install'

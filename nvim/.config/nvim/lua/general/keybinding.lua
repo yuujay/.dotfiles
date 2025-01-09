@@ -106,9 +106,9 @@ vim.keymap.set('v', '>', '>gv', options)
 -- Disable search highlights
 vim.keymap.set('n', '<leader>`', ':nohls<CR>', options)
 
--- Packer plugins using packer
-options.desc = "sync packer installation"
-vim.keymap.set('n', '<leader><leader>p', ':PackerSync<CR>', options)
+-- Lazy plugins
+options.desc = "lazy installation"
+vim.keymap.set('n', '<leader><leader>l', ':Lazy<CR>', options)
 options.desc = ""
 
 -- Shortcuts to open common files
