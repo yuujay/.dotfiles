@@ -8,12 +8,12 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "open diagn
 vim.keymap.set('n', '<leader>qq', vim.diagnostic.setloclist, { desc = "open diagnostics window" })
 
 vim.diagnostic.config({
-    virtual_text = false, -- Set this to true if you want diagnostic message on each line
-    signs = true,
-    update_in_insert = false,
-    underline = true,
-    severity_sort = true,
-    float = true,
+  virtual_text = false, -- Set this to true if you want diagnostic message on each line
+  signs = true,
+  update_in_insert = false,
+  underline = true,
+  severity_sort = true,
+  float = true,
 })
 
 -- Debugging
@@ -34,34 +34,34 @@ require('dap-go').setup()
 
 -- require('dapui').setup()
 require("dapui").setup({
-	layouts = {
-		{
-			elements = {
-				{ id = "scopes", size = 0.25 },
-				{ id = "breakpoints", size = 0.25 },
-				{ id = "stacks", size = 0.25 },
-				{ id = "watches", size = 0.25 },
-			},
-			size = 40,
-			position = "left",
-		},
-		{
-			elements = {},
-			size = 10,
-			position = "bottom",
-		},
-	},
+  layouts = {
+    {
+      elements = {
+        { id = "scopes", size = 0.25 },
+        { id = "breakpoints", size = 0.25 },
+        { id = "stacks", size = 0.25 },
+        { id = "watches", size = 0.25 },
+      },
+      size = 40,
+      position = "left",
+    },
+    {
+      elements = {},
+      size = 10,
+      position = "bottom",
+    },
+  },
 })
 
 
 -- local dap, dapui = require("dap"), require("dapui")
 
 -- dap.listeners.after.event_initialized["dapui_config"] = function()
---   dapui.open()
--- end
--- dap.listeners.before.event_terminated["dapui_config"] = function()
---   dapui.close()
--- end
--- dap.listeners.before.event_exited["dapui_config"] = function()
---   dapui.close()
--- end
+  --   dapui.open()
+  -- end
+  -- dap.listeners.before.event_terminated["dapui_config"] = function()
+    --   dapui.close()
+    -- end
+    -- dap.listeners.before.event_exited["dapui_config"] = function()
+      --   dapui.close()
+      -- end
