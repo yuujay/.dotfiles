@@ -18,16 +18,16 @@ return {
     'williamboman/mason-lspconfig.nvim', -- fuses mason and nvim-lspconfig
 
     -- Autocompletion
-    {'hrsh7th/nvim-cmp'},
-    {'hrsh7th/cmp-buffer'},
-    {'hrsh7th/cmp-path'},
-    {'hrsh7th/cmp-nvim-lsp'},
-    {'hrsh7th/cmp-nvim-lua'},
+    'hrsh7th/nvim-cmp',
+    'hrsh7th/cmp-buffer',
+    'hrsh7th/cmp-path',
+    'hrsh7th/cmp-nvim-lsp',
+    'hrsh7th/cmp-nvim-lua',
 
     -- Snippets
-    {'L3MON4D3/LuaSnip'},
-    {'rafamadriz/friendly-snippets'},
-    {'saadparwaiz1/cmp_luasnip'},
+    'L3MON4D3/LuaSnip',
+    'rafamadriz/friendly-snippets',
+    'saadparwaiz1/cmp_luasnip',
 
     -- Movements,
     'junegunn/fzf',
@@ -53,16 +53,6 @@ return {
     'ellisonleao/glow.nvim', -- Preview markdown
     {'plasticboy/vim-markdown', branch = 'master', require = {'godlygeek/tabular'}},
 
-    -- zettlekasten
-    -- {
-        --   "zk-org/zk-nvim",
-        --   config = function()
-            --     require("zk").setup({
-                --       -- See Setup section below
-                --     })
-                --   end
-                -- }
-
-                -- 'ThePrimeagen/harpoon'
-                -- 'chipsenkbeil/distant.nvim' -- NIFTY_ONE - Remote development from vim
-            }
+    -- 'ThePrimeagen/harpoon'
+    -- 'chipsenkbeil/distant.nvim' -- NIFTY_ONE - Remote development from vim
+}
