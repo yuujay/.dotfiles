@@ -11,7 +11,6 @@ return {
         {"<leader>gh", "<cmd>Gitsigns preview_hunk<CR>", desc="Git Preview Hunk"},
     },
     opts = {
-        options = {
             signs = {
                 add          = { text = '│' },
                 change       = { text = '│' },
@@ -50,6 +49,5 @@ return {
             yadm = {
                 enable = false
             },
-        }
     }
 }

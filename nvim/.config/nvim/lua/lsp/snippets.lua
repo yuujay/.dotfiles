@@ -1,3 +1,4 @@
+print('in lsp/snippets')
 local ls = require("luasnip")
 local snip = ls.snippet
 local node = ls.snippet_node
