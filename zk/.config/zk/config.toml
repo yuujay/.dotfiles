@@ -39,18 +39,25 @@ id-case = "lower"
 author = "Gowtham UJ"
 
 # GROUP OVERRIDES
+[group.ankit]
+paths = ["work/ankit/*"]
+
+[group.ankit.note]
+filename = "{{format-date now '%m-%d-%Y'}}"
+template = "work-update.md"
+
 [group.journal]
 paths = ["journal/weekly", "journal/daily"]
 
 [group.journal.note]
-filename = "{{format-date now}}"
+filename = "{{format-date now '%m-%d-%Y'}}"
 template = "journal.md"
 
 [group.work]
 paths = ["work/*"]
 
 [group.work.note]
-filename = "{{format-date now}}"
+filename = "{{format-date now '%m-%d-%Y'}}"
 template = "work-update.md"
 
 

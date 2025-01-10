@@ -2,7 +2,7 @@
 Title:   {{title}}
 Id:      {{id}}
 Author:  {{extra.author}}
-Date:    {{format-date now}}
+Date:    {{format-date now '%m-%d-%Y'}}
 Tags:    [scratch]
 
 ---
