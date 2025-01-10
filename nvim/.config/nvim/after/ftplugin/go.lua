@@ -1,9 +1,10 @@
 local set = vim.opt_local
+local dapgo = require('dap-go').setup()
 
 set.expandtab = false
 set.tabstop = 4
 set.shiftwidth = 4
 
 vim.keymap.set("n", "<space>td", function()
-  require("dap-go").debug_test()
+  dapgo.debug_test()
 end, { buffer = 0 })
