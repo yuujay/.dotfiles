@@ -27,12 +27,17 @@ return {
   },
 
   -- Debugging/DAP
-  'mfussenegger/nvim-dap',
-  'leoluz/nvim-dap-go',
-  'rcarriga/nvim-dap-ui',
-  'theHamsta/nvim-dap-virtual-text',
-  'nvim-neotest/nvim-nio',
-  'nvim-telescope/telescope-dap.nvim',
+  {
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      "leoluz/nvim-dap-go",
+      "rcarriga/nvim-dap-ui",
+      "theHamsta/nvim-dap-virtual-text",
+      "nvim-neotest/nvim-nio",
+      "williamboman/mason.nvim",
+      'nvim-telescope/telescope-dap.nvim',
+    },
+  },
 
   'towolf/vim-helm',
 
