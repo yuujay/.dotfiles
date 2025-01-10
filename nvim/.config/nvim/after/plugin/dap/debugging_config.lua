@@ -13,7 +13,31 @@ vim.keymap.set("n", "<leader>dt", ":lua require'dap-go'.debug_test()<CR>")
 
 require("nvim-dap-virtual-text").setup()
 require('dap-go').setup()
-require('dapui').setup()
+
+-- require('dapui').setup()
+require("dapui").setup({
+	layouts = {
+		{
+			elements = {
+				{ id = "scopes", size = 0.25 },
+				{ id = "breakpoints", size = 0.25 },
+				{ id = "stacks", size = 0.25 },
+				{ id = "watches", size = 0.25 },
+			},
+			size = 40,
+			position = "left",
+		},
+		{
+			elements = {},
+			size = 10,
+			position = "bottom",
+		},
+	},
+})
+
+vim.fn.sign_define("DapBreakpoint", { text = "⬢", texthl = "Yellow", linehl = "", numhl = "Yellow" })
+vim.fn.sign_define("DapStopped", { text = "▶", texthl = "Green", linehl = "ColorColumn", numhl = "Green" })
+
 
 -- local dap, dapui = require("dap"), require("dapui")
 

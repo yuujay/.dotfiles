@@ -1,19 +1,21 @@
 return {
     {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
+
     -- Debugging/DAP
     'mfussenegger/nvim-dap',
-    'nvim-telescope/telescope-dap.nvim',
-    'rcarriga/nvim-dap-ui',
     'leoluz/nvim-dap-go',
+    'rcarriga/nvim-dap-ui',
     'theHamsta/nvim-dap-virtual-text',
     'nvim-neotest/nvim-nio',
+    'nvim-telescope/telescope-dap.nvim',
 
     -- One simple LSP Config to rule em all
     'towolf/vim-helm',
+
     -- LSP Support
     'neovim/nvim-lspconfig',
-    {'williamboman/mason.nvim'},
-    -- {'williamboman/mason-lspconfig.nvim'},
+    'williamboman/mason.nvim', -- makes it easy to install LSP,DAP,Linter
+    'williamboman/mason-lspconfig.nvim', -- fuses mason and nvim-lspconfig
 
     -- Autocompletion
     {'hrsh7th/nvim-cmp'},
