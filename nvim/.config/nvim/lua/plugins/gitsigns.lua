@@ -11,6 +11,8 @@ return {
         {"<leader>gh", "<cmd>Gitsigns preview_hunk<CR>", desc="Git Preview Hunk"},
     },
     opts = {
+        -- Do not remove `options` key as it breaks gitsigns
+        options = {
             signs = {
                 add          = { text = '│' },
                 change       = { text = '│' },
@@ -49,5 +51,6 @@ return {
             yadm = {
                 enable = false
             },
+        },
     }
 }
