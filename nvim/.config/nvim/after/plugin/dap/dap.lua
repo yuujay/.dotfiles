@@ -1,6 +1,22 @@
 local ok, _ = pcall(require, "dap")
 if not ok then return end
 
+-- Diagnostics setting
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = "goto previous diagnostics" })
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = "goto next diagnostics" })
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "open diagnostics of current line" })
+vim.keymap.set('n', '<leader>qq', vim.diagnostic.setloclist, { desc = "open diagnostics window" })
+
+vim.diagnostic.config({
+    virtual_text = false, -- Set this to true if you want diagnostic message on each line
+    signs = true,
+    update_in_insert = false,
+    underline = true,
+    severity_sort = true,
+    float = true,
+})
+
+-- Debugging
 vim.keymap.set("n", "<leader>5", ":lua require'dap'.continue()<CR>")
 vim.keymap.set("n", "<leader>3", ":lua require'dap'.step_over()<CR>")
 vim.keymap.set("n", "<leader>2", ":lua require'dap'.step_into()<CR>")
@@ -10,6 +26,8 @@ vim.keymap.set("n", "<leader>B", ":lua require'dap'.set_breakpoint(vim.fn.input(
 vim.keymap.set("n", "<leader>lp", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>")
 vim.keymap.set("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>")
 vim.keymap.set("n", "<leader>dt", ":lua require'dap-go'.debug_test()<CR>")
+vim.fn.sign_define("DapBreakpoint", { text = "⬢", texthl = "Yellow", linehl = "", numhl = "Yellow" })
+vim.fn.sign_define("DapStopped", { text = "▶", texthl = "Green", linehl = "ColorColumn", numhl = "Green" })
 
 require("nvim-dap-virtual-text").setup()
 require('dap-go').setup()
@@ -33,24 +51,6 @@ require("dapui").setup({
 			position = "bottom",
 		},
 	},
-})
-
-vim.fn.sign_define("DapBreakpoint", { text = "⬢", texthl = "Yellow", linehl = "", numhl = "Yellow" })
-vim.fn.sign_define("DapStopped", { text = "▶", texthl = "Green", linehl = "ColorColumn", numhl = "Green" })
-
--- Diagnostics
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = "goto previous diagnostics" })
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = "goto next diagnostics" })
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "open diagnostics of current line" })
-vim.keymap.set('n', '<leader>qq', vim.diagnostic.setloclist, { desc = "open diagnostics window" })
-
-vim.diagnostic.config({
-    virtual_text = false, -- Set this to true if you want diagnostic message on each line
-    signs = true,
-    update_in_insert = false,
-    underline = true,
-    severity_sort = true,
-    float = true,
 })
 
 
