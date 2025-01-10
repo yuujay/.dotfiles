@@ -1,5 +1,6 @@
 .DS_Store
 
+test-example-codes/**
 **/*.log
 *.db
 fish/**/fish/fish_variables

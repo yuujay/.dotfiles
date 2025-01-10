@@ -111,6 +111,11 @@ options.desc = "lazy installation"
 vim.keymap.set('n', '<leader><leader>l', ':Lazy<CR>', options)
 options.desc = ""
 
+-- Mason plugins
+options.desc = "Mason installation"
+vim.keymap.set('n', '<leader><leader>m', ':Mason<CR>', options)
+options.desc = ""
+
 -- Shortcuts to open common files
 vim.keymap.set('n', '<leader><leader>hs', ':e /etc/hosts<CR>', options)
 

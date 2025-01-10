@@ -1,36 +1,45 @@
 return {
   {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
-  -- Debugging/DAP
-  'mfussenegger/nvim-dap',
-  'nvim-telescope/telescope-dap.nvim',
-  'rcarriga/nvim-dap-ui',
-  'leoluz/nvim-dap-go',
-  'theHamsta/nvim-dap-virtual-text',
-  'nvim-neotest/nvim-nio',
 
-  -- One simple LSP Config to rule em all
-  'towolf/vim-helm',
+  -- LSP Support
   {
-    'VonHeikemen/lsp-zero.nvim',
+    'neovim/nvim-lspconfig',
     dependencies = {
-      -- LSP Support
-      {'neovim/nvim-lspconfig'},
-      {'williamboman/mason.nvim'},
-      {'williamboman/mason-lspconfig.nvim'},
+      'williamboman/mason.nvim', -- makes it easy to install LSP,DAP,Linter
+      'williamboman/mason-lspconfig.nvim', -- fuses mason and nvim-lspconfig
+    },
+  },
 
-      -- Autocompletion
-      {'hrsh7th/nvim-cmp'},
-      {'hrsh7th/cmp-buffer'},
-      {'hrsh7th/cmp-path'},
-      {'hrsh7th/cmp-nvim-lsp'},
-      {'hrsh7th/cmp-nvim-lua'},
+  -- Autocompletion
+  {
+    'hrsh7th/nvim-cmp',
+    dependencies = {
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-path',
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-nvim-lua',
 
       -- Snippets
-      {'L3MON4D3/LuaSnip'},
-      {'rafamadriz/friendly-snippets'},
-      {'saadparwaiz1/cmp_luasnip'},
-    }
+      'L3MON4D3/LuaSnip',
+      'rafamadriz/friendly-snippets',
+      'saadparwaiz1/cmp_luasnip',
+    },
   },
+
+  -- Debugging/DAP
+  {
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      "leoluz/nvim-dap-go",
+      "rcarriga/nvim-dap-ui",
+      "theHamsta/nvim-dap-virtual-text",
+      "nvim-neotest/nvim-nio",
+      "williamboman/mason.nvim",
+      'nvim-telescope/telescope-dap.nvim',
+    },
+  },
+
+  'towolf/vim-helm',
 
   -- Movements,
   'junegunn/fzf',
@@ -48,23 +57,13 @@ return {
   'jiangmiao/auto-pairs',
   'tpope/vim-commentary',
   'tpope/vim-endwise',
---  'tpope/vim-fugitive',
+  --  'tpope/vim-fugitive',
   'tpope/vim-surround',
   'michaeljsmith/vim-indent-object',
 
   -- Markdown
   'ellisonleao/glow.nvim', -- Preview markdown
   {'plasticboy/vim-markdown', branch = 'master', require = {'godlygeek/tabular'}},
-
-  -- zettlekasten
--- {
---   "zk-org/zk-nvim",
---   config = function()
---     require("zk").setup({
---       -- See Setup section below
---     })
---   end
--- }
 
   -- 'ThePrimeagen/harpoon'
   -- 'chipsenkbeil/distant.nvim' -- NIFTY_ONE - Remote development from vim
