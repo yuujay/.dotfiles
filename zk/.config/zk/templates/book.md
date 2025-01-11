@@ -7,3 +7,14 @@ Tags:
   - scratch
 
 ---
+
+#### Book Name -
+#### Book Author -
+
+
+### Top Takeaways
+
+-
+
+
+### Resources
