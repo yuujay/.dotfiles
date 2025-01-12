@@ -29,7 +29,7 @@ template = "default.md"
 id-charset = "alphanum"
 
 # Length of the generated IDs.
-id-length = 4
+id-length = 8
 
 # Letter case for the random IDs.
 id-case = "lower"
@@ -39,6 +39,21 @@ id-case = "lower"
 author = "Gowtham UJ"
 
 # GROUP OVERRIDES
+[group.book]
+[group.book.note]
+filename = "{{format-date now '%m-%d-%Y'}}"
+template = "book.md"
+
+[group.podcast]
+[group.podcast.note]
+filename = "{{format-date now '%m-%d-%Y'}}"
+template = "podcast.md"
+
+[group.meeting-notes]
+[group.meeting-notes.note]
+filename = "{{format-date now '%m-%d-%Y'}}-{{title}}"
+template = "meeting-notes.md"
+
 [group.ankit]
 paths = ["work/ankit/*"]
 
@@ -87,7 +102,6 @@ recents = "--sort created- --created-after 'last two weeks'"
 [alias]
 # Create/open dated file under work dir to provide updates
 su = "zk new --group work work"
-
 # Edit the last modified note.
 edlast = "zk edit --limit 1 --sort modified- $@"
 # Edit the notes selected interactively among the notes created the last two weeks.

@@ -4,12 +4,13 @@ Id:      {{id}}
 Author:  {{extra.author}}
 Date:    {{format-date now '%m-%d-%Y'}}
 Tags:
-  - books
+  - podcast
 
 ---
 
-#### Book Name -
-#### Book Author -
+#### Podcast Name -
+#### Podcast Episode -
+#### Podcast Host -
 
 
 ### Top Takeaways
