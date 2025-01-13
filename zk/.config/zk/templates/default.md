@@ -5,6 +5,7 @@ Author:  {{extra.author}}
 Date:    {{format-date now '%m-%d-%Y'}}
 Tags:
   - scratch
+  - fleeting
   - inbox
   - to-sort
 
