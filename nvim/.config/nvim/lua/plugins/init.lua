@@ -57,13 +57,8 @@ return {
   'jiangmiao/auto-pairs',
   'tpope/vim-commentary',
   'tpope/vim-endwise',
-  --  'tpope/vim-fugitive',
   'tpope/vim-surround',
   'michaeljsmith/vim-indent-object',
-
-  -- Markdown
-  'ellisonleao/glow.nvim', -- Preview markdown
-  {'plasticboy/vim-markdown', branch = 'master', require = {'godlygeek/tabular'}},
 
   -- 'ThePrimeagen/harpoon'
   -- 'chipsenkbeil/distant.nvim' -- NIFTY_ONE - Remote development from vim

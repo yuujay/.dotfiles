@@ -47,10 +47,11 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
   }),
   sources = cmp.config.sources({
-    -- Add any sources exposed by snippet plugins
+     -- Add any sources exposed by snippet plugins
     { name = 'nvim_lsp', keyword_length = 4 },
     { name = 'luasnip', keyword_length = 3 },
     { name = 'path', keyword_length = 2 },
+    { name = 'render-markdown', keyword_length = 2 },
   }, {
     { name = 'buffer', keyword_length = 5 },
   })
