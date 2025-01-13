@@ -1,6 +1,6 @@
 ---
 Title:   {{format-date now '%m-%d-%Y'}}-mos-lead-update
-Date:    {{format-date now '%m-%d-%Y'}}
+Date:    {{format-date now "full"}}
 Id:      {{id}}
 Author:  {{extra.author}}
 Tags:
