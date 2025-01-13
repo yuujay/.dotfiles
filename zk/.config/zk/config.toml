@@ -39,15 +39,29 @@ id-case = "lower"
 author = "Gowtham UJ"
 
 # GROUP OVERRIDES
+[group.journal]
+paths = ["journal/weekly", "journal/daily"]
+
+[group.journal.note]
+filename = "{{format-date now '%m-%d-%Y'}}"
+template = "journal.md"
+
 [group.book]
 [group.book.note]
-filename = "{{format-date now '%m-%d-%Y'}}"
+filename = "{{format-date now '%m-%d-%Y'}}-book-notes"
 template = "book.md"
 
 [group.podcast]
 [group.podcast.note]
-filename = "{{format-date now '%m-%d-%Y'}}"
+filename = "{{format-date now '%m-%d-%Y'}}-podcast-notes"
 template = "podcast.md"
+
+[group.work]
+paths = ["work/*"]
+
+[group.work.note]
+filename = "{{format-date now '%m-%d-%Y'}}-work-update"
+template = "work-update.md"
 
 [group.meeting-notes]
 [group.meeting-notes.note]
@@ -58,23 +72,15 @@ template = "meeting-notes.md"
 paths = ["work/ankit/*"]
 
 [group.ankit.note]
+# filename = "{{format-date now '%m-%d-%Y'}}"
+template = "ankit-1-1.md"
+
+[group.mos-lead]
+paths = ["work/1-1/*"]
+
+[group.mos-lead.note]
 filename = "{{format-date now '%m-%d-%Y'}}"
-template = "work-update.md"
-
-[group.journal]
-paths = ["journal/weekly", "journal/daily"]
-
-[group.journal.note]
-filename = "{{format-date now '%m-%d-%Y'}}"
-template = "journal.md"
-
-[group.work]
-paths = ["work/*"]
-
-[group.work.note]
-filename = "{{format-date now '%m-%d-%Y'}}"
-template = "work-update.md"
-
+template = "mos-1-1.md"
 
 # MARKDOWN SETTINGS
 [format.markdown]
