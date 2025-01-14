@@ -8,6 +8,8 @@ Tags:
 
 ---
 
+{{content}}
+
 #### Podcast Name -
 #### Podcast Episode -
 #### Podcast Host -

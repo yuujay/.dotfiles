@@ -14,6 +14,8 @@ Tags:
 
 ---
 
+{{content}}
+
 ### Updates
 
 #### Chandani

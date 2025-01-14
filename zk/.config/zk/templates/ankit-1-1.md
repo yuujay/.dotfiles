@@ -10,6 +10,8 @@ Tags:
 
 ---
 
+{{content}}
+
 ### Updates
 
 -

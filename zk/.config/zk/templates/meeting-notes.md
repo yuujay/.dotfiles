@@ -9,6 +9,8 @@ Tags:
 
 ---
 
+{{content}}
+
 ### Attendees
 
 

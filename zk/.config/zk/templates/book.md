@@ -8,6 +8,8 @@ Tags:
 
 ---
 
+{{content}}
+
 #### Book Name -
 #### Book Author -
 

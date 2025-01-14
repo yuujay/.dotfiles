@@ -119,7 +119,7 @@ lucky = "zk list --quiet --format full --sort random --limit 1"
 [lsp]
 
 [lsp.diagnostics]
-# Report titles of wiki-links as hints.
 wiki-title = "hint"
-# Warn for dead links between notes.
 dead-link = "error"
+# This needs to be added to the individual notes config.toml file as well, as the default is different
+note-filter-text = "{{title}} {{path}}"

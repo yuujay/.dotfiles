@@ -7,6 +7,8 @@ Tags:
 
 ---
 
+{{content}}
+
 ### Gratitude
 
 -
