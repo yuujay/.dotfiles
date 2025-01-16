@@ -9,9 +9,7 @@ Tags:
   - mos
 
 ---
-
 {{content}}
-
 ### Updates
 
 -
@@ -20,6 +18,9 @@ Tags:
 
 -
 
+### Tips
+
+-
 
 ### Review callout
 
