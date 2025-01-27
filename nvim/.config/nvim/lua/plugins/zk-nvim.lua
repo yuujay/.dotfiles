@@ -37,8 +37,8 @@ return {
     {"<leader>mwt", "<Cmd>ZkNew { dir = 'work', title = 'todo'}<CR>", desc="ZK Open Work To-Do Notes"},
 
     {"<leader>mj", "<Cmd>ZkNew { dir = 'journal/daily', group = 'journal'}<CR>", desc="ZK Open Journal"},
-    {"<leader>mbn", "<Cmd>ZkNew { dir = 'personal', group = 'book', title = vim.fn.input('Title: ')}<CR>", desc="ZK new book note"},
-    {"<leader>mpn", "<Cmd>ZkNew { dir = 'personal', group = 'podcast', title = vim.fn.input('Title: ')}<CR>", desc="ZK new podcast note"},
+    {"<leader>mnb", "<Cmd>ZkNew { dir = 'personal', group = 'book', title = vim.fn.input('Title: ')}<CR>", desc="ZK new book note"},
+    {"<leader>mnp", "<Cmd>ZkNew { dir = 'personal', group = 'podcast', title = vim.fn.input('Title: ')}<CR>", desc="ZK new podcast note"},
 
     {"<leader>ma", "<Cmd>ZkNew { dir = 'work/ankit', group = 'ankit', title = vim.fn.input('Title: ') }<CR>", desc="ZK Open Ankit Notes"},
     {"<leader>msu", "<Cmd>ZkNew { dir = 'work', group = 'work'}<CR>", desc="ZK Open Scrum Updates"},
