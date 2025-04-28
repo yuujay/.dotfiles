@@ -35,8 +35,16 @@
     upgrade-submodules = submodule update --init --remote
     ups = push -u origin HEAD
 [color "decorate"]
-    head = brightcyan
+    head = red
     branch = cyan
+    tag = yellow
+    remoteBranch = magenta
+[color "diff"]
+    meta = black bold
+    frag = magenta
+    context = white
+    whitespace = yellow reverse
+    old = red
 [commit]
     template = ~/.gitmessage
     gpgsign = true
@@ -67,6 +75,13 @@
     tool = vimdiff
 [mergetool "vimdiff"]
     cmd = vimdiff -f $LOCAL $MERGED $REMOTE
+; [pager]
+;     diff = diff-so-fancy | less -R
+; [diff-so-fancy]
+;     markEmptyLines = false
+[push]
+    autoSetupRemote = true
+    default = current
 [pull]
     ff = only
     rebase = true
