@@ -68,11 +68,18 @@ template = "work-update.md"
 filename = "{{format-date now '%m-%d-%Y'}}-{{title}}"
 template = "meeting-notes.md"
 
+[group.joe]
+paths = ["work/joe/*"]
+
+[group.joe.note]
+filename = "joe-{{format-date now '%m-%d-%Y'}}"
+template = "joe-1-1.md"
+
 [group.ankit]
 paths = ["work/ankit/*"]
 
 [group.ankit.note]
-# filename = "{{format-date now '%m-%d-%Y'}}"
+filename = "ankit-{{format-date now '%m-%d-%Y'}}"
 template = "ankit-1-1.md"
 
 [group.mos-lead]
