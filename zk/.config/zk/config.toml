@@ -72,7 +72,7 @@ template = "meeting-notes.md"
 paths = ["work/joe/*"]
 
 [group.joe.note]
-filename = "joe-{{format-date now '%m-%d-%Y'}}"
+filename = "joe-{{format-date now '%m-%d-%Y'}}-{{title}}"
 template = "joe-1-1.md"
 
 [group.ankit]
