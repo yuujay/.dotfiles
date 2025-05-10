@@ -2,6 +2,7 @@ hs.loadSpoon("ReloadConfiguration")
 spoon.ReloadConfiguration:start()
 
 HYPER = {'shift', 'alt', 'cmd', 'ctrl'}
+MEH = {'alt', 'shift', 'ctrl'}
 CMD_SHIFT = {'cmd', 'shift'}
 CMD_CTRL = {'cmd', 'ctrl'}
 ALT_CMD = {'alt', 'cmd'}
